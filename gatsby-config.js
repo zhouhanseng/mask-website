@@ -4,5 +4,6 @@ module.exports = {
     },
     plugins: [
         'gatsby-plugin-postcss'
-    ]
+    ],
+    pathPrefix: "/mask-website",
 }

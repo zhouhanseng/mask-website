@@ -1,11 +1,18 @@
 module.exports = {
-  purge: ['./src/**/*.{js,jsx,ts,tsx}'],
+  purge: ["./src/**/*.{js,jsx,ts,tsx}"],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+      minWidth: {
+        "nav-links": "400px",
+      },
+      maxWidth: {
+        "nav-logo": "140px",
+      },
+    },
   },
   variants: {
     extend: {},
   },
   plugins: [],
-}
+};

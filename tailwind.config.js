@@ -3,8 +3,14 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      screens: {
+        "max-sm": {
+          max: "640px",
+        },
+      },
       minWidth: {
-        "nav-links": "400px",
+        "nav-links": "450px",
+        "nav-logo": "110px",
       },
       maxWidth: {
         "nav-logo": "140px",

@@ -41,12 +41,12 @@ export const Navbar = () => {
         >
           Home
         </Link>
-        <Link to="https://news.mask.io/" className="flex items-center">
+        <a href="https://news.mask.io/" className="flex items-center">
           News
-        </Link>
-        <Link to="https://we.mask.io/" className="flex items-center">
+        </a>
+        <a href="https://we.mask.io/" className="flex items-center">
           Community
-        </Link>
+        </a>
         <Link
           to="/faq"
           className={
@@ -57,12 +57,12 @@ export const Navbar = () => {
         >
           Help
         </Link>
-        <Link
-          to="https://kan-1.gitbook.io/mask-network/plugin-system/mask-plugin"
+        <a
+          href="https://kan-1.gitbook.io/mask-network/plugin-system/mask-plugin"
           className="flex items-center"
         >
           Docs
-        </Link>
+        </a>
         <Link
           to="/about"
           className={

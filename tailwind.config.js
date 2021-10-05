@@ -5,12 +5,17 @@ module.exports = {
     extend: {
       screens: {
         "max-sm": {
-          max: "640px",
+          max: "540px",
         },
+        sm: {
+          min: "540px",
+        },
+        md: "800px",
       },
       minWidth: {
         "nav-links": "450px",
         "nav-logo": "110px",
+        280: "280px",
       },
       maxWidth: {
         "nav-logo": "140px",

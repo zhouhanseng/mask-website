@@ -1,14 +1,108 @@
 import * as React from "react";
 import { Navbar } from "../components/Navbar";
+import { Footer } from "../components/Footer";
 
 //assets
-import indexHeadImage from "../images/index_head.webp";
+import downloadImage from "../images/download.png";
+import chromeImage from "../images/chrome.png";
+import firefoxImage from "../images/firefox.png";
+import mobileAppImage from "../images/mobile_app.png";
+import appleStoreImage from "../images/apple_store.png";
+import googlePlayImage from "../images/google_play.png";
+import apkImage from "../images/apk.png";
 
 // markup
 const DownloadPage = () => {
   return (
     <main>
       <Navbar />
+      <div className="mt-16 w-full max-sm:my-8">
+        <div className="flex flex-col items-center text-center px-4">
+          <p className="hg:text-6xl text-5xl md:font-light max-sm:text-4xl mb-4">
+            Mask welcome your use!
+          </p>
+          <p className="text-2xl max-sm:text-xl max-sm:font-light hg:mb-24 md:mb-16 mb-8">
+            Enjoy the web3.0 world at your fingertips
+          </p>
+          <img alt="" src={downloadImage} className="max-w-5xl w-10/12" />
+          <div className="max-w-4xl w-10/12 flex justify-between max-sm:flex-col my-16">
+            {[
+              {
+                name: "Chrome / Edge",
+                image: chromeImage,
+                text: "Chrome web store",
+                link: "https://chrome.google.com/webstore/detail/mask-network/jkoeaghipilijlahjplgbfiocjhldnap",
+              },
+              {
+                name: "Firefox",
+                image: firefoxImage,
+                text: "ADD-ons store",
+                link: "https://addons.mozilla.org/en-US/firefox/addon/maskbook",
+              },
+            ].map((value, i) => (
+              <div
+                className={
+                  (i === 0 ? "mb-24" : "") +
+                  " flex flex-col justify-between h-72 items-center"
+                }
+              >
+                <p className="text-4xl font-light">{value.name}</p>
+                <p className="text-xl font-medium">Status: Stable</p>
+                <img alt="" src={value.image} className="w-20" />
+                <a
+                  href={value.link}
+                  className="bg-black text-white py-3 px-4 rounded-md cursor-pointer"
+                >
+                  {value.text}
+                </a>
+              </div>
+            ))}
+          </div>
+        </div>
+        <div className="bg-blue-mask w-full py-16">
+          <div className="w-full max-w-7xl mx-auto flex md:justify-between md:flex-row flex-col-reverse md:h-96 items-center hg:px-16 md:px-8">
+            <div className="h-48 max-sm:h-36 max-sm:px-4 w-full max-w-md text-white flex flex-col justify-between md:mt-0 mt-24">
+              <p className="text-4xl md:font-extralight">Mobile App</p>
+              <p className="w-full md:max-w-xss md:font-medium font-light text-xl max-sm:text-sm leading-tight">
+                Enjoy the web3.0 world at your fingertips
+              </p>
+              <div className="flex">
+                <a href="https://mask.io/links/?ios-app-store">
+                  <img
+                    alt=""
+                    src={appleStoreImage}
+                    className="w-40 max-sm:w-36 mr-2 h-12 max-sm:h-10"
+                  />
+                </a>
+                <a href="https://play.google.com/store/apps/details?id=com.dimension.maskbook">
+                  <img
+                    alt=""
+                    src={googlePlayImage}
+                    className="w-40 max-sm:w-36 h-12 max-sm:h-10"
+                  />
+                </a>
+              </div>
+            </div>
+            <img
+              alt=""
+              src={mobileAppImage}
+              className="hg:h-96 md:h-80 max-sm:h-auto"
+            />
+          </div>
+        </div>
+        <div className="w-full flex py-16 bg-white justify-center items-center">
+          <div className="flex flex-col justify-center items-center">
+            <img alt="" src={apkImage} className="w-48" />
+            <a
+              href="https://github.com/DimensionDev/Mask-Android-Release/releases/download/1.34.0/app-release.apk"
+              className="text-white bg-black rounded-md px-4 py-3 mt-8"
+            >
+              Github releases
+            </a>
+          </div>
+        </div>
+      </div>
+      <Footer />
     </main>
   );
 };

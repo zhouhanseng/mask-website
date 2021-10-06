@@ -19,7 +19,7 @@ export const Footer = () => {
 
   return (
     <footer className="bg-blue-1000">
-      {["/about"].includes(path) ? null : (
+      {["/about", "/download"].includes(path) ? null : (
         <div className="md:flex md:justify-between max-sm:flex-col max-sm:justify-center md:items-center md:max-w-8xl w-full mx-auto max-sm:px-4 p-10 pb-7 bg-blue-100 hg:relative hg:-top-20 flex-wrap">
           <div className="mr-7 mb-7 max-sm:w-full">
             <p className="text-3xl font-medium mb-4 max-sm:text-2xl max-sm:w-full max-sm:text-center">

@@ -6,6 +6,7 @@ module.exports = {
       colors: {
         blue: {
           1000: "#041B49",
+          mask: "#1C68F3",
         },
       },
       screens: {

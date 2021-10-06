@@ -1,5 +1,6 @@
 import * as React from "react";
 import { Navbar } from "../components/Navbar";
+import { Footer } from "../components/Footer";
 
 //assets
 import indexHeadImage from "../images/index_head.webp";
@@ -200,6 +201,7 @@ const IndexPage = () => {
           <img alt="" src={partnerDgcImage} />
         </div>
       </div>
+      <Footer />
     </main>
   );
 };

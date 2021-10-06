@@ -3,6 +3,11 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      colors: {
+        blue: {
+          1000: "#041B49",
+        },
+      },
       screens: {
         "max-sm": {
           max: "540px",
@@ -11,6 +16,7 @@ module.exports = {
           min: "540px",
         },
         md: "800px",
+        hg: "1440px",
       },
       minWidth: {
         "nav-links": "450px",
@@ -18,7 +24,12 @@ module.exports = {
         280: "280px",
       },
       maxWidth: {
+        xss: "240px",
         "nav-logo": "140px",
+        "8xl": "1440px",
+      },
+      height: {
+        "footer-body": "268px",
       },
     },
   },
@@ -26,4 +37,5 @@ module.exports = {
     extend: {},
   },
   plugins: [],
+  important: true,
 };

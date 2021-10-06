@@ -11,39 +11,47 @@ import iconTelegramImage from "../images/icon_telegram.png";
 import iconTwiiterImage from "../images/icon_twitter.png";
 
 export const Footer = () => {
+  const [path, setPath] = useState("");
+
+  useEffect(() => {
+    setPath(window.location.pathname);
+  }, []);
+
   return (
     <footer className="bg-blue-1000">
-      <div className="md:flex md:justify-between max-sm:flex-col max-sm:justify-center md:items-center md:max-w-8xl w-full mx-auto max-sm:px-4 p-10 pb-7 bg-blue-100 hg:relative hg:-top-20 flex-wrap">
-        <div className="mr-7 mb-7 max-sm:w-full">
-          <p className="text-3xl font-medium mb-4 max-sm:text-2xl max-sm:w-full max-sm:text-center">
-            MASK NETWORK Newsletter
-          </p>
-          <p className="text-lg text-gray-500  max-sm:w-full max-sm:text-center">
-            Follow us for more information about MASK
-          </p>
-        </div>
-        <form
-          className="max-sm:flex max-sm:justify-center max-sm:w-full"
-          name="subscription"
-          method="post"
-          target="_blank"
-          noValidate
-          action="https://dimension.us20.list-manage.com/subscribe/post?u=bd44f8df98ab3d8daf8bbe020&amp;id=d23c8870f6"
-        >
-          <input
-            name="EMAIL"
-            className="outline-none w-96 max-sm:w-68 max-sm:text-sm max-sm:pl-2 bg-white py-4 pl-5"
-            type="email"
-            placeholder="Please input your email address"
-          />
-          <button
-            type="submit"
-            className="py-4 px-5 max-sm:px-3 max-sm:text-sm bg-blue-600 text-white"
+      {["/about"].includes(path) ? null : (
+        <div className="md:flex md:justify-between max-sm:flex-col max-sm:justify-center md:items-center md:max-w-8xl w-full mx-auto max-sm:px-4 p-10 pb-7 bg-blue-100 hg:relative hg:-top-20 flex-wrap">
+          <div className="mr-7 mb-7 max-sm:w-full">
+            <p className="text-3xl font-medium mb-4 max-sm:text-2xl max-sm:w-full max-sm:text-center">
+              MASK NETWORK Newsletter
+            </p>
+            <p className="text-lg text-gray-500  max-sm:w-full max-sm:text-center">
+              Follow us for more information about MASK
+            </p>
+          </div>
+          <form
+            className="max-sm:flex max-sm:justify-center max-sm:w-full"
+            name="subscription"
+            method="post"
+            target="_blank"
+            noValidate
+            action="https://dimension.us20.list-manage.com/subscribe/post?u=bd44f8df98ab3d8daf8bbe020&amp;id=d23c8870f6"
           >
-            Submit
-          </button>
-        </form>
-      </div>
+            <input
+              name="EMAIL"
+              className="outline-none w-96 max-sm:w-68 max-sm:text-sm max-sm:pl-2 bg-white py-4 pl-5"
+              type="email"
+              placeholder="Please input your email address"
+            />
+            <button
+              type="submit"
+              className="py-4 px-5 max-sm:px-3 max-sm:text-sm bg-blue-600 text-white"
+            >
+              Submit
+            </button>
+          </form>
+        </div>
+      )}
       <div className="md:py-24 py-5 md:max-w-8xl w-full mx-auto max-sm:px-4 px-5 flex flex-wrap">
         <div className="md:h-footer-body py-1 md:flex md:flex-col md:justify-between md:max-w-sm min-w-280 md:w-1/4 w-full md:border-r md:border-b-0 border-b border-gray-100 border-opacity-25">
           <img alt="" src={logoWhiteImage} className="w-32 md:mb-0 mb-8" />

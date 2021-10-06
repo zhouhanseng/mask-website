@@ -19,8 +19,8 @@ export const Navbar = () => {
   return (
     <nav
       className={
-        (path === "/" ? "" : "bg-gray-50") +
-        " absolute flex items-center px-6 justify-between w-full h-20"
+        (path === "/" ? "absolute" : "bg-gray-50") +
+        " flex items-center px-6 justify-between w-full h-20"
       }
     >
       <img

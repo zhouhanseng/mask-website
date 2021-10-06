@@ -18,9 +18,14 @@ module.exports = {
         md: "800px",
         hg: "1440px",
       },
+      minHeight: {
+        "hg-about-content": "767px",
+        "md-about-content": "567px",
+      },
       minWidth: {
         "nav-links": "450px",
         "nav-logo": "110px",
+        "about-image": "480px",
         280: "280px",
       },
       maxWidth: {

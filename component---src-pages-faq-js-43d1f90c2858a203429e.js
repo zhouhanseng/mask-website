@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkmask_website=self.webpackChunkmask_website||[]).push([[329],{505:function(e,n,t){t.r(n);var a=t(7294),u=t(5345);t(3683);n.default=function(){return a.createElement("main",null,a.createElement(u.w,null))}},3683:function(e,n,t){n.Z=t.p+"static/index_head-edd92e6ade9f8ea8c3f84e4e560517b9.webp"}}]);
+//# sourceMappingURL=component---src-pages-faq-js-43d1f90c2858a203429e.js.map

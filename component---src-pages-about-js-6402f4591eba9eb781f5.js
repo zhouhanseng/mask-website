@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkmask_website=self.webpackChunkmask_website||[]).push([[682],{5518:function(e,n,t){t.r(n);var u=t(7294),a=t(135);t(3683);n.default=function(){return u.createElement("main",null,u.createElement(a.w,null))}}}]);
-//# sourceMappingURL=component---src-pages-about-js-6402f4591eba9eb781f5.js.map

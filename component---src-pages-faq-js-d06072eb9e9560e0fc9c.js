@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkmask_website=self.webpackChunkmask_website||[]).push([[329],{505:function(e,n,t){t.r(n);var u=t(7294),a=t(135);t(3683);n.default=function(){return u.createElement("main",null,u.createElement(a.w,null))}}}]);
-//# sourceMappingURL=component---src-pages-faq-js-d06072eb9e9560e0fc9c.js.map

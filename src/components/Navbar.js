@@ -22,10 +22,11 @@ export const Navbar = () => {
         (["/", "/mask-website", "/mask-website/"].includes(path)
           ? "absolute"
           : "bg-gray-50") +
-        " flex items-center px-6 justify-between w-full h-20"
+        " flex items-center px-6 justify-between w-full h-20 z-10"
       }
     >
       <img
+        alt=""
         src={
           ["/", "/mask-website", "/mask-website/"].includes(path)
             ? logoWhiteImage

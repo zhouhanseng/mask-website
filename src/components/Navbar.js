@@ -19,7 +19,9 @@ export const Navbar = () => {
   return (
     <nav
       className={
-        (path === "/" ? "absolute" : "bg-gray-50") +
+        (["/", "/mask-website", "/mask-website/"].includes(path)
+          ? "absolute"
+          : "bg-gray-50") +
         " flex items-center px-6 justify-between w-full h-20"
       }
     >

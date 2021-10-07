@@ -26,12 +26,18 @@ export const Navbar = () => {
       }
     >
       <img
-        src={path === "/" ? logoWhiteImage : logoBlueImage}
+        src={
+          ["/", "/mask-website", "/mask-website/"].includes(path)
+            ? logoWhiteImage
+            : logoBlueImage
+        }
         className="w-1/6 max-w-nav-logo min-w-nav-logo"
       />
       <div
         className={
-          (path === "/" ? "text-white" : "text-gray-900") +
+          (["/", "/mask-website", "/mask-website/"].includes(path)
+            ? "text-white"
+            : "text-gray-900") +
           " items-center w-2/6 justify-between min-w-nav-links antialiased font-light text-xl h-full" +
           // Response: show nav links > 768px
           " md:flex hidden"
@@ -39,7 +45,11 @@ export const Navbar = () => {
       >
         <Link
           to="/"
-          className={(path === "/" ? "font-bold" : "") + " flex items-center"}
+          className={
+            (["/", "/mask-website", "/mask-website/"].includes(path)
+              ? "font-bold"
+              : "") + " flex items-center"
+          }
         >
           Home
         </Link>
@@ -81,7 +91,7 @@ export const Navbar = () => {
           <Link
             to="/download"
             className={
-              (path === "/"
+              (["/", "/mask-website", "/mask-website/"].includes(path)
                 ? "text-white border-white"
                 : "text-white border-blue-600 bg-blue-600") +
               " px-6 py-2 border-solid border rounded-full cursor-pointer" +
@@ -97,7 +107,9 @@ export const Navbar = () => {
           <MenuIcon
             onClick={() => setOpen(true)}
             className={
-              (path === "/" ? "text-white" : "text-black") +
+              (["/", "/mask-website", "/mask-website/"].includes(path)
+                ? "text-white"
+                : "text-black") +
               " cursor-pointer flex md:hidden transform scale-y-150"
             }
           />
@@ -105,8 +117,9 @@ export const Navbar = () => {
           <CloseIcon
             onClick={() => setOpen(true)}
             className={
-              (path === "/" ? "text-white" : "text-black") +
-              " cursor-pointer flex md:hidden"
+              (["/", "/mask-website", "/mask-website/"].includes(path)
+                ? "text-white"
+                : "text-black") + " cursor-pointer flex md:hidden"
             }
           />
         )}

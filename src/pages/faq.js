@@ -201,7 +201,7 @@ const FaqPage = () => {
             <img
               alt=""
               src={size > 800 ? faqImage : faqSmImage}
-              className="w-full md:w-1/2"
+              className="w-full md:w-1/2 h-auto"
             />
           </div>
           <div className="hg:mt-36 md:mt-24 mt-16 w-full md:mb-32 mb-16">

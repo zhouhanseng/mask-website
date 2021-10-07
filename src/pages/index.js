@@ -236,7 +236,7 @@ const IndexPage = () => {
       </p>
       <div className="flex justify-between w-9/10 md:w-4/5 mx-auto font-semibold text-xl mt-8 md:mt-16 max-sm:text-sm px-2 mb-8 md:mb-24">
         <div className="flex flex-col items-center w-36 max-sm:w-24">
-          <img
+          <StaticImage
             alt=""
             src={"../images/github.png"}
             className="w-24 mb-3 max-sm:w-20"
@@ -244,7 +244,7 @@ const IndexPage = () => {
           <p>GitHub</p>
         </div>
         <div className="flex flex-col items-center w-36 max-sm:w-24">
-          <img
+          <StaticImage
             alt=""
             src={"../images/maskdao.png"}
             className="w-24 mb-3 max-sm:w-20"
@@ -252,7 +252,7 @@ const IndexPage = () => {
           <p>MaskDao</p>
         </div>
         <div className="flex flex-col items-center w-36 max-sm:w-24">
-          <img
+          <StaticImage
             alt=""
             src={"../images/mask_snapshot.png"}
             className="w-24 mb-3 max-sm:w-20"

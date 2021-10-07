@@ -1,4 +1,5 @@
 import * as React from "react";
+import { useState, useEffect } from "react";
 import { Navbar } from "../components/Navbar";
 import { Footer } from "../components/Footer";
 
@@ -51,25 +52,45 @@ import partnerOkexImage from "../images/partner_okex.png";
 import partnerWeb30Image from "../images/partner_web30.png";
 
 const IndexPage = () => {
-  return (
+  const [size, setSize] = useState(0);
+
+  useEffect(() => {
+    setSize(getWindowDimensions(window));
+
+    function handleResize() {
+      setSize(getWindowDimensions(window));
+    }
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  return size ? (
     <main>
       <Navbar />
       <img alt="" src={indexHeadImage} className="w-full" />
       {/* #region what is mask image */}
-      <img alt="" src={whatIsMaskImage} className="w-full md:flex hidden" />
-      <img
-        alt=""
-        src={whatIsMaskResponseImage}
-        className="w-full md:hidden flex"
-      />
+      {size > 800 ? (
+        <img alt="" src={whatIsMaskImage} className="w-full md:flex hidden" />
+      ) : (
+        <img
+          alt=""
+          src={whatIsMaskResponseImage}
+          className="w-full md:hidden flex"
+        />
+      )}
+
       {/* #endregion */}
       {/* #region discover image */}
-      <img alt="" src={discoverImage} className="w-full md:flex hidden" />
-      <img
-        alt=""
-        src={discoverResponseImage}
-        className="w-full md:hidden flex"
-      />
+      {size > 800 ? (
+        <img alt="" src={discoverImage} className="w-full md:flex hidden" />
+      ) : (
+        <img
+          alt=""
+          src={discoverResponseImage}
+          className="w-full md:hidden flex"
+        />
+      )}
       {/* #endregion */}
       <div className="grid grid-cols-2 md:grid-cols-4 w-9/10 md:w-4/5 mx-auto">
         <img alt="" src={functionOneImage} className="" />
@@ -78,85 +99,120 @@ const IndexPage = () => {
         <img alt="" src={functionTwoImage} className="" />
       </div>
       {/* #region extension image */}
-      <img
-        alt=""
-        src={extensionImage}
-        className="sm:flex hidden max-w-xl mx-auto mt-8"
-      />
-      <img
-        alt=""
-        src={extensionResponseImage}
-        className="sm:hidden flex max-w-sm mx-auto mt-4 w-4/5"
-      />
+      {size > 800 ? (
+        <img
+          alt=""
+          src={extensionImage}
+          className="sm:flex hidden max-w-xl mx-auto mt-8"
+        />
+      ) : (
+        <img
+          alt=""
+          src={extensionResponseImage}
+          className="sm:hidden flex max-w-sm mx-auto mt-4 w-4/5"
+        />
+      )}
       {/* #endregion */}
       {/* #region ITO image */}
-      <img alt="" src={ITOImage} className="w-full md:flex hidden" />
-      <img
-        alt=""
-        src={ITO_MdImage}
-        className="w-full md:hidden max-sm:hidden"
-      />
-      <img alt="" src={ITO_SmImage} className="w-full sm:hidden flex" />
+      {size > 800 ? (
+        <img alt="" src={ITOImage} className="w-full md:flex hidden" />
+      ) : size > 540 ? (
+        <img
+          alt=""
+          src={ITO_MdImage}
+          className="w-full md:hidden max-sm:hidden"
+        />
+      ) : (
+        <img alt="" src={ITO_SmImage} className="w-full sm:hidden flex" />
+      )}
       {/* #endregion */}
 
       {/* #region LuckyDrop image */}
-      <img alt="" src={LuckyDropImage} className="w-full md:flex hidden" />
-      <img
-        alt=""
-        src={LuckyDrop_MdImage}
-        className="w-full md:hidden max-sm:hidden"
-      />
-      <img alt="" src={LuckyDrop_SmImage} className="w-full sm:hidden flex" />
+      {size > 800 ? (
+        <img alt="" src={LuckyDropImage} className="w-full md:flex hidden" />
+      ) : size > 540 ? (
+        <img
+          alt=""
+          src={LuckyDrop_MdImage}
+          className="w-full md:hidden max-sm:hidden"
+        />
+      ) : (
+        <img alt="" src={LuckyDrop_SmImage} className="w-full sm:hidden flex" />
+      )}
       {/* #endregion */}
 
       {/* #region LuckyDrop image */}
-      <img alt="" src={FileServiceImage} className="w-full md:flex hidden" />
-      <img
-        alt=""
-        src={FileService_MdImage}
-        className="w-full md:hidden max-sm:hidden"
-      />
-      <img alt="" src={FileService_SmImage} className="w-full sm:hidden flex" />
+      {size > 800 ? (
+        <img alt="" src={FileServiceImage} className="w-full md:flex hidden" />
+      ) : size > 540 ? (
+        <img
+          alt=""
+          src={FileService_MdImage}
+          className="w-full md:hidden max-sm:hidden"
+        />
+      ) : (
+        <img
+          alt=""
+          src={FileService_SmImage}
+          className="w-full sm:hidden flex"
+        />
+      )}
       {/* #endregion */}
 
       {/* #region Transak image */}
-      <img alt="" src={TransakImage} className="w-full md:flex hidden" />
-      <img
-        alt=""
-        src={Transak_MdImage}
-        className="w-full md:hidden max-sm:hidden"
-      />
-      <img alt="" src={Transak_SmImage} className="w-full sm:hidden flex" />
+      {size > 800 ? (
+        <img alt="" src={TransakImage} className="w-full md:flex hidden" />
+      ) : size > 540 ? (
+        <img
+          alt=""
+          src={Transak_MdImage}
+          className="w-full md:hidden max-sm:hidden"
+        />
+      ) : (
+        <img alt="" src={Transak_SmImage} className="w-full sm:hidden flex" />
+      )}
       {/* #endregion */}
 
       {/* #region Transak image */}
-      <img alt="" src={MarketsImage} className="w-full md:flex hidden" />
-      <img
-        alt=""
-        src={Markets_MdImage}
-        className="w-full md:hidden max-sm:hidden"
-      />
-      <img alt="" src={Markets_SmImage} className="w-full sm:hidden flex" />
+      {size > 800 ? (
+        <img alt="" src={MarketsImage} className="w-full md:flex hidden" />
+      ) : size > 540 ? (
+        <img
+          alt=""
+          src={Markets_MdImage}
+          className="w-full md:hidden max-sm:hidden"
+        />
+      ) : (
+        <img alt="" src={Markets_SmImage} className="w-full sm:hidden flex" />
+      )}
       {/* #endregion */}
 
       {/* #region NFT image */}
-      <img alt="" src={NftImage} className="w-full md:flex hidden" />
-      <img
-        alt=""
-        src={Nft_MdImage}
-        className="w-full md:hidden max-sm:hidden"
-      />
-      <img alt="" src={Nft_SmImage} className="w-full sm:hidden flex" />
+      {size > 800 ? (
+        <img alt="" src={NftImage} className="w-full md:flex hidden" />
+      ) : size > 540 ? (
+        <img
+          alt=""
+          src={Nft_MdImage}
+          className="w-full md:hidden max-sm:hidden"
+        />
+      ) : (
+        <img alt="" src={Nft_SmImage} className="w-full sm:hidden flex" />
+      )}
       {/* #endregion */}
 
       {/* #region NFT image */}
-      <img alt="" src={SwapImage} className="w-full md:flex hidden" />
-      <img
-        alt=""
-        src={Swap_MdImage}
-        className="w-full md:hidden max-sm:hidden"
-      />
-      <img alt="" src={Swap_SmImage} className="w-full sm:hidden flex" />
+      {size > 800 ? (
+        <img alt="" src={SwapImage} className="w-full md:flex hidden" />
+      ) : size > 540 ? (
+        <img
+          alt=""
+          src={Swap_MdImage}
+          className="w-full md:hidden max-sm:hidden"
+        />
+      ) : (
+        <img alt="" src={Swap_SmImage} className="w-full sm:hidden flex" />
+      )}
       {/* #endregion */}
       <p className="sm:leading-relaxed sm:text-4xl max-sm:text-2xl max-sm:leading-8 max-sm:mt-2 font-semibold mx-auto text-center w-2/3 mt-8 min-w-280">
         Join the Mask Network Community
@@ -203,7 +259,14 @@ const IndexPage = () => {
       </div>
       <Footer />
     </main>
+  ) : (
+    <div className="h-screen" />
   );
 };
+
+function getWindowDimensions(window) {
+  const { innerWidth } = window;
+  return innerWidth;
+}
 
 export default IndexPage;

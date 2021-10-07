@@ -22,10 +22,13 @@ export const Footer = () => {
       {[
         "/about",
         "/mask-website/about",
+        "/mask-website/about/",
         "/download",
         "/mask-website/download",
+        "/mask-website/download/",
         "/faq",
         "/mask-website/faq",
+        "/mask-website/faq/",
       ].includes(path) ? null : (
         <div className="md:flex md:justify-between max-sm:flex-col max-sm:justify-center md:items-center md:max-w-8xl w-full mx-auto max-sm:px-4 p-10 pb-7 bg-blue-100 hg:relative hg:-top-20 flex-wrap">
           <div className="mr-7 mb-7 max-sm:w-full">
@@ -113,7 +116,9 @@ export const Footer = () => {
               >
                 News
               </a>
-              <p className="text-base text-white opacity-80">FAQs</p>
+              <Link className="text-base text-white opacity-80" to="/faq">
+                FAQs
+              </Link>
               <a
                 href="https://github.com/DimensionDev"
                 target="_blank"
@@ -121,8 +126,15 @@ export const Footer = () => {
               >
                 Source Code
               </a>
-              <p className="text-base text-white opacity-80">Help</p>
-              <p className="text-base text-white opacity-80">Tutorials</p>
+              <Link className="text-base text-white opacity-80" to="/faq">
+                Help
+              </Link>
+              <a
+                className="text-base text-white opacity-80"
+                href="https://realmaskbook.notion.site/realmaskbook/An-In-Complete-Guide-to-Mask-Network-3ce8000d37a74f9fb449e1d97ea4eddb"
+              >
+                Tutorials
+              </a>
               <a
                 href='https://github.com/DimensionDev/Maskbook/issues?q=is:issue+is:open+label:"Bounty:+Open"'
                 target="_blank"

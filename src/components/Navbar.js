@@ -6,7 +6,7 @@ import CloseIcon from "@mui/icons-material/Close";
 import { Drawer, List } from "@mui/material";
 // assets
 import logoBlueImage from "../images/logo_blue.png";
-import logoWhiteImage from "../images/logo.webp";
+import logoWhiteImage from "../images/logo.png";
 
 export const Navbar = () => {
   const [path, setPath] = useState("");

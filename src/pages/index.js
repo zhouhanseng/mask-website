@@ -4,7 +4,7 @@ import { Navbar } from "../components/Navbar";
 import { Footer } from "../components/Footer";
 
 //assets
-import indexHeadImage from "../images/index_head.webp";
+import indexHeadImage from "../images/index_head.png";
 import whatIsMaskImage from "../images/what_is_mask.png";
 import whatIsMaskResponseImage from "../images/what_is_mask_response.png";
 import discoverImage from "../images/discover.png";

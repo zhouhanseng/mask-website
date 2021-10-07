@@ -4,9 +4,6 @@ import { Footer } from "../components/Footer";
 
 import AboutImage from "../images/about.png";
 
-//assets
-import indexHeadImage from "../images/index_head.webp";
-
 // markup
 const AnoutPage = () => {
   return (

@@ -1,7 +1,7 @@
 import * as React from "react";
 import { useEffect, useState } from "react";
 import { Link } from "gatsby";
-import logoWhiteImage from "../images/logo.webp";
+import logoWhiteImage from "../images/logo.png";
 
 import iconDiscordImage from "../images/icon_discord.png";
 import iconFacebookImage from "../images/icon_facebook.png";
@@ -44,6 +44,7 @@ export const Footer = () => {
             name="subscription"
             method="post"
             target="_blank"
+            rel="noopener"
             noValidate
             action="https://dimension.us20.list-manage.com/subscribe/post?u=bd44f8df98ab3d8daf8bbe020&amp;id=d23c8870f6"
           >
@@ -85,6 +86,7 @@ export const Footer = () => {
                 <a
                   href="https://dimensiondev.github.io/Maskbook-VI/"
                   target="_blank"
+                  rel="noopener"
                   className="text-base text-white opacity-80 pb-10 max-sm:pb-5 block"
                 >
                   Brand Guide
@@ -92,6 +94,7 @@ export const Footer = () => {
                 <a
                   href="mailto:info@dimension.im"
                   target="_blank"
+                  rel="noopener"
                   className="text-base text-white opacity-80 pb-10 max-sm:pb-5 block"
                 >
                   Contact Us
@@ -99,6 +102,7 @@ export const Footer = () => {
                 <a
                   href="https://legal.mask.io/maskbook/"
                   target="_blank"
+                  rel="noopener"
                   className="text-base text-white opacity-80 block"
                 >
                   Privacy Policy
@@ -112,6 +116,7 @@ export const Footer = () => {
               <a
                 href="https://news.mask.io/"
                 target="_blank"
+                rel="noopener"
                 className="text-base text-white opacity-80"
               >
                 News
@@ -122,6 +127,7 @@ export const Footer = () => {
               <a
                 href="https://github.com/DimensionDev"
                 target="_blank"
+                rel="noopener"
                 className="text-base text-white opacity-80"
               >
                 Source Code
@@ -138,6 +144,7 @@ export const Footer = () => {
               <a
                 href='https://github.com/DimensionDev/Maskbook/issues?q=is:issue+is:open+label:"Bounty:+Open"'
                 target="_blank"
+                rel="noopener"
                 className="text-base text-white opacity-80"
               >
                 Bounty Program
@@ -145,6 +152,7 @@ export const Footer = () => {
               <a
                 href="https://www.linkedin.com/company/masknetwork/jobs/"
                 target="_blank"
+                rel="noopener"
                 className="text-base text-white opacity-80"
               >
                 Join Us
@@ -155,22 +163,42 @@ export const Footer = () => {
         <div className="hg:h-footer-body md:h-24 py-1 flex flex-col hg:w-48 hg:ml-10 hg:mt-0 mt-8 justify-between w-full md:pb-0 pb-12">
           <p className="text-2xl text-white">Community</p>
           <div className="grid hg:grid-cols-3 grid-cols-6 hg:gap-x-4 gap-x-2 hg:gap-y-4 hg:w-40 w-72 hg:mt-0 mt-12">
-            <a href="https://discord.gg/4SVXvj7" target="_blank">
+            <a href="https://discord.gg/4SVXvj7" target="_blank" rel="noopener">
               <img alt="" src={iconDiscordImage} className="cursor-pointer" />
             </a>
-            <a href="https://www.facebook.com/masknetwork" target="_blank">
+            <a
+              href="https://www.facebook.com/masknetwork"
+              target="_blank"
+              rel="noopener"
+            >
               <img alt="" src={iconFacebookImage} className="cursor-pointer" />
             </a>
-            <a href="https://github.com/DimensionDev" target="_blank">
+            <a
+              href="https://github.com/DimensionDev"
+              target="_blank"
+              rel="noopener"
+            >
               <img alt="" src={iconGithubImage} className="cursor-pointer" />
             </a>
-            <a href="https://www.reddit.com/r/MaskNetwork/" target="_blank">
+            <a
+              href="https://www.reddit.com/r/MaskNetwork/"
+              target="_blank"
+              rel="noopener"
+            >
               <img alt="" src={iconRedditImage} className="cursor-pointer" />
             </a>
-            <a href="https://t.me/maskbook_group#telegram" target="_blank">
+            <a
+              href="https://t.me/maskbook_group#telegram"
+              target="_blank"
+              rel="noopener"
+            >
               <img alt="" src={iconTelegramImage} className="cursor-pointer" />
             </a>
-            <a href="https://twitter.com/realMaskNetwork" target="_blank">
+            <a
+              href="https://twitter.com/realMaskNetwork"
+              target="_blank"
+              rel="noopener"
+            >
               <img alt="" src={iconTwiiterImage} className="cursor-pointer" />
             </a>
             <div className="opacity-0 hidden hg:flex">

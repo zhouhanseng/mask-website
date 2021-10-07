@@ -194,16 +194,20 @@ const FaqPage = () => {
       <Navbar />
       {size ? (
         <>
-          <div className="w-full flex">
-            <div className="hidden md:w-1/2 md:flex justify-center items-center bg-gray-200 hg:text-5xl md:text-4xl">
-              <p className="w-4/5">How can we help you?</p>
+          {size > 800 ? (
+            <div className="w-full flex">
+              <div className="hidden md:w-1/2 md:flex justify-center items-center bg-gray-200 hg:text-5xl md:text-4xl">
+                <p className="w-4/5">How can we help you?</p>
+              </div>
+              <img
+                alt=""
+                src={size > 800 ? faqImage : faqSmImage}
+                className="w-full md:w-1/2 h-auto"
+              />
             </div>
-            <img
-              alt=""
-              src={size > 800 ? faqImage : faqSmImage}
-              className="w-full md:w-1/2 h-auto"
-            />
-          </div>
+          ) : (
+            <img alt="" src={faqSmImage} className="w-full" />
+          )}
           <div className="hg:mt-36 md:mt-24 mt-16 w-full md:mb-32 mb-16">
             <div className="w-full max-w-7xl mx-auto px-5 flex justify-between">
               <div className="w-full max-w-3xl md:pr-8">

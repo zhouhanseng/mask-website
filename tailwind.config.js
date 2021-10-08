@@ -7,6 +7,7 @@ module.exports = {
         blue: {
           1000: "#041B49",
           mask: "#1C68F3",
+          cookies: "#112F6C",
         },
       },
       screens: {

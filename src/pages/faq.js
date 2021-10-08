@@ -1,5 +1,5 @@
 import * as React from "react";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import { Navbar } from "../components/Navbar";
 import { Footer } from "../components/Footer";
@@ -213,40 +213,26 @@ const FaqPage = () => {
               <div className="w-full max-w-3xl md:pr-8">
                 {contents.map((x, i) => (
                   <div key={i.toString()}>
-                    <div className="flex items-center mb-12 max-sm:mb-6">
-                      <img
-                        alt=""
-                        src={x.image}
-                        className="w-12 h-12 max-sm:w-9 max-sm:h-9"
-                      />
-                      <p className="text-4xl max-sm:text-3xl ml-2" id={x.title}>
-                        {x.title}
-                      </p>
-                    </div>
-                    <div className="pl-14 max-sm:pl-3">
-                      {x.contents.map((y, k) => (
-                        <div key={k.toString()}>
-                          <FaqContent
-                            show={y.show}
-                            title={y.title}
-                            content={y.content}
-                          />
-                        </div>
-                      ))}
-                    </div>
+                    <FaqTopic
+                      contents={contents}
+                      i={i}
+                      content={x}
+                      action={(title) => setAnchor(title)}
+                    />
                   </div>
                 ))}
               </div>
               <div>
-                <p className="sticky top-4 md:flex hidden flex-col">
-                  {contents.map((x) => (
+                <div className="sticky top-28 md:flex hidden flex-col">
+                  {contents.map((x, i) => (
                     <Anchor
                       title={x.title}
+                      i={i.toString()}
                       current={anchor}
                       action={() => setAnchor(x.title)}
                     />
                   ))}
-                </p>
+                </div>
               </div>
             </div>
           </div>
@@ -259,9 +245,66 @@ const FaqPage = () => {
   );
 };
 
+function FaqTopic(props) {
+  const ref = useRef();
+
+  useEffect(() => {
+    if (!ref.current) return;
+
+    let observer = new IntersectionObserver(
+      (changes) => {
+        if (!ref.current || !changes[0]) return;
+
+        if (changes[0].isIntersecting) {
+          props.action(ref.current.textContent);
+        }
+      },
+      {
+        root: document,
+        rootMargin: "0px",
+        threshold: 1.0,
+      }
+    );
+
+    observer.observe(ref.current);
+  }, []);
+
+  return (
+    <>
+      <div
+        ref={ref}
+        className={
+          "flex items-center mb-12 max-sm:mb-6 " +
+          (props.i === 0 ? "" : "mt-24")
+        }
+      >
+        <img
+          alt=""
+          src={props.content.image}
+          className="w-12 h-12 max-sm:w-9 max-sm:h-9"
+        />
+        <p
+          className="text-4xl max-sm:text-3xl ml-2 font-bold"
+          id={props.content.title}
+        >
+          {props.content.title}
+        </p>
+      </div>
+      <div className="pl-14 max-sm:pl-3">
+        {props.content.contents.map((y, k) => (
+          <div key={k.toString()}>
+            <FaqContent show={y.show} title={y.title} content={y.content} />
+          </div>
+        ))}
+      </div>
+    </>
+  );
+}
+
 function Anchor(props) {
   return (
     <AnchorLink
+      offset="100"
       href={"#" + props.title}
       className={
         "py-3 px-4 border-l-4 " +
@@ -282,13 +325,13 @@ function FaqContent(props) {
   return (
     <div className="mb-10 max-sm:mb-6">
       <p
-        className="text-2xl max-sm:text-xl max-sm:font-light mb-4 max-sm:mb-2 cursor-pointer"
+        className="text-2xl max-sm:text-xl max-sm:font-light mb-4 max-sm:mb-2 cursor-pointer flex items-center"
         onClick={() => setShow(!show)}
       >
         <span
           className={
             (show ? "text-4xl max-sm:text-3xl " : "text-3xl max-sm:text-2xl ") +
-            "pr-4"
+            "pr-4 -translate-y-0.5 transform"
           }
         >
           {show ? "-" : "+"}
@@ -297,7 +340,7 @@ function FaqContent(props) {
       </p>
       {show ? (
         <p
-          className="text-gray-500 text-xl max-sm:text-sm"
+          className="text-gray-500 text-xl max-sm:text-sm relative left-8 max-sm:left-7"
           dangerouslySetInnerHTML={{ __html: props.content }}
         />
       ) : null}

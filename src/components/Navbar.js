@@ -21,7 +21,7 @@ export const Navbar = () => {
       className={
         (["/", "/mask-website", "/mask-website/"].includes(path)
           ? "absolute"
-          : "bg-gray-50") +
+          : "bg-gray-50 sticky top-0") +
         " flex items-center px-6 justify-between w-full h-20 z-10"
       }
     >
@@ -39,7 +39,7 @@ export const Navbar = () => {
           (["/", "/mask-website", "/mask-website/"].includes(path)
             ? "text-white"
             : "text-gray-900") +
-          " items-center w-2/6 justify-between min-w-nav-links antialiased font-light text-xl h-full" +
+          " items-center w-2/5 justify-between min-w-nav-links antialiased font-extralight text-xl h-full" +
           // Response: show nav links > 768px
           " md:flex hidden"
         }
@@ -49,46 +49,73 @@ export const Navbar = () => {
           className={
             (["/", "/mask-website", "/mask-website/"].includes(path)
               ? "font-bold"
-              : "") + " flex items-center"
+              : "") + " flex items-center font-extralight"
           }
         >
           Home
         </Link>
-        <a href="https://news.mask.io/" className="flex items-center">
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://news.mask.io/"
+          className="flex items-center font-extralight"
+        >
           News
         </a>
-        <a href="https://we.mask.io/" className="flex items-center">
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://we.mask.io/"
+          className="flex items-center font-extralight"
+        >
           Community
         </a>
         <Link
           to="/faq"
           className={
-            (path === "/faq"
+            ([
+              "/faq",
+              "/faq/",
+              "/mask-website/faq",
+              "/mask-website/faq/",
+            ].includes(path)
               ? "text-blue-600 font-bold border-b-2 border-blue-600 transform translate-y-px"
-              : "") + " px-2 flex items-center h-full"
+              : "") + " px-2 flex items-center h-full font-extralight"
           }
         >
           Help
         </Link>
         <a
+          target="_blank"
+          rel="noreferrer"
           href="https://kan-1.gitbook.io/mask-network/plugin-system/mask-plugin"
-          className="flex items-center"
+          className="flex items-center font-extralight"
         >
           Docs
         </a>
         <Link
           to="/about"
           className={
-            (path === "/about"
+            ([
+              "/about",
+              "/about/",
+              "/mask-website/about",
+              "/mask-website/about/",
+            ].includes(path)
               ? "text-blue-600 font-bold border-b-2 border-blue-600 transform translate-y-px"
-              : "") + " px-2 flex items-center h-full"
+              : "") + " px-2 flex items-center h-full font-extralight"
           }
         >
           About
         </Link>
       </div>
       <div>
-        {path === "/download" ? null : (
+        {[
+          "/download",
+          "/download/",
+          "/mask-website/download",
+          "/mask-website/download/",
+        ].includes(path) ? null : (
           <Link
             to="/download"
             className={
@@ -155,7 +182,12 @@ export const Navbar = () => {
             <Link to="/about" className="py-4 border-b border-gray-300">
               About
             </Link>
-            {path === "/download" ? null : (
+            {[
+              "/download",
+              "/download/",
+              "/mask-website/download",
+              "/mask-website/download/",
+            ].includes(path) ? null : (
               <Link to="/download" className="py-4 border-b border-gray-300">
                 Use Mask
               </Link>

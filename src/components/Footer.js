@@ -21,16 +21,19 @@ export const Footer = () => {
     <footer className="bg-blue-1000">
       {[
         "/about",
+        "/about/",
         "/mask-website/about",
         "/mask-website/about/",
         "/download",
+        "/download/",
         "/mask-website/download",
         "/mask-website/download/",
         "/faq",
+        "/faq/",
         "/mask-website/faq",
         "/mask-website/faq/",
       ].includes(path) ? null : (
-        <div className="md:flex md:justify-between max-sm:flex-col max-sm:justify-center md:items-center md:max-w-8xl w-full mx-auto max-sm:px-4 p-10 pb-7 bg-blue-100 hg:relative hg:-top-20 flex-wrap">
+        <div className="md:flex md:justify-between max-sm:flex-col max-sm:justify-center md:items-center md:max-w-8xl md:w-10/12 w-11/12 max-sm:w-full mx-auto px-4 md:px-10 p-10 pb-7 bg-blue-100 relative -top-20 max-sm:top-0 max-sm:static flex-wrap">
           <div className="mr-7 mb-7 max-sm:w-full">
             <p className="text-3xl font-medium mb-4 max-sm:text-2xl max-sm:w-full max-sm:text-center">
               MASK NETWORK Newsletter
@@ -50,20 +53,20 @@ export const Footer = () => {
           >
             <input
               name="EMAIL"
-              className="outline-none w-96 max-sm:w-68 max-sm:text-sm max-sm:pl-2 bg-white py-4 pl-5"
+              className="outline-none w-96 max-sm:w-68 md:text-base text-sm max-sm:pl-2 bg-white py-4 pl-5"
               type="email"
               placeholder="Please input your email address"
             />
             <button
               type="submit"
-              className="py-4 px-5 max-sm:px-3 max-sm:text-sm bg-blue-600 text-white"
+              className="py-4 md:px-5 px-3 text-sm md:text-base bg-blue-600 text-white"
             >
               Submit
             </button>
           </form>
         </div>
       )}
-      <div className="md:py-24 py-5 md:max-w-8xl w-full mx-auto max-sm:px-4 px-5 flex flex-wrap">
+      <div className="md:py-24 py-5 md:max-w-8xl md:w-10/12 hg:w-11/12 w-full mx-auto max-sm:px-4 px-5 flex flex-wrap">
         <div className="md:h-footer-body py-1 md:flex md:flex-col md:justify-between md:max-w-sm min-w-280 md:w-1/4 w-full md:border-r md:border-b-0 border-b border-gray-100 border-opacity-25">
           <img alt="" src={logoWhiteImage} className="w-32 md:mb-0 mb-8" />
           <div className="pr-2">
@@ -78,7 +81,7 @@ export const Footer = () => {
             </p>
           </div>
         </div>
-        <div className="sm:h-footer-body md:w-3/5 md:max-w-2xl flex pr-16 md:mt-0 mt-12 max-sm:w-full max-sm:flex-wrap">
+        <div className="sm:h-footer-body md:w-1/2 md:max-w-2xl flex hg:pr-16 md:pl-4 md:mt-0 mt-12 max-sm:w-full max-sm:flex-wrap">
           <div className="flex justify-center md:max-w-xss md:w-1/3 whitespace-nowrap">
             <div className="sm:h-footer-body py-1 flex flex-col justify-between mx-auto">
               <p className="text-2xl text-white max-sm:mb-12">About</p>
@@ -112,7 +115,7 @@ export const Footer = () => {
           </div>
           <div className="sm:h-footer-body py-1 flex flex-col justify-between max-w-lg md:w-2/3 whitespace-nowrap md:ml-0 ml-16 max-sm:ml-0 max-sm:mt-8">
             <p className="text-2xl text-white max-sm:mb-12">Navigate</p>
-            <div className="grid grid-cols-3 gap-x-16 gap-y-10 max-sm:gap-y-5 max-sm:gap-x-8">
+            <div className="grid grid-cols-3 md:gap-x-16 gap-x-4 gap-y-10 max-sm:gap-y-5 max-sm:gap-x-8">
               <a
                 href="https://news.mask.io/"
                 target="_blank"

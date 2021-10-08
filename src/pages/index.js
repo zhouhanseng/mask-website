@@ -2,6 +2,7 @@ import * as React from "react";
 import { useState, useEffect } from "react";
 import { Navbar } from "../components/Navbar";
 import { Footer } from "../components/Footer";
+import { Cookies } from "../components/Cookies";
 import { StaticImage } from "gatsby-plugin-image";
 
 const IndexPage = () => {
@@ -64,13 +65,13 @@ const IndexPage = () => {
         <StaticImage
           alt=""
           src={"../images/extension.png"}
-          className="sm:flex hidden max-w-xl mx-auto mt-8"
+          className="sm:flex hidden max-w-xl mx-auto mt-8 mb-8"
         />
       ) : (
         <StaticImage
           alt=""
           src={"../images/extension_response.png"}
-          className="sm:hidden flex max-w-sm mx-auto mt-4 w-4/5"
+          className="sm:hidden flex max-w-sm mx-auto mt-4 mb-4 w-4/5"
         />
       )}
       {/* #endregion */}
@@ -230,11 +231,11 @@ const IndexPage = () => {
       <p className="sm:leading-relaxed sm:text-4xl max-sm:text-2xl max-sm:leading-8 max-sm:mt-2 font-semibold mx-auto text-center w-2/3 mt-8 min-w-280">
         Join the Mask Network Community
       </p>
-      <p className="max-sm:text-base text-2xl text-center mt-8 px-3 text-gray-500 max-w-xl mx-auto font-normal">
+      <p className="max-sm:text-base text-2xl text-center mt-8 px-3 text-gray-500 max-w-xl mx-auto font-light">
         Mask Network is trusted and supported by an active community of users
         and contributors. Join us!
       </p>
-      <div className="flex justify-between w-9/10 md:w-4/5 mx-auto font-semibold text-xl mt-8 md:mt-16 max-sm:text-sm px-2 mb-8 md:mb-24">
+      <div className="flex justify-between w-9/10 md:w-4/5 mx-auto font-semibold text-xl mt-8 md:mt-16 max-sm:text-sm px-2 mb-16 md:mb-44">
         <div className="flex flex-col items-center w-36 max-sm:w-24">
           <StaticImage
             alt=""
@@ -261,7 +262,7 @@ const IndexPage = () => {
         </div>
       </div>
       <div className="bg-blue-50 pb-48 max-sm:pb-4">
-        <p className="md:pt-16 py-10 max-sm:pt-3 max-sm:text-2xl max-sm:font-normal text-4xl font-semibold text-center">
+        <p className="md:pt-24 py-16 max-sm:pt-6 max-sm:text-2xl max-sm:font-normal text-4xl font-semibold text-center">
           Partner&Supporter
         </p>
         <div className="grid grid-cols-3 gap-x-16 max-sm:gap-x-4 w-10/12 md:grid-cols-5 md:max-w-6xl md:w-11/12 md:gap-x-16 gap-y-8 mx-auto hoverFilter">
@@ -283,6 +284,7 @@ const IndexPage = () => {
         </div>
       </div>
       <Footer />
+      <Cookies />
     </main>
   ) : (
     <div className="h-screen" />

@@ -11,10 +11,14 @@ const AnoutPage = () => {
       <Navbar />
       <div className="md:max-w-7xl w-full mx-auto md:flex hg:min-hg-h-about-content md:min-md-h-about-content my-16 max-sm:my-8 px-8">
         <div className="md:w-1/2 w-full md:py-4 hg:py-16 md:pr-8 flex flex-col md:mb-0 mb-8">
-          <p className="hg:text-6xl text-6xl md:text-4xl max-sm:text-3xl  max-w-xss mb-4">
+          <p className="hg:text-6xl text-6xl md:text-4xl max-sm:text-3xl font-bold max-w-xs mb-4 md:mb-8">
             About us
           </p>
-          <p className="hg:text-2xl text-2xl md:text-xl max-sm:text-lg font-semibold max-w-sm mb-4">
+          <p
+            className="hg:text-2xl text-2xl md:text-xl max-sm:text-lg font-semibold max-w-sm mb-4 md:mb-8"
+            target="_blank"
+            rel="noreferrer"
+          >
             Mask Network aims to bridge the Web 2.0 users to Web 3.0.
           </p>
           <p className="hg:text-xl text-xl md:text-base max-sm:text-sm text-gray-400 max-w-lg">

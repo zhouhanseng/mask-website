@@ -24,7 +24,7 @@ const IndexPage = () => {
       <Navbar />
       <StaticImage alt="" src="../images/index_head.png" className="w-full" />
       {/* #region what is mask image */}
-      {size > 800 ? (
+      {size > 850 ? (
         <StaticImage
           alt=""
           src="../images/what_is_mask.png"
@@ -40,7 +40,7 @@ const IndexPage = () => {
 
       {/* #endregion */}
       {/* #region discover image */}
-      {size > 800 ? (
+      {size > 850 ? (
         <StaticImage
           alt=""
           src="../images/discover.png"
@@ -60,28 +60,31 @@ const IndexPage = () => {
         <StaticImage alt="" src={"../images/function_four.png"} className="" />
         <StaticImage alt="" src={"../images/function_two.png"} className="" />
       </div>
-      {/* #region extension image */}
-      {size > 800 ? (
-        <StaticImage
-          alt=""
-          src={"../images/extension.png"}
-          className="sm:flex hidden max-w-xl mx-auto mt-8 mb-8"
-        />
-      ) : (
-        <StaticImage
-          alt=""
-          src={"../images/extension_response.png"}
-          className="sm:hidden flex max-w-sm mx-auto mt-4 mb-4 w-4/5"
-        />
-      )}
-      {/* #endregion */}
+
+      <p className="sm:leading-relaxed hg:text-5xl text-4xl max-sm:text-2xl max-sm:leading-8 font-semibold mx-auto text-center w-2/3 mt-16 min-w-280">
+        Browser Extension
+      </p>
+      <p className="max-sm:text-base text-2xl text-center mt-4 leading-relaxed px-6 text-gray-500 w-full mx-auto font-light">
+        A SEAMLESS WEB 3.0 EXPERIENCE
+      </p>
+      <p className="max-sm:text-base text-2xl text-center mb-24 max-sm:mb-8 leading-relaxed px-6 text-gray-500 w-full mx-auto font-light">
+        LOG IN WITH MASK ID TO ENJOY THE DECENTRALIZED WORLD
+      </p>
+
       {/* #region ITO image */}
-      {size > 800 ? (
-        <StaticImage
-          alt=""
-          src={"../images/ITO.png"}
-          className="w-full md:flex hidden"
-        />
+      {size > 850 ? (
+        <div className="w-5/6 md:flex hidden max-w-8xl mx-auto mb-16">
+          <div className="w-1/2 py-8 pl-16">
+            <p className="hg:text-4xl md:text-2xl lg:text-3xl">
+              ITO (Initial Twitter Offering)
+            </p>
+            <p className="relative top-1/2 hg:text-2xl text-xl pr-8">
+              Launch decentralized asset freely and participate in token launch
+              directly on Twitter
+            </p>
+          </div>
+          <StaticImage alt="" src={"../images/ITO.png"} className="w-1/2" />
+        </div>
       ) : size > 540 ? (
         <StaticImage
           alt=""
@@ -98,12 +101,22 @@ const IndexPage = () => {
       {/* #endregion */}
 
       {/* #region LuckyDrop image */}
-      {size > 800 ? (
-        <StaticImage
-          alt=""
-          src={"../images/LuckyDrop.png"}
-          className="w-full md:flex hidden"
-        />
+      {size > 850 ? (
+        <div className="w-5/6 md:flex hidden max-w-8xl mx-auto mb-16">
+          <StaticImage
+            alt=""
+            src={"../images/LuckyDrop.png"}
+            className="w-1/2"
+          />
+          <div className="w-1/2 py-8 pl-16">
+            <p className="hg:text-4xl md:text-2xl lg:text-3xl">Lucky Drop</p>
+            <p className="relative top-1/2 hg:text-2xl text-xl pr-8">
+              Interact with your friends with crypto assets on social media.
+              Borderless payment Claim and hand out crypto assets on ETH, BSC,
+              and Polygon.
+            </p>
+          </div>
+        </div>
       ) : size > 540 ? (
         <StaticImage
           alt=""
@@ -120,12 +133,21 @@ const IndexPage = () => {
       {/* #endregion */}
 
       {/* #region LuckyDrop image */}
-      {size > 800 ? (
-        <StaticImage
-          alt=""
-          src={"../images/FileService.png"}
-          className="w-full md:flex hidden"
-        />
+      {size > 850 ? (
+        <div className="w-5/6 md:flex hidden max-w-8xl mx-auto mb-16">
+          <div className="w-1/2 py-8 pl-16">
+            <p className="hg:text-4xl md:text-2xl lg:text-3xl">File Service</p>
+            <p className="relative top-1/2 hg:text-2xl text-xl pr-8">
+              Decentralized file storage, permanently. Upload and share files to
+              your Mask friends on top of Arweave Network
+            </p>
+          </div>
+          <StaticImage
+            alt=""
+            src={"../images/FileService.png"}
+            className="w-1/2"
+          />
+        </div>
       ) : size > 540 ? (
         <StaticImage
           alt=""
@@ -142,12 +164,17 @@ const IndexPage = () => {
       {/* #endregion */}
 
       {/* #region Transak image */}
-      {size > 800 ? (
-        <StaticImage
-          alt=""
-          src={"../images/Transak.png"}
-          className="w-full md:flex hidden"
-        />
+      {size > 850 ? (
+        <div className="w-5/6 md:flex hidden max-w-8xl mx-auto mb-16">
+          <StaticImage alt="" src={"../images/Transak.png"} className="w-1/2" />
+          <div className="w-1/2 py-8 pl-16">
+            <p className="hg:text-4xl md:text-2xl lg:text-3xl">Transak</p>
+            <p className="relative top-1/2 hg:text-2xl text-xl pr-8">
+              Fiat On-Ramp Aggregator on Twitter. Buy crypto in 60+ countries
+              with transak support.
+            </p>
+          </div>
+        </div>
       ) : size > 540 ? (
         <StaticImage
           alt=""
@@ -164,12 +191,17 @@ const IndexPage = () => {
       {/* #endregion */}
 
       {/* #region Transak image */}
-      {size > 800 ? (
-        <StaticImage
-          alt=""
-          src={"../images/Markets.png"}
-          className="w-full md:flex hidden"
-        />
+      {size > 850 ? (
+        <div className="w-5/6 md:flex hidden max-w-8xl mx-auto mb-16">
+          <div className="w-1/2 py-8 pl-16">
+            <p className="hg:text-4xl md:text-2xl lg:text-3xl">Markets</p>
+            <p className="relative top-1/2 hg:text-2xl text-xl pr-8">
+              Display token information, price charts and exchange information
+              directly on social media.
+            </p>
+          </div>
+          <StaticImage alt="" src={"../images/Markets.png"} className="w-1/2" />
+        </div>
       ) : size > 540 ? (
         <StaticImage
           alt=""
@@ -186,12 +218,17 @@ const IndexPage = () => {
       {/* #endregion */}
 
       {/* #region NFT image */}
-      {size > 800 ? (
-        <StaticImage
-          alt=""
-          src={"../images/NFT.png"}
-          className="w-full md:flex hidden"
-        />
+      {size > 850 ? (
+        <div className="w-5/6 md:flex hidden max-w-8xl mx-auto mb-16">
+          <StaticImage alt="" src={"../images/NFT.png"} className="w-1/2" />
+          <div className="w-1/2 py-8 pl-16">
+            <p className="hg:text-4xl md:text-2xl lg:text-3xl">NFT</p>
+            <p className="relative top-1/2 hg:text-2xl text-xl pr-8">
+              Display specific information of collectibles in Opensea and
+              Rarible, make an offer directly on social media.
+            </p>
+          </div>
+        </div>
       ) : size > 540 ? (
         <StaticImage
           alt=""
@@ -208,12 +245,17 @@ const IndexPage = () => {
       {/* #endregion */}
 
       {/* #region NFT image */}
-      {size > 800 ? (
-        <StaticImage
-          alt=""
-          src={"../images/Swap.png"}
-          className="w-full md:flex hidden"
-        />
+      {size > 850 ? (
+        <div className="w-5/6 md:flex hidden max-w-8xl mx-auto mb-16">
+          <div className="w-1/2 py-8 pl-16">
+            <p className="hg:text-4xl md:text-2xl lg:text-3xl">Swap</p>
+            <p className="relative top-1/2 hg:text-2xl text-xl pr-8">
+              Purchase tokens through DEX without additional fees and
+              restrictions.
+            </p>
+          </div>
+          <StaticImage alt="" src={"../images/Swap.png"} className="w-1/2" />
+        </div>
       ) : size > 540 ? (
         <StaticImage
           alt=""
@@ -231,7 +273,7 @@ const IndexPage = () => {
       <p className="sm:leading-relaxed sm:text-4xl max-sm:text-2xl max-sm:leading-8 max-sm:mt-2 font-semibold mx-auto text-center w-2/3 mt-8 min-w-280">
         Join the Mask Network Community
       </p>
-      <p className="max-sm:text-base text-2xl text-center mt-8 px-3 text-gray-500 max-w-xl mx-auto font-light">
+      <p className="max-sm:text-base text-2xl text-center mt-8 px-6 text-gray-500 w-full mx-auto font-light">
         Mask Network is trusted and supported by an active community of users
         and contributors. Join us!
       </p>

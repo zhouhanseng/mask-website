@@ -17,7 +17,8 @@ module.exports = {
         sm: {
           min: "540px",
         },
-        md: "800px",
+        md: "850px",
+
         hg: "1440px",
       },
       minHeight: {

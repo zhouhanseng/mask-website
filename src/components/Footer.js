@@ -81,7 +81,7 @@ export const Footer = () => {
             </p>
           </div>
         </div>
-        <div className="sm:h-footer-body md:w-1/2 md:max-w-2xl flex hg:pr-16 md:pl-4 md:mt-0 mt-12 max-sm:w-full max-sm:flex-wrap max-sm:mt-4">
+        <div className="sm:h-footer-body md:w-1/2 md:max-w-2xl flex hg:pr-16 md:pl-4 md:mt-0 mt-16 max-sm:w-full max-sm:flex-wrap max-sm:mt-4">
           <div className="flex justify-center md:max-w-xss md:w-1/3 whitespace-nowrap mr-8 max-sm:mt-8">
             <div className="sm:h-footer-body py-1 flex flex-col justify-between mx-auto">
               <p className="text-2xl text-white max-sm:mb-12">About</p>

@@ -3,6 +3,9 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      dropShadow: {
+        "news-letter": "0 6px 3px rgba(66, 135, 245, 0.15)",
+      },
       colors: {
         blue: {
           1000: "#041B49",
@@ -11,6 +14,9 @@ module.exports = {
         },
       },
       screens: {
+        "max-xsm": {
+          max: "400px",
+        },
         "max-sm": {
           max: "540px",
         },

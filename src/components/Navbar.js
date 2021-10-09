@@ -25,15 +25,17 @@ export const Navbar = () => {
         " flex items-center px-6 justify-between w-full h-20 z-10"
       }
     >
-      <img
-        alt=""
-        src={
-          ["/", "/mask-website", "/mask-website/"].includes(path)
-            ? logoWhiteImage
-            : logoBlueImage
-        }
-        className="w-1/6 max-w-nav-logo min-w-nav-logo"
-      />
+      <Link to="/">
+        <img
+          alt=""
+          src={
+            ["/", "/mask-website", "/mask-website/"].includes(path)
+              ? logoWhiteImage
+              : logoBlueImage
+          }
+          className="w-1/6 max-w-nav-logo min-w-nav-logo"
+        />
+      </Link>
       <div
         className={
           (["/", "/mask-website", "/mask-website/"].includes(path)
@@ -110,26 +112,27 @@ export const Navbar = () => {
         </Link>
       </div>
       <div>
-        {[
-          "/download",
-          "/download/",
-          "/mask-website/download",
-          "/mask-website/download/",
-        ].includes(path) ? null : (
-          <Link
-            to="/download"
-            className={
-              (["/", "/mask-website", "/mask-website/"].includes(path)
-                ? "text-white border-white"
-                : "text-white border-blue-600 bg-blue-600") +
-              " px-6 py-2 border-solid border rounded-full cursor-pointer" +
-              // Response: show download button > 768px
-              " md:flex hidden"
-            }
-          >
-            Use Mask
-          </Link>
-        )}
+        <Link
+          to="/download"
+          className={
+            (["/", "/mask-website", "/mask-website/"].includes(path)
+              ? "text-white border-white"
+              : "text-white border-blue-600 bg-blue-600") +
+            " px-6 py-2 border-solid border rounded-full cursor-pointer" +
+            // Response: show download button > 768px
+            " md:flex hidden " +
+            ([
+              "/download",
+              "/download/",
+              "/mask-website/download",
+              "/mask-website/download/",
+            ].includes(path)
+              ? "opacity-0 pointer-events-none"
+              : "")
+          }
+        >
+          Use Mask
+        </Link>
 
         {!open ? (
           <MenuIcon

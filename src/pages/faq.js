@@ -325,7 +325,7 @@ function FaqContent(props) {
   return (
     <div className="mb-10 max-sm:mb-6">
       <p
-        className="text-2xl max-sm:text-xl max-sm:font-light mb-4 max-sm:mb-2 cursor-pointer flex items-center"
+        className="text-2xl max-sm:text-xl mb-4 max-sm:mb-2 cursor-pointer flex items-center"
         onClick={() => setShow(!show)}
       >
         <span

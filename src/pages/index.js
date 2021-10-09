@@ -329,7 +329,7 @@ const IndexPage = () => {
         </a>
       </div>
       <div className="bg-blue-50 pb-48 max-sm:pb-4">
-        <p className="md:pt-24 py-16 max-sm:pt-6 max-sm:text-2xl max-sm:font-normal text-4xl font-semibold text-center">
+        <p className="md:pt-24 py-16 max-sm:pt-6 max-sm:text-2xl text-4xl font-semibold text-center">
           Partner&Supporter
         </p>
         <div className="grid grid-cols-3 gap-x-16 max-sm:gap-x-4 w-10/12 md:grid-cols-5 md:max-w-6xl md:w-11/12 md:gap-x-16 gap-y-8 mx-auto hoverFilter">

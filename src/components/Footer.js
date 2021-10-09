@@ -35,15 +35,15 @@ export const Footer = () => {
       ].includes(path) ? null : (
         <div className="md:flex md:justify-between max-sm:flex-col max-sm:justify-center md:items-center md:max-w-8xl md:w-10/12 w-11/12 max-sm:w-full mx-auto px-4 md:px-10 p-10 pb-7 bg-blue-100 relative -top-20 max-sm:top-0 max-sm:static flex-wrap">
           <div className="mr-7 mb-7 max-sm:w-full">
-            <p className="text-3xl font-medium mb-4 max-sm:text-2xl max-sm:w-full max-sm:text-center">
+            <p className="text-3xl font-medium mb-4 max-sm:text-2xl max-sm:w-full text-center md:text-left">
               MASK NETWORK Newsletter
             </p>
-            <p className="text-lg text-gray-500  max-sm:w-full max-sm:text-center">
+            <p className="text-lg text-gray-500 max-sm:w-full text-center md:text-left">
               Follow us for more information about MASK
             </p>
           </div>
           <form
-            className="max-sm:flex max-sm:justify-center max-sm:w-full"
+            className="md:block flex justify-center md:justify-start max-sm:w-full filter drop-shadow-news-letter"
             name="subscription"
             method="post"
             target="_blank"
@@ -53,7 +53,7 @@ export const Footer = () => {
           >
             <input
               name="EMAIL"
-              className="outline-none w-96 max-sm:w-68 md:text-base text-sm max-sm:pl-2 bg-white py-4 pl-5"
+              className="outline-none w-96 max-sm:w-68 md:text-base text-sm max-sm:pl-2 bg-white py-4 pl-5 rounded-none"
               type="email"
               placeholder="Please input your email address"
             />
@@ -81,8 +81,8 @@ export const Footer = () => {
             </p>
           </div>
         </div>
-        <div className="sm:h-footer-body md:w-1/2 md:max-w-2xl flex hg:pr-16 md:pl-4 md:mt-0 mt-12 max-sm:w-full max-sm:flex-wrap">
-          <div className="flex justify-center md:max-w-xss md:w-1/3 whitespace-nowrap">
+        <div className="sm:h-footer-body md:w-1/2 md:max-w-2xl flex hg:pr-16 md:pl-4 md:mt-0 mt-12 max-sm:w-full max-sm:flex-wrap max-sm:mt-4">
+          <div className="flex justify-center md:max-w-xss md:w-1/3 whitespace-nowrap mr-8 max-sm:mt-8">
             <div className="sm:h-footer-body py-1 flex flex-col justify-between mx-auto">
               <p className="text-2xl text-white max-sm:mb-12">About</p>
               <div>
@@ -115,12 +115,12 @@ export const Footer = () => {
           </div>
           <div className="sm:h-footer-body py-1 flex flex-col justify-between max-w-lg md:w-2/3 whitespace-nowrap md:ml-0 ml-16 max-sm:ml-0 max-sm:mt-8">
             <p className="text-2xl text-white max-sm:mb-12">Navigate</p>
-            <div className="grid grid-cols-3 md:gap-x-16 gap-x-4 gap-y-10 max-sm:gap-y-5 max-sm:gap-x-8">
+            <div className="grid grid-cols-3 md:gap-x-16 gap-x-4 gap-y-10 max-sm:gap-y-5 max-sm:gap-x-0 text-base max-xsm:text-sm">
               <a
                 href="https://news.mask.io/"
                 target="_blank"
                 rel="noreferrer"
-                className="text-base text-white opacity-80"
+                className="text-white opacity-80"
               >
                 News
               </a>
@@ -131,15 +131,15 @@ export const Footer = () => {
                 href="https://github.com/DimensionDev"
                 target="_blank"
                 rel="noreferrer"
-                className="text-base text-white opacity-80"
+                className="text-white opacity-80"
               >
                 Source Code
               </a>
-              <Link className="text-base text-white opacity-80" to="/faq">
+              <Link className="text-white opacity-80" to="/faq">
                 Help
               </Link>
               <a
-                className="text-base text-white opacity-80"
+                className="text-white opacity-80"
                 href="https://realmaskbook.notion.site/realmaskbook/An-In-Complete-Guide-to-Mask-Network-3ce8000d37a74f9fb449e1d97ea4eddb"
               >
                 Tutorials
@@ -148,7 +148,7 @@ export const Footer = () => {
                 href='https://github.com/DimensionDev/Maskbook/issues?q=is:issue+is:open+label:"Bounty:+Open"'
                 target="_blank"
                 rel="noreferrer"
-                className="text-base text-white opacity-80"
+                className="text-white opacity-80"
               >
                 Bounty Program
               </a>
@@ -156,7 +156,7 @@ export const Footer = () => {
                 href="https://www.linkedin.com/company/masknetwork/jobs/"
                 target="_blank"
                 rel="noreferrer"
-                className="text-base text-white opacity-80"
+                className="text-white opacity-80"
               >
                 Join Us
               </a>

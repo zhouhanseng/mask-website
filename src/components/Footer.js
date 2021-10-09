@@ -66,8 +66,8 @@ export const Footer = () => {
           </form>
         </div>
       )}
-      <div className="md:py-24 py-5 md:max-w-8xl md:w-10/12 hg:w-11/12 w-full mx-auto max-sm:px-4 px-5 flex flex-wrap">
-        <div className="md:h-footer-body py-1 md:flex md:flex-col md:justify-between md:max-w-md min-w-280 md:w-1/2 w-full md:border-r md:border-b-0 border-b border-gray-100 border-opacity-25">
+      <div className="md:py-24 py-5 md:max-w-8xl md:w-10/12 hg:w-11/12 w-full mx-auto max-sm:px-4 px-5 flex flex-wrap relative">
+        <div className="md:h-footer-body py-1 md:flex md:flex-col md:justify-between md:max-w-sm min-w-280 md:w-1/4 w-full md:border-r md:border-b-0 border-b border-gray-100 border-opacity-25">
           <img alt="" src={logoWhiteImage} className="w-32 md:mb-0 mb-8" />
           <div className="pr-2">
             <p className="text-white opacity-80 text-base mb-4 md:max-w-xs w-full">
@@ -163,7 +163,7 @@ export const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="hg:h-footer-body md:h-24 py-1 flex flex-col hg:w-48 hg:ml-10 hg:mt-0 mt-8 justify-between w-full md:pb-0 pb-12">
+        <div className="hg:h-footer-body md:h-24 py-1 flex flex-col hg:w-48 hg:ml-10 hg:mt-0 mt-8 justify-between w-full md:pb-0 pb-12 hg:absolute hg:right-0">
           <p className="text-2xl text-white">Community</p>
           <div className="grid hg:grid-cols-3 grid-cols-6 hg:gap-x-4 gap-x-2 hg:gap-y-4 hg:w-40 w-72 hg:mt-0 mt-12">
             <a

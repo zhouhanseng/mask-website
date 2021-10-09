@@ -288,30 +288,45 @@ const IndexPage = () => {
         and contributors. Join us!
       </p>
       <div className="flex justify-between w-9/10 md:w-4/5 mx-auto font-semibold text-xl mt-8 md:mt-16 max-sm:text-sm px-2 mb-16 md:mb-44">
-        <div className="flex flex-col items-center w-36 max-sm:w-24">
+        <a
+          href="https://github.com/DimensionDev"
+          className="flex flex-col items-center w-36 max-sm:w-24"
+          target="_blank"
+          rel="noreferrer"
+        >
           <StaticImage
             alt=""
             src={"../images/github.png"}
             className="w-24 mb-3 max-sm:w-20"
           />
           <p>GitHub</p>
-        </div>
-        <div className="flex flex-col items-center w-36 max-sm:w-24">
+        </a>
+        <a
+          href="https://we.mask.io/"
+          className="flex flex-col items-center w-36 max-sm:w-24"
+          target="_blank"
+          rel="noreferrer"
+        >
           <StaticImage
             alt=""
             src={"../images/maskdao.png"}
             className="w-24 mb-3 max-sm:w-20"
           />
           <p>MaskDao</p>
-        </div>
-        <div className="flex flex-col items-center w-36 max-sm:w-24">
+        </a>
+        <a
+          href="https://snapshot.org/#/masknetwork.eth"
+          className="flex flex-col items-center w-36 max-sm:w-24"
+          target="_blank"
+          rel="noreferrer"
+        >
           <StaticImage
             alt=""
             src={"../images/mask_snapshot.png"}
             className="w-24 mb-3 max-sm:w-20"
           />
           <p className="text-center">Mask Snapshot</p>
-        </div>
+        </a>
       </div>
       <div className="bg-blue-50 pb-48 max-sm:pb-4">
         <p className="md:pt-24 py-16 max-sm:pt-6 max-sm:text-2xl max-sm:font-normal text-4xl font-semibold text-center">

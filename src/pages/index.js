@@ -75,7 +75,7 @@ const IndexPage = () => {
       {size > 850 ? (
         <div className="w-5/6 md:flex hidden max-w-8xl mx-auto mb-16">
           <div className="w-1/2 py-8 pl-16">
-            <p className="hg:text-4xl md:text-2xl lg:text-3xl">
+            <p className="hg:text-4xl md:text-2xl lg:text-3xl font-bold">
               ITO (Initial Twitter Offering)
             </p>
             <p className="relative top-1/2 hg:text-2xl text-xl pr-8">
@@ -109,7 +109,9 @@ const IndexPage = () => {
             className="w-1/2"
           />
           <div className="w-1/2 py-8 pl-16">
-            <p className="hg:text-4xl md:text-2xl lg:text-3xl">Lucky Drop</p>
+            <p className="hg:text-4xl md:text-2xl lg:text-3xl font-bold">
+              Lucky Drop
+            </p>
             <p className="relative top-1/2 hg:text-2xl text-xl pr-8">
               Interact with your friends with crypto assets on social media.
               Borderless payment Claim and hand out crypto assets on ETH, BSC,
@@ -136,7 +138,9 @@ const IndexPage = () => {
       {size > 850 ? (
         <div className="w-5/6 md:flex hidden max-w-8xl mx-auto mb-16">
           <div className="w-1/2 py-8 pl-16">
-            <p className="hg:text-4xl md:text-2xl lg:text-3xl">File Service</p>
+            <p className="hg:text-4xl md:text-2xl lg:text-3xl font-bold">
+              File Service
+            </p>
             <p className="relative top-1/2 hg:text-2xl text-xl pr-8">
               Decentralized file storage, permanently. Upload and share files to
               your Mask friends on top of Arweave Network
@@ -168,7 +172,9 @@ const IndexPage = () => {
         <div className="w-5/6 md:flex hidden max-w-8xl mx-auto mb-16">
           <StaticImage alt="" src={"../images/Transak.png"} className="w-1/2" />
           <div className="w-1/2 py-8 pl-16">
-            <p className="hg:text-4xl md:text-2xl lg:text-3xl">Transak</p>
+            <p className="hg:text-4xl md:text-2xl lg:text-3xl font-bold">
+              Transak
+            </p>
             <p className="relative top-1/2 hg:text-2xl text-xl pr-8">
               Fiat On-Ramp Aggregator on Twitter. Buy crypto in 60+ countries
               with transak support.
@@ -194,7 +200,9 @@ const IndexPage = () => {
       {size > 850 ? (
         <div className="w-5/6 md:flex hidden max-w-8xl mx-auto mb-16">
           <div className="w-1/2 py-8 pl-16">
-            <p className="hg:text-4xl md:text-2xl lg:text-3xl">Markets</p>
+            <p className="hg:text-4xl md:text-2xl lg:text-3xl font-bold">
+              Markets
+            </p>
             <p className="relative top-1/2 hg:text-2xl text-xl pr-8">
               Display token information, price charts and exchange information
               directly on social media.
@@ -222,7 +230,7 @@ const IndexPage = () => {
         <div className="w-5/6 md:flex hidden max-w-8xl mx-auto mb-16">
           <StaticImage alt="" src={"../images/NFT.png"} className="w-1/2" />
           <div className="w-1/2 py-8 pl-16">
-            <p className="hg:text-4xl md:text-2xl lg:text-3xl">NFT</p>
+            <p className="hg:text-4xl md:text-2xl lg:text-3xl font-bold">NFT</p>
             <p className="relative top-1/2 hg:text-2xl text-xl pr-8">
               Display specific information of collectibles in Opensea and
               Rarible, make an offer directly on social media.
@@ -248,7 +256,9 @@ const IndexPage = () => {
       {size > 850 ? (
         <div className="w-5/6 md:flex hidden max-w-8xl mx-auto mb-16">
           <div className="w-1/2 py-8 pl-16">
-            <p className="hg:text-4xl md:text-2xl lg:text-3xl">Swap</p>
+            <p className="hg:text-4xl md:text-2xl lg:text-3xl font-bold">
+              Swap
+            </p>
             <p className="relative top-1/2 hg:text-2xl text-xl pr-8">
               Purchase tokens through DEX without additional fees and
               restrictions.

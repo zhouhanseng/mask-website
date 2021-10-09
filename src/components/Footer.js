@@ -67,7 +67,7 @@ export const Footer = () => {
         </div>
       )}
       <div className="md:py-24 py-5 md:max-w-8xl md:w-10/12 hg:w-11/12 w-full mx-auto max-sm:px-4 px-5 flex flex-wrap">
-        <div className="md:h-footer-body py-1 md:flex md:flex-col md:justify-between md:max-w-sm min-w-280 md:w-1/4 w-full md:border-r md:border-b-0 border-b border-gray-100 border-opacity-25">
+        <div className="md:h-footer-body py-1 md:flex md:flex-col md:justify-between md:max-w-md min-w-280 md:w-1/2 w-full md:border-r md:border-b-0 border-b border-gray-100 border-opacity-25">
           <img alt="" src={logoWhiteImage} className="w-32 md:mb-0 mb-8" />
           <div className="pr-2">
             <p className="text-white opacity-80 text-base mb-4 md:max-w-xs w-full">

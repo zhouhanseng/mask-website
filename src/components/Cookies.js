@@ -14,16 +14,7 @@ export function Cookies() {
         <p className="max-w-5xl font-light text-sm pr-4">
           We use cookies to enhance your experience, analyze our traffic, and
           for security and marketing. By visiting our website you agree to our
-          use of cookies. *
-          <a
-            href="https://en.wikipedia.org/wiki/HTTP_cookie"
-            target="_blank"
-            rel="noreferrer"
-            className="text-blue-600"
-          >
-            Read more about cookies
-          </a>
-          *
+          use of cookies.
         </p>
         <p
           className="px-4 py-3 bg-blue-mask rounded-md text-sm whitespace-nowrap cursor-pointer"

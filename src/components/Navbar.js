@@ -66,8 +66,8 @@ export const Navbar = () => {
             to="/"
             className={
               (["/", "/mask-website", "/mask-website/"].includes(path)
-                ? "font-bold"
-                : "") + " flex items-center font-extralight"
+                ? "font-bold border-b-2 border-white transform translate-y-px"
+                : "") + " flex items-center font-extralight h-full"
             }
           >
             Home

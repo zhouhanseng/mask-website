@@ -33,7 +33,7 @@ export const Footer = () => {
         "/mask-website/faq",
         "/mask-website/faq/",
       ].includes(path) ? null : (
-        <div className="md:flex md:justify-between max-sm:flex-col max-sm:justify-center md:items-center md:max-w-8xl md:w-10/12 w-11/12 max-sm:w-full mx-auto px-4 md:px-10 p-10 pb-7 bg-blue-100 relative -top-20 max-sm:top-0 max-sm:static flex-wrap">
+        <div className="md:flex md:justify-between max-sm:flex-col max-sm:justify-center md:items-center md:max-w-8xl md:w-10/12 w-10/12 max-sm:w-full mx-auto px-4 md:px-10 p-10 pb-7 bg-blue-100 relative -top-20 max-sm:top-0 max-sm:static flex-wrap">
           <div className="mr-7 mb-7 max-sm:w-full">
             <p className="text-3xl font-medium mb-4 max-sm:text-2xl max-sm:w-full text-center md:text-left">
               MASK NETWORK Newsletter
@@ -66,7 +66,7 @@ export const Footer = () => {
           </form>
         </div>
       )}
-      <div className="md:py-24 py-5 md:max-w-8xl md:w-10/12 hg:w-11/12 w-full mx-auto max-sm:px-4 px-5 flex flex-wrap relative">
+      <div className="md:py-24 py-5 md:max-w-8xl md:w-10/12 hg:w-11/12 w-full mx-auto max-sm:px-4 px-16 md:px-5 flex flex-wrap relative">
         <div className="md:h-footer-body py-1 md:flex md:flex-col md:justify-between md:max-w-sm min-w-280 md:w-1/4 w-full md:border-r md:border-b-0 border-b border-gray-100 border-opacity-25">
           <img alt="" src={logoWhiteImage} className="w-32 md:mb-0 mb-8" />
           <div className="pr-2">

@@ -13,6 +13,8 @@ import faq3Image from "../images/faq_three.png";
 import faq4Image from "../images/faq_four.png";
 import faq5Image from "../images/faq_five.png";
 import faq6Image from "../images/faq_six.png";
+import faqExpandImage from "../images/faq_expand.png";
+import faqShrinkImage from "../images/faq_shrink.png";
 
 // markup
 const FaqPage = () => {
@@ -51,7 +53,6 @@ const FaqPage = () => {
       contents: [
         {
           title: "Where does the crypto price info come from?",
-          show: true,
           content:
             "Mask Network support price chart by both CoinMarketCap and CoinGecko. You can change the data source on “Settings.”",
         },
@@ -73,7 +74,6 @@ const FaqPage = () => {
       contents: [
         {
           title: "How to use the file service on Mask Network?",
-          show: true,
           content:
             "Mask Network is now available on Twitter, Facebook, and Minds.com. We will support more platforms in the future.",
         },
@@ -95,7 +95,6 @@ const FaqPage = () => {
       contents: [
         {
           title: "What is ITO ( Initial Twitter Offering )?",
-          show: true,
           content:
             '<p class="max-sm:mb-2 mb-3">ITO (Initial Twitter Offering) is a decentralized asset offering feature, available on the decentralized blockchain network infrastructure Ethereum, Binance Smart Chain, and Polygon. Users could participate in a token launch directly on Twitter; projects could also reward users or build awareness through ITO by offering their existing tokens with a discount, or simply launch a new token.</p><p class="max-sm:mb-2 mb-3">Please follow our Blog (<a class="font-semibold" href="http://masknetwork.medium.com/">http://masknetwork.medium.com/</a>) or Telegram Channel for more information. After the event starts, find the relevant tweets of ITO and click "Enter" to participate in ITO.</p>',
         },
@@ -128,7 +127,6 @@ const FaqPage = () => {
       contents: [
         {
           title: "How to create a wallet?",
-          show: true,
           content:
             "Mask Network will automatically create an Ethereum wallet for you since you create a persona. Or you can create a wallet on the dashboard. Click “Enter the Dashboard” -> “Wallets” -> “Create Wallet” -> Enter Wallet Name -> Choose “ I confirm that i need to create a wallet” -> Click “Import” -> Done!",
         },
@@ -146,7 +144,6 @@ const FaqPage = () => {
         {
           title:
             "How to view the history and detail information of the received Lucky Drop?",
-          show: true,
           content:
             'Click the blue smiley face on the top right corner. ->Click “Enter the Dashboard” - > “Wallets” -> Choose "Activity" -> InBound, You can see an OutBound list, Select the record you need to view.',
         },
@@ -328,19 +325,15 @@ function FaqContent(props) {
         className="text-2xl max-sm:text-xl mb-4 max-sm:mb-2 cursor-pointer flex items-center"
         onClick={() => setShow(!show)}
       >
-        <span
-          className={
-            (show ? "text-4xl max-sm:text-3xl " : "text-3xl max-sm:text-2xl ") +
-            "pr-4 -translate-y-0.5 transform"
-          }
-        >
-          {show ? "-" : "+"}
-        </span>
+        <img
+          src={!show ? faqExpandImage : faqShrinkImage}
+          className="pr-4 w-8"
+        />
         <span>{props.title}</span>
       </p>
       {show ? (
         <p
-          className="text-gray-500 text-xl max-sm:text-sm relative left-8 max-sm:left-7"
+          className="text-gray-500 text-xl max-sm:text-sm relative left-8 max-sm:left-7 max-xsm:left-6 w-5/6"
           dangerouslySetInnerHTML={{ __html: props.content }}
         />
       ) : null}

@@ -3,6 +3,9 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      zIndex: {
+        2000: "2000",
+      },
       dropShadow: {
         "news-letter": "0 6px 3px rgba(66, 135, 245, 0.15)",
       },

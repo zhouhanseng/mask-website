@@ -8,7 +8,7 @@ import iconFacebookImage from "../images/icon_facebook.png";
 import iconGithubImage from "../images/icon_github.png";
 import iconRedditImage from "../images/icon_reddit.png";
 import iconTelegramImage from "../images/icon_telegram.png";
-import iconTwiiterImage from "../images/icon_twitter.png";
+import iconTwitterImage from "../images/icon_twitter.png";
 
 export const Footer = () => {
   const [path, setPath] = useState("");
@@ -206,7 +206,7 @@ export const Footer = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <img alt="" src={iconTwiiterImage} className="cursor-pointer" />
+              <img alt="" src={iconTwitterImage} className="cursor-pointer" />
             </a>
             <div className="opacity-0 hidden hg:flex">
               placeholder never show

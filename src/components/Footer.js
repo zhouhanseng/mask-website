@@ -33,17 +33,17 @@ export const Footer = () => {
         "/mask-website/faq",
         "/mask-website/faq/",
       ].includes(path) ? null : (
-        <div className="md:flex md:justify-between max-sm:flex-col max-sm:justify-center md:items-center md:max-w-8xl md:w-10/12 w-10/12 max-sm:w-full mx-auto px-4 md:px-10 p-10 pb-7 bg-blue-100 relative -top-20 max-sm:top-0 max-sm:static flex-wrap">
+        <div className="md:flex md:justify-between max-sm:flex-col max-sm:justify-center md:items-center md:max-w-8xl md:w-10/12 w-10/12 max-sm:w-full mx-auto max-sm:px-4 px-10 p-10 pb-7 bg-blue-100 relative -top-20 max-sm:top-0 max-sm:static flex-wrap box-shadow-news-letter-out">
           <div className="mr-7 mb-7 max-sm:w-full">
-            <p className="text-3xl font-medium mb-4 max-sm:text-2xl max-sm:w-full text-center md:text-left">
+            <p className="text-3xl font-medium mb-4 max-sm:text-2xl max-sm:w-full max-sm:text-center text-left">
               MASK NETWORK Newsletter
             </p>
-            <p className="text-lg text-gray-500 max-sm:w-full text-center md:text-left">
+            <p className="text-lg text-gray-500 max-sm:w-full max-sm:text-center text-left">
               Follow us for more information about MASK
             </p>
           </div>
           <form
-            className="md:block flex justify-center md:justify-start max-sm:w-full filter drop-shadow-news-letter"
+            className="md:block flex max-sm:justify-center justify-start max-sm:w-full filter drop-shadow-news-letter"
             name="subscription"
             method="post"
             target="_blank"

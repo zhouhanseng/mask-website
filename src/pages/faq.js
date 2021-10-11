@@ -1,5 +1,6 @@
 import * as React from "react";
 import { useEffect, useState, useRef } from "react";
+import { StaticImage } from "gatsby-plugin-image";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import { Navbar } from "../components/Navbar";
 import { Footer } from "../components/Footer";
@@ -196,11 +197,19 @@ const FaqPage = () => {
               <div className="hidden md:w-1/2 md:flex justify-center items-center bg-gray-200 hg:text-5xl md:text-4xl">
                 <p className="w-4/5">How can we help you?</p>
               </div>
-              <img
-                alt=""
-                src={size > 850 ? faqImage : faqSmImage}
-                className="w-full md:w-1/2 h-auto"
-              />
+              {size > 850 ? (
+                <StaticImage
+                  alt=""
+                  src={"../images/faq.png"}
+                  className="w-full md:w-1/2 h-auto"
+                />
+              ) : (
+                <StaticImage
+                  alt=""
+                  src={"../images/faq_sm.png"}
+                  className="w-full md:w-1/2 h-auto"
+                />
+              )}
             </div>
           ) : (
             <img alt="" src={faqSmImage} className="w-full" />

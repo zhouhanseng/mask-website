@@ -138,12 +138,9 @@ export const Footer = () => {
               <Link className="text-white opacity-80" to="/faq">
                 Help
               </Link>
-              <a
-                className="text-white opacity-80"
-                href="https://realmaskbook.notion.site/realmaskbook/An-In-Complete-Guide-to-Mask-Network-3ce8000d37a74f9fb449e1d97ea4eddb"
-              >
+              <Link className="text-white opacity-80" to="/faq?type=tutorials">
                 Tutorials
-              </a>
+              </Link>
               <a
                 href='https://github.com/DimensionDev/Maskbook/issues?q=is:issue+is:open+label:"Bounty:+Open"'
                 target="_blank"

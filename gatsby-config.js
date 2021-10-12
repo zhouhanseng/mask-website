@@ -8,6 +8,7 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     "gatsby-plugin-cname",
+    "gatsby-plugin-use-query-params",
   ],
   pathPrefix: "/mask-website",
 };

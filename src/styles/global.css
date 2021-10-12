@@ -16,6 +16,41 @@
   box-shadow: 10px 0 12px -4px rgba(31, 73, 125, 0.08), -10px 0 6px -4px rgba(31, 73, 125, 0.08);
 }
 
+.what-is-mask-out-background {
+    background: linear-gradient(#E3F0FF, #ffffff 90%, #ffffff)
+}
+
+.discover-background {
+    background: linear-gradient(#C1190F, #DD615A)
+}
+
+.noise-img, .what-is-mask-background {
+    filter: saturate(115%);
+}
+
+.noise-img::after {
+    content: '';
+    background-image: url(../images/noise.png);
+    position: absolute;
+    background-repeat: repeat;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    opacity: 0.65;    
+}
+
+.what-is-mask-background::after {
+    content: '';
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.2) 30%, rgba(255, 255, 255, 0));
+    position: absolute;
+    background-repeat: repeat;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;     
+}
+
 @media (max-width: 1340px) {
     .hoverFilter img {
         filter: none;

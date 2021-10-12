@@ -2,11 +2,12 @@ import * as React from "react";
 import { useEffect, useState, useRef } from "react";
 import { StaticImage } from "gatsby-plugin-image";
 import AnchorLink from "react-anchor-link-smooth-scroll";
+import { useQueryParam, StringParam } from "use-query-params";
 import { Navbar } from "../components/Navbar";
 import { Footer } from "../components/Footer";
 
 //assets
-import faqImage from "../images/faq.png";
+
 import faqSmImage from "../images/faq_sm.png";
 import faq1Image from "../images/faq_one.png";
 import faq2Image from "../images/faq_two.png";
@@ -14,12 +15,18 @@ import faq3Image from "../images/faq_three.png";
 import faq4Image from "../images/faq_four.png";
 import faq5Image from "../images/faq_five.png";
 import faq6Image from "../images/faq_six.png";
+import faq7Image from "../images/faq_seven.png";
+import faq8Image from "../images/faq_eight.png";
+import faq9Image from "../images/faq_nine.png";
+import faq10Image from "../images/faq_ten.png";
 import faqExpandImage from "../images/faq_expand.png";
 import faqShrinkImage from "../images/faq_shrink.png";
 
 // markup
 const FaqPage = () => {
   const [size, setSize] = useState(0);
+  const [type, setType] = useQueryParam("type", StringParam);
+
   const contents = [
     {
       title: "Getting Started",
@@ -174,6 +181,135 @@ const FaqPage = () => {
     },
   ];
 
+  const tutorialContents = [
+    {
+      title: "Setup",
+      image: faq7Image,
+      contents: [
+        {
+          text: "Installation & set up",
+          link: "https://realmaskbook.notion.site/Installation-set-up-8147f28c734c4038b4cba4b6ba9a772f",
+        },
+        {
+          text: "Setting up your wallet (Support MetaMask and WalletConnect)",
+          link: "https://realmaskbook.notion.site/Setting-up-your-wallet-Support-MetaMask-and-WalletConnect-3f39ee5c74a6403f88d8af3e2a76ec0b",
+        },
+        {
+          text: "Manually update the Mask Network plugin",
+          link: "https://realmaskbook.notion.site/Manually-update-the-Mask-Network-plugin-1e87e9d71ae64e5c8cf0d6bc11f57fb3",
+        },
+        {
+          text: "Back up your private key",
+          link: "https://realmaskbook.notion.site/Back-up-your-private-key-ad5909e3cf8849bdb7e5989d8487e8d3",
+        },
+      ],
+    },
+    {
+      title: "Switch Network & Cross Chain",
+      image: faq1Image,
+      contents: [
+        {
+          text: "Switch network between ETH, BSC, and Polygon",
+          link: "https://realmaskbook.notion.site/Switch-network-between-ETH-BSC-and-Polygon-30501828d0db492fb2ee9b9f9822c178",
+        },
+        {
+          text: "Use the Polygon Bridge to convert from Ethereum Mainnet and Polygon",
+          link: "https://realmaskbook.notion.site/Use-the-Polygon-Bridge-to-convert-from-Ethereum-Mainnet-and-Polygon-81c0a8268b064c80aec2ee226871741a",
+        },
+        {
+          text: "Convert $MASK from ERC20 to BEP20",
+          link: "https://realmaskbook.notion.site/Convert-MASK-from-ERC20-to-BEP20-7e982c16c1404d758a3c94b1e5ee9ca2",
+        },
+      ],
+    },
+    {
+      title: "Features",
+      image: faq8Image,
+      contents: [
+        {
+          text: "Send an Encrypted Text",
+          link: "https://realmaskbook.notion.site/Send-an-Encrypted-Text-365ba60facbd4d069ea6ca72ec16a154",
+        },
+        {
+          text: "Purchase NFTs or place a bid  for NFTs  via OpenSea or Rarible on Twitter",
+          link: "https://realmaskbook.notion.site/Purchase-NFTs-or-place-a-bid-for-NFTs-via-OpenSea-or-Rarible-on-Twitter-912fea95f84b49bfb481ef152e1423c1",
+        },
+        {
+          text: "Send a Lucky Drop (Support ETH, BSC and Polygon)",
+          link: "https://realmaskbook.notion.site/Send-a-Red-Packet-Support-ETH-BSC-and-Polygon-d5a3c18464474a07bd07581c31cea7f7",
+        },
+        {
+          text: "Use File Service via Arweave (IPFS, SIA, Swarm soon)",
+          link: "https://realmaskbook.notion.site/Use-File-Service-via-Arweave-IPFS-SIA-Swarm-soon-e5d60b122fda433e921ddad242b58c05",
+        },
+        {
+          text: "Cast a Snapshot vote",
+          link: "https://realmaskbook.notion.site/Cast-a-Snapshot-vote-4ba42d31d00647d782ff431e8fe986d2",
+        },
+        {
+          text: "Launch an ITO (Initial Twitter Offering) (Support ETH, BSC and Polygon)",
+          link: "https://realmaskbook.notion.site/Launch-an-ITO-Initial-Twitter-Offering-Support-ETH-BSC-and-Polygon-eb242a21eaff4c48ba4c1445bd7b9482",
+        },
+        {
+          text: "Claim tokens (from ITO/Airdrop) (Support ETH only, Polygon soon)",
+          link: "https://realmaskbook.notion.site/Claim-tokens-from-ITO-Airdrop-Support-ETH-only-Polygon-soon-90ccfe8812ea4e44bb998921b80aaa80",
+        },
+        {
+          text: "Check cryptocurrency info on social media (CoinGecko, CoinMarketCap, Uniswap Info)",
+          link: "https://realmaskbook.notion.site/Check-cryptocurrency-info-on-social-media-CoinGecko-CoinMarketCap-Uniswap-Info-f086e3aa33964f74a84cf2033dfcba9c",
+        },
+        {
+          text: "Participate in ITO (Initial Twitter Offering) (Support ETH, BSC and Polygon)",
+          link: "https://realmaskbook.notion.site/Participate-in-ITO-Initial-Twitter-Offering-Support-ETH-BSC-and-Polygon-16de37684de54f36923f55158159a11c",
+        },
+        {
+          text: "Display the NFTs you own on your Twitter profile",
+          link: "https://realmaskbook.notion.site/Display-the-NFTs-you-own-on-your-Twitter-profile-1cdcf9569ecc4e98987e05c88e0d2deb",
+        },
+      ],
+    },
+    {
+      title: "$Mask Token Related",
+      image: faq9Image,
+      contents: [
+        {
+          text: "How to add $MASK liquidity to PancakeSwap",
+          link: "https://realmaskbook.notion.site/How-to-add-MASK-liquidity-to-PancakeSwap-1af175c8a4524e3d8c3ec988480c4674",
+        },
+      ],
+    },
+    {
+      title: "Third-party Plugins",
+      image: faq10Image,
+      contents: [
+        {
+          text: "See the latest offer of a Tweet NFT by Valuables Plugin",
+          link: "https://realmaskbook.notion.site/See-the-latest-offer-of-a-Tweet-NFT-by-Valuables-Plugin-ce284e61c703460096f1b10f8e378685",
+        },
+        {
+          text: "Make a quick Gitcoin Grant donation using the Mask extension",
+          link: "https://realmaskbook.notion.site/Make-a-quick-Gitcoin-Grant-donation-using-the-Mask-extension-89bdc65b8fa34c05a3707792ea05e52f",
+        },
+        {
+          text: "Trade tokens via Uniswap, Sushi, 0x,Balancer, Dodo,etc. on Twitter (Support ETH, BSC and Polygon)",
+          link: "https://realmaskbook.notion.site/Trade-tokens-via-Uniswap-Sushi-0x-etc-on-Twitter-Support-ETH-BSC-and-Polygon-803402915c2c4148a269dc88faf0306e",
+        },
+        {
+          text: "Cultivate a weekly saving habit via GoodGhosting on Twitter (Polygon only)",
+          link: "https://realmaskbook.notion.site/Cultivate-a-weekly-saving-habit-via-GoodGhosting-on-Twitter-Polygon-only-6b80d1ee67b64987aa54be7cb4fd9983",
+        },
+        {
+          text: "Participate in lossless lottery via PoolTogether on Twitter (ETH and Polygon)",
+          link: "https://realmaskbook.notion.site/Participate-in-lossless-lottery-via-PoolTogether-on-Twitter-ETH-and-Polygon-4e4954ffc592452b9c8903babec47959",
+        },
+        {
+          text: "Copy your favourite manager's portfolio via dHEDGE on Twitter (ETH and Polygon)",
+          link: "https://realmaskbook.notion.site/Copy-your-favourite-manager-s-portfolio-via-dHEDGE-on-Twitter-ETH-and-Polygon-eab2d7120a094834b24d86b1a54aa1c7",
+        },
+      ],
+    },
+  ];
+
   const [anchor, setAnchor] = useState(contents[0].title);
 
   useEffect(() => {
@@ -214,32 +350,86 @@ const FaqPage = () => {
           ) : (
             <img alt="" src={faqSmImage} className="w-full" />
           )}
-          <div className="hg:mt-36 md:mt-24 mt-16 w-full md:mb-32 mb-16">
+          <div className="w-full md:mb-32 mb-16 hg:mt-36 md:mt-24 mt-16">
             <div className="w-full max-w-7xl mx-auto px-5 flex justify-between">
-              <div className="w-full max-w-3xl md:pr-8">
-                {contents.map((x, i) => (
-                  <div key={i.toString()}>
-                    <FaqTopic
-                      contents={contents}
-                      i={i}
-                      content={x}
-                      action={(title) => setAnchor(title)}
-                    />
+              <div className="w-full md:pr-8 pl-4">
+                <p
+                  className="cursor-pointer mb-14 max-sm:mb-6"
+                  onClick={() => {
+                    setType(type === "faq" || !type ? "tutorials" : "faq");
+                  }}
+                >
+                  <span
+                    className={
+                      type === "faq" || !type
+                        ? "text-6xl font-semibold max-sm:text-4xl"
+                        : "text-5xl text-gray-500 max-sm:text-3xl"
+                    }
+                  >
+                    FAQ\
+                  </span>
+                  <span
+                    className={
+                      type === "faq" || !type
+                        ? "text-5xl text-gray-500 max-sm:text-3xl"
+                        : "text-6xl font-semibold max-sm:text-4xl"
+                    }
+                  >
+                    Tutorial
+                  </span>
+                </p>
+                {type === "tutorials" ? (
+                  <div className="max-w-4xl my-24 max-sm:my-8">
+                    <p className="text-4xl mb-8 px-4 md:px-0 max-sm:text-2xl max-sm:mb-4 max-sm:px-0">
+                      An (In)Complete Guide to Mask Network
+                    </p>
+                    <p className="text-xl text-gray-500 px-4 md:px-0 max-sm:text-base max-sm:px-0">
+                      Mask Network is the portal to the new internet that
+                      connects mainstream Web 2.0 social media with the open,
+                      decentralized Web 3.0. Through our browser extension,
+                      users could get a glimpse of the decentralized application
+                      world. You can easily make borderless cryptocurrency
+                      transfers, decentralized file storage and sharing, display
+                      and trade NFTs, participate in various DeFi projects, and
+                      vote on governance proposals. Do everything in a Web 3.0
+                      way, but on top of Web 2.0.
+                    </p>
                   </div>
-                ))}
+                ) : null}
+                {type === "tutorials"
+                  ? tutorialContents.map((x, i) => (
+                      <div key={i.toString()} className="max-w-3xl">
+                        <TutorialTopic i={i} content={x} />
+                      </div>
+                    ))
+                  : null}
+                {type === "faq" || !type
+                  ? contents.map((x, i) => (
+                      <div key={i.toString()} className="max-w-3xl">
+                        <FaqTopic
+                          contents={contents}
+                          i={i}
+                          content={x}
+                          action={(title) => setAnchor(title)}
+                        />
+                      </div>
+                    ))
+                  : null}
               </div>
-              <div>
-                <div className="sticky top-28 md:flex hidden flex-col">
-                  {contents.map((x, i) => (
-                    <Anchor
-                      title={x.title}
-                      i={i.toString()}
-                      current={anchor}
-                      action={() => setAnchor(x.title)}
-                    />
-                  ))}
+              {type === "faq" || !type ? (
+                <div>
+                  <div className="sticky top-16 md:flex hidden flex-col">
+                    {contents.map((x, i) => (
+                      <Anchor
+                        title={x.title}
+                        i={i.toString()}
+                        current={anchor}
+                        action={() => setAnchor(x.title)}
+                      />
+                    ))}
+                  </div>
                 </div>
-              </div>
+              ) : null}
             </div>
           </div>
         </>
@@ -250,6 +440,40 @@ const FaqPage = () => {
     </main>
   );
 };
+
+function TutorialTopic(props) {
+  return (
+    <>
+      <div
+        className={
+          "flex items-center mb-8 " +
+          (props.i === 0 ? "" : "mt-20 max-sm:mt-10")
+        }
+      >
+        <img
+          alt=""
+          src={props.content.image}
+          className="w-12 h-12 max-sm:w-9 max-sm:h-9"
+        />
+        <p className="text-4xl max-sm:text-3xl ml-2 font-bold">
+          {props.content.title}
+        </p>
+      </div>
+      <div className="ml-14 max-sm:ml-2 flex flex-col">
+        {props.content.contents.map((x) => (
+          <a
+            href={x.link}
+            target="_blank"
+            rel="noreferrer"
+            className="font-semibold mb-8 text-xl max-sm:text-base max-sm:font-light max-sm:mb-4 max-sm:underline"
+          >
+            {x.text}
+          </a>
+        ))}
+      </div>
+    </>
+  );
+}
 
 function FaqTopic(props) {
   const ref = useRef();
@@ -313,7 +537,7 @@ function Anchor(props) {
       offset="100"
       href={"#" + props.title}
       className={
-        "py-3 px-4 border-l-4 " +
+        "whitespace-nowrap py-3 px-4 border-l-4 " +
         (props.title === props.current
           ? " border-gray-800 text-gray-800"
           : "border-gray-300 text-gray-300 font-light")

@@ -2,7 +2,7 @@ import * as React from "react";
 import { Navbar } from "../components/Navbar";
 import { Footer } from "../components/Footer";
 
-import AboutImage from "../images/about.png";
+import { StaticImage } from "gatsby-plugin-image";
 
 // markup
 const AnoutPage = () => {
@@ -36,10 +36,10 @@ const AnoutPage = () => {
             of our personal data.
           </p>
         </div>
-        <img
+        <StaticImage
           alt=""
-          src={AboutImage}
-          className="md:w-1/2 w-full h-auto md:min-w-about-image"
+          src={"../images/about.png"}
+          className="md:w-1/2 w-full h-auto md:min-w-about-image noise-img"
         />
       </div>
       <Footer />

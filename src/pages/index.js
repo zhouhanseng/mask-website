@@ -107,7 +107,7 @@ const IndexPage = () => {
         </div>
         <StaticImage
           alt=""
-          src={"../images/ito.png"}
+          src={"../images/ITO.png"}
           className="w-full md:w-1/2 noise-img"
         />
       </div>

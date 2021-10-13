@@ -168,27 +168,33 @@ export const Navbar = () => {
               <Link to="/" className="py-4 border-b border-gray-300">
                 Home
               </Link>
-              <Link
-                to="https://news.mask.io/"
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://news.mask.io/"
                 className="py-4 border-b border-gray-300"
               >
                 News
-              </Link>
-              <Link
-                to="https://we.mask.io/"
+              </a>
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://we.mask.io/"
                 className="py-4 border-b border-gray-300"
               >
                 Community
-              </Link>
+              </a>
               <Link to="/faq" className="py-4 border-b border-gray-300">
                 Help
               </Link>
-              <Link
-                to="https://kan-1.gitbook.io/mask-network/plugin-system/mask-plugin"
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://kan-1.gitbook.io/mask-network/plugin-system/mask-plugin"
                 className="py-4 border-b border-gray-300"
               >
                 Docs
-              </Link>
+              </a>
               <Link to="/about" className="py-4 border-b border-gray-300">
                 About
               </Link>

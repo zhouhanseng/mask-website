@@ -22,7 +22,11 @@ const IndexPage = () => {
   return size ? (
     <main>
       <Navbar />
-      <StaticImage alt="" src="../images/index_head.png" className="w-full" />
+      <StaticImage
+        alt=""
+        src="../images/index_head.png"
+        className="w-full noise-img"
+      />
       {/* #region what is mask image */}
       <div className="w-full hg:py-24 md:py-8 pb-8 pt-4 max-sm:py-8 what-is-mask-out-background">
         <div className="md:w-5/6 w-11/12 flex flex-col md:flex-row max-w-8xl mx-auto md:justify-between">

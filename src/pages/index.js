@@ -46,7 +46,7 @@ const IndexPage = () => {
           <div className="w-full md:w-1/2 hg:pr-12 flex md:flex-row-reverse md:justify-start justify-center">
             <StaticImage
               alt=""
-              src="../images/whatIsMask.svg"
+              src="../images/whatIsMask.png"
               className="hg:w-full w-4/5 what-is-mask-background"
             />
           </div>

@@ -6,7 +6,12 @@ module.exports = {
   plugins: [
     "gatsby-plugin-postcss",
     `gatsby-plugin-image`,
-    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-plugin-sharp`,
+      options: {
+        defaultQuality: 80,
+      },
+    },
     `gatsby-transformer-sharp`,
     "gatsby-plugin-cname",
     "gatsby-plugin-use-query-params",

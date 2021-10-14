@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { Navbar } from "../components/Navbar";
 import { Footer } from "../components/Footer";
 import { Cookies } from "../components/Cookies";
+import { SEO } from "../components/SEO";
 import { StaticImage } from "gatsby-plugin-image";
 
 const IndexPage = () => {
@@ -21,6 +22,7 @@ const IndexPage = () => {
 
   return size ? (
     <main>
+      <SEO title="Mask Network" />
       <Navbar />
       <StaticImage
         alt=""

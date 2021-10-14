@@ -1,6 +1,7 @@
 import * as React from "react";
 import { Navbar } from "../components/Navbar";
 import { Footer } from "../components/Footer";
+import { SEO } from "../components/SEO";
 
 import { StaticImage } from "gatsby-plugin-image";
 
@@ -8,6 +9,7 @@ import { StaticImage } from "gatsby-plugin-image";
 const AnoutPage = () => {
   return (
     <main>
+      <SEO title="About us - Mask Network" />
       <Navbar />
       <div className="md:max-w-7xl w-full mx-auto md:flex hg:min-hg-h-about-content md:min-md-h-about-content my-16 max-sm:my-8 px-8">
         <div className="md:w-1/2 w-full md:py-4 hg:py-16 md:pr-8 flex flex-col md:mb-0 mb-8">

@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
     siteUrl: `https://mask.io`,
+    title: "Mask Network",
   },
   plugins: [
     "gatsby-plugin-postcss",
@@ -9,6 +10,7 @@ module.exports = {
     `gatsby-transformer-sharp`,
     "gatsby-plugin-cname",
     "gatsby-plugin-use-query-params",
+    "gatsby-plugin-react-helmet",
   ],
   pathPrefix: "/mask-website",
 };

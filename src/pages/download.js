@@ -1,6 +1,7 @@
 import * as React from "react";
 import { Navbar } from "../components/Navbar";
 import { Footer } from "../components/Footer";
+import { SEO } from "../components/SEO";
 
 //assets
 import downloadImage from "../images/download.png";
@@ -15,6 +16,7 @@ import apkImage from "../images/apk.png";
 const DownloadPage = () => {
   return (
     <main>
+      <SEO title="Download Links - Mask Network" />
       <Navbar />
       <div className="mt-16 w-full max-sm:my-8">
         <div className="flex flex-col items-center text-center px-4">

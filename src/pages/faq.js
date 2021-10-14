@@ -5,6 +5,7 @@ import AnchorLink from "react-anchor-link-smooth-scroll";
 import { useQueryParam, StringParam } from "use-query-params";
 import { Navbar } from "../components/Navbar";
 import { Footer } from "../components/Footer";
+import { SEO } from "../components/SEO";
 
 //assets
 
@@ -325,6 +326,7 @@ const FaqPage = () => {
 
   return (
     <main>
+      <SEO title="FAQs — Mask Network" />
       <Navbar />
       {size ? (
         <>

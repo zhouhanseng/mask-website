@@ -164,15 +164,26 @@ export const Navbar = () => {
         </div>
         {open ? (
           <Drawer open={open} onClose={() => setOpen(false)}>
-            <List className="w-72 flex flex-col px-4 pt-8 text-xl">
-              <Link to="/" className="py-4 border-b border-gray-300">
+            <List className="w-72 flex flex-col px-4 pt-8 text-xl bg-gray-100 h-full">
+              <p className="text-lg text-gray-400 mb-5">
+                Welcome to Mask Network
+              </p>
+              <Link
+                to="/"
+                className={
+                  "py-2 pl-2 text-2xl mb-5 " +
+                  (["/", "/mask-website", "/mask-website/"].includes(path)
+                    ? "bg-white text-blue-mask rounded-md"
+                    : "")
+                }
+              >
                 Home
               </Link>
               <a
                 target="_blank"
                 rel="noreferrer"
                 href="https://news.mask.io/"
-                className="py-4 border-b border-gray-300"
+                className="py-2 pl-2 text-2xl mb-5"
               >
                 News
               </a>
@@ -180,22 +191,48 @@ export const Navbar = () => {
                 target="_blank"
                 rel="noreferrer"
                 href="https://we.mask.io/"
-                className="py-4 border-b border-gray-300"
+                className="py-2 pl-2 text-2xl mb-5"
               >
                 Community
               </a>
-              <Link to="/faq" className="py-4 border-b border-gray-300">
+              <Link
+                to="/faq"
+                className={
+                  "py-2 pl-2 text-2xl mb-5 " +
+                  ([
+                    "/faq",
+                    "/faq/",
+                    "/mask-website/faq",
+                    "/mask-website/faq/",
+                  ].includes(path)
+                    ? "bg-white text-blue-mask rounded-md"
+                    : "")
+                }
+              >
                 Help
               </Link>
               <a
                 target="_blank"
                 rel="noreferrer"
                 href="https://kan-1.gitbook.io/mask-network/plugin-system/mask-plugin"
-                className="py-4 border-b border-gray-300"
+                className="py-2 pl-2 text-2xl mb-6"
               >
                 Docs
               </a>
-              <Link to="/about" className="py-4 border-b border-gray-300">
+              <Link
+                to="/about"
+                className={
+                  "py-2 pl-2 text-2xl mb-7 " +
+                  ([
+                    "/about",
+                    "/about/",
+                    "/mask-website/about",
+                    "/mask-website/about/",
+                  ].includes(path)
+                    ? "bg-white text-blue-mask rounded-md"
+                    : "")
+                }
+              >
                 About
               </Link>
               {[
@@ -204,7 +241,10 @@ export const Navbar = () => {
                 "/mask-website/download",
                 "/mask-website/download/",
               ].includes(path) ? null : (
-                <Link to="/download" className="py-4 border-b border-gray-300">
+                <Link
+                  to="/download"
+                  className="py-1 text-2xl rounded-full border-2 border-gray-900 w-40 text-center"
+                >
                   Get Mask
                 </Link>
               )}

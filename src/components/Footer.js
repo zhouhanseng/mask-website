@@ -36,7 +36,7 @@ export const Footer = () => {
         <div className="md:flex md:justify-between max-sm:flex-col max-sm:justify-center md:items-center md:max-w-8xl md:w-10/12 w-10/12 max-sm:w-full mx-auto max-sm:px-4 px-10 p-10 pb-7 bg-blue-100 relative -top-20 max-sm:top-0 max-sm:static flex-wrap box-shadow-news-letter-out">
           <div className="mr-7 mb-7 max-sm:w-full">
             <p className="text-3xl font-medium mb-4 max-sm:text-2xl max-sm:w-full max-sm:text-center text-left">
-              MASK NETWORK Newsletter
+              Subscribe Newsletter
             </p>
             <p className="text-lg text-gray-500 max-sm:w-full max-sm:text-center text-left">
               Follow us for more information about MASK

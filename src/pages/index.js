@@ -5,6 +5,14 @@ import { Footer } from "../components/Footer";
 import { Cookies } from "../components/Cookies";
 import { SEO } from "../components/SEO";
 import { StaticImage } from "gatsby-plugin-image";
+import githubImage from "../images/github.png";
+import maskdaoImage from "../images/maskdao.png";
+import snapshotImage from "../images/mask_snapshot.png";
+
+import functionOneImage from "../images/function_one.png";
+import functionTwoImage from "../images/function_two.png";
+import functionThreeImage from "../images/function_three.png";
+import functionFourImage from "../images/function_four.png";
 
 const IndexPage = () => {
   const [size, setSize] = useState(0);
@@ -80,10 +88,10 @@ const IndexPage = () => {
 
       {/* #endregion */}
       <div className="grid grid-cols-2 md:grid-cols-4 w-9/10 md:w-4/5 mx-auto">
-        <StaticImage alt="" src={"../images/function_one.png"} className="" />
-        <StaticImage alt="" src={"../images/function_three.png"} className="" />
-        <StaticImage alt="" src={"../images/function_four.png"} className="" />
-        <StaticImage alt="" src={"../images/function_two.png"} className="" />
+        <img alt="" src={functionOneImage} className="" />
+        <img alt="" src={functionTwoImage} className="" />
+        <img alt="" src={functionThreeImage} className="" />
+        <img alt="" src={functionFourImage} className="" />
       </div>
 
       <p className="sm:leading-relaxed hg:text-5xl text-4xl max-sm:text-2xl max-sm:leading-8 font-semibold mx-auto text-center w-2/3 mt-16 min-w-280">
@@ -244,11 +252,7 @@ const IndexPage = () => {
           target="_blank"
           rel="noreferrer"
         >
-          <StaticImage
-            alt=""
-            src={"../images/github.png"}
-            className="w-24 mb-3 max-sm:w-20"
-          />
+          <img alt="" src={githubImage} className="w-24 mb-3 max-sm:w-20" />
           <p>GitHub</p>
         </a>
         <a
@@ -257,11 +261,7 @@ const IndexPage = () => {
           target="_blank"
           rel="noreferrer"
         >
-          <StaticImage
-            alt=""
-            src={"../images/maskdao.png"}
-            className="w-24 mb-3 max-sm:w-20"
-          />
+          <img alt="" src={maskdaoImage} className="w-24 mb-3 max-sm:w-20" />
           <p>MaskDao</p>
         </a>
         <a
@@ -270,11 +270,7 @@ const IndexPage = () => {
           target="_blank"
           rel="noreferrer"
         >
-          <StaticImage
-            alt=""
-            src={"../images/mask_snapshot.png"}
-            className="w-24 mb-3 max-sm:w-20"
-          />
+          <img alt="" src={snapshotImage} className="w-24 mb-3 max-sm:w-20" />
           <p className="text-center">Mask Snapshot</p>
         </a>
       </div>

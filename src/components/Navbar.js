@@ -147,7 +147,7 @@ export const Navbar = () => {
                 : "")
             }
           >
-            Use Mask
+            Get Mask
           </Link>
 
           {!open ? (
@@ -205,7 +205,7 @@ export const Navbar = () => {
                 "/mask-website/download/",
               ].includes(path) ? null : (
                 <Link to="/download" className="py-4 border-b border-gray-300">
-                  Use Mask
+                  Get Mask
                 </Link>
               )}
             </List>

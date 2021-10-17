@@ -55,7 +55,7 @@ const IndexPage = () => {
             <StaticImage
               alt=""
               src="../images/whatIsMask.png"
-              className="w-full what-is-mask-background"
+              className="w-full max-sm:w-4/5 what-is-mask-background"
               placeholder="none"
             />
           </div>

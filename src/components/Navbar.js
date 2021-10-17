@@ -57,7 +57,7 @@ export const Navbar = () => {
             (["/", "/mask-website", "/mask-website/"].includes(path)
               ? "text-white"
               : "text-gray-900") +
-            " items-center w-2/5 justify-between min-w-nav-links antialiased font-extralight text-xl h-full" +
+            " items-center w-8/12 hg:w-2/5 justify-between min-w-nav-links antialiased font-extralight text-xl h-full" +
             // Response: show nav links > 768px
             " md:flex hidden"
           }

@@ -130,7 +130,7 @@ const IndexPage = () => {
       <div className="md:w-5/6 w-11/12 flex flex-col-reverse md:flex-row max-w-8xl mx-auto mb-16 max-sm:mb-4">
         <div className="w-full md:w-1/2 py-8 max-sm:pt-3 md:pl-16 max-sm:mt-0 md:mt-0 mt-8 md:px-0 px-8 max-sm:px-2">
           <p className="hg:text-4xl md:text-2xl lg:text-3xl max-sm:text-3xl max-sm:mb-12 text-4xl md:mb-0 mb-40 font-bold">
-            ITO (Initial Twitter Offering)
+            Initial Twitter Offering
           </p>
           <p className="relative top-1/2 text-2xl max-sm:text-base md:pr-8">
             Launch decentralized asset freely and participate in token launch

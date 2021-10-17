@@ -2,9 +2,9 @@ import * as React from "react";
 import { Navbar } from "../components/Navbar";
 import { Footer } from "../components/Footer";
 import { SEO } from "../components/SEO";
+import { StaticImage } from "gatsby-plugin-image";
 
 //assets
-import downloadImage from "../images/download.png";
 import chromeImage from "../images/chrome.png";
 import firefoxImage from "../images/firefox.png";
 import mobileAppImage from "../images/mobile_app.png";
@@ -26,13 +26,18 @@ const DownloadPage = () => {
           <p className="text-2xl max-sm:text-xl max-sm:font-light hg:mb-24 md:mb-16 mb-8">
             Enjoy the web3.0 world at your fingertips
           </p>
-          <img alt="" src={downloadImage} className="max-w-5xl w-10/12" />
+          <StaticImage
+            alt=""
+            src="../images/download.png"
+            placeholder="none"
+            className="max-w-5xl w-10/12"
+          />
           <div className="max-w-4xl w-10/12 flex justify-between max-sm:flex-col my-16">
             {[
               {
                 name: "Chrome / Edge",
                 image: chromeImage,
-                text: "Chrome web store",
+                text: "Chrome Web Store",
                 link: "https://chrome.google.com/webstore/detail/mask-network/jkoeaghipilijlahjplgbfiocjhldnap",
               },
               {

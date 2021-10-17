@@ -56,6 +56,7 @@ const IndexPage = () => {
               alt=""
               src="../images/whatIsMask.png"
               className="hg:w-full w-4/5 what-is-mask-background"
+              placeholder="none"
             />
           </div>
         </div>
@@ -71,12 +72,12 @@ const IndexPage = () => {
             </p>
             <p className="md:mb-8 mb-4 max-sm:mb-0 text-2xl max-sm:text-sm">
               INTERACT WITH FRIENDS ON SOCIAL MEDIA IN A FREE, DECENTRALIZED,
-              WEB 3.0 WAY
+              WEB 3.0 WAY.
             </p>
             <p className="opacity-0 max-sm:hidden">empty</p>
           </div>
 
-          <div className="w-full md:w-1/2 hg:pr-12 flex md:flex-row-reverse md:justify-start justify-center">
+          <div className="w-full md:w-1/2 hg:pr-12 flex md:flex-row-reverse md:justify-start justify-center transform hg:-translate-x-1">
             <StaticImage
               alt=""
               src="../images/discover.png"
@@ -87,11 +88,31 @@ const IndexPage = () => {
       </div>
 
       {/* #endregion */}
-      <div className="grid grid-cols-2 md:grid-cols-4 w-9/10 md:w-4/5 mx-auto">
-        <img alt="" src={functionOneImage} className="" />
-        <img alt="" src={functionTwoImage} className="" />
-        <img alt="" src={functionThreeImage} className="" />
-        <img alt="" src={functionFourImage} className="" />
+      <div className="grid grid-cols-2 md:grid-cols-4 w-9/10 md:w-4/5 mx-auto text-center">
+        <div className="flex flex-col items-center mb-16">
+          <img alt="" src={functionOneImage} className="w-24 h-24" />
+          <p className="w-3/4 mt-6 hg:text-xl text-base max-sm:text-sm font-semibold">
+            Send encrypted messages to designated receivers
+          </p>
+        </div>
+        <div className="flex flex-col items-center mb-16">
+          <img alt="" src={functionTwoImage} className="w-24 h-24" />
+          <p className="w-3/4 mt-6 hg:text-xl text-base max-sm:text-sm font-semibold">
+            Protect your privacy
+          </p>
+        </div>
+        <div className="flex flex-col items-center">
+          <img alt="" src={functionThreeImage} className="w-24 h-24" />
+          <p className="w-3/4 mt-6 hg:text-xl text-base max-sm:text-sm font-semibold">
+            Defend your data autonomy
+          </p>
+        </div>
+        <div className="flex flex-col items-center">
+          <img alt="" src={functionFourImage} className="w-24 h-24" />
+          <p className="w-3/4 mt-6 hg:text-xl text-base max-sm:text-sm font-semibold">
+            Discover ownership economy
+          </p>
+        </div>
       </div>
 
       <p className="sm:leading-relaxed hg:text-5xl text-4xl max-sm:text-2xl max-sm:leading-8 font-semibold mx-auto text-center w-2/3 mt-16 min-w-280">
@@ -112,7 +133,7 @@ const IndexPage = () => {
           </p>
           <p className="relative top-1/2 text-2xl max-sm:text-base md:pr-8">
             Launch decentralized asset freely and participate in token launch
-            directly on Twitter
+            directly on Twitter.
           </p>
         </div>
         <StaticImage
@@ -136,7 +157,7 @@ const IndexPage = () => {
           </p>
           <p className="relative top-1/2 text-2xl max-sm:text-base md:pr-8">
             Interact with your friends with crypto assets on social media.
-            Borderless payment Claim and hand out crypto assets on ETH, BSC, and
+            Borderless payment claim and hand out crypto assets on ETH, BSC, and
             Polygon.
           </p>
         </div>
@@ -151,7 +172,7 @@ const IndexPage = () => {
           </p>
           <p className="relative top-1/2 text-2xl max-sm:text-base md:pr-8">
             Decentralized file storage, permanently. Upload and share files to
-            your Mask friends on top of Arweave Network
+            your Mask friends on top of Arweave Network.
           </p>
         </div>
         <StaticImage
@@ -175,7 +196,7 @@ const IndexPage = () => {
           </p>
           <p className="relative top-1/2 text-2xl max-sm:text-base md:pr-8">
             Fiat On-Ramp Aggregator on Twitter. Buy crypto in 60+ countries with
-            transak support.
+            Transak support.
           </p>
         </div>
       </div>
@@ -262,7 +283,7 @@ const IndexPage = () => {
           rel="noreferrer"
         >
           <img alt="" src={maskdaoImage} className="w-24 mb-3 max-sm:w-20" />
-          <p>MaskDao</p>
+          <p>MaskDAO</p>
         </a>
         <a
           href="https://snapshot.org/#/masknetwork.eth"
@@ -276,24 +297,65 @@ const IndexPage = () => {
       </div>
       <div className="bg-blue-50 pb-48 max-sm:pb-4">
         <p className="md:pt-24 py-16 max-sm:pt-6 max-sm:text-2xl text-4xl font-semibold text-center">
-          Partner&Supporter
+          Partner & Supporter
         </p>
         <div className="grid grid-cols-3 gap-x-16 max-sm:gap-x-4 w-10/12 md:grid-cols-5 md:max-w-6xl md:w-11/12 md:gap-x-16 gap-y-8 mx-auto hoverFilter">
-          <StaticImage alt="" src={"../images/partner_binance.png"} />
-          <StaticImage alt="" src={"../images/partner_web30.png"} />
-          <StaticImage alt="" src={"../images/partner_okex.png"} />
-          <StaticImage alt="" src={"../images/partner_hashkey.png"} />
-          <StaticImage alt="" src={"../images/partner_maker.png"} />
-          <StaticImage alt="" src={"../images/partner_gitcoin.png"} />
-          <StaticImage alt="" src={"../images/partner_gun.png"} />
-          <StaticImage alt="" src={"../images/partner_arweave.png"} />
-          <StaticImage alt="" src={"../images/partner_chainide.png"} />
+          <StaticImage
+            alt=""
+            src={"../images/partner_binance.png"}
+            placeholder="none"
+          />
+          <StaticImage
+            alt=""
+            src={"../images/partner_web30.png"}
+            placeholder="none"
+          />
+          <StaticImage
+            alt=""
+            src={"../images/partner_okex.png"}
+            placeholder="none"
+          />
+          <StaticImage
+            alt=""
+            src={"../images/partner_hashkey.png"}
+            placeholder="none"
+          />
+          <StaticImage
+            alt=""
+            src={"../images/partner_maker.png"}
+            placeholder="none"
+          />
+          <StaticImage
+            alt=""
+            src={"../images/partner_gitcoin.png"}
+            placeholder="none"
+          />
+          <StaticImage
+            alt=""
+            src={"../images/partner_gun.png"}
+            placeholder="none"
+          />
+          <StaticImage
+            alt=""
+            src={"../images/partner_arweave.png"}
+            placeholder="none"
+          />
+          <StaticImage
+            alt=""
+            src={"../images/partner_chainide.png"}
+            placeholder="none"
+          />
           <StaticImage
             alt=""
             src={"../images/partner_dgc.png"}
             className="md:hidden flex opacity-0"
+            placeholder="none"
           />
-          <StaticImage alt="" src={"../images/partner_dgc.png"} />
+          <StaticImage
+            alt=""
+            src={"../images/partner_dgc.png"}
+            placeholder="none"
+          />
         </div>
       </div>
       <Footer />

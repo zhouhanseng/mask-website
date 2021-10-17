@@ -16,6 +16,7 @@ import faq3Image from "../images/faq_three.png";
 import faq4Image from "../images/faq_four.png";
 import faq5Image from "../images/faq_five.png";
 import faq6Image from "../images/faq_six.png";
+import faqOtherImage from "../images/faq_other.png";
 import faq7Image from "../images/faq_seven.png";
 import faq8Image from "../images/faq_eight.png";
 import faq9Image from "../images/faq_nine.png";
@@ -42,7 +43,7 @@ const FaqPage = () => {
         {
           title: "How to install Mask Network?",
           content:
-            "Go to <a class='font-semibold' href='https://mask.io/download'>https://mask.io/download</a> to install Mask Network directly. You can also install through the Chrome Web Store, Google Play Store(beta), or the Apple App Store(beta).",
+            "Go to <a class='font-semibold' href='mask.io/download'>mask.io/download</a> to install Mask Network directly. You can also install through the Chrome Web Store, Google Play Store(beta), or the Apple App Store(beta).",
         },
         {
           title: "How to create a persona?",
@@ -52,7 +53,7 @@ const FaqPage = () => {
         {
           title: "Explain like I am a nerd.",
           content:
-            "Alice encrypts cleartext (M) with a random AES key (K) to get ciphertext (CT) and then securely shares K via ECIES over <a href='https://en.wikipedia.org/wiki/ECC' class='font-semibold'>SECP256K1</a> with Bob using Bob's public key (K.Bob). Alice publishes CT on Facebook and synchronizes K.Bob over GUN. Bob can then retrieve K to decrypt M.",
+            "Alice encrypts cleartext (M) with a random AES key (K) to get ciphertext (CT) and then securely shares <span class='underline-dotted'>K</span> via <span class='underline-dotted'>ECIES</span> over <a href='https://en.wikipedia.org/wiki/ECC' class='font-semibold'>SECP256K1</a> with Bob using Bob's public key (K.Bob). Alice publishes <span class='underline-dotted'>CT</span> on Facebook and synchronizes <span class='underline-dotted'>K.Bob</span> over GUN. Bob can then retrieve <span class='underline-dotted'>K</span> to decrypt <span class='underline-dotted'>M</span>.",
         },
       ],
     },
@@ -160,8 +161,14 @@ const FaqPage = () => {
           title:
             "How long is the Lucky Drop validity period? What happens when the lucky drop is expired?",
           content:
-            'The current Red Packet is valid for 24 hours. After 24 hours, if the Red Packet has a remaining quantity, the remaining cryptocurrency will be refunded. You can find that record in “Dashboard” -> “Wallets” -> Choose "Activity" -> OutBound and click the record to refund.',
+            'The current Lucky Drop is valid for 24 hours. After 24 hours, if the Lucky Drop has a remaining quantity, the remaining cryptocurrency will be refunded. You can find that record in “Dashboard” -> “Wallets” -> Choose "Activity" -> OutBound and click the record to refund.',
         },
+      ],
+    },
+    {
+      title: "Other",
+      image: faqOtherImage,
+      contents: [
         {
           title: "Will Mask Network be banned (by Twitter)?",
           content:
@@ -339,13 +346,15 @@ const FaqPage = () => {
                 <StaticImage
                   alt=""
                   src={"../images/faq.png"}
-                  className="w-full md:w-1/2 h-auto"
+                  className="w-full md:w-1/2 h-auto noise-img"
+                  placeholder="none"
                 />
               ) : (
                 <StaticImage
                   alt=""
                   src={"../images/faq_sm.png"}
-                  className="w-full md:w-1/2 h-auto"
+                  className="w-full md:w-1/2 h-auto noise-img"
+                  placeholder="none"
                 />
               )}
             </div>

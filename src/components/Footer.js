@@ -71,10 +71,10 @@ export const Footer = () => {
           <img alt="" src={logoWhiteImage} className="w-32 md:mb-0 mb-8" />
           <div className="pr-2">
             <p className="text-white opacity-80 text-base mb-4 md:max-w-xs w-full">
-              Mask Network is developed and Maintained by Dimension.{" "}
+              Mask Network is developed and maintained by Dimension.{" "}
             </p>
             <p className="text-white opacity-80 text-base md:mb-4 mb-8 md:max-w-xs w-full">
-              Mask network is a free and open source software.
+              Mask Network is a free and open source software.
             </p>
             <p className="text-white text-base max-w-xs md:mb-0 mb-16">
               © 2018-2021 Mask.io
@@ -164,6 +164,20 @@ export const Footer = () => {
           <p className="text-2xl text-white">Community</p>
           <div className="grid hg:grid-cols-3 grid-cols-6 hg:gap-x-4 gap-x-2 hg:gap-y-4 hg:w-40 w-72 hg:mt-0 mt-12">
             <a
+              href="https://twitter.com/realMaskNetwork"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img alt="" src={iconTwitterImage} className="cursor-pointer" />
+            </a>
+            <a
+              href="https://t.me/maskbook_group#telegram"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img alt="" src={iconTelegramImage} className="cursor-pointer" />
+            </a>
+            <a
               href="https://discord.gg/4SVXvj7"
               target="_blank"
               rel="noreferrer"
@@ -178,13 +192,6 @@ export const Footer = () => {
               <img alt="" src={iconFacebookImage} className="cursor-pointer" />
             </a>
             <a
-              href="https://github.com/DimensionDev"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img alt="" src={iconGithubImage} className="cursor-pointer" />
-            </a>
-            <a
               href="https://www.reddit.com/r/MaskNetwork/"
               target="_blank"
               rel="noreferrer"
@@ -192,18 +199,11 @@ export const Footer = () => {
               <img alt="" src={iconRedditImage} className="cursor-pointer" />
             </a>
             <a
-              href="https://t.me/maskbook_group#telegram"
+              href="https://github.com/DimensionDev"
               target="_blank"
               rel="noreferrer"
             >
-              <img alt="" src={iconTelegramImage} className="cursor-pointer" />
-            </a>
-            <a
-              href="https://twitter.com/realMaskNetwork"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img alt="" src={iconTwitterImage} className="cursor-pointer" />
+              <img alt="" src={iconGithubImage} className="cursor-pointer" />
             </a>
             <div className="opacity-0 hidden hg:flex">
               placeholder never show

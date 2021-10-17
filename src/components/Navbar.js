@@ -98,7 +98,7 @@ export const Navbar = () => {
                 "/mask-website/faq/",
               ].includes(path)
                 ? "text-blue-600 font-bold border-b-2 border-blue-600 transform translate-y-px"
-                : "") + " px-2 flex items-center h-full font-extralight"
+                : "") + " flex items-center h-full font-extralight"
             }
           >
             Help
@@ -121,7 +121,7 @@ export const Navbar = () => {
                 "/mask-website/about/",
               ].includes(path)
                 ? "text-blue-600 font-bold border-b-2 border-blue-600 transform translate-y-px"
-                : "") + " px-2 flex items-center h-full font-extralight"
+                : "") + " flex items-center h-full font-extralight"
             }
           >
             About

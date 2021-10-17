@@ -55,7 +55,7 @@ const IndexPage = () => {
             <StaticImage
               alt=""
               src="../images/whatIsMask.png"
-              className="hg:w-full w-4/5 what-is-mask-background"
+              className="w-full what-is-mask-background"
               placeholder="none"
             />
           </div>

@@ -82,6 +82,7 @@ const IndexPage = () => {
               alt=""
               src="../images/discover.png"
               className="w-full noise-img"
+              placeholder="blurred"
             />
           </div>
         </div>

@@ -41,6 +41,7 @@ const AnoutPage = () => {
         <StaticImage
           alt=""
           src={"../images/about.png"}
+          placeholder="blurred"
           className="md:w-1/2 w-full h-auto md:min-w-about-image noise-img"
         />
       </div>

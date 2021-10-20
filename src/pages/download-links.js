@@ -9,7 +9,6 @@ import { StaticImage } from "gatsby-plugin-image";
 import chromeImage from "../images/chrome.png";
 import firefoxImage from "../images/firefox.png";
 import mobileAppImage from "../images/mobile_app.png";
-import mobileSideAppImage from "../images/mobile_side_app.png";
 import appleStoreImage from "../images/apple_store.png";
 import googlePlayImage from "../images/google_play.png";
 import apkImage from "../images/apk.png";
@@ -159,9 +158,10 @@ const DownloadPage = () => {
               className="h-16 w-download-badge"
             />
           </a>
-          <img
+          <StaticImage
             alt=""
-            src={mobileSideAppImage}
+            src={"../images/mobile_side_app.png"}
+            placeholder="blurred"
             className="hg:h-96 md:h-80 max-sm:h-auto mx-auto px-4"
           />
           <p

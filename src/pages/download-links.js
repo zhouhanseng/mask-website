@@ -41,6 +41,7 @@ const DownloadPage = () => {
               Enjoy the web3.0 world at your fingertips
             </p>
             <StaticImage
+              quality={90}
               alt=""
               src="../images/download.png"
               placeholder="none"

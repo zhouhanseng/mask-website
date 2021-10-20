@@ -45,7 +45,10 @@ const AnoutPage = () => {
           className="md:w-1/2 w-full h-auto md:min-w-about-image noise-img"
         />
       </div>
-      <Footer />
+      <footer className="text-gray-500 text-sm max-sm:text-xs border-t border-gray-200 py-8 px-8 hg:pl-80 md:pl-40">
+        I thought what I’d do was, I’d pretend I was one of those deaf-mutes.
+      </footer>
+      {/* <Footer /> */}
     </main>
   );
 };

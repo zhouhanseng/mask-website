@@ -172,7 +172,7 @@ const DownloadPage = () => {
             }}
             className="px-4 text-white text-lg text-center underline mb-24 max-sm:mb-14"
           >
-            Download for another operating system
+            Download for another operating system.
           </p>
         </div>
       )}

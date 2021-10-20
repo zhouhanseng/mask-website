@@ -43,7 +43,7 @@ const FaqPage = () => {
         {
           title: "How to install Mask Network?",
           content:
-            "Go to <a class='font-semibold' href='mask.io/download'>mask.io/download</a> to install Mask Network directly. You can also install through the Chrome Web Store, Google Play Store(beta), or the Apple App Store(beta).",
+            "Go to <a class='font-semibold' href='mask.io/download-links'>mask.io/download-links</a> to install Mask Network directly. You can also install through the Chrome Web Store, Google Play Store(beta), or the Apple App Store(beta).",
         },
         {
           title: "How to create a persona?",

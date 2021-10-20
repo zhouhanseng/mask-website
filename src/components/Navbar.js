@@ -61,10 +61,10 @@ export const Navbar = () => {
             // Response: show nav links > 768px
             " md:flex hidden " +
             ([
-              "/download",
-              "/download/",
-              "/mask-website/download",
-              "/mask-website/download/",
+              "/download-links",
+              "/download-links/",
+              "/mask-website/download-links",
+              "/mask-website/download-links/",
             ].includes(path)
               ? "w-8/12"
               : "w-7/12")
@@ -137,7 +137,7 @@ export const Navbar = () => {
         </div>
         <div>
           <Link
-            to="/download"
+            to="/download-links"
             className={
               (["/", "/mask-website", "/mask-website/"].includes(path)
                 ? "text-white border-white"
@@ -146,10 +146,10 @@ export const Navbar = () => {
               // Response: show download button > 768px
               " md:flex hidden " +
               ([
-                "/download",
-                "/download/",
-                "/mask-website/download",
-                "/mask-website/download/",
+                "/download-links",
+                "/download-links/",
+                "/mask-website/download-links",
+                "/mask-website/download-links/",
               ].includes(path)
                 ? "opacity-0 pointer-events-none"
                 : "")
@@ -244,13 +244,13 @@ export const Navbar = () => {
                 About
               </Link>
               {[
-                "/download",
-                "/download/",
-                "/mask-website/download",
-                "/mask-website/download/",
+                "/download-links",
+                "/download-links/",
+                "/mask-website/download-links",
+                "/mask-website/download-links/",
               ].includes(path) ? null : (
                 <Link
-                  to="/download"
+                  to="/download-links"
                   className="py-1 text-2xl rounded-full border-2 border-gray-900 w-40 text-center"
                 >
                   Get Mask

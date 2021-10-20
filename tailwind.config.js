@@ -15,6 +15,9 @@ module.exports = {
           mask: "#1C68F3",
           cookies: "#112F6C",
         },
+        gray: {
+          1000: "#0B1117",
+        },
       },
       screens: {
         "max-xsm": {
@@ -47,6 +50,9 @@ module.exports = {
       },
       height: {
         "footer-body": "268px",
+      },
+      width: {
+        "download-badge": "180px",
       },
     },
   },

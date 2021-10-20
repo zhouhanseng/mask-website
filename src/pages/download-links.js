@@ -99,7 +99,7 @@ const DownloadPage = () => {
                     <img
                       alt=""
                       src={appleStoreImage}
-                      className="mr-2 h-16 w-download-badge"
+                      className="mr-2 h-16 w-download-badge max-sm:h-12 max-sm:w-download-badge-sm"
                     />
                   </a>
                   <a
@@ -110,7 +110,7 @@ const DownloadPage = () => {
                     <img
                       alt=""
                       src={googlePlayImage}
-                      className="h-16 w-download-badge"
+                      className="h-16 w-download-badge max-sm:h-12 max-sm:w-download-badge-sm"
                     />
                   </a>
                 </div>

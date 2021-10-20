@@ -53,6 +53,7 @@ module.exports = {
       },
       width: {
         "download-badge": "180px",
+        "download-badge-sm": "135px",
       },
     },
   },

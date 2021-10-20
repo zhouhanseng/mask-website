@@ -5,7 +5,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import { Drawer, List } from "@mui/material";
 // assets
-import logoBlueImage from "../images/logo_blue.png";
+import logoBlueImage from "../images/logo_blue.svg";
 import logoWhiteImage from "../images/logo.png";
 
 export const Navbar = () => {

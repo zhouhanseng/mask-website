@@ -35,10 +35,10 @@ const DownloadPage = () => {
         <div className="mt-16 w-full max-sm:my-8">
           <div className="flex flex-col items-center text-center px-4">
             <p className="hg:text-6xl text-5xl md:font-light max-sm:text-4xl mb-4">
-              Mask welcome your use!
+              Install Mask Network on Your Devices
             </p>
             <p className="text-2xl max-sm:text-xl max-sm:font-light hg:mb-24 md:mb-16 mb-8">
-              Enjoy the web3.0 world at your fingertips
+              Enjoy the Web 3.0 world with Mask Network
             </p>
             <StaticImage
               quality={90}
@@ -58,7 +58,7 @@ const DownloadPage = () => {
                 {
                   name: "Firefox",
                   image: firefoxImage,
-                  text: "ADD-ons store",
+                  text: "ADD-ONS",
                   link: "https://addons.mozilla.org/en-US/firefox/addon/maskbook",
                 },
               ].map((value, i) => (
@@ -70,7 +70,7 @@ const DownloadPage = () => {
                 >
                   <p className="text-4xl font-light">{value.name}</p>
                   <p className="text-xl font-medium">Status: Stable</p>
-                  <img alt="" src={value.image} className="w-20" />
+                  <img alt="" src={value.image} className="w-20 h-20" />
                   <a
                     href={value.link}
                     className="bg-black text-white py-3 px-4 rounded-md cursor-pointer"
@@ -88,7 +88,7 @@ const DownloadPage = () => {
                   Mobile App
                 </p>
                 <p className="w-full md:max-w-xss md:font-medium font-light text-xl max-sm:text-sm leading-tight max-sm:text-center mb-4">
-                  Enjoy the web3.0 world at your fingertips
+                  Enjoy the Web 3.0 world with Mask Network
                 </p>
                 <div className="flex max-sm:justify-center">
                   <a
@@ -137,10 +137,10 @@ const DownloadPage = () => {
       ) : (
         <div className="w-full bg-blue-mask flex flex-col items-center">
           <p className="text-white text-6xl max-sm:text-4xl text-center pt-28 max-sm:pt-12 mb-7 px-4">
-            Mask welcome your use!
+            Install Mask Network on Your Devices
           </p>
           <p className="text-white text-xl items-center px-6 text-center mb-7">
-            Enjoy the web3.0 world at your fingertips
+            Enjoy the Web 3.0 world with Mask Network
           </p>
 
           <a

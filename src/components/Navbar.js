@@ -41,7 +41,7 @@ export const Navbar = () => {
           " flex items-center px-6 justify-between w-full h-20 z-10"
         }
       >
-        <Link to="/">
+        <a href="mask.io">
           <img
             alt=""
             src={
@@ -51,7 +51,7 @@ export const Navbar = () => {
             }
             className="w-1/6 max-w-nav-logo min-w-nav-logo"
           />
-        </Link>
+        </a>
         <div
           className={
             (["/", "/mask-website", "/mask-website/"].includes(path)
@@ -70,8 +70,8 @@ export const Navbar = () => {
               : "w-7/12")
           }
         >
-          <Link
-            to="/"
+          <a
+            href="mask.io"
             className={
               (["/", "/mask-website", "/mask-website/"].includes(path)
                 ? "font-bold border-b-2 border-white transform translate-y-px"
@@ -79,7 +79,7 @@ export const Navbar = () => {
             }
           >
             Home
-          </Link>
+          </a>
           <a
             target="_blank"
             rel="noreferrer"
@@ -96,7 +96,7 @@ export const Navbar = () => {
           >
             Community
           </a>
-          <Link
+          {/* <Link
             to="/faq"
             className={
               ([
@@ -110,7 +110,7 @@ export const Navbar = () => {
             }
           >
             Help
-          </Link>
+          </Link> */}
           <a
             target="_blank"
             rel="noreferrer"
@@ -176,8 +176,8 @@ export const Navbar = () => {
               <p className="text-lg text-gray-400 mb-5">
                 Welcome to Mask Network
               </p>
-              <Link
-                to="/"
+              <a
+                href="mask.io"
                 className={
                   "py-2 pl-2 text-2xl mb-5 " +
                   (["/", "/mask-website", "/mask-website/"].includes(path)
@@ -186,7 +186,7 @@ export const Navbar = () => {
                 }
               >
                 Home
-              </Link>
+              </a>
               <a
                 target="_blank"
                 rel="noreferrer"
@@ -203,7 +203,7 @@ export const Navbar = () => {
               >
                 Community
               </a>
-              <Link
+              {/* <Link
                 to="/faq"
                 className={
                   "py-2 pl-2 text-2xl mb-5 " +
@@ -218,7 +218,7 @@ export const Navbar = () => {
                 }
               >
                 Help
-              </Link>
+              </Link> */}
               <a
                 target="_blank"
                 rel="noreferrer"

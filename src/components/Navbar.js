@@ -41,7 +41,7 @@ export const Navbar = () => {
           " flex items-center px-6 justify-between w-full h-20 z-10"
         }
       >
-        <a href="mask.io">
+        <a href="https://mask.io/" rel="noreferrer">
           <img
             alt=""
             src={
@@ -71,7 +71,8 @@ export const Navbar = () => {
           }
         >
           <a
-            href="mask.io"
+            href="https://mask.io/"
+            rel="noreferrer"
             className={
               (["/", "/mask-website", "/mask-website/"].includes(path)
                 ? "font-bold border-b-2 border-white transform translate-y-px"
@@ -177,7 +178,8 @@ export const Navbar = () => {
                 Welcome to Mask Network
               </p>
               <a
-                href="mask.io"
+                href="https://mask.io/"
+                rel="noreferrer"
                 className={
                   "py-2 pl-2 text-2xl mb-5 " +
                   (["/", "/mask-website", "/mask-website/"].includes(path)

@@ -65,7 +65,7 @@ const DownloadPage = () => {
                 <div
                   className={
                     (i === 0 ? "mb-24" : "") +
-                    " flex flex-col justify-between h-72 items-center"
+                    " flex flex-col justify-between h-72 items-center md:w-64"
                   }
                 >
                   <p className="text-4xl font-light">{value.name}</p>
@@ -73,7 +73,7 @@ const DownloadPage = () => {
                   <img alt="" src={value.image} className="w-20 h-20" />
                   <a
                     href={value.link}
-                    className="bg-black text-white py-3 px-4 rounded-md cursor-pointer"
+                    className="bg-black text-white py-3 text-center w-download-badge rounded-md cursor-pointer"
                   >
                     {value.text}
                   </a>

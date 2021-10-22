@@ -178,17 +178,6 @@ const DownloadPage = () => {
       )}
 
       <footer className="text-white w-full bg-gray-1000 md:text-center text-left text-xs temporary-footer md:py-20 py-16 px-4">
-        <p className="mb-2">
-          Some developers of Mask Network are patrons of{" "}
-          <a
-            href="https://www.eff.org/"
-            target="_blank"
-            rel="noreferrer"
-            className="underline hover:text-blue-400"
-          >
-            Electronic Frontier Foundation.
-          </a>
-        </p>
         <p>
           <a
             href="https://dimensiondev.github.io/Maskbook-VI/"

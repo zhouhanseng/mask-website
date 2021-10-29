@@ -1,21 +1,21 @@
-import * as React from "react";
-import { useEffect, useState } from "react";
-import { Link } from "gatsby";
-import logoWhiteImage from "../images/logo.png";
+import * as React from "react"
+import { useEffect, useState } from "react"
+import { Link } from "gatsby"
+import logoWhiteImage from "../images/logo.png"
 
-import iconDiscordImage from "../images/icon_discord.png";
-import iconFacebookImage from "../images/icon_facebook.png";
-import iconGithubImage from "../images/icon_github.png";
-import iconRedditImage from "../images/icon_reddit.png";
-import iconTelegramImage from "../images/icon_telegram.png";
-import iconTwitterImage from "../images/icon_twitter.png";
+import iconDiscordImage from "../images/icon_discord.png"
+import iconFacebookImage from "../images/icon_facebook.png"
+import iconGithubImage from "../images/icon_github.png"
+import iconRedditImage from "../images/icon_reddit.png"
+import iconTelegramImage from "../images/icon_telegram.png"
+import iconTwitterImage from "../images/icon_twitter.png"
 
 export const Footer = () => {
-  const [path, setPath] = useState("");
+  const [path, setPath] = useState("")
 
   useEffect(() => {
-    setPath(window.location.pathname);
-  }, []);
+    setPath(window.location.pathname)
+  }, [])
 
   return (
     <footer className="bg-blue-1000">
@@ -47,7 +47,6 @@ export const Footer = () => {
             name="subscription"
             method="post"
             target="_blank"
-            rel="noreferrer"
             noValidate
             action="https://dimension.us20.list-manage.com/subscribe/post?u=bd44f8df98ab3d8daf8bbe020&amp;id=d23c8870f6"
           >
@@ -217,5 +216,5 @@ export const Footer = () => {
         </p>
       </div>
     </footer>
-  );
-};
+  )
+}

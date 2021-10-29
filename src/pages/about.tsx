@@ -1,9 +1,9 @@
-import * as React from "react";
-import { Navbar } from "../components/Navbar";
-import { Footer } from "../components/Footer";
-import { SEO } from "../components/SEO";
+import * as React from "react"
+import { Navbar } from "../components/Navbar"
+import { Footer } from "../components/Footer"
+import { SEO } from "../components/SEO"
 
-import { StaticImage } from "gatsby-plugin-image";
+import { StaticImage } from "gatsby-plugin-image"
 
 // markup
 const AnoutPage = () => {
@@ -16,11 +16,7 @@ const AnoutPage = () => {
           <p className="hg:text-6xl text-6xl md:text-4xl max-sm:text-3xl font-bold max-w-xs mb-4 md:mb-8">
             About us
           </p>
-          <p
-            className="hg:text-2xl text-2xl md:text-xl max-sm:text-lg font-semibold max-w-sm mb-4 md:mb-8"
-            target="_blank"
-            rel="noreferrer"
-          >
+          <p className="hg:text-2xl text-2xl md:text-xl max-sm:text-lg font-semibold max-w-sm mb-4 md:mb-8" >
             Mask Network aims to bridge the Web 2.0 users to Web 3.0.
           </p>
           <p className="hg:text-xl text-xl md:text-base max-sm:text-sm text-gray-400 max-w-lg">
@@ -47,7 +43,7 @@ const AnoutPage = () => {
       </div>
       <Footer />
     </main>
-  );
-};
+  )
+}
 
-export default AnoutPage;
+export default AnoutPage

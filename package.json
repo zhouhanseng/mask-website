@@ -14,7 +14,8 @@
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "lint": "./node_modules/.bin/eslint src --ext .tsx --fix"
   },
   "dependencies": {
     "@emotion/react": "^11.4.1",
@@ -36,7 +37,10 @@
     "use-query-params": "^1.2.3"
   },
   "devDependencies": {
+    "@types/react-anchor-link-smooth-scroll": "^1.0.2",
+    "@types/react-helmet": "^6.1.4",
     "autoprefixer": "^10.3.6",
+    "eslint-config-react-app": "^6.0.0",
     "gatsby-plugin-postcss": "^4.14.0",
     "gh-pages": "^3.2.3",
     "postcss": "^8.3.8",

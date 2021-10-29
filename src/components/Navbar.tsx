@@ -1,20 +1,20 @@
-import * as React from "react";
-import { useEffect, useState } from "react";
-import { Link } from "gatsby";
-import MenuIcon from "@mui/icons-material/Menu";
-import CloseIcon from "@mui/icons-material/Close";
-import { Drawer, List } from "@mui/material";
+import * as React from "react"
+import { useEffect, useState } from "react"
+import { Link } from "gatsby"
+import MenuIcon from "@mui/icons-material/Menu"
+import CloseIcon from "@mui/icons-material/Close"
+import { Drawer, List } from "@mui/material"
 // assets
-import logoBlueImage from "../images/logo_blue.svg";
-import logoWhiteImage from "../images/logo.png";
+import logoBlueImage from "../images/logo_blue.svg"
+import logoWhiteImage from "../images/logo.png"
 
 export const Navbar = () => {
-  const [path, setPath] = useState("");
-  const [open, setOpen] = useState(false);
+  const [path, setPath] = useState("")
+  const [open, setOpen] = useState(false)
 
   useEffect(() => {
-    setPath(window.location.pathname);
-  }, []);
+    setPath(window.location.pathname)
+  }, [])
 
   return (
     <>
@@ -24,9 +24,7 @@ export const Navbar = () => {
           <CloseIcon
             onClick={() => setOpen(false)}
             className={
-              (["/", "/mask-website", "/mask-website/"].includes(path)
-                ? "text-white"
-                : "text-black") + " cursor-pointer flex md:hidden"
+                "text-black cursor-pointer flex md:hidden"
             }
           />
         ) : null}
@@ -261,5 +259,5 @@ export const Navbar = () => {
         ) : null}
       </nav>
     </>
-  );
-};
+  )
+}

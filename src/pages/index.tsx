@@ -1,32 +1,32 @@
-import * as React from "react";
-import { useState, useEffect } from "react";
-import { Navbar } from "../components/Navbar";
-import { Footer } from "../components/Footer";
-import { Cookies } from "../components/Cookies";
-import { SEO } from "../components/SEO";
-import { StaticImage } from "gatsby-plugin-image";
-import githubImage from "../images/github.png";
-import maskdaoImage from "../images/maskdao.png";
-import snapshotImage from "../images/mask_snapshot.png";
+import * as React from "react"
+import { useState, useEffect } from "react"
+import { Navbar } from "../components/Navbar"
+import { Footer } from "../components/Footer"
+import { Cookies } from "../components/Cookies"
+import { SEO } from "../components/SEO"
+import { StaticImage } from "gatsby-plugin-image"
+import githubImage from "../images/github.png"
+import maskdaoImage from "../images/maskdao.png"
+import snapshotImage from "../images/mask_snapshot.png"
 
-import functionOneImage from "../images/function_one.png";
-import functionTwoImage from "../images/function_two.png";
-import functionThreeImage from "../images/function_three.png";
-import functionFourImage from "../images/function_four.png";
+import functionOneImage from "../images/function_one.png"
+import functionTwoImage from "../images/function_two.png"
+import functionThreeImage from "../images/function_three.png"
+import functionFourImage from "../images/function_four.png"
 
 const IndexPage = () => {
-  const [size, setSize] = useState(0);
+  const [size, setSize] = useState(0)
 
   useEffect(() => {
-    setSize(getWindowDimensions(window));
+    setSize(getWindowDimensions(window))
 
     function handleResize() {
-      setSize(getWindowDimensions(window));
+      setSize(getWindowDimensions(window))
     }
 
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
+    window.addEventListener("resize", handleResize)
+    return () => window.removeEventListener("resize", handleResize)
+  }, [])
 
   return size ? (
     <main>
@@ -364,12 +364,12 @@ const IndexPage = () => {
     </main>
   ) : (
     <div className="h-screen" />
-  );
-};
-
-function getWindowDimensions(window) {
-  const { innerWidth } = window;
-  return innerWidth;
+  )
 }
 
-export default IndexPage;
+function getWindowDimensions(window: any) {
+  const { innerWidth } = window
+  return innerWidth
+}
+
+export default IndexPage

@@ -1,33 +1,32 @@
-import * as React from "react";
-import { useEffect, useState, useRef } from "react";
-import { StaticImage } from "gatsby-plugin-image";
-import AnchorLink from "react-anchor-link-smooth-scroll";
-import { useQueryParam, StringParam } from "use-query-params";
-import { Navbar } from "../components/Navbar";
-import { Footer } from "../components/Footer";
-import { SEO } from "../components/SEO";
+import * as React from "react"
+import { useEffect, useState, useRef } from "react"
+import { StaticImage } from "gatsby-plugin-image"
+import AnchorLink from "react-anchor-link-smooth-scroll"
+import { useQueryParam, StringParam } from "use-query-params"
+import { Navbar } from "../components/Navbar"
+import { Footer } from "../components/Footer"
+import { SEO } from "../components/SEO"
 
 //assets
-
-import faqSmImage from "../images/faq_sm.png";
-import faq1Image from "../images/faq_one.png";
-import faq2Image from "../images/faq_two.png";
-import faq3Image from "../images/faq_three.png";
-import faq4Image from "../images/faq_four.png";
-import faq5Image from "../images/faq_five.png";
-import faq6Image from "../images/faq_six.png";
-import faqOtherImage from "../images/faq_other.png";
-import faq7Image from "../images/faq_seven.png";
-import faq8Image from "../images/faq_eight.png";
-import faq9Image from "../images/faq_nine.png";
-import faq10Image from "../images/faq_ten.png";
-import faqExpandImage from "../images/faq_expand.png";
-import faqShrinkImage from "../images/faq_shrink.png";
+import faqSmImage from "../images/faq_sm.png"
+import faq1Image from "../images/faq_one.png"
+import faq2Image from "../images/faq_two.png"
+import faq3Image from "../images/faq_three.png"
+import faq4Image from "../images/faq_four.png"
+import faq5Image from "../images/faq_five.png"
+import faq6Image from "../images/faq_six.png"
+import faqOtherImage from "../images/faq_other.png"
+import faq7Image from "../images/faq_seven.png"
+import faq8Image from "../images/faq_eight.png"
+import faq9Image from "../images/faq_nine.png"
+import faq10Image from "../images/faq_ten.png"
+import faqExpandImage from "../images/faq_expand.png"
+import faqShrinkImage from "../images/faq_shrink.png"
 
 // markup
 const FaqPage = () => {
-  const [size, setSize] = useState(0);
-  const [type, setType] = useQueryParam("type", StringParam);
+  const [size, setSize] = useState(0)
+  const [type, setType] = useQueryParam("type", StringParam)
 
   const contents = [
     {
@@ -187,7 +186,7 @@ const FaqPage = () => {
         },
       ],
     },
-  ];
+  ]
 
   const tutorialContents = [
     {
@@ -316,20 +315,20 @@ const FaqPage = () => {
         },
       ],
     },
-  ];
+  ]
 
-  const [anchor, setAnchor] = useState(contents[0].title);
+  const [anchor, setAnchor] = useState(contents[0].title)
 
   useEffect(() => {
-    setSize(getWindowDimensions(window));
+    setSize(getWindowDimensions(window))
 
     function handleResize() {
-      setSize(getWindowDimensions(window));
+      setSize(getWindowDimensions(window))
     }
 
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
+    window.addEventListener("resize", handleResize)
+    return () => window.removeEventListener("resize", handleResize)
+  }, [])
 
   return (
     <main>
@@ -367,7 +366,7 @@ const FaqPage = () => {
                 <p
                   className="cursor-pointer mb-14 max-sm:mb-6"
                   onClick={() => {
-                    setType(type === "faq" || !type ? "tutorials" : "faq");
+                    setType(type === "faq" || !type ? "tutorials" : "faq")
                   }}
                 >
                   <span
@@ -421,7 +420,7 @@ const FaqPage = () => {
                           contents={contents}
                           i={i}
                           content={x}
-                          action={(title) => setAnchor(title)}
+                          action={(title: any) => setAnchor(title)}
                         />
                       </div>
                     ))
@@ -449,10 +448,10 @@ const FaqPage = () => {
       )}
       <Footer />
     </main>
-  );
-};
+  )
+}
 
-function TutorialTopic(props) {
+function TutorialTopic(props: any) {
   return (
     <>
       <div
@@ -471,7 +470,7 @@ function TutorialTopic(props) {
         </p>
       </div>
       <div className="ml-14 max-sm:ml-2 flex flex-col">
-        {props.content.contents.map((x) => (
+        {props.content.contents.map((x: any) => (
           <a
             href={x.link}
             target="_blank"
@@ -483,21 +482,25 @@ function TutorialTopic(props) {
         ))}
       </div>
     </>
-  );
+  )
 }
 
-function FaqTopic(props) {
-  const ref = useRef();
+function FaqTopic(props: any) {
+  const ref = useRef(null)
 
   useEffect(() => {
-    if (!ref.current) return;
+    if (!ref) return
+    if (!ref.current) return
 
     let observer = new IntersectionObserver(
       (changes) => {
-        if (!ref.current || !changes[0]) return;
+        if (!ref) return
+        if (!ref.current) return
+        if (!changes[0]) return
 
         if (changes[0].isIntersecting) {
-          props.action(ref.current.textContent);
+          // @ts-ignore
+          props.action(ref.current.textContent!)
         }
       },
       {
@@ -505,10 +508,10 @@ function FaqTopic(props) {
         rootMargin: "0px",
         threshold: 1.0,
       }
-    );
+    )
 
-    observer.observe(ref.current);
-  }, []);
+    observer.observe(ref.current!)
+  }, [ref])
 
   return (
     <>
@@ -532,17 +535,17 @@ function FaqTopic(props) {
         </p>
       </div>
       <div className="pl-14 max-sm:pl-3">
-        {props.content.contents.map((y, k) => (
+        {props.content.contents.map((y: any, k: any) => (
           <div key={k.toString()}>
             <FaqContent show={y.show} title={y.title} content={y.content} />
           </div>
         ))}
       </div>
     </>
-  );
+  )
 }
 
-function Anchor(props) {
+function Anchor(props: any) {
   return (
     <AnchorLink
       offset="100"
@@ -557,11 +560,11 @@ function Anchor(props) {
     >
       {props.title}
     </AnchorLink>
-  );
+  )
 }
 
-function FaqContent(props) {
-  const [show, setShow] = useState(Boolean(props.show));
+function FaqContent(props: any) {
+  const [show, setShow] = useState(Boolean(props.show))
 
   return (
     <div className="mb-10 max-sm:mb-6">
@@ -582,12 +585,12 @@ function FaqContent(props) {
         />
       ) : null}
     </div>
-  );
+  )
 }
 
-function getWindowDimensions(window) {
-  const { innerWidth } = window;
-  return innerWidth;
+function getWindowDimensions(window: any) {
+  const { innerWidth } = window
+  return innerWidth
 }
 
-export default FaqPage;
+export default FaqPage

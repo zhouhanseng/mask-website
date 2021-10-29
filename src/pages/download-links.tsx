@@ -1,32 +1,32 @@
-import * as React from "react";
-import { useEffect, useState } from "react";
-import { Navbar } from "../components/Navbar";
-import { Footer } from "../components/Footer";
-import { SEO } from "../components/SEO";
-import { StaticImage } from "gatsby-plugin-image";
+import * as React from "react"
+import { useEffect, useState } from "react"
+import { Navbar } from "../components/Navbar"
+import { SEO } from "../components/SEO"
+import { StaticImage } from "gatsby-plugin-image"
 
 //assets
-import chromeImage from "../images/chrome.png";
-import firefoxImage from "../images/firefox.png";
-import mobileAppImage from "../images/mobile_app.png";
-import appleStoreImage from "../images/apple_store.png";
-import googlePlayImage from "../images/google_play.png";
-import apkImage from "../images/apk.png";
+import chromeImage from "../images/chrome.png"
+import firefoxImage from "../images/firefox.png"
+import mobileAppImage from "../images/mobile_app.png"
+import appleStoreImage from "../images/apple_store.png"
+import googlePlayImage from "../images/google_play.png"
+import apkImage from "../images/apk.png"
 
 // markup
 const DownloadPage = () => {
-  const [os, setOs] = useState("");
-  const [showAll, setShowAll] = useState(false);
+  const [os, setOs] = useState("")
+  const [showAll, setShowAll] = useState(false)
   useEffect(() => {
-    const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+    // @ts-ignore
+    const userAgent = navigator.userAgent || navigator.vendor || window.opera
     if (/android/i.test(userAgent)) {
-      setOs("Android");
+      setOs("Android")
     } else if (/iPad|iPhone|iPod/.test(userAgent)) {
-      setOs("iOS");
+      setOs("iOS")
     } else {
-      setOs("Other");
+      setOs("Other")
     }
-  }, []);
+  }, [])
   return os ? (
     <main>
       <SEO title="Download Links - Mask Network" />
@@ -153,8 +153,6 @@ const DownloadPage = () => {
           >
             <img
               alt=""
-              target="_blank"
-              rel="noreferrer"
               src={os === "iOS" ? appleStoreImage : googlePlayImage}
               className="h-16 w-download-badge"
             />
@@ -167,8 +165,8 @@ const DownloadPage = () => {
           />
           <p
             onClick={() => {
-              document.body.scrollTop = document.documentElement.scrollTop = 0;
-              setShowAll(true);
+              document.body.scrollTop = document.documentElement.scrollTop = 0
+              setShowAll(true)
             }}
             className="px-4 text-white text-lg text-center underline mb-24 max-sm:mb-14"
           >
@@ -220,7 +218,7 @@ const DownloadPage = () => {
       </footer>
       {/* <Footer /> */}
     </main>
-  ) : null;
-};
+  ) : null
+}
 
-export default DownloadPage;
+export default DownloadPage

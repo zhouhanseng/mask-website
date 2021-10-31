@@ -16,6 +16,14 @@ module.exports = {
     "gatsby-plugin-cname",
     "gatsby-plugin-use-query-params",
     "gatsby-plugin-react-helmet",
+    {
+      resolve: "gatsby-plugin-react-svg",
+      options: {
+        rule: {
+          include:  /\.svg$/ // See below to configure properly
+        }
+      }
+    }
   ],
   pathPrefix: "/mask-website",
-};
+}

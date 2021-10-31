@@ -4,6 +4,7 @@ module.exports = {
     },
     extends: `react-app`,
     rules: {
-        semi: [2, 'never']
+        semi: [2, 'never'],
+        "object-curly-spacing": [2, 'always']
     }
 }

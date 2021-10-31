@@ -13,6 +13,8 @@ import functionOneImage from "../images/function_one.png"
 import functionTwoImage from "../images/function_two.png"
 import functionThreeImage from "../images/function_three.png"
 import functionFourImage from "../images/function_four.png"
+import { Banner } from "../components/Banner"
+import { SectionItem } from "../components/SectionItem"
 
 const IndexPage = () => {
   const [size, setSize] = useState(0)
@@ -32,35 +34,8 @@ const IndexPage = () => {
     <main>
       <SEO title="Mask Network" />
       <Navbar />
-      <StaticImage
-        alt=""
-        src="../images/index_head.png"
-        className="w-full noise-img"
-      />
-      {/* #region what is mask image */}
-      <div className="w-full hg:py-24 md:py-8 pb-8 pt-4 max-sm:py-8 what-is-mask-out-background">
-        <div className="md:w-5/6 w-11/12 flex flex-col md:flex-row max-w-8xl mx-auto md:justify-between">
-          <div className="w-full md:w-1/2 md:pl-12 md:px-0 px-8 max-sm:px-2 flex flex-col justify-center md:text-left text-center md:mt-0 mt-20 max-sm:mt-8 md:mb-0 mb-12">
-            <p className="font-semibold hg:text-6xl lg:text-5xl md:text-4xl mb-12 text-5xl max-sm:text-4xl max-sm:mb-5">
-              What is Mask?
-            </p>
-            <p className="md:mb-8 mb-4 max-sm:mb-0 hg:font-semibold hg:text-3xl md:text-2xl text-3xl lg:whitespace-nowrap max-sm:text-sm max-sm:whitespace-normal">
-              The bridge between the Web 2.0 and Web 3.0.
-            </p>
-            <p className="hg:text-3xl md:text-2xl hg:font-semibold text-3xl max-sm:text-sm">
-              The defenders to data autonomy.
-            </p>
-          </div>
-          <div className="w-full md:w-1/2 hg:pr-12 flex md:flex-row-reverse md:justify-start justify-center">
-            <StaticImage
-              alt=""
-              src="../images/whatIsMask.png"
-              className="w-full max-sm:w-4/5 what-is-mask-background"
-              placeholder="none"
-            />
-          </div>
-        </div>
-      </div>
+      <Banner />
+      <SectionItem mode={'left'} />
 
       {/* #endregion */}
       {/* #region discover image */}

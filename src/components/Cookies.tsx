@@ -1,5 +1,5 @@
 import * as React from "react"
-import {useState, useEffect} from "react"
+import { useState, useEffect } from "react"
 
 export function Cookies() {
   const [hidden, setHidden] = useState("true")

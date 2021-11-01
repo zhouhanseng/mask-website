@@ -32,7 +32,9 @@ body *::-webkit-scrollbar-thumb  {
 }
 
 .menu-link {
-    @apply flex items-center font-normal mx-8 font-medium;
+    @apply inline-flex items-center font-normal mx-8 font-medium;
+    @apply md:mx-0 md:my-4 md:text-4xl md:font-bold;
+    @apply sm:mx-0 my-4 sm:text-3xl sm:font-bold;
 }
 
 .h1 {

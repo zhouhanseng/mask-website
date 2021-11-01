@@ -8,8 +8,8 @@ interface GetMaskButtonProps {
 
 export const GetMaskButton = memo<GetMaskButtonProps>(({ size }) => {
   const classname = size === 'large' ?
-    "text-lg w-60 text-white border-blue-600 bg-blue-600 px-6 py-4 text-center font-bold py-2 border-none justify-center border rounded-full cursor-pointer md:flex hidden"
-    : "text-sm w-28 text-white border-blue-600 bg-blue-600 px-4 py-3 text-center font-bold py-2 border-none justify-center border rounded-full cursor-pointer md:flex hidden"
+    "text-lg w-60 text-white border-blue-600 bg-blue-600 px-6 py-4 text-center font-bold py-2 border-none justify-center border rounded-full cursor-pointer"
+    : "text-sm w-28 text-white border-blue-600 bg-blue-600 px-4 py-3 text-center font-bold py-2 border-none justify-center border rounded-full cursor-pointer"
   return (
     <Link
       to="/download-links"

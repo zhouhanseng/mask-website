@@ -20,46 +20,54 @@ interface MenuProps {
 
 const MenuLink = memo<MenuLinkProps>(({ open , to, children }) => {
  return (
-   <Link to={to} className="menu-link relative font-medium" activeClassName={"menu-link-active"}>
-     {children}
-   </Link>
+   <div className="sm:min-w-full md:min-w-full">
+     <Link to={to} className="menu-link relative" activeClassName={"menu-link-active"}>
+       {children}
+     </Link>
+   </div>
  )
 })
 
 const Menu = ({ open }: MenuProps) => {
   return (
-    <div className="flex flex-col md:flex-row">
+    <div className="flex sm:flex-col md:flex-col items-center self-start">
       <MenuLink open={open} to={"/"}>Home</MenuLink>
-      <a
-        target="_blank"
-        rel="noreferrer"
-        href="https://news.mask.io/"
-        className="menu-link"
-      >
-        News
-      </a>
-      <a
-        target="_blank"
-        rel="noreferrer"
-        href="https://we.mask.io/"
-        className="menu-link"
-      >
-        Community
-      </a>
+      <div className="sm:min-w-full md:min-w-full">
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://news.mask.io/"
+          className="menu-link"
+        >
+          News
+        </a>
+      </div>
+      <div className="sm:min-w-full md:min-w-full">
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://we.mask.io/"
+          className="menu-link"
+        >
+          Community
+        </a>
+      </div>
       <MenuLink
         to="/faq"
         open={open}
       >
         Help
       </MenuLink>
-      <a
-        target="_blank"
-        rel="noreferrer"
-        href="https://kan-1.gitbook.io/mask-network/plugin-system/mask-plugin"
-        className="menu-link"
-      >
-        Docs
-      </a>
+      <div className="sm:min-w-full md:min-w-full">
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://kan-1.gitbook.io/mask-network/plugin-system/mask-plugin"
+          className="menu-link"
+        >
+          Docs
+        </a>
+      </div>
       <MenuLink to="/about" open={open}>
         About
       </MenuLink>
@@ -69,25 +77,10 @@ const Menu = ({ open }: MenuProps) => {
 
 
 export const Navbar = () => {
-  const [path, setPath] = useState("")
   const [open, setOpen] = useState(false)
-
-  useEffect(() => {
-    setPath(window.location.pathname)
-  }, [])
 
   return (
     <>
-      <div className="flex">
-        {open ? (
-          <CloseIcon
-            onClick={() => setOpen(false)}
-            className={
-                "text-black cursor-pointer flex md:hidden"
-            }
-          />
-        ) : null}
-      </div>
       <nav
         className={"flex items-center px-6 justify-between w-full h-20 z-10"}
       >
@@ -95,25 +88,50 @@ export const Navbar = () => {
           <LogoBlueImage className="w-1/6 max-w-nav-logo min-w-nav-logo" />
         </Link>
         <div
-          className={ "items-center hg:w-2/5 justify-between min-w-nav-links antialiased text-xl h-full md:flex hidden "} >
+          className={"flex items-center w-2/5 justify-between sm:min-w-nav-links antialiased text-xl h-full sm:flex sm:hidden md:hidden"} >
               <Menu open={open} />
         </div>
         <div>
-          <GetMaskButton size={'small'} />
+          <div className="md:hidden sm:hidden md:hidden">
+            <GetMaskButton size={'small'} />
+          </div>
 
           {!open ? (
-            <MenuIcon
-              onClick={() => setOpen(true)}
-              className={"text-black cursor-pointer flex md:hidden transform scale-y-150" } />
+              <MenuIcon
+                onClick={() => setOpen(true)}
+                className={"text-black cursor-pointer flex transform scale-y-150 hidden sm:flex md:flex"} />
           ) : null}
         </div>
         {open ? (
-          <Drawer open={open} onClose={() => setOpen(false)}>
-            <List className="w-72 flex flex-col px-4 pt-8 text-xl bg-gray-100 h-full">
-              <p className="text-lg text-gray-400 mb-5">
-                Welcome to Mask Network
-              </p>
-              <Menu open={open} />
+          <Drawer PaperProps={{ sx: { width: '100%' } }} className="w-full" open={open} onClose={() => setOpen(false)}>
+            <div className="w-full h-16 pt-5 bg-gray-100 px-6">
+              <Link to="/">
+                <LogoBlueImage className="w-1/6 max-w-nav-logo min-w-nav-logo" />
+              </Link>
+            </div>
+            <CloseIcon
+              onClick={() => setOpen(false)}
+              className={
+                "absolute right-7 top-7 text-black cursor-pointer flex hidden md:flex sm:flex"
+              }
+            />
+            <List className="w-full flex flex-col px-4 pt-8 text-xl bg-gray-100 h-full">
+              <div className='p-10'>
+                <div className='pb-8 pt-4'>
+                  <h2 className="h2">
+                    <p>
+                      The Portal to the New,
+                    </p>
+                    <p>
+                      Open Internet
+                    </p>
+                  </h2>
+                </div>
+                <div className='pb-8'>
+                  <GetMaskButton size={'large'} />
+                </div>
+                <Menu open={open} />
+              </div>
             </List>
           </Drawer>
         ) : null}

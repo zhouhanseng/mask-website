@@ -3,7 +3,6 @@ import { useEffect, useState, useRef } from "react"
 import { StaticImage } from "gatsby-plugin-image"
 import AnchorLink from "react-anchor-link-smooth-scroll"
 import { useQueryParam, StringParam } from "use-query-params"
-import { Navbar } from "../components/Navbar"
 import { Footer } from "../components/Footer"
 import { SEO } from "../components/SEO"
 
@@ -22,6 +21,7 @@ import faq9Image from "../images/faq_nine.png"
 import faq10Image from "../images/faq_ten.png"
 import faqExpandImage from "../images/faq_expand.png"
 import faqShrinkImage from "../images/faq_shrink.png"
+import Layout from "../components/Layout"
 
 // markup
 const FaqPage = () => {
@@ -331,9 +331,8 @@ const FaqPage = () => {
   }, [])
 
   return (
-    <main>
+    <Layout>
       <SEO title="FAQs — Mask Network" />
-      <Navbar />
       {size ? (
         <>
           {size > 850 ? (
@@ -447,7 +446,7 @@ const FaqPage = () => {
         <div className="h-screen" />
       )}
       <Footer />
-    </main>
+    </Layout>
   )
 }
 

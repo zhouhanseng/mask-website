@@ -1,6 +1,5 @@
 import * as React from "react"
 import { useEffect, useState } from "react"
-import { Navbar } from "../components/Navbar"
 import { SEO } from "../components/SEO"
 import { StaticImage } from "gatsby-plugin-image"
 
@@ -11,6 +10,7 @@ import mobileAppImage from "../images/mobile_app.png"
 import appleStoreImage from "../images/apple_store.png"
 import googlePlayImage from "../images/google_play.png"
 import apkImage from "../images/apk.png"
+import Layout from "../components/Layout"
 
 // markup
 const DownloadPage = () => {
@@ -28,9 +28,8 @@ const DownloadPage = () => {
     }
   }, [])
   return os ? (
-    <main>
+    <Layout>
       <SEO title="Download Links - Mask Network" />
-      <Navbar />
       {os === "Other" || showAll ? (
         <div className="mt-16 w-full max-sm:my-8">
           <div className="flex flex-col items-center text-center px-4">
@@ -217,7 +216,7 @@ const DownloadPage = () => {
         </p>
       </footer>
       {/* <Footer /> */}
-    </main>
+    </Layout>
   ) : null
 }
 

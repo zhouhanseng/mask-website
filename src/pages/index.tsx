@@ -15,6 +15,7 @@ import functionThreeImage from "../images/function_three.png"
 import functionFourImage from "../images/function_four.png"
 import { Banner } from "../components/Banner"
 import { SectionItem } from "../components/SectionItem"
+import Layout from "../components/Layout"
 
 const IndexPage = () => {
   const [size, setSize] = useState(0)
@@ -31,9 +32,8 @@ const IndexPage = () => {
   }, [])
 
   return size ? (
-    <main className='flex justify-center flex-col items-center'>
+    <Layout>
       <SEO title="Mask Network" />
-      <Navbar />
       <Banner />
       <SectionItem mode={{ reverse: false, row: true }} />
 
@@ -334,9 +334,7 @@ const IndexPage = () => {
           />
         </div>
       </div>
-      <Footer />
-      <Cookies />
-    </main>
+    </Layout>
   ) : (
     <div className="h-screen" />
   )

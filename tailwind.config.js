@@ -6,6 +6,8 @@ module.exports = {
       'sm': { 'max': '767px' },
       'md': { 'min': '768px', 'max': '1023px' },
       'lg': { 'min': '1024px', 'max': '1279px' },
+      'max-md': { 'max': '1023px' },
+      'min-lg': { 'min': '1024px' },
       'xl': { 'min': '1280px', 'max': '1535px' },
       '2xl': { 'min': '1536px' },
     },
@@ -16,10 +18,11 @@ module.exports = {
       margin: {
         DEFAULT: '1rem',
         sm: '1rem',
-        md: '1rem',
+        md: '2rem',
         lg: '4rem',
         xl: '5rem',
         '2xl': '6rem',
+        'max-md': '2rem'
       },
     },
     extend: {

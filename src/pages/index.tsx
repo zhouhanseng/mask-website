@@ -35,7 +35,7 @@ const IndexPage = () => {
       <SEO title="Mask Network" />
       <Navbar />
       <Banner />
-      <SectionItem mode={'left'} />
+      <SectionItem mode={{ reverse: false, row: true }} />
 
       {/* #endregion */}
       {/* #region discover image */}

@@ -20,7 +20,7 @@ interface MenuProps {
 
 const MenuLink = memo<MenuLinkProps>(({ open , to, children }) => {
  return (
-   <Link to={to} className="menu-link relative" activeClassName={"menu-link-active"}>
+   <Link to={to} className="menu-link relative font-medium" activeClassName={"menu-link-active"}>
      {children}
    </Link>
  )

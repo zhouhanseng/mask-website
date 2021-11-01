@@ -3,8 +3,9 @@
 @tailwind utilities;
 
 body {
-    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
+    font-family: 'Montserrat', system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
     overflow-y: overlay;
+    scroll-behavior: smooth;
 }
 
 body::-webkit-scrollbar {
@@ -31,7 +32,7 @@ body *::-webkit-scrollbar-thumb  {
 }
 
 .menu-link {
-    @apply flex items-center font-normal mx-8 font-bold;
+    @apply flex items-center font-normal mx-8 font-medium;
 }
 
 .h1 {
@@ -55,6 +56,10 @@ body *::-webkit-scrollbar-thumb  {
     color: #777E91;
 }
 
+.menu-link-active {
+    font-weight: bold !important;
+}
+
 .menu-link-active:after {
     content: '';
     position: absolute;
@@ -63,13 +68,21 @@ body *::-webkit-scrollbar-thumb  {
     height: 6px;
     background-color: #1C68F3;
     opacity: 0.5;
+    font-weight: bold;
+}
+
+.banner-svg svg {
+    @apply md:w-10
+}
+
+.section-svg svg {
+    min-height: 500px;
 }
 
 .typing {
     width: 18.5em; height: 1.25em;
     border-right: 1px solid transparent;
     animation: typing 3.5s steps(37, end), blink-caret .75s step-end infinite;
-    font-family: Consolas, Monaco;
     /*word-break: break-all;*/
     overflow: hidden;
 }

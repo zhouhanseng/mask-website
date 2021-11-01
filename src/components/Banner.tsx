@@ -23,7 +23,7 @@ export const Banner = () => {
                     <GetMaskButton size='large' />
                   </div>
                 </div>
-                <div className="flex-grow-0 absolute bottom-0 sm:right-10 sm:w-32 relative w-80 z-0">
+                <div className="flex-grow-0 sm:absolute bottom-0 sm:right-10 sm:w-32 relative w-80 z-0">
                     <StatueOfLibertySvg  />
                 </div>
             </div>

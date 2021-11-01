@@ -41,12 +41,51 @@ body *::-webkit-scrollbar-thumb  {
 
 /*todo: color*/
 .h2 {
-    font-size: 4rem;
+    @apply sm:text-2xl md:text-3xl text-6xl font-bold leading-loose;
     font-style: normal;
-    font-weight: 900;
-    line-height: 1.5;
     color: #1B1B1B;
 }
+
+.h5 {
+    @apply sm:text-xs md:text-xl text-3xl font-bold leading-loose;
+    font-style: normal;
+    color: #1B1B1B;
+}
+
+/*.container {*/
+/*    width: 100%;*/
+/*}*/
+
+/*@media (min-width: 768px) {*/
+/*    .container {*/
+/*        max-width: 100%;*/
+/*    }*/
+/*}*/
+
+/*@media (min-width: 1024px) {*/
+/*    .container {*/
+/*        max-width: 100%;*/
+/*    }*/
+/*}*/
+
+/*@media (min-width: 1280px) {*/
+/*    .container {*/
+/*        max-width: 1280px;*/
+/*    }*/
+/*}*/
+
+/*@media (min-width: 1440px) {*/
+/*    .container {*/
+/*        max-width: 1440px;*/
+/*    }*/
+/*}*/
+
+/*@media (min-width: 1536px) {*/
+/*    .container {*/
+/*        max-width: 1536px;*/
+/*    }*/
+/*}*/
+
 
 .description-text {
     font-style: normal;

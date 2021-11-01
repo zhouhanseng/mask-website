@@ -2,6 +2,26 @@ module.exports = {
   purge: ["./src/**/*.{js,jsx,ts,tsx}"],
   darkMode: false, // or 'media' or 'class'
   theme: {
+    screens: {
+      'sm': { 'max': '767px' },
+      'md': { 'min': '768px', 'max': '1023px' },
+      'lg': { 'min': '1024px', 'max': '1279px' },
+      'xl': { 'min': '1280px', 'max': '1535px' },
+      '2xl': { 'min': '1536px' },
+    },
+    container: {
+      padding: {
+        DEFAULT: '1rem',
+      },
+      margin: {
+        DEFAULT: '1rem',
+        sm: '1rem',
+        md: '1rem',
+        lg: '4rem',
+        xl: '5rem',
+        '2xl': '6rem',
+      },
+    },
     extend: {
       zIndex: {
         2000: "2000",
@@ -19,20 +39,20 @@ module.exports = {
           1000: "#0B1117",
         },
       },
-      screens: {
-        "max-xsm": {
-          max: "400px",
-        },
-        "max-sm": {
-          max: "540px",
-        },
-        sm: {
-          min: "540px",
-        },
-        md: "850px",
-
-        hg: "1440px",
-      },
+      // screens: {
+      //   "max-xsm": {
+      //     max: "400px",
+      //   },
+      //   "max-sm": {
+      //     max: "540px",
+      //   },
+      //   sm: {
+      //     min: "540px",
+      //   },
+      //   md: "850px",
+      //
+      //   hg: "1440px",
+      // },
       minHeight: {
         "hg-about-content": "767px",
         "md-about-content": "567px",

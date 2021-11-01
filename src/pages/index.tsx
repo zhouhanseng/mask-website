@@ -31,7 +31,7 @@ const IndexPage = () => {
   }, [])
 
   return size ? (
-    <main>
+    <main className='flex justify-center flex-col items-center'>
       <SEO title="Mask Network" />
       <Navbar />
       <Banner />

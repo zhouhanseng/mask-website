@@ -1,5 +1,5 @@
 import * as React from "react"
-import { memo, PropsWithChildren, useEffect, useState } from "react"
+import { memo, PropsWithChildren, useState } from "react"
 import { Link } from "gatsby"
 import MenuIcon from "@mui/icons-material/Menu"
 import CloseIcon from "@mui/icons-material/Close"
@@ -30,7 +30,7 @@ const MenuLink = memo<MenuLinkProps>(({ open , to, children }) => {
 
 const Menu = ({ open }: MenuProps) => {
   return (
-    <div className="flex sm:flex-col md:flex-col items-center self-start">
+    <div className="flex sm:flex-col md:flex-col items-center self-start h-full">
       <MenuLink open={open} to={"/"}>Home</MenuLink>
       <div className="sm:min-w-full md:min-w-full">
         <a

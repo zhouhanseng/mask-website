@@ -9,20 +9,41 @@ import iconRedditImage from "../images/icon_reddit.png"
 import iconTelegramImage from "../images/icon_telegram.png"
 import iconTwitterImage from "../images/icon_twitter.png"
 import { Newsletter } from "./Newsletter"
+import { useEffect, useState } from "react"
 
 export const Footer = () => {
+  const [path, setPath] = useState("")
+  useEffect(() => {
+    setPath(window.location.pathname)
+  }, [])
+
+  const isHideNewsletter = [
+    "/about",
+    "/about/",
+    "/mask-website/about",
+    "/mask-website/about/",
+    "/download-links",
+    "/download-links/",
+    "/mask-website/download-links",
+    "/mask-website/download-links/",
+    "/faq",
+    "/faq/",
+    "/mask-website/faq",
+    "/mask-website/faq/",
+  ].includes(path)
+
   return (
     <>
       <div className="md:hidden min-lg:hidden">
-        <Newsletter />
+        <Newsletter/>
       </div>
       <footer className="bg-blue-1000 flex justify-center flex-grow-0">
         <div className="container px-10">
           <div className="relative -top-20 sm:hidden">
-            <Newsletter />
+            <Newsletter/>
           </div>
           <div
-            className="py-4 pt-10 w-full mx-auto grid grid-cols-4 max-md:grid-cols-1 relative px-0">
+            className={`py-4 ${isHideNewsletter ? 'pt-20' : ''} w-full mx-auto grid grid-cols-4 max-md:grid-cols-1 relative px-0`}>
             <div
               className="py-1 md:flex md:flex-col md:justify-between max-md:border-b border-b-0 border-r max-md:border-r-0 sm:pb-12 md:pb-12 border-gray-100 border-opacity-25 min-lg:pr-8 min-lg:mr-8">
               <div className='pb-8 sm:pt-8 sm:pb-0'>

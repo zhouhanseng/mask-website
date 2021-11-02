@@ -1,11 +1,11 @@
 import * as React from "react"
 import { GetMaskButton } from "./GetMaskButton"
 import StatueOfLibertySvg from "../images/statue_of_liberty.svg"
-import BannerSvg from "../images/banner_2.svg"
+import WhatSvg from "../images/what.svg"
 
 export const Banner = () => {
     return (
-        <section className='container mt-10 flex items-center' style={{ minHeight: 'calc(100vh - 80px)' }}>
+        <section className='container mt-16 flex items-center pb-20' style={{ minHeight: 'calc(100vh - 80px)' }}>
           <div>
             <div className='flex justify-start relative items-center'>
               <div className="flex-grow sm:p-8 z-10 px-20 p-20">
@@ -35,9 +35,8 @@ export const Banner = () => {
                   The defender to data autonomy.</h5>
               </div>
               <div className="flex-grow-0 sm:absolute bottom-0 right-6 sm:w-28 relative w-8/12 z-0">
-                <BannerSvg />
+                <WhatSvg />
               </div>
-
             </div>
           </div>
         </section>

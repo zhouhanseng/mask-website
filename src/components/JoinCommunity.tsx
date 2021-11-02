@@ -6,7 +6,7 @@ import * as React from "react"
 // todo: color
 export const JoinCommunity = () => {
   return (
-    <div className="container mx-auto mt-10">
+    <div className="container mx-auto mt-16">
       <h2 className="sm:leading-relaxed h2 font-semibold mx-auto text-center mt-8 min-w-280">
         Join the Mask Network Community
       </h2>

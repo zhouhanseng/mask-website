@@ -30,7 +30,7 @@ const config = [
 
 export const BrowserExtension = () => {
   return (
-    <div className="mt-10 p-10 sm:p-4">
+    <div className="mt-16 p-10 sm:p-4">
       <div>
         <h2 className='h2 text-center max-md:text-left'>
           Browser Extension

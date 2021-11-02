@@ -3,7 +3,7 @@ import * as React from "react"
 
 export const Partner = () => {
   return (
-    <div className="container pb-48 sm:pb-4">
+    <div className="container pb-48 sm:pb-4 mx-auto">
       <h2 className="h2 py-16 sm:pt-6 font-semibold text-center">
         Partner & Supporter
       </h2>

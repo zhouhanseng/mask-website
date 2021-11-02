@@ -19,7 +19,7 @@ export const Footer = () => {
 
   return (
     <footer className="bg-blue-1000 flex justify-center">
-      <div className="container">
+      <div className="container px-10">
         {[
           "/about",
           "/about/",
@@ -68,9 +68,9 @@ export const Footer = () => {
           </div>
         )}
         <div
-          className="py-5 w-full mx-auto flex flex-wrap relative md:flex-col sm:flex-col px-0">
+          className="py-4 w-full mx-auto grid grid-cols-4 max-md:grid-cols-1 relative px-0">
           <div
-            className="py-1 md:flex md:flex-col md:justify-between max-md:border-b border-b-0 border-r max-md:border-r-0 sm:pb-8 md:pb-8 sm:mb-8 md:mb-8 border-gray-100 border-opacity-25 min-lg:pr-8 min-lg:mr-8">
+            className="py-1 md:flex md:flex-col md:justify-between max-md:border-b border-b-0 border-r max-md:border-r-0 sm:pb-12 md:pb-12 border-gray-100 border-opacity-25 min-lg:pr-8 min-lg:mr-8">
             <img alt="" src={logoWhiteImage} className="w-32 md:mb-0 mb-8"/>
             <div className="pr-2">
               <p className="text-white opacity-80 text-base mb-4 md:max-w-xs w-full">
@@ -79,14 +79,14 @@ export const Footer = () => {
               <p className="text-white opacity-80 text-base md:mb-4 mb-8 md:max-w-xs w-full">
                 Mask Network is a free and open source software.
               </p>
-              <p className="text-white text-base max-w-xs md:mb-0 mb-16">
+              <p className="text-white text-base max-w-xs max-md:mb-0">
                 © 2018-2021 Mask.io
               </p>
             </div>
           </div>
           <div
-            className="flex hg:pr-16 pl-4 sm:pl-0 md:pl-0 md:mt-0 max-md:mt-4">
-            <div className="flex justify-center whitespace-nowrap mr-8 sm:mt-8 md:mt-8">
+            className="flex pl-4 sm:pl-0 md:pl-0 md:mt-0 max-md:mt-4 col-span-2">
+            <div className="flex justify-center whitespace-nowrap max-md:mr-8 sm:mt-8 md:mt-8">
               <div className="py-1 flex flex-col">
                 <p className="text-2xl text-white mb-6">About</p>
                 <div
@@ -119,58 +119,60 @@ export const Footer = () => {
               </div>
             </div>
             <div
-              className="sm:h-footer-body py-1 flex flex-col justify-between max-w-lg md:w-2/3 whitespace-nowrap md:ml-0 ml-16 sm:ml-0 md:ml-0 sm:mt-8 md:mt-8">
-              <p className="text-2xl text-white mb-6">Navigate</p>
-              <div
-                className="grid grid-cols-3 sm:grid-cols-1 gap-x-16 gap-x-4 gap-y-10 sm:gap-y-5 max-md:gap-x-0 max-md:gap-y-4 text-base max-md::text-sm">
-                <a
-                  href="https://news.mask.io/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="text-white opacity-80"
-                >
-                  News
-                </a>
-                <Link className="text-base text-white opacity-80" to="/faq">
-                  FAQs
-                </Link>
-                <a
-                  href="https://github.com/DimensionDev"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="text-white opacity-80"
-                >
-                  Source Code
-                </a>
-                <Link className="text-white opacity-80" to="/faq">
-                  Help
-                </Link>
-                <Link className="text-white opacity-80" to="/faq?type=tutorials">
-                  Tutorials
-                </Link>
-                <a
-                  href='https://github.com/DimensionDev/Maskbook/issues?q=is:issue+is:open+label:"Bounty:+Open"'
-                  target="_blank"
-                  rel="noreferrer"
-                  className="text-white opacity-80"
-                >
-                  Bounty Program
-                </a>
-                <a
-                  href="https://www.linkedin.com/company/masknetwork/jobs/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="text-white opacity-80"
-                >
-                  Join Us
-                </a>
+              className="flex flex-col justify-between max-w-lg whitespace-nowrap md:ml-12 ml-16 sm:ml-0 md:ml-0 sm:mt-8 md:mt-8">
+              <div className="py-1 flex flex-col">
+                <p className="text-2xl text-white mb-6">Navigate</p>
+                <div
+                  className="grid grid-cols-3 sm:grid-cols-1 gap-x-16 gap-x-4 gap-y-10 sm:gap-y-5 max-md:gap-x-0 max-md:gap-y-4 text-base max-md::text-sm">
+                  <a
+                    href="https://news.mask.io/"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-white opacity-80"
+                  >
+                    News
+                  </a>
+                  <Link className="text-base text-white opacity-80" to="/faq">
+                    FAQs
+                  </Link>
+                  <a
+                    href="https://github.com/DimensionDev"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-white opacity-80"
+                  >
+                    Source Code
+                  </a>
+                  <Link className="text-white opacity-80" to="/faq">
+                    Help
+                  </Link>
+                  <Link className="text-white opacity-80" to="/faq?type=tutorials">
+                    Tutorials
+                  </Link>
+                  <a
+                    href='https://github.com/DimensionDev/Maskbook/issues?q=is:issue+is:open+label:"Bounty:+Open"'
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-white opacity-80"
+                  >
+                    Bounty Program
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/company/masknetwork/jobs/"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-white opacity-80"
+                  >
+                    Join Us
+                  </a>
+                </div>
               </div>
             </div>
           </div>
           <div
-            className="hg:h-footer-body md:h-24 py-1 flex flex-col hg:w-48 hg:ml-10 hg:mt-0 mt-8 justify-between w-full md:pb-0 pb-12 hg:absolute hg:right-0">
+            className="py-1 flex flex-col mt-8 justify-between w-full pb-12 min-lg:mt-0">
             <p className="text-2xl text-white">Community</p>
-            <div className="grid hg:grid-cols-3 grid-cols-6 hg:gap-x-4 gap-x-2 hg:gap-y-4 hg:w-40 w-72 hg:mt-0 mt-12">
+            <div className="grid grid-cols-6 gap-x-4 max-md:gap-x-2 w-72 mt-6">
               <a
                 href="https://twitter.com/realMaskNetwork"
                 target="_blank"
@@ -219,7 +221,7 @@ export const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="w-full md:px-0 px-5">
+        <div className="w-full px-0 min-lg:mt-12">
           <p
             className="w-full text-white text-center sm:text-left py-4 border-t border-gray-100 border-opacity-25 mx-auto">
             I thought what I'd do was, I'd pretend I was one of those deaf-mutes.

@@ -336,25 +336,27 @@ const FaqPage = () => {
       {size ? (
         <>
           {size > 850 ? (
-            <div className="w-full flex">
-              <div className="hidden md:w-1/2 md:flex justify-center items-center bg-gray-200 hg:text-5xl md:text-4xl">
-                <p className="w-4/5">How can we help you?</p>
+            <div className="w-full h-full flex relative max-h-screen-1/3">
+              <div className="flex justify-center items-center bg-gray-200 w-1/2 max-md:absolute max-md:top-0 max-md:left-0 max-md:w-full">
+                <p className="h2 w-1/2 max-md:w-full max-md:text-gray-h2">How can we help you?</p>
               </div>
-              {size > 850 ? (
-                <StaticImage
-                  alt=""
-                  src={"../images/faq.png"}
-                  className="w-full md:w-1/2 noise-img max-h-screen-1/3"
-                  placeholder="none"
-                />
-              ) : (
-                <StaticImage
-                  alt=""
-                  src={"../images/faq_sm.png"}
-                  className="w-full md:w-1/2 noise-img max-h-screen-1/3"
-                  placeholder="none"
-                />
-              )}
+              <div className="w-1/2 overflow-hidden">
+                {size > 850 ? (
+                  <StaticImage
+                    alt=""
+                    src={"../images/faq.png"}
+                    className="noise-img"
+                    placeholder="none"
+                  />
+                ) : (
+                  <StaticImage
+                    alt=""
+                    src={"../images/faq_sm.png"}
+                    className="noise-img"
+                    placeholder="none"
+                  />
+                )}
+              </div>
             </div>
           ) : (
             <img alt="" src={faqSmImage} className="w-full" />
@@ -380,8 +382,8 @@ const FaqPage = () => {
                   <span
                     className={
                       type === "faq" || !type
-                        ? "text-5xl text-gray-500 max-sm:text-3xl"
-                        : "text-6xl font-semibold max-sm:text-4xl"
+                        ? "text-5xl text-gray-500 max-sm:text-3xl font-bold"
+                        : "text-6xl font-semibold max-sm:text-4xl font-bold"
                     }
                   >
                     Tutorial
@@ -574,7 +576,7 @@ function FaqContent(props: any) {
           src={!show ? faqExpandImage : faqShrinkImage}
           className="pr-4 w-8"
         />
-        <span>{props.title}</span>
+        <span className='font-bold'>{props.title}</span>
       </p>
       {show ? (
         <p

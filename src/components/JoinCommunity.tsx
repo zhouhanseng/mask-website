@@ -6,7 +6,7 @@ import * as React from "react"
 // todo: color
 export const JoinCommunity = () => {
   return (
-    <div className="container">
+    <div className="container mx-auto mt-10">
       <p className="sm:leading-relaxed h2 font-semibold mx-auto text-center mt-8 min-w-280">
         Join the Mask Network Community
       </p>
@@ -14,7 +14,7 @@ export const JoinCommunity = () => {
         Mask Network is trusted and supported by an active community of users
         and contributors. Join us!
       </p>
-      <div className="flex justify-between w-9/10 md:w-4/5 mx-auto font-semibold text-xl mt-8 md:mt-16 max-sm:text-sm px-2 mb-16 md:mb-44">
+      <div className="flex justify-between min-lg:w-2/3 md:w-4/5 mx-auto font-semibold text-xl mt-8 md:mt-16 max-sm:text-sm px-2 mb-16 md:mb-44">
         <a
           href="https://github.com/DimensionDev"
           className="flex flex-col items-center w-24 max-sm:w-24"

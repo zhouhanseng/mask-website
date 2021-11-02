@@ -14,7 +14,7 @@ export const SectionItem = memo<SectionItemProps>(({ mode, children, subtitle, t
   const { row = true, reverse = false } = mode
   const flexRowStyle = row ? (reverse ? 'flex-row-reverse sm:flex-col md:flex-col' : 'flex-row sm:flex-col md:flex-col') : 'flex-col'
   return (
-      <section className='container mx-auto mt-10 gray-background'>
+      <section className='container mx-auto mt-10'>
         <div className={`flex ${flexRowStyle} justify-center items-center`}>
           <div className="flex-1">
             <div className='p-10'>

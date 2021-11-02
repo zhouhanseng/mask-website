@@ -30,7 +30,7 @@ const MenuLink = memo<MenuLinkProps>(({ open , to, children }) => {
 
 const Menu = ({ open }: MenuProps) => {
   return (
-    <div className="flex sm:flex-col md:flex-col items-center self-start h-full">
+    <div className="w-full flex sm:flex-col md:flex-col items-center justify-center self-start h-full">
       <MenuLink open={open} to={"/"}>Home</MenuLink>
       <div className="sm:min-w-full md:min-w-full">
         <a
@@ -88,10 +88,10 @@ export const Navbar = () => {
           <LogoBlueImage className="w-1/6 max-w-nav-logo min-w-nav-logo" />
         </Link>
         <div
-          className={"flex items-center w-2/5 justify-between sm:min-w-nav-links antialiased text-xl h-full sm:flex sm:hidden md:hidden"} >
+          className={"flex flex-grow items-center w-2/5 justify-between sm:min-w-nav-links antialiased text-xl h-full sm:flex sm:hidden md:hidden"} >
               <Menu open={open} />
         </div>
-        <div>
+        <div className="w-1/6 flex justify-end">
           <div className="md:hidden sm:hidden md:hidden">
             <GetMaskButton size={'small'} />
           </div>

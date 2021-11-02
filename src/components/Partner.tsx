@@ -4,11 +4,11 @@ import * as React from "react"
 export const Partner = () => {
   return (
     <div className="container pb-48 sm:pb-4 mx-auto">
-      <h2 className="h2 py-16 sm:pt-6 font-semibold text-center">
+      <h2 className="h2 py-10 sm:pt-6 font-semibold text-center">
         Partner & Supporter
       </h2>
       <div
-        className="grid grid-cols-5 max-md:grid-cols-3 gap-x-16 max-sm:gap-x-4 w-10/12 md:grid-cols-5 md:max-w-6xl md:w-11/12 md:gap-x-16 gap-y-8 mx-auto hoverFilter justify-center">
+        className="grid grid-cols-5 max-md:grid-cols-3 gap-x-16 max-md:gap-x-4 w-10/12 md:grid-cols-5 md:max-w-6xl md:w-11/12 gap-y-8 mx-auto hoverFilter max-md:gap-y-4 justify-center">
         <StaticImage
           alt=""
           src={"../images/partner_binance.png"}

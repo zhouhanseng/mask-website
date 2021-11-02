@@ -17,7 +17,7 @@ export const SectionItem = memo<SectionItemProps>(({ mode, children, subtitle, t
       <section className='container mx-auto mt-10'>
         <div className={`flex ${flexRowStyle} justify-center items-center`}>
           <div className="flex-1">
-            <div className='p-10'>
+            <div className='p-10 sm:p-4'>
               <h2 className={`h2 max-md:text-left ${row ? 'text-left' : 'text-center'}`}>
                 {title}
               </h2>

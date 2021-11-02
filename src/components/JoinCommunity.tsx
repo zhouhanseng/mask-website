@@ -7,14 +7,14 @@ import * as React from "react"
 export const JoinCommunity = () => {
   return (
     <div className="container mx-auto mt-10">
-      <p className="sm:leading-relaxed h2 font-semibold mx-auto text-center mt-8 min-w-280">
+      <h2 className="sm:leading-relaxed h2 font-semibold mx-auto text-center mt-8 min-w-280">
         Join the Mask Network Community
-      </p>
-      <p className="h5 text-center mt-8 px-6 text-black w-full mx-auto font-light">
+      </h2>
+      <p className="description-text text-center m4-8 px-6 w-full mx-auto font-light">
         Mask Network is trusted and supported by an active community of users
         and contributors. Join us!
       </p>
-      <div className="flex justify-between min-lg:w-2/3 md:w-4/5 mx-auto font-semibold text-xl mt-8 md:mt-16 max-sm:text-sm px-2 mb-16 md:mb-44">
+      <div className="flex justify-between min-lg:w-2/3 md:w-4/5 mx-auto font-semibold text-xl mt-16 max-md:text-sm px-2 mb-16">
         <a
           href="https://github.com/DimensionDev"
           className="flex flex-col items-center w-24 max-sm:w-24"

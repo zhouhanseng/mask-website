@@ -73,6 +73,7 @@ module.exports = {
         xss: "240px",
         "nav-logo": "140px",
         "8xl": "1440px",
+        "1/2": '50vw',
       },
       height: {
         "footer-body": "268px",

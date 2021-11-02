@@ -6,21 +6,8 @@ import circleVert from "../utils/circleVert.vert"
 import circleFrag from "../utils/circleFrag.frag"
 
 export const Background = () => {
-  const [size, setSize] = useState({ width: 0, height: 0 })
   const [ticker] = useState(typeof window !== `undefined` ? new TickManager(): null)
   const ref = useRef(null)
-  console.log(size)
-
-  useEffect(() => {
-    setSize(getWindowDimensions(window))
-
-    function handleResize() {
-      setSize(getWindowDimensions(window))
-    }
-
-    window.addEventListener("resize", handleResize)
-    return () => window.removeEventListener("resize", handleResize)
-  }, [])
 
   useEffect(() => {
     if (!ref || !ref.current) return
@@ -57,13 +44,21 @@ export const Background = () => {
       shader.render(elapsed)
     }
 
+    function handleResize() {
+      shader.resize(
+        window.innerWidth, window.innerHeight
+      )
+    }
+
     ticker.on(onTick)
+
+    window.addEventListener("resize", handleResize)
+
+    return () => {
+      window.removeEventListener('resize', handleResize)
+    }
   }, [ref, ticker])
   return (
-    <canvas ref={ref} id="flourishCanvas" width={size.width} height={size.height} />
+    <canvas ref={ref} id="flourishCanvas" width={'100vw'} height={'100vh'} />
   )
-}
-function getWindowDimensions(window: any) {
-  const { innerWidth, innerHeight } = window
-  return { width: innerWidth, height: innerHeight }
 }

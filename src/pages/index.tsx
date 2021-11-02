@@ -10,6 +10,7 @@ import NFTSvg from "../images/nft.svg"
 import MessageSvg from "../images/messsage.svg"
 import ITOSvg from "../images/ito.svg"
 import { JoinCommunity } from "../components/JoinCommunity"
+import { BrowserExtension } from "../components/BrowserExtension"
 
 const sectionConfig = [
   {
@@ -56,6 +57,9 @@ const IndexPage = () => {
     <Layout>
       <SEO title="Mask Network" />
       <Banner />
+      <div className="container mx-auto mt-10">
+        <BrowserExtension />
+      </div>
       {
         sectionConfig.map((x) => {
           return (

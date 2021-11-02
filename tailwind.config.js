@@ -40,7 +40,8 @@ module.exports = {
         },
         gray: {
           1000: "#0B1117",
-          background: '#E2E2E2'
+          description: "#777E91",
+          background: "#E2E2E2"
         },
       },
       // screens: {

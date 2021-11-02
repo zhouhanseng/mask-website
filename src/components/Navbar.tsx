@@ -30,7 +30,7 @@ const MenuLink = memo<MenuLinkProps>(({ open , to, children }) => {
 
 const Menu = ({ open }: MenuProps) => {
   return (
-    <div className="w-full flex sm:flex-col md:flex-col items-center justify-center self-start h-full">
+    <div className="w-full flex sm:flex-col md:flex-col items-center justify-center max-md:justify-start self-start h-full">
       <MenuLink open={open} to={"/"}>Home</MenuLink>
       <div className="sm:min-w-full md:min-w-full">
         <a
@@ -103,7 +103,7 @@ export const Navbar = () => {
           ) : null}
         </div>
         {open ? (
-          <Drawer PaperProps={{ sx: { width: '100vw' } }} className="w-full" open={open} onClose={() => setOpen(false)}>
+          <Drawer PaperProps={{ sx: { width: '100vw', height: '100vh' } }} className="w-full" open={open} onClose={() => setOpen(false)}>
             <div className="w-full h-16 pt-5 bg-gray-100 px-6">
               <Link to="/">
                 <LogoBlueImage className="w-1/6 max-w-nav-logo min-w-nav-logo" />
@@ -115,9 +115,9 @@ export const Navbar = () => {
                 "absolute right-7 top-7 text-black cursor-pointer flex hidden md:flex sm:flex"
               }
             />
-            <List className="w-full flex flex-col px-4 pt-8 text-xl bg-gray-100 h-full">
-              <div className='p-10'>
-                <div className='pb-8 pt-4'>
+            <List className="w-full flex flex-col px-4 pt-8 text-xl bg-gray-100 h-full max-md:px-2 max-md:pt-4">
+              <div className='p-10 max-md:p-4'>
+                <div className='pb-8 pt-4 max-md:pb-4 max-md:pt-2'>
                   <h2 className="h2">
                     <p>
                       The Portal to the New,

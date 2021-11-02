@@ -31,8 +31,8 @@ const DownloadPage = () => {
     <Layout>
       <SEO title="Download Links - Mask Network" />
       {os === "Other" || showAll ? (
-        <div className="mt-16 w-full max-sm:my-8">
-          <div className="flex flex-col items-center text-center px-4">
+        <div className="mt-16 sm:mt-0 w-full max-sm:my-8">
+          <div className="flex flex-col items-center text-center px-4 sm:hidden">
             <p className="hg:text-6xl text-5xl md:font-light max-sm:text-4xl mb-4">
               Install Mask Network on Your Devices
             </p>
@@ -80,7 +80,7 @@ const DownloadPage = () => {
               ))}
             </div>
           </div>
-          <div className="bg-blue-mask w-full py-16">
+          <div className="bg-blue-mask w-full py-16 container">
             <div className="w-full max-w-7xl mx-auto flex md:justify-between md:flex-row flex-col-reverse md:h-96 items-center hg:px-16 md:px-8">
               <div className="h-48 max-sm:h-36 max-sm:px-4 w-full max-w-md text-white flex flex-col justify-between md:mt-0 mt-24">
                 <p className="text-4xl md:font-extralight max-sm:text-center mb-4">
@@ -89,7 +89,7 @@ const DownloadPage = () => {
                 <p className="w-full md:max-w-xss md:font-medium font-light text-xl max-sm:text-sm leading-tight max-sm:text-center mb-4">
                   Enjoy the Web 3.0 world with Mask Network
                 </p>
-                <div className="flex max-sm:justify-center">
+                <div className="flex sm:justify-between gap-x-4">
                   <a
                     href="https://mask.io/links/?ios-app-store"
                     target="_blank"
@@ -98,18 +98,17 @@ const DownloadPage = () => {
                     <img
                       alt=""
                       src={appleStoreImage}
-                      className="mr-2 h-16 w-download-badge max-sm:h-12 max-sm:w-download-badge-sm"
                     />
                   </a>
                   <a
                     href="https://play.google.com/store/apps/details?id=com.dimension.maskbook"
                     target="_blank"
                     rel="noreferrer"
+                    className="text-center"
                   >
                     <img
                       alt=""
                       src={googlePlayImage}
-                      className="h-16 w-download-badge max-sm:h-12 max-sm:w-download-badge-sm"
                     />
                   </a>
                 </div>
@@ -173,49 +172,6 @@ const DownloadPage = () => {
           </p>
         </div>
       )}
-
-      <footer className="text-white w-full bg-gray-1000 md:text-center text-left text-xs temporary-footer md:py-20 py-16 px-4">
-        <p className="mb-2">
-          Some developers of Mask Network are patrons of{" "}
-          <a
-            href="https://www.eff.org/"
-            target="_blank"
-            rel="noreferrer"
-            className="underline hover:text-blue-400"
-          >
-            Electronic Frontier Foundation.
-          </a>
-        </p>
-        <p>
-          <a
-            href="https://dimensiondev.github.io/Maskbook-VI/"
-            target="_blank"
-            rel="noreferrer"
-            className="underline hover:text-blue-400"
-          >
-            Brand Guide
-          </a>{" "}
-          |{" "}
-          <a
-            href="mailto:info@dimension.im"
-            target="_blank"
-            rel="noreferrer"
-            className="underline hover:text-blue-400"
-          >
-            Contact
-          </a>{" "}
-          |{" "}
-          <a
-            href="https://legal.mask.io/maskbook/"
-            target="_blank"
-            rel="noreferrer"
-            className="underline hover:text-blue-400"
-          >
-            Privacy Policy
-          </a>
-        </p>
-      </footer>
-      {/* <Footer /> */}
     </Layout>
   ) : null
 }

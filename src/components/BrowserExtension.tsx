@@ -30,13 +30,13 @@ const config = [
 
 export const BrowserExtension = () => {
   return (
-    <div className="mt-10 p-10">
+    <div className="mt-10 p-10 sm:p-4">
       <div>
         <h2 className='h2 text-center max-md:text-left'>
           Browser Extension
         </h2>
       </div>
-      <div className={`flex justify-center items-center pt-8`}>
+      <div className={`flex justify-between items-start pt-8 gap-x-2`}>
         {
           config.map(x =>{
             return (

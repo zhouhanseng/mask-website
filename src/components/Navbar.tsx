@@ -103,7 +103,7 @@ export const Navbar = () => {
           ) : null}
         </div>
         {open ? (
-          <Drawer PaperProps={{ sx: { width: '100%' } }} className="w-full" open={open} onClose={() => setOpen(false)}>
+          <Drawer PaperProps={{ sx: { width: '100vw' } }} className="w-full" open={open} onClose={() => setOpen(false)}>
             <div className="w-full h-16 pt-5 bg-gray-100 px-6">
               <Link to="/">
                 <LogoBlueImage className="w-1/6 max-w-nav-logo min-w-nav-logo" />

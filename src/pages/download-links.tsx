@@ -6,7 +6,7 @@ import { StaticImage } from "gatsby-plugin-image"
 //assets
 import chromeImage from "../images/chrome.png"
 import firefoxImage from "../images/firefox.png"
-import mobileAppImage from "../images/mobile_app.png"
+import mobileAppImage from "../images/mobile_side_app.png"
 import appleStoreImage from "../images/apple_store.png"
 import googlePlayImage from "../images/google_play.png"
 import apkImage from "../images/apk.png"
@@ -116,7 +116,7 @@ const DownloadPage = () => {
               <img
                 alt=""
                 src={mobileAppImage}
-                className="hg:h-96 md:h-80 max-sm:h-auto"
+                className="hg:h-96 md:h-80 max-sm:h-auto max-w-1/2"
               />
             </div>
           </div>

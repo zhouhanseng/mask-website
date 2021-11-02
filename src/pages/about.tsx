@@ -1,7 +1,6 @@
 import * as React from "react"
-import { Navbar } from "../components/Navbar"
-import { Footer } from "../components/Footer"
 import { SEO } from "../components/SEO"
+import AboutSvg from "../images/about.svg"
 
 import { StaticImage } from "gatsby-plugin-image"
 import Layout from "../components/Layout"
@@ -13,7 +12,7 @@ const AnoutPage = () => {
       <SEO title="About us - Mask Network"/>
       <div className='container my-10 sm:my-6'>
         <div className='flex max-md:flex-col justify-center items-center'>
-          <div className="flex-grow">
+          <div className="flex-grow w-1/2">
             <p className="h2">
               About us
             </p>
@@ -35,13 +34,10 @@ const AnoutPage = () => {
               of our personal data.
             </p>
           </div>
-          <div className="flex-grow">
-            <StaticImage
-              alt=""
-              src={"../images/about.png"}
-              placeholder="blurred"
-              className="w-full"
-            />
+          <div className="flex-grow w-1/2">
+            <div className="w-full">
+              <AboutSvg />
+            </div>
           </div>
         </div>
       </div>

@@ -373,8 +373,8 @@ const FaqPage = () => {
                   <span
                     className={
                       type === "faq" || !type
-                        ? "text-6xl font-semibold max-sm:text-4xl"
-                        : "text-5xl text-gray-500 max-sm:text-3xl"
+                        ? "text-6xl font-semibold max-sm:text-4xl font-bold"
+                        : "text-5xl text-gray-500 max-sm:text-3xl font-bold"
                     }
                   >
                     FAQ\

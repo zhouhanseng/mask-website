@@ -45,7 +45,7 @@ export const Footer = () => {
               </p>
             </div>
             <form
-              className="md:block flex max-sm:justify-center justify-start max-sm:w-full filter drop-shadow-news-letter"
+              className="flex max-md:justify-center justify-start max-md:w-full filter drop-shadow-news-letter min-lg:min-w-2/5"
               name="subscription"
               method="post"
               target="_blank"
@@ -54,13 +54,13 @@ export const Footer = () => {
             >
               <input
                 name="EMAIL"
-                className="outline-none w-96 max-sm:w-68 md:text-base text-sm max-sm:pl-2 bg-white py-4 pl-5 rounded-none"
+                className="outline-none flex-grow md:text-base text-sm max-sm:pl-2 bg-white py-4 pl-5 rounded-none"
                 type="email"
                 placeholder="Please input your email address"
               />
               <button
                 type="submit"
-                className="py-4 md:px-5 px-3 text-sm md:text-base bg-blue-600 text-white"
+                className="py-4 md:px-5 px-3 text-sm md:text-base bg-blue-600 text-white flex-grow-0"
               >
                 Submit
               </button>

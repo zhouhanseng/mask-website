@@ -40,6 +40,7 @@ module.exports = {
         },
         gray: {
           1000: "#0B1117",
+          background: '#E2E2E2'
         },
       },
       // screens: {
@@ -65,6 +66,7 @@ module.exports = {
         "nav-logo": "110px",
         "about-image": "480px",
         280: "280px",
+        '2/5': '40%'
       },
       maxWidth: {
         xss: "240px",

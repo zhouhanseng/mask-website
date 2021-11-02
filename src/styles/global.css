@@ -91,10 +91,13 @@ body *::-webkit-scrollbar-thumb  {
 
 .description-text {
     font-style: normal;
-    font-weight: bold;
-    font-size: 1.5rem;
-    line-height: 1.5;
     color: #777E91;
+    @apply text-2xl md:text-xl sm:text-sm font-bold
+}
+
+.icon-name {
+    @apply text-xl sm:text-sm font-bold
+
 }
 
 .menu-link-active {

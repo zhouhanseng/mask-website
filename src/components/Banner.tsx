@@ -5,7 +5,7 @@ import BannerSvg from "../images/banner_2.svg"
 
 export const Banner = () => {
     return (
-        <section className='container mt-10' style={{ minHeight: "calc(100vh - 80px)" }}>
+        <section className='container mt-10'>
             <div className='flex justify-start relative items-center'>
                 <div className="flex-grow sm:p-8 z-10 px-20 p-20">
                   <div className="sm:text-4xl leading-tight font-bold md:text-6xl text-8xl">

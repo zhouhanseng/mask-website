@@ -11,7 +11,7 @@ const AnoutPage = () => {
   return (
     <Layout>
       <SEO title="About us - Mask Network"/>
-      <div className='container my-40'>
+      <div className='container my-10 sm:my-6'>
         <div className='flex max-md:flex-col justify-center items-center'>
           <div className="flex-grow">
             <p className="h2">

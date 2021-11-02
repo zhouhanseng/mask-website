@@ -84,7 +84,7 @@ export const Navbar = () => {
       <nav
         className={"flex items-center px-6 justify-between w-full h-20 z-10"}
       >
-        <Link to="/">
+        <Link to="/" className="w-1/6">
           <LogoBlueImage className="w-1/6 max-w-nav-logo min-w-nav-logo" />
         </Link>
         <div

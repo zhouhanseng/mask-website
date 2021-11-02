@@ -1,5 +1,4 @@
 import * as React from "react"
-import { useEffect, useState } from "react"
 import { SEO } from "../components/SEO"
 import { Banner } from "../components/Banner"
 import { SectionItem } from "../components/SectionItem"
@@ -11,6 +10,7 @@ import ITOSvg from "../images/ito.svg"
 import { JoinCommunity } from "../components/JoinCommunity"
 import { BrowserExtension } from "../components/BrowserExtension"
 import { Partner } from "../components/Partner"
+import { Background } from "../components/Background"
 
 const sectionConfig = [
   {
@@ -40,22 +40,12 @@ const sectionConfig = [
 ]
 
 const IndexPage = () => {
-  const [size, setSize] = useState(0)
-
-  useEffect(() => {
-    setSize(getWindowDimensions(window))
-
-    function handleResize() {
-      setSize(getWindowDimensions(window))
-    }
-
-    window.addEventListener("resize", handleResize)
-    return () => window.removeEventListener("resize", handleResize)
-  }, [])
-
-  return size ? (
+  return (
     <Layout>
       <SEO title="Mask Network"/>
+      <div className="fixed top-0 left-0" style={{ zIndex: -1 }}>
+        <Background />
+      </div>
       <Banner/>
       <div className='bg-gradient-to-b from-white to-gray-background w-full'>
         <div className="container mx-auto mt-10">
@@ -78,14 +68,8 @@ const IndexPage = () => {
         <Partner />
       </div>
     </Layout>
-  ) : (
-    <div className="h-screen"/>
   )
 }
 
-function getWindowDimensions(window: any) {
-  const { innerWidth } = window
-  return innerWidth
-}
 
 export default IndexPage

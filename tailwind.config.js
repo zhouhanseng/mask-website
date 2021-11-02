@@ -41,7 +41,8 @@ module.exports = {
                 gray: {
                     1000: "#0B1117",
                     description: "#777E91",
-                    background: "#F5F9FF"
+                    background: "#F5F9FF",
+                    h2: "#E6E8EC"
                 },
             },
             // screens: {
@@ -74,6 +75,7 @@ module.exports = {
                 "nav-logo": "140px",
                 "8xl": "1440px",
                 "1/2": '50vw',
+                "1/3": '33vw',
             },
             maxHeight: {
                 'screen-1/3': "30vh"

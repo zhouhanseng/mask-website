@@ -33,7 +33,7 @@ const DownloadPage = () => {
       {os === "Other" || showAll ? (
         <div className="mt-16 sm:mt-0 w-full max-sm:my-8">
           <div className="flex flex-col items-center text-center px-4 sm:hidden">
-            <p className="hg:text-6xl text-5xl md:font-light max-sm:text-4xl mb-4">
+            <p className="h2 mb-4">
               Install Mask Network on Your Devices
             </p>
             <p className="text-2xl max-sm:text-xl max-sm:font-light hg:mb-24 md:mb-16 mb-8">
@@ -81,7 +81,7 @@ const DownloadPage = () => {
             </div>
           </div>
           <div className="bg-blue-mask w-full py-16">
-            <div className="container mx-auto flex md:justify-between md:flex-row flex-col-reverse md:h-96 items-center hg:px-16 md:px-8">
+            <div className="container mx-auto flex md:justify-between flex-row sm:flex-col-reverse items-center justify-center px-16 max-md:px-8">
               <div className="h-48 max-sm:h-36 max-sm:px-4 w-full max-w-md text-white flex flex-col justify-between md:mt-0 mt-24">
                 <p className="text-4xl md:font-extralight max-sm:text-center mb-4">
                   Mobile App
@@ -116,7 +116,7 @@ const DownloadPage = () => {
               <img
                 alt=""
                 src={mobileAppImage}
-                className="hg:h-96 md:h-80 max-sm:h-auto max-w-1/2"
+                className="max-w-1/3 max-md:max-w-1/2"
               />
             </div>
           </div>
@@ -134,7 +134,7 @@ const DownloadPage = () => {
         </div>
       ) : (
         <div className="w-full bg-blue-mask flex flex-col items-center">
-          <p className="text-white text-6xl max-sm:text-4xl text-center pt-28 max-sm:pt-12 mb-7 px-4">
+          <p className="text-white h2 text-center pt-28 max-sm:pt-12 mb-7 px-4">
             Install Mask Network on Your Devices
           </p>
           <p className="text-white text-xl items-center px-6 text-center mb-7">
@@ -159,7 +159,7 @@ const DownloadPage = () => {
             alt=""
             src={"../images/mobile_side_app.png"}
             placeholder="blurred"
-            className="hg:h-96 md:h-80 max-sm:h-auto mx-auto px-4"
+            className="mx-auto px-4 max-md:max-w-1/2"
           />
           <p
             onClick={() => {

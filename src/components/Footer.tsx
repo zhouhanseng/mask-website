@@ -71,7 +71,9 @@ export const Footer = () => {
           className="py-4 w-full mx-auto grid grid-cols-4 max-md:grid-cols-1 relative px-0">
           <div
             className="py-1 md:flex md:flex-col md:justify-between max-md:border-b border-b-0 border-r max-md:border-r-0 sm:pb-12 md:pb-12 border-gray-100 border-opacity-25 min-lg:pr-8 min-lg:mr-8">
-            <img alt="" src={logoWhiteImage} className="w-32 md:mb-0 mb-8"/>
+            <div className='pb-8 sm:pt-8 sm:pb-0'>
+              <img alt="" src={logoWhiteImage} className="w-32 md:mb-0 mb-8"/>
+            </div>
             <div className="pr-2">
               <p className="text-white opacity-80 text-base mb-4 md:max-w-xs w-full">
                 Mask Network is developed and maintained by Dimension.{" "}
@@ -86,7 +88,7 @@ export const Footer = () => {
           </div>
           <div
             className="flex pl-4 sm:pl-0 md:pl-0 md:mt-0 max-md:mt-4 col-span-2">
-            <div className="flex justify-center whitespace-nowrap max-md:mr-8 sm:mt-8 md:mt-8">
+            <div className="flex justify-start whitespace-nowrap max-md:mr-8 sm:mt-8 md:mt-8">
               <div className="py-1 flex flex-col">
                 <p className="text-2xl text-white mb-6">About</p>
                 <div
@@ -119,11 +121,11 @@ export const Footer = () => {
               </div>
             </div>
             <div
-              className="flex flex-col justify-between max-w-lg whitespace-nowrap md:ml-12 ml-16 sm:ml-0 md:ml-0 sm:mt-8 md:mt-8">
+              className="flex flex-col justify-start max-w-lg whitespace-nowrap md:ml-12 ml-16 sm:ml-0 md:ml-0 sm:mt-8 md:mt-8">
               <div className="py-1 flex flex-col">
                 <p className="text-2xl text-white mb-6">Navigate</p>
                 <div
-                  className="grid grid-cols-3 sm:grid-cols-1 gap-x-16 gap-x-4 gap-y-10 sm:gap-y-5 max-md:gap-x-0 max-md:gap-y-4 text-base max-md::text-sm">
+                  className="grid grid-cols-3 sm:grid-cols-1 gap-x-1 gap-y-10 sm:gap-y-5 max-md:gap-x-0 max-md:gap-y-4 text-base max-md::text-sm">
                   <a
                     href="https://news.mask.io/"
                     target="_blank"
@@ -170,53 +172,56 @@ export const Footer = () => {
             </div>
           </div>
           <div
-            className="py-1 flex flex-col mt-8 justify-between w-full pb-12 min-lg:mt-0">
-            <p className="text-2xl text-white">Community</p>
-            <div className="grid grid-cols-6 gap-x-4 max-md:gap-x-2 w-72 mt-6">
-              <a
-                href="https://twitter.com/realMaskNetwork"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img alt="" src={iconTwitterImage} className="cursor-pointer"/>
-              </a>
-              <a
-                href="https://t.me/maskbook_group#telegram"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img alt="" src={iconTelegramImage} className="cursor-pointer"/>
-              </a>
-              <a
-                href="https://discord.gg/4SVXvj7"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img alt="" src={iconDiscordImage} className="cursor-pointer"/>
-              </a>
-              <a
-                href="https://www.facebook.com/masknetwork"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img alt="" src={iconFacebookImage} className="cursor-pointer"/>
-              </a>
-              <a
-                href="https://www.reddit.com/r/MaskNetwork/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img alt="" src={iconRedditImage} className="cursor-pointer"/>
-              </a>
-              <a
-                href="https://github.com/DimensionDev"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img alt="" src={iconGithubImage} className="cursor-pointer"/>
-              </a>
-              <div className="opacity-0 hidden hg:flex">
-                placeholder never show
+            className="flex flex-col mt-8 justify-start w-full pb-12 min-lg:mt-0">
+            <div className="py-1 flex flex-col">
+              <p className="text-2xl text-white min-lg:mb-6">Community</p>
+              <div
+                className="grid min-lg:grid-cols-3 grid-cols-6 gap-x-4 max-md:gap-x-2 w-72 mt-6 min-lg:w-36 gap-y-4 min-lg:mt-0">
+                <a
+                  href="https://twitter.com/realMaskNetwork"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img alt="" src={iconTwitterImage} className="cursor-pointer"/>
+                </a>
+                <a
+                  href="https://t.me/maskbook_group#telegram"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img alt="" src={iconTelegramImage} className="cursor-pointer"/>
+                </a>
+                <a
+                  href="https://discord.gg/4SVXvj7"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img alt="" src={iconDiscordImage} className="cursor-pointer"/>
+                </a>
+                <a
+                  href="https://www.facebook.com/masknetwork"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img alt="" src={iconFacebookImage} className="cursor-pointer"/>
+                </a>
+                <a
+                  href="https://www.reddit.com/r/MaskNetwork/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img alt="" src={iconRedditImage} className="cursor-pointer"/>
+                </a>
+                <a
+                  href="https://github.com/DimensionDev"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img alt="" src={iconGithubImage} className="cursor-pointer"/>
+                </a>
+                <div className="opacity-0 hidden hg:flex">
+                  placeholder never show
+                </div>
               </div>
             </div>
           </div>

@@ -80,8 +80,8 @@ const DownloadPage = () => {
               ))}
             </div>
           </div>
-          <div className="bg-blue-mask w-full py-16 container">
-            <div className="w-full max-w-7xl mx-auto flex md:justify-between md:flex-row flex-col-reverse md:h-96 items-center hg:px-16 md:px-8">
+          <div className="bg-blue-mask w-full py-16">
+            <div className="container mx-auto flex md:justify-between md:flex-row flex-col-reverse md:h-96 items-center hg:px-16 md:px-8">
               <div className="h-48 max-sm:h-36 max-sm:px-4 w-full max-w-md text-white flex flex-col justify-between md:mt-0 mt-24">
                 <p className="text-4xl md:font-extralight max-sm:text-center mb-4">
                   Mobile App

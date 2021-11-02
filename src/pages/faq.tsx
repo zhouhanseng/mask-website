@@ -344,14 +344,14 @@ const FaqPage = () => {
                 <StaticImage
                   alt=""
                   src={"../images/faq.png"}
-                  className="w-full md:w-1/2 h-auto noise-img"
+                  className="w-full md:w-1/2 noise-img max-h-screen-1/3"
                   placeholder="none"
                 />
               ) : (
                 <StaticImage
                   alt=""
                   src={"../images/faq_sm.png"}
-                  className="w-full md:w-1/2 h-auto noise-img"
+                  className="w-full md:w-1/2 noise-img max-h-screen-1/3"
                   placeholder="none"
                 />
               )}

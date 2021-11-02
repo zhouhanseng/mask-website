@@ -28,7 +28,7 @@ export const Banner = () => {
                 </div>
             </div>
           <div className="rounded-xl flex justify-center items-center relative" style={{ background: '#06018E' }}>
-            <div className="text-blue-50 flex-grow sm:px-4 sm:py-10 md:px-8 md:py-10 pl-24 py-40 z-10">
+            <div className="text-blue-50 flex-grow sm:px-4 sm:py-2 md:px-8 md:py-10 pl-24 py-40 z-10">
               <h2 className="h2 text-blue-50 md:pb-10">What is Mask Network?</h2>
               <h5 className="h5 text-blue-50">The bridge that helps you seamlessly transit to web3.
                 The defender to data autonomy.</h5>

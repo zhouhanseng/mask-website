@@ -363,7 +363,7 @@ const FaqPage = () => {
           )}
           <div className="w-full md:mb-32 mb-16 hg:mt-36 md:mt-24 mt-16">
             <div className="w-full max-w-7xl mx-auto px-5 flex justify-between">
-              <div className="w-full md:pr-8 pl-4">
+              <div className="w-full md:pr-8 pl-4 md:pl-2 sm:pl-0">
                 <p
                   className="cursor-pointer mb-14 max-sm:mb-6"
                   onClick={() => {
@@ -373,8 +373,8 @@ const FaqPage = () => {
                   <span
                     className={
                       type === "faq" || !type
-                        ? "text-6xl font-semibold max-sm:text-4xl font-bold"
-                        : "text-5xl text-gray-500 max-sm:text-3xl font-bold"
+                        ? "text-6xl font-semibold md:text-4xl sm:text-3xl font-bold"
+                        : "text-5xl text-gray-500 md:text-4xl sm:text-3xl font-bold"
                     }
                   >
                     FAQ\
@@ -382,8 +382,8 @@ const FaqPage = () => {
                   <span
                     className={
                       type === "faq" || !type
-                        ? "text-5xl text-gray-500 max-sm:text-3xl font-bold"
-                        : "text-6xl font-semibold max-sm:text-4xl font-bold"
+                        ? "text-5xl text-gray-500 md:text-4xl sm:text-3xl font-bold"
+                        : "text-6xl font-semibold md:text-4xl sm:text-3xl font-bold"
                     }
                   >
                     Tutorial
@@ -518,7 +518,7 @@ function FaqTopic(props: any) {
       <div
         ref={ref}
         className={
-          "flex items-center mb-12 max-sm:mb-6 " +
+          "flex items-center mb-12 max-md:mb-6 " +
           (props.i === 0 ? "" : "mt-24")
         }
       >
@@ -528,7 +528,7 @@ function FaqTopic(props: any) {
           className="w-12 h-12 max-sm:w-9 max-sm:h-9"
         />
         <p
-          className="text-4xl max-sm:text-3xl ml-2 font-bold"
+          className="text-4xl md:text-3xl sm:text-2xl ml-2 font-bold"
           id={props.content.title}
         >
           {props.content.title}
@@ -569,18 +569,18 @@ function FaqContent(props: any) {
   return (
     <div className="mb-10 max-sm:mb-6">
       <p
-        className="text-2xl max-sm:text-xl mb-4 max-sm:mb-2 cursor-pointer flex items-center"
+        className="text-2xl md:text-xl sm:text-base mb-4 max-md:mb-2 cursor-pointer flex items-center"
         onClick={() => setShow(!show)}
       >
         <img
           src={!show ? faqExpandImage : faqShrinkImage}
-          className="pr-4 w-8"
+          className="pr-4 w-8 max-md:w-6"
         />
         <span className='font-bold'>{props.title}</span>
       </p>
       {show ? (
         <p
-          className="text-gray-500 text-xl max-sm:text-sm relative left-8 max-sm:left-7 max-xsm:left-6 w-5/6"
+          className="text-gray-500 text-xl md:text-base sm:text-sm relative left-8 max-sm:left-7 max-xsm:left-6 w-5/6"
           dangerouslySetInnerHTML={{ __html: props.content }}
         />
       ) : null}

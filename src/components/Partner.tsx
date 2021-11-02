@@ -8,7 +8,7 @@ export const Partner = () => {
         Partner & Supporter
       </h2>
       <div
-        className="grid grid-cols-5 max-md:grid-cols-3 gap-x-16 max-md:gap-x-4 w-10/12 md:grid-cols-5 md:max-w-6xl md:w-11/12 gap-y-8 mx-auto hoverFilter max-md:gap-y-4 justify-center">
+        className="grid grid-cols-5 max-md:grid-cols-3 gap-x-16 max-md:gap-x-4 w-10/12 md:grid-cols-5 md:max-w-6xl md:w-11/12 gap-y-8 mx-auto hoverFilter md:gap-y-8 sm:gap-y-4 justify-center">
         <StaticImage
           alt=""
           src={"../images/partner_binance.png"}

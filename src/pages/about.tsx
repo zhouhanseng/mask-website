@@ -11,10 +11,10 @@ const AnoutPage = () => {
   return (
     <Layout>
       <SEO title="About us - Mask Network"/>
-      <div className='container my-10'>
-        <div className='flex'>
-          <div className="md:w-1/2 w-full md:py-4 hg:py-16 md:pr-8 flex flex-col md:mb-0 mb-8">
-            <p className="hg:text-6xl text-6xl md:text-4xl max-sm:text-3xl font-bold max-w-xs mb-4 md:mb-8">
+      <div className='container my-40'>
+        <div className='flex max-md:flex-col justify-center items-center'>
+          <div className="flex-grow">
+            <p className="h2">
               About us
             </p>
             <p className="hg:text-2xl text-2xl md:text-xl max-sm:text-lg font-semibold max-w-sm mb-4 md:mb-8">
@@ -35,12 +35,12 @@ const AnoutPage = () => {
               of our personal data.
             </p>
           </div>
-          <div>
+          <div className="flex-grow">
             <StaticImage
               alt=""
               src={"../images/about.png"}
               placeholder="blurred"
-              className="md:w-1/2 w-full h-auto md:min-w-about-image noise-img"
+              className="w-full"
             />
           </div>
         </div>

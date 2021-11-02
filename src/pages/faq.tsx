@@ -445,7 +445,6 @@ const FaqPage = () => {
       ) : (
         <div className="h-screen" />
       )}
-      <Footer />
     </Layout>
   )
 }

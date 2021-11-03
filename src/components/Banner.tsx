@@ -5,7 +5,7 @@ import WhatSvg from "../images/what.svg"
 
 export const Banner = () => {
     return (
-        <section className='container mt-16 flex items-center pb-20' style={{ minHeight: 'calc(100vh - 80px)' }}>
+        <section className='container pt-16 flex items-center pb-20 md:pb-10 sm:pb-4' style={{ minHeight: 'calc(100vh - 80px)' }}>
           <div>
             <div className='flex justify-start relative items-center'>
               <div className="flex-grow sm:p-8 z-10 px-20 p-20">

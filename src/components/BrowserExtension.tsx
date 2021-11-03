@@ -32,19 +32,19 @@ export const BrowserExtension = () => {
   return (
     <div className="mt-16 p-10 sm:p-4">
       <div>
-        <h2 className='h2 text-center max-md:text-left'>
+        <h2 className='h2 text-center'>
           Browser Extension
         </h2>
       </div>
-      <div className={`flex justify-between items-start pt-8 gap-x-2`}>
+      <div className={`flex justify-between items-start pt-8 gap-x-2 sm:flex-col`}>
         {
           config.map(x =>{
             return (
-              <div key={x.title} className="flex-grow-0 w-1/3 items-center flex flex-col justify-center">
-                <div className="flex justify-center w-24">
+              <div key={x.title} className="flex-grow-0 w-1/3 items-center flex flex-col justify-center sm:flex-row sm:w-full sm:pt-6">
+                <div className="flex justify-center w-24 sm:w-1/3">
                   {x.svg}
                 </div>
-                <p className='py-4 text-gray-description'>{x.title}</p>
+                <p className='py-4 text-gray-description sm:w-2/3 sm:pl-2'>{x.title}</p>
               </div>
             )
           })

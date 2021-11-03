@@ -391,7 +391,7 @@ const FaqPage = () => {
                 </p>
                 {type === "tutorials" ? (
                   <div className="max-w-4xl my-24 max-sm:my-8">
-                    <p className="text-4xl mb-8 px-4 md:px-0 max-sm:text-2xl max-sm:mb-4 max-sm:px-0">
+                    <p className="text-4xl mb-8 px-4 md:px-0 max-sm:mb-4 max-sm:px-0 md:text-3xl sm:text-2xl">
                       An (In)Complete Guide to Mask Network
                     </p>
                     <p className="text-xl text-gray-500 px-4 md:px-0 max-sm:text-base max-sm:px-0">
@@ -456,8 +456,8 @@ function TutorialTopic(props: any) {
     <>
       <div
         className={
-          "flex items-center mb-8 " +
-          (props.i === 0 ? "" : "mt-20 max-sm:mt-10")
+          "flex items-center mb-8 max-md:mb-4 " +
+          (props.i === 0 ? "" : "mt-20 max-sm:mt-6")
         }
       >
         <img
@@ -465,7 +465,7 @@ function TutorialTopic(props: any) {
           src={props.content.image}
           className="w-12 h-12 max-sm:w-9 max-sm:h-9"
         />
-        <p className="text-4xl max-sm:text-3xl ml-2 font-bold">
+        <p className="text-4xl ml-2 font-bold md:text-3xl sm:text-2xl">
           {props.content.title}
         </p>
       </div>
@@ -475,7 +475,7 @@ function TutorialTopic(props: any) {
             href={x.link}
             target="_blank"
             rel="noreferrer"
-            className="font-semibold mb-8 text-xl max-sm:text-base max-sm:font-light max-sm:mb-4 max-sm:underline"
+            className="font-semibold mb-8 max-md:mb-4 text-xl max-sm:text-base max-sm:font-light max-sm:mb-4 max-sm:underline md:text-base sm:text-sm "
           >
             {x.text}
           </a>

@@ -38,12 +38,12 @@ export const Footer = () => {
         <Newsletter/>
       </div>
       <footer className="bg-blue-1000 flex justify-center flex-grow-0">
-        <div className="container px-10">
+        <div className="container px-10 md:px-8 sm:px-6">
           <div className="relative -top-20 sm:hidden">
             <Newsletter/>
           </div>
           <div
-            className={`py-4 ${isHideNewsletter ? 'pt-20' : ''} w-full mx-auto grid grid-cols-4 max-md:grid-cols-1 relative px-0`}>
+            className={`py-4 ${isHideNewsletter ? 'pt-20 md:pt-12 sm:pt-8' : ''} w-full mx-auto grid grid-cols-4 max-md:grid-cols-1 relative px-0`}>
             <div
               className="py-1 md:flex md:flex-col md:justify-between max-md:border-b border-b-0 border-r max-md:border-r-0 sm:pb-12 md:pb-12 border-gray-100 border-opacity-25 min-lg:pr-8 min-lg:mr-8">
               <div className='pb-8 sm:pt-8 sm:pb-0'>

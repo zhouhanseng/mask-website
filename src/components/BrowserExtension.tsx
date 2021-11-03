@@ -44,7 +44,7 @@ export const BrowserExtension = () => {
           config.map(x =>{
             return (
               <div key={x.title} className="flex-grow-0 w-1/3 items-center flex flex-col justify-center sm:flex-row sm:w-full sm:pt-6">
-                <div className="flex justify-center w-24 sm:w-1/3">
+                <div className="flex justify-center w-24 sm:w-1/3 max-w-nav-logo">
                   {x.svg}
                 </div>
                 <p className='py-4 text-gray-description sm:w-2/3 sm:pl-6'>{x.title}</p>

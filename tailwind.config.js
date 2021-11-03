@@ -61,6 +61,7 @@ module.exports = {
             minHeight: {
                 "hg-about-content": "767px",
                 "md-about-content": "567px",
+                "screen-2/5": "40vh",
             },
             minWidth: {
                 "nav-links": "450px",

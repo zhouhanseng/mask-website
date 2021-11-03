@@ -6,7 +6,7 @@ const config = [
     title: "Add Mask to your browser",
     svg: <StaticImage
       alt="Add Mask to your browse icon"
-      src={'../images/add_mask_to_browser.png'}
+      src={'../images/add_mask_to_browser.svg'}
       placeholder="none"
       className="w-full"
     />
@@ -15,7 +15,7 @@ const config = [
     title: "Login in with Mask ID and connect wallet",
     svg: <StaticImage
       alt="Login in with Mask ID and connect wallet icon"
-      src={'../images/login_with_mask.png'}
+      src={'../images/login_with_mask.svg'}
       placeholder="none"
       className="w-full"
     />
@@ -24,7 +24,7 @@ const config = [
     title: "Enjoy your familiar Web 2.0 sites turbocharged by Web 3.0",
     svg: <StaticImage
       alt="Enjoy your familiar Web 2.0 sites turbocharged by Web 3.0 icon"
-      src={'../images/enjoy_web3.png'}
+      src={'../images/enjoy_web3.svg'}
       placeholder="none"
       className="w-full"
     />
@@ -33,7 +33,7 @@ const config = [
 
 export const BrowserExtension = () => {
   return (
-    <div className="mt-16 p-10 sm:p-4">
+    <div className="mt-12 p-10 sm:p-4">
       <div>
         <h2 className='h2 text-center'>
           Browser Extension

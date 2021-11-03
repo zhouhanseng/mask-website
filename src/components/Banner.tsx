@@ -2,22 +2,38 @@ import * as React from "react"
 import { GetMaskButton } from "./GetMaskButton"
 import StatueOfLibertySvg from "../images/statue_of_liberty.svg"
 import WhatSvg from "../images/what.svg"
+import { useEffect, useRef } from "react"
+import Typed from 'typed.js'
 
 export const Banner = () => {
+  const ref = useRef(null)
+
+  useEffect(() => {
+    if (!ref || !ref.current) return
+    const options = {
+      strings: ['The Portal to <br> the New, <br>Open Internet.'],
+      typeSpeed: 200,
+      backSpeed: 200,
+    }
+
+    const typed = new Typed('.element', options )
+    typed.start()
+
+    return () => {
+      typed.destroy()
+    }
+  }, [ref])
+
+
     return (
         <section className='container pt-16 flex items-center pb-20 md:pb-10 sm:pb-4' style={{ minHeight: 'calc(100vh - 80px)' }}>
           <div className='w-full'>
             <div className='flex justify-start relative items-center'>
               <div className="flex-grow z-10 p-10 md:p-4 sm:p-4">
-                <div className="text-black-main sm:text-4xl leading-tight md:text-6xl text-8xl font-bold">
-                  <p>
-                    The Portal to
-                  </p>
-                  <p>
-                    the New,
-                  </p>
-                  <p>
-                    Open Internet
+                <div className="text-black-main sm:text-4xl leading-tight md:text-6xl text-8xl font-bold w-full">
+                  <span  className='element' ref={ref} />
+                  <p className="invisible h-0">
+                    Open Internet 1
                   </p>
                 </div>
                 <div className="py-8">

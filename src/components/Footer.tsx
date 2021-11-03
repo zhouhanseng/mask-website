@@ -56,9 +56,6 @@ export const Footer = () => {
                 <p className="text-white opacity-80 text-base md:mb-4 mb-8 md:max-w-xs w-full">
                   Mask Network is a free and open source software.
                 </p>
-                <p className="text-white text-base max-w-xs max-md:mb-0">
-                  © 2018-2021 Mask.io
-                </p>
               </div>
             </div>
             <div
@@ -202,9 +199,16 @@ export const Footer = () => {
             </div>
           </div>
           <div className="w-full px-0 min-lg:mt-12">
+            <p className="text-white text-base max-w-xs max-md:mb-0">
+            </p>
             <p
-              className="w-full text-white text-center sm:text-left py-4 border-t border-gray-100 border-opacity-25 mx-auto">
+              className="flex justify-between w-full text-white text-center sm:text-left py-4 border-t border-gray-100 border-opacity-25 mx-auto sm:flex-col sm:items-center sm:justify-center">
+              <span>
+              © 2018-2021 Mask.io
+              </span>
+              <span className='text-center'>
               I thought what I'd do was, I'd pretend I was one of those deaf-mutes.
+              </span>
             </p>
           </div>
         </div>

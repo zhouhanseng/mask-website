@@ -6,10 +6,10 @@ import WhatSvg from "../images/what.svg"
 export const Banner = () => {
     return (
         <section className='container pt-16 flex items-center pb-20 md:pb-10 sm:pb-4' style={{ minHeight: 'calc(100vh - 80px)' }}>
-          <div>
+          <div className='w-full'>
             <div className='flex justify-start relative items-center'>
               <div className="flex-grow z-10 p-10 md:p-4 sm:p-4">
-                <div className="sm:text-4xl leading-tight md:text-6xl text-8xl">
+                <div className="sm:text-4xl leading-tight md:text-6xl text-8xl font-bold">
                   <p>
                     The Portal to
                   </p>
@@ -20,7 +20,7 @@ export const Banner = () => {
                     Open Internet
                   </p>
                 </div>
-                <div className="my-8">
+                <div className="py-8">
                   <GetMaskButton size='large' />
                 </div>
               </div>

@@ -23,6 +23,7 @@
     "@fontsource/montserrat": "^4.5.1",
     "@mui/icons-material": "^5.0.1",
     "@mui/material": "^5.0.2",
+    "animate.css": "^4.1.1",
     "gatsby": "^3.14.2",
     "gatsby-plugin-cname": "^1.0.0",
     "gatsby-plugin-image": "^1.14.1",

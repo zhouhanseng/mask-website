@@ -192,7 +192,11 @@ body *::-webkit-scrollbar-thumb  {
 }
 .typed-fade-out{
     opacity: 0;
-    transition: opacity .25s;
+    transition: opacity .4s;
     -webkit-animation: 0;
     animation: 0;
+}
+
+.animate__animated.animate__fadeInDown {
+    --animate-duration: 2s;
 }

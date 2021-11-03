@@ -1,3 +1,4 @@
+const { width } = require("tailwindcss/lib/plugins")
 module.exports = {
     purge: ["./src/**/*.{js,jsx,ts,tsx}"],
     darkMode: false, // or 'media' or 'class'
@@ -5,6 +6,7 @@ module.exports = {
         screens: {
             'sm': { 'max': '767px' },
             'md': { 'min': '768px', 'max': '1279px' },
+            'md-container': { 'min': '1024px', 'max': '1279px' },
             'lg': { 'min': '1280px', 'max': '1535px' },
             'max-md': { 'max': '1279px' },
             'min-lg': { 'min': '1280px' },
@@ -13,6 +15,9 @@ module.exports = {
         container: {
             padding: {
                 DEFAULT: '1rem',
+            },
+            maxWidth: {
+                'md-container': '968px',
             },
             margin: {
                 DEFAULT: '1rem',
@@ -25,6 +30,9 @@ module.exports = {
             },
         },
         extend: {
+            animation: {
+                'spin-once': 'spin 3s linear',
+            },
             zIndex: {
                 2000: "2000",
             },
@@ -47,24 +55,13 @@ module.exports = {
                     main: '#1B1B1B'
                 }
             },
-            // screens: {
-            //   "max-xsm": {
-            //     max: "400px",
-            //   },
-            //   "max-sm": {
-            //     max: "540px",
-            //   },
-            //   sm: {
-            //     min: "540px",
-            //   },
-            //   md: "850px",
-            //
-            //   hg: "1440px",
-            // },
             minHeight: {
                 "hg-about-content": "767px",
                 "md-about-content": "567px",
                 "screen-2/5": "40vh",
+                "276": "290px",
+                "396": "305px",
+                "564": "564px",
             },
             minWidth: {
                 "nav-links": "450px",

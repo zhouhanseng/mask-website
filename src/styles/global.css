@@ -6,7 +6,7 @@ body {
     font-family: 'Montserrat', system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
     overflow-y: overlay;
     scroll-behavior: smooth;
-    @apply font-black-main
+    @apply text-black-main;
 }
 
 body::-webkit-scrollbar {
@@ -46,13 +46,13 @@ body *::-webkit-scrollbar-thumb  {
 .h2 {
     @apply sm:text-2xl md:text-3xl text-6xl font-bold py-8 sm:py-4 md:py-6 font-black;
     font-style: normal;
-    @apply font-black-main
+    @apply text-black-main;
 }
 
 .h5 {
     @apply sm:text-xs md:text-xl text-3xl font-bold leading-loose;
     font-style: normal;
-    @apply font-black-main
+    @apply text-black-main;
 }
 
 /*.container {*/

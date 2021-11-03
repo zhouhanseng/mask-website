@@ -103,8 +103,8 @@ export const Navbar = () => {
           ) : null}
         </div>
         {open ? (
-          <Drawer PaperProps={{ sx: { width: '100vw', height: '100vh' } }} className="w-full" open={open} onClose={() => setOpen(false)}>
-            <div className="w-full h-16 pt-5 bg-gray-100 px-6">
+          <Drawer PaperProps={{ sx: { width: '100vw', minHeight: '100vh', background: '#F5F9FF' } }} className="w-full" open={open} onClose={() => setOpen(false)}>
+            <div className="w-full h-16 pt-5 px-6">
               <Link to="/">
                 <LogoBlueImage className="w-1/6 max-w-nav-logo min-w-nav-logo" />
               </Link>
@@ -115,7 +115,7 @@ export const Navbar = () => {
                 "absolute right-7 top-7 text-black cursor-pointer flex hidden md:flex sm:flex"
               }
             />
-            <List className="w-full flex flex-col px-4 pt-8 text-xl bg-gray-100 h-full max-md:px-2 max-md:pt-4">
+            <List className="w-full flex flex-col px-4 pt-8 text-xl max-md:px-2 max-md:pt-4">
               <div className='p-10 max-md:p-4'>
                 <div className='pb-8 pt-4 max-md:pb-4 max-md:pt-2'>
                   <h2 className="h2">

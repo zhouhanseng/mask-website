@@ -195,19 +195,19 @@ const FaqPage = () => {
       contents: [
         {
           text: "Installation & set up",
-          link: "https://realmaskbook.notion.site/Installation-set-up-8147f28c734c4038b4cba4b6ba9a772f",
+          link: "https://realmasknetwork.notion.site/Installation-set-up-8147f28c734c4038b4cba4b6ba9a772f",
         },
         {
           text: "Setting up your wallet (Support MetaMask and WalletConnect)",
-          link: "https://realmaskbook.notion.site/Setting-up-your-wallet-Support-MetaMask-and-WalletConnect-3f39ee5c74a6403f88d8af3e2a76ec0b",
+          link: "https://realmasknetwork.notion.site/Setting-up-your-wallet-Support-MetaMask-and-WalletConnect-3f39ee5c74a6403f88d8af3e2a76ec0b",
         },
         {
           text: "Manually update the Mask Network plugin",
-          link: "https://realmaskbook.notion.site/Manually-update-the-Mask-Network-plugin-1e87e9d71ae64e5c8cf0d6bc11f57fb3",
+          link: "https://realmasknetwork.notion.site/Manually-update-the-Mask-Network-plugin-1e87e9d71ae64e5c8cf0d6bc11f57fb3",
         },
         {
           text: "Back up your private key",
-          link: "https://realmaskbook.notion.site/Back-up-your-private-key-ad5909e3cf8849bdb7e5989d8487e8d3",
+          link: "https://realmasknetwork.notion.site/Back-up-your-private-key-ad5909e3cf8849bdb7e5989d8487e8d3",
         },
       ],
     },
@@ -217,15 +217,15 @@ const FaqPage = () => {
       contents: [
         {
           text: "Switch network between ETH, BSC, and Polygon",
-          link: "https://realmaskbook.notion.site/Switch-network-between-ETH-BSC-and-Polygon-30501828d0db492fb2ee9b9f9822c178",
+          link: "https://realmasknetwork.notion.site/Switch-network-between-ETH-BSC-and-Polygon-30501828d0db492fb2ee9b9f9822c178",
         },
         {
           text: "Use the Polygon Bridge to convert from Ethereum Mainnet and Polygon",
-          link: "https://realmaskbook.notion.site/Use-the-Polygon-Bridge-to-convert-from-Ethereum-Mainnet-and-Polygon-81c0a8268b064c80aec2ee226871741a",
+          link: "https://realmasknetwork.notion.site/Use-the-Polygon-Bridge-to-convert-from-Ethereum-Mainnet-and-Polygon-81c0a8268b064c80aec2ee226871741a",
         },
         {
           text: "Convert $MASK from ERC20 to BEP20",
-          link: "https://realmaskbook.notion.site/Convert-MASK-from-ERC20-to-BEP20-7e982c16c1404d758a3c94b1e5ee9ca2",
+          link: "https://realmasknetwork.notion.site/Convert-MASK-from-ERC20-to-BEP20-7e982c16c1404d758a3c94b1e5ee9ca2",
         },
       ],
     },
@@ -235,43 +235,43 @@ const FaqPage = () => {
       contents: [
         {
           text: "Send an Encrypted Text",
-          link: "https://realmaskbook.notion.site/Send-an-Encrypted-Text-365ba60facbd4d069ea6ca72ec16a154",
+          link: "https://realmasknetwork.notion.site/Send-an-Encrypted-Text-365ba60facbd4d069ea6ca72ec16a154",
         },
         {
           text: "Purchase NFTs or place a bid  for NFTs  via OpenSea or Rarible on Twitter",
-          link: "https://realmaskbook.notion.site/Purchase-NFTs-or-place-a-bid-for-NFTs-via-OpenSea-or-Rarible-on-Twitter-912fea95f84b49bfb481ef152e1423c1",
+          link: "https://realmasknetwork.notion.site/Purchase-NFTs-or-place-a-bid-for-NFTs-via-OpenSea-or-Rarible-on-Twitter-912fea95f84b49bfb481ef152e1423c1",
         },
         {
           text: "Send a Lucky Drop (Support ETH, BSC and Polygon)",
-          link: "https://realmaskbook.notion.site/Send-a-Red-Packet-Support-ETH-BSC-and-Polygon-d5a3c18464474a07bd07581c31cea7f7",
+          link: "https://realmasknetwork.notion.site/Send-a-Red-Packet-Support-ETH-BSC-and-Polygon-d5a3c18464474a07bd07581c31cea7f7",
         },
         {
           text: "Use File Service via Arweave (IPFS, SIA, Swarm soon)",
-          link: "https://realmaskbook.notion.site/Use-File-Service-via-Arweave-IPFS-SIA-Swarm-soon-e5d60b122fda433e921ddad242b58c05",
+          link: "https://realmasknetwork.notion.site/Use-File-Service-via-Arweave-IPFS-SIA-Swarm-soon-e5d60b122fda433e921ddad242b58c05",
         },
         {
           text: "Cast a Snapshot vote",
-          link: "https://realmaskbook.notion.site/Cast-a-Snapshot-vote-4ba42d31d00647d782ff431e8fe986d2",
+          link: "https://realmasknetwork.notion.site/Cast-a-Snapshot-vote-4ba42d31d00647d782ff431e8fe986d2",
         },
         {
           text: "Launch an ITO (Initial Twitter Offering) (Support ETH, BSC and Polygon)",
-          link: "https://realmaskbook.notion.site/Launch-an-ITO-Initial-Twitter-Offering-Support-ETH-BSC-and-Polygon-eb242a21eaff4c48ba4c1445bd7b9482",
+          link: "https://realmasknetwork.notion.site/Launch-an-ITO-Initial-Twitter-Offering-Support-ETH-BSC-and-Polygon-eb242a21eaff4c48ba4c1445bd7b9482",
         },
         {
           text: "Claim tokens (from ITO/Airdrop) (Support ETH only, Polygon soon)",
-          link: "https://realmaskbook.notion.site/Claim-tokens-from-ITO-Airdrop-Support-ETH-only-Polygon-soon-90ccfe8812ea4e44bb998921b80aaa80",
+          link: "https://realmasknetwork.notion.site/Claim-tokens-from-ITO-Airdrop-Support-ETH-only-Polygon-soon-90ccfe8812ea4e44bb998921b80aaa80",
         },
         {
           text: "Check cryptocurrency info on social media (CoinGecko, CoinMarketCap, Uniswap Info)",
-          link: "https://realmaskbook.notion.site/Check-cryptocurrency-info-on-social-media-CoinGecko-CoinMarketCap-Uniswap-Info-f086e3aa33964f74a84cf2033dfcba9c",
+          link: "https://realmasknetwork.notion.site/Check-cryptocurrency-info-on-social-media-CoinGecko-CoinMarketCap-Uniswap-Info-f086e3aa33964f74a84cf2033dfcba9c",
         },
         {
           text: "Participate in ITO (Initial Twitter Offering) (Support ETH, BSC and Polygon)",
-          link: "https://realmaskbook.notion.site/Participate-in-ITO-Initial-Twitter-Offering-Support-ETH-BSC-and-Polygon-16de37684de54f36923f55158159a11c",
+          link: "https://realmasknetwork.notion.site/Participate-in-ITO-Initial-Twitter-Offering-Support-ETH-BSC-and-Polygon-16de37684de54f36923f55158159a11c",
         },
         {
           text: "Display the NFTs you own on your Twitter profile",
-          link: "https://realmaskbook.notion.site/Display-the-NFTs-you-own-on-your-Twitter-profile-1cdcf9569ecc4e98987e05c88e0d2deb",
+          link: "https://realmasknetwork.notion.site/Display-the-NFTs-you-own-on-your-Twitter-profile-1cdcf9569ecc4e98987e05c88e0d2deb",
         },
       ],
     },
@@ -281,7 +281,7 @@ const FaqPage = () => {
       contents: [
         {
           text: "How to add $MASK liquidity to PancakeSwap",
-          link: "https://realmaskbook.notion.site/How-to-add-MASK-liquidity-to-PancakeSwap-1af175c8a4524e3d8c3ec988480c4674",
+          link: "https://realmasknetwork.notion.site/How-to-add-MASK-liquidity-to-PancakeSwap-1af175c8a4524e3d8c3ec988480c4674",
         },
       ],
     },
@@ -291,27 +291,27 @@ const FaqPage = () => {
       contents: [
         {
           text: "See the latest offer of a Tweet NFT by Valuables Plugin",
-          link: "https://realmaskbook.notion.site/See-the-latest-offer-of-a-Tweet-NFT-by-Valuables-Plugin-ce284e61c703460096f1b10f8e378685",
+          link: "https://realmasknetwork.notion.site/See-the-latest-offer-of-a-Tweet-NFT-by-Valuables-Plugin-ce284e61c703460096f1b10f8e378685",
         },
         {
           text: "Make a quick Gitcoin Grant donation using the Mask extension",
-          link: "https://realmaskbook.notion.site/Make-a-quick-Gitcoin-Grant-donation-using-the-Mask-extension-89bdc65b8fa34c05a3707792ea05e52f",
+          link: "https://realmasknetwork.notion.site/Make-a-quick-Gitcoin-Grant-donation-using-the-Mask-extension-89bdc65b8fa34c05a3707792ea05e52f",
         },
         {
           text: "Trade tokens via Uniswap, Sushi, 0x,Balancer, Dodo,etc. on Twitter (Support ETH, BSC and Polygon)",
-          link: "https://realmaskbook.notion.site/Trade-tokens-via-Uniswap-Sushi-0x-etc-on-Twitter-Support-ETH-BSC-and-Polygon-803402915c2c4148a269dc88faf0306e",
+          link: "https://realmasknetwork.notion.site/Trade-tokens-via-Uniswap-Sushi-0x-etc-on-Twitter-Support-ETH-BSC-and-Polygon-803402915c2c4148a269dc88faf0306e",
         },
         {
           text: "Cultivate a weekly saving habit via GoodGhosting on Twitter (Polygon only)",
-          link: "https://realmaskbook.notion.site/Cultivate-a-weekly-saving-habit-via-GoodGhosting-on-Twitter-Polygon-only-6b80d1ee67b64987aa54be7cb4fd9983",
+          link: "https://realmasknetwork.notion.site/Cultivate-a-weekly-saving-habit-via-GoodGhosting-on-Twitter-Polygon-only-6b80d1ee67b64987aa54be7cb4fd9983",
         },
         {
           text: "Participate in lossless lottery via PoolTogether on Twitter (ETH and Polygon)",
-          link: "https://realmaskbook.notion.site/Participate-in-lossless-lottery-via-PoolTogether-on-Twitter-ETH-and-Polygon-4e4954ffc592452b9c8903babec47959",
+          link: "https://realmasknetwork.notion.site/Participate-in-lossless-lottery-via-PoolTogether-on-Twitter-ETH-and-Polygon-4e4954ffc592452b9c8903babec47959",
         },
         {
           text: "Copy your favourite manager's portfolio via dHEDGE on Twitter (ETH and Polygon)",
-          link: "https://realmaskbook.notion.site/Copy-your-favourite-manager-s-portfolio-via-dHEDGE-on-Twitter-ETH-and-Polygon-eab2d7120a094834b24d86b1a54aa1c7",
+          link: "https://realmasknetwork.notion.site/Copy-your-favourite-manager-s-portfolio-via-dHEDGE-on-Twitter-ETH-and-Polygon-eab2d7120a094834b24d86b1a54aa1c7",
         },
       ],
     },

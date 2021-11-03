@@ -340,7 +340,7 @@ const FaqPage = () => {
               <div className="flex justify-center items-center bg-gray-200 w-1/2 max-md:absolute max-md:top-0 max-md:left-0 max-md:w-full">
                 <p className="h2 w-1/2 max-md:w-full max-md:text-gray-h2">How can we help you?</p>
               </div>
-              <div className="w-1/2 overflow-hidden">
+              <div className="w-1/2 max-md:w-full overflow-hidden">
                 {size > 850 ? (
                   <StaticImage
                     alt=""

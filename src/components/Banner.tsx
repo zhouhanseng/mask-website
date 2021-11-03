@@ -9,7 +9,7 @@ export const Banner = () => {
           <div className='w-full'>
             <div className='flex justify-start relative items-center'>
               <div className="flex-grow z-10 p-10 md:p-4 sm:p-4">
-                <div className="sm:text-4xl leading-tight md:text-6xl text-8xl font-bold">
+                <div className="font-black-main sm:text-4xl leading-tight md:text-6xl text-8xl font-bold">
                   <p>
                     The Portal to
                   </p>

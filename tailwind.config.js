@@ -43,6 +43,9 @@ module.exports = {
                     background: "#F5F9FF",
                     h2: "#E6E8EC"
                 },
+                black: {
+                    main: '#1B1B1B'
+                }
             },
             // screens: {
             //   "max-xsm": {

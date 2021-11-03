@@ -10,9 +10,9 @@ const AnoutPage = () => {
   return (
     <Layout>
       <SEO title="About us - Mask Network"/>
-      <div className='container my-10 sm:my-6'>
+      <div className='container my-16 sm:my-10'>
         <div className='flex max-md:flex-col justify-center items-center'>
-          <div className="flex-grow w-1/2">
+          <div className="flex-grow min-lg:w-1/2 max-md:w-10/12">
             <p className="h2">
               About us
             </p>

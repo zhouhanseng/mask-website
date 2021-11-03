@@ -92,7 +92,7 @@ export const Navbar = () => {
               <Menu open={open} />
         </div>
         <div className="w-1/6 flex justify-end">
-          <div className="md:hidden sm:hidden md:hidden">
+          <div className="md:hidden sm:hidden">
             <GetMaskButton size={'small'} />
           </div>
 

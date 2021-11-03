@@ -27,7 +27,7 @@ export const Newsletter = () => {
           <h3 className="h2 font-medium sm:w-full sm:text-center text-left sm:text-xl min-lg:text-4xl md:text-3xl md:font-semibold md:text-left">
             MASK NETWORK Newsletter
           </h3>
-          <p className="description-text text-gray-500 sm:w-full text-center text-left md:font-normal sm:font-light md:text-left">
+          <p className="description-text text-gray-500 sm:w-full text-center text-left md:font-normal sm:font-light md:text-left min-lg:font-normal">
             Follow us for more information about MASK
           </p>
         </div>

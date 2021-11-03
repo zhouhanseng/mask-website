@@ -144,7 +144,7 @@ export const Footer = () => {
               </div>
             </div>
             <div
-              className="flex flex-col mt-8 justify-start w-full pb-12 min-lg:mt-0">
+              className="flex flex-col mt-8 justify-start w-full pb-12 min-lg:mt-0 min-lg:ml-20">
               <div className="py-1 flex flex-col">
                 <p className="text-2xl text-white min-lg:mb-6">Community</p>
                 <div

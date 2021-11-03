@@ -174,8 +174,8 @@ body *::-webkit-scrollbar-thumb  {
 }
 
 .typed-cursor{
+    @apply md:text-6xl text-8xl sm:text-4xl;
     user-select: none;
-    font-size: 96px;
     opacity: 1;
     font-weight: lighter;
     animation: typedjsBlink 0.7s infinite;

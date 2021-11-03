@@ -2,11 +2,12 @@ import * as React from "react"
 import { GetMaskButton } from "./GetMaskButton"
 import StatueOfLibertySvg from "../images/statue_of_liberty.svg"
 import WhatSvg from "../images/what.svg"
-import { useEffect, useRef } from "react"
+import { useEffect, useRef, useState } from "react"
 import Typed from 'typed.js'
 
 export const Banner = () => {
   const ref = useRef(null)
+  const [tyepingFinish, setTypingFinish] = useState(false)
 
   useEffect(() => {
     if (!ref || !ref.current) return
@@ -14,6 +15,7 @@ export const Banner = () => {
       strings: ['The Portal to <br> the New, <br>Open Internet.'],
       typeSpeed: 200,
       backSpeed: 200,
+      onComplete: () => setTypingFinish(true)
     }
 
     const typed = new Typed('.element', options )
@@ -21,6 +23,7 @@ export const Banner = () => {
 
     return () => {
       typed.destroy()
+      setTypingFinish(false)
     }
   }, [ref])
 
@@ -33,11 +36,16 @@ export const Banner = () => {
                 <div className="text-black-main sm:text-4xl leading-tight md:text-6xl text-8xl font-bold w-full">
                   <span  className='element' ref={ref} />
                   <p className="invisible h-0">
-                    Open Internet 1
+                    Open Internet
                   </p>
                 </div>
                 <div className="py-8">
-                  <GetMaskButton size='large' />
+                  {
+                    !tyepingFinish && <div style={{ height: '80px' }}/>
+                  }
+                  {
+                    tyepingFinish && <GetMaskButton size='large' />
+                  }
                 </div>
               </div>
               <div className="flex-grow-0 min-lg:px-10 min-lg:w-1/3 sm:absolute bottom-0 sm:right-10 sm:w-40 relative md-80 z-0">

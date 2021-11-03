@@ -335,13 +335,13 @@ const FaqPage = () => {
       <SEO title="FAQs — Mask Network" />
       {size ? (
         <>
-          {size > 850 ? (
+          {size > 768 ? (
             <div className="w-full h-full flex relative max-h-screen-1/3">
               <div className="flex justify-center items-center bg-gray-200 w-1/2 max-md:absolute max-md:top-0 max-md:left-0 max-md:w-full">
                 <p className="h2 w-1/2 max-md:w-full max-md:text-gray-h2">How can we help you?</p>
               </div>
               <div className="w-1/2 max-md:w-full overflow-hidden">
-                {size > 850 ? (
+                {size > 768 ? (
                   <StaticImage
                     alt=""
                     src={"../images/faq.png"}
@@ -361,7 +361,7 @@ const FaqPage = () => {
           ) : (
             <img alt="" src={faqSmImage} className="w-full" />
           )}
-          <div className="w-full md:mb-32 mb-16 hg:mt-36 md:mt-24 mt-16">
+          <div className="w-full md:mb-32 mb-16 min-lg:mt-48 md:mt-24 mt-16">
             <div className="w-full max-w-7xl mx-auto px-5 flex justify-between">
               <div className="w-full md:pr-8 pl-4 md:pl-2 sm:pl-0">
                 <p
@@ -429,7 +429,7 @@ const FaqPage = () => {
               </div>
               {type === "faq" || !type ? (
                 <div>
-                  <div className="sticky top-16 md:flex hidden flex-col">
+                  <div className="sticky top-16 flex sm:hidden flex-col">
                     {contents.map((x, i) => (
                       <Anchor
                         title={x.title}

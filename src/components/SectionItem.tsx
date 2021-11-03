@@ -24,8 +24,8 @@ export const SectionItem = memo<SectionItemProps>(({ mode, children, subtitle, t
               <p className="description-text">{subtitle}</p>
             </div>
           </div>
-          <div className={`flex-1 sm:flex-grow max-md:w-full ${row ? '' : 'w-full'}`}>
-            <div className="w-10/12 min-lg:max-w-1/2 mx-auto">
+          <div className={`flex-1 sm:flex-grow max-md:w-full ${row ? '' : 'w-full pt-24'} max-md:pt-16`}>
+            <div className="w-10/12 min-lg:max-w-800 mx-auto">
               {children}
             </div>
           </div>

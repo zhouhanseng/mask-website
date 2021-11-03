@@ -79,6 +79,7 @@ module.exports = {
                 "8xl": "1440px",
                 "1/2": '50vw',
                 "1/3": '33vw',
+                800: "800px",
             },
             maxHeight: {
                 'screen-1/3': "30vh"

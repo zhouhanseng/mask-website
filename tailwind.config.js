@@ -1,11 +1,10 @@
-const { width } = require("tailwindcss/lib/plugins")
 module.exports = {
     purge: ["./src/**/*.{js,jsx,ts,tsx}"],
     darkMode: false, // or 'media' or 'class'
     theme: {
         screens: {
-            'sm': { 'max': '767px' },
-            'md': { 'min': '768px', 'max': '1279px' },
+            'sm': { 'max': '667px' },
+            'md': { 'min': '668px', 'max': '1279px' },
             'md-container': { 'min': '1024px', 'max': '1279px' },
             'lg': { 'min': '1280px', 'max': '1535px' },
             'max-md': { 'max': '1279px' },

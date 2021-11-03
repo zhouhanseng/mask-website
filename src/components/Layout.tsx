@@ -2,7 +2,6 @@ import { Navbar } from "./Navbar"
 
 import React from "react"
 import { Footer } from "./Footer"
-import { Cookies } from "./Cookies"
 export default function Layout({ children }: any) {
   return (
     <div className='flex flex-col min-h-screen'>
@@ -11,7 +10,6 @@ export default function Layout({ children }: any) {
         {children}
       </main>
       <Footer />
-      <Cookies />
     </div>
   )
 }

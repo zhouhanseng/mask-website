@@ -39,7 +39,7 @@ const sectionConfig = [
   {
     mode: { reverse: false, row: false },
     title: "Digital Footprint Aggregation",
-    subtitle: "Aggregate all your digital footprint, including your writing history, NFT collection, POAPs, donation records ,etc all in your own profile",
+    subtitle: "Aggregate all your digital footprint, including your writing history, NFT collection, POAPs, donation records, etc all in your own profile",
     children: <Footprint/>
   },
   {

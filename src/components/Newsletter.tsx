@@ -23,11 +23,11 @@ export const Newsletter = () => {
     ].includes(path) ? null : (
       <div
         className="flex flex-row justify-between sm:flex-col md:flex-row sm:justify-center items-center sm:px-4 md:px-4 px-10 p-10 pb-7 bg-blue-100 sm:static flex-wrap box-shadow-news-letter-out">
-        <div className="mr-7 mb-7 max-sm:w-full">
-          <p className="text-3xl font-medium mb-4 max-sm:text-2xl max-sm:w-full max-sm:text-center text-left">
+        <div className="mr-7 mb-7 sm:w-full">
+          <h3 className="h2 font-medium mb-4 sm:mb-0 sm:w-full sm:text-center text-left">
             MASK NETWORK Newsletter
-          </p>
-          <p className="text-lg text-gray-500 max-sm:w-full max-sm:text-center text-left">
+          </h3>
+          <p className="description-text text-gray-500 sm:w-full text-center text-left sm:font-light">
             Follow us for more information about MASK
           </p>
         </div>

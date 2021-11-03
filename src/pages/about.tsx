@@ -2,7 +2,6 @@ import * as React from "react"
 import { SEO } from "../components/SEO"
 import AboutSvg from "../images/about.svg"
 
-import { StaticImage } from "gatsby-plugin-image"
 import Layout from "../components/Layout"
 
 // markup
@@ -34,7 +33,7 @@ const AnoutPage = () => {
               of our personal data.
             </p>
           </div>
-          <div className="flex-grow w-1/2">
+          <div className="flex-grow w-1/2 sm:w-full max-md:pb-28 max-md:mt-16">
             <div className="w-full">
               <AboutSvg />
             </div>

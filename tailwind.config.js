@@ -62,6 +62,7 @@ module.exports = {
                 "276": "290px",
                 "396": "305px",
                 "564": "564px",
+                "300": "300px",
             },
             minWidth: {
                 "nav-links": "450px",

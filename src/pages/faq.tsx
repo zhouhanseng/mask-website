@@ -336,7 +336,7 @@ const FaqPage = () => {
       {size ? (
         <>
           {size > 768 ? (
-            <div className="w-full h-full flex relative max-h-screen-1/3">
+            <div className="w-full h-full flex relative max-h-screen-1/3 min-h-300">
               <div className="flex justify-center items-center bg-gray-200 w-1/2 max-md:absolute max-md:top-0 max-md:left-0 max-md:w-full">
                 <p className="h2 w-1/2 max-md:w-full max-md:text-gray-h2">How can we help you?</p>
               </div>

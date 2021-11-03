@@ -81,9 +81,9 @@ const DownloadPage = () => {
             </div>
           </div>
           <div className="bg-blue-mask w-full py-16">
-            <div className="container mx-auto flex md:justify-between flex-row sm:flex-col-reverse items-center justify-center px-16 max-md:px-8">
-              <div className="h-48 max-sm:h-36 max-sm:px-4 w-full max-w-md text-white flex flex-col justify-between md:mt-0 mt-24">
-                <p className="text-4xl md:font-extralight max-sm:text-center mb-4">
+            <div className="container mx-auto flex md:justify-between flex-row sm:flex-col-reverse items-center justify-between px-16 max-md:px-8">
+              <div className="h-48 max-sm:h-36 max-sm:px-4 w-full max-w-md text-white flex flex-col justify-between md:mt-0 mt-20 min-lg:mt-0">
+                <p className="text-4xl font-bold max-sm:text-center mb-4">
                   Mobile App
                 </p>
                 <p className="w-full md:max-w-xss md:font-medium font-light text-xl max-sm:text-sm leading-tight max-sm:text-center mb-4">
@@ -166,7 +166,7 @@ const DownloadPage = () => {
               document.body.scrollTop = document.documentElement.scrollTop = 0
               setShowAll(true)
             }}
-            className="px-4 text-white text-lg text-center underline mb-24 max-sm:mb-14"
+            className="px-4 text-white text-lg text-center underline mb-24 max-sm:mb-14 sm:mt-16"
           >
             Download for another operating system.
           </p>

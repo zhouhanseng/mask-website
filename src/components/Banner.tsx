@@ -8,8 +8,8 @@ export const Banner = () => {
         <section className='container pt-16 flex items-center pb-20 md:pb-10 sm:pb-4' style={{ minHeight: 'calc(100vh - 80px)' }}>
           <div>
             <div className='flex justify-start relative items-center'>
-              <div className="flex-grow sm:p-8 z-10 px-20 p-20">
-                <div className="sm:text-4xl leading-tight font-black md:text-6xl text-8xl">
+              <div className="flex-grow z-10 p-10 md:p-4 sm:p-4">
+                <div className="sm:text-4xl leading-tight md:text-6xl text-8xl">
                   <p>
                     The Portal to
                   </p>
@@ -24,7 +24,7 @@ export const Banner = () => {
                   <GetMaskButton size='large' />
                 </div>
               </div>
-              <div className="flex-grow-0 sm:absolute bottom-0 sm:right-10 sm:w-40 relative w-80 z-0">
+              <div className="flex-grow-0 min-lg:px-10 min-lg:w-1/3 sm:absolute bottom-0 sm:right-10 sm:w-40 relative md-80 z-0">
                 <StatueOfLibertySvg  />
               </div>
             </div>

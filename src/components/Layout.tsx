@@ -1,8 +1,13 @@
 import { Navbar } from "./Navbar"
 
-import React from "react"
+import React, { useEffect } from "react"
 import { Footer } from "./Footer"
 export default function Layout({ children }: any) {
+  useEffect(() => {
+    if (!window) return
+    alert(window.innerWidth)
+    alert(window.innerHeight)
+  }, [])
   return (
     <div className='flex flex-col min-h-screen'>
       <Navbar />

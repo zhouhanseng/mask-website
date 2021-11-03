@@ -8,6 +8,7 @@ const config = [
       alt="Add Mask to your browse icon"
       src={'../images/add_mask_to_browser.png'}
       placeholder="none"
+      className="w-full"
     />
   },
   {
@@ -16,6 +17,7 @@ const config = [
       alt="Login in with Mask ID and connect wallet icon"
       src={'../images/login_with_mask.png'}
       placeholder="none"
+      className="w-full"
     />
   },
   {
@@ -24,6 +26,7 @@ const config = [
       alt="Enjoy your familiar Web 2.0 sites turbocharged by Web 3.0 icon"
       src={'../images/enjoy_web3.png'}
       placeholder="none"
+      className="w-full"
     />
   },
 ]
@@ -44,7 +47,7 @@ export const BrowserExtension = () => {
                 <div className="flex justify-center w-24 sm:w-1/3">
                   {x.svg}
                 </div>
-                <p className='py-4 text-gray-description sm:w-2/3 sm:pl-2'>{x.title}</p>
+                <p className='py-4 text-gray-description sm:w-2/3 sm:pl-6'>{x.title}</p>
               </div>
             )
           })

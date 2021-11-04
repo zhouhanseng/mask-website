@@ -22,7 +22,7 @@ export const SectionItem = memo<SectionItemProps>(({ mode, subtitle, title, url 
               <h2 className={`h2 max-md:text-left ${row ? 'text-left' : 'text-center'}`}>
                 {title}
               </h2>
-              <p className="description-text whitespace-pre-wrap">{subtitle}</p>
+              <p className={`description-text whitespace-pre-wrap ${!row ? 'min-lg:text-center' : ''}`}>{subtitle}</p>
             </div>
           </div>
           <div className={`flex-1 sm:flex-grow max-md:w-full ${row ? '' : 'w-full pt-24'} max-md:pt-16`}>

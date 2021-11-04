@@ -3,7 +3,9 @@ import { Helmet } from "react-helmet"
 
 export function SEO(props: any) {
   return (
-    <Helmet>
+    <Helmet htmlAttributes={{
+        lang: 'en',
+    }}>
       <meta charSet="UTF-8" />
       <meta
         name="viewport"

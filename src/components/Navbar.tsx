@@ -84,7 +84,7 @@ export const Navbar = () => {
       <nav
         className={"flex flex-grow-0 items-center px-6 justify-between w-full h-20 z-10"}
       >
-        <Link to="/" className="w-1/6">
+        <Link aria-label="home link" to="/" className="w-1/6">
           <Logo />
         </Link>
         <div

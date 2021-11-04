@@ -29,49 +29,57 @@ const sectionConfig = [
     mode: { reverse: false, row: false },
     title: "ITO (Initial Twitter Offering)",
     subtitle: "Launch decentralized asset freely and participate in token launch directly on Twitter",
-    url: ITOSvg
+    url: ITOSvg,
+    link: ""
   },
   {
     mode: { reverse: false, row: false },
     title: "Social Trading",
     subtitle: "Pop-up trading widget that allows you to instantly view prices of the hottest Crypto/Stock and trade. Can also invest in the best performing  managers.",
-    url: MarketSvg
+    url: MarketSvg,
+    link: ""
   },
   {
     mode: { reverse: false, row: false },
     title: "Verifiable NFT Avatars",
     subtitle: "Pop-up trading widget that allows you to instantly view prices of the hottest Crypto/Stock and trade. Can also invest in the best performing  managers.",
-    url: AvatarSvg
+    url: AvatarSvg,
+    link: ""
   },
   {
     mode: { reverse: false, row: false },
     title: "Digital Footprint Aggregation",
     subtitle: "Aggregate all your digital footprint, including your writing history, NFT collection, POAPs, donation records, etc all in your own profile",
-    url: Footprint
+    url: Footprint,
+    link: ""
   },
   {
     mode: { reverse: false, row: true },
     title: "Social Marketplaces",
     subtitle: `Buy and sell NFTs directly on social networks, powered by Opensea. \nInitial NFT launches also available.`,
-    url: NFTSvg
+    url: NFTSvg,
+    link: ""
   },
   {
     mode: { reverse: true, row: true },
     title: "Giveaway",
     subtitle: "Gift crypto or NFTs to any users, first come first serve.",
-    url: RedPacketSvg
+    url: RedPacketSvg,
+    link: ""
   },
   {
     mode: { reverse: false, row: true },
     title: "File Service",
     subtitle: "Decentralized file storage, permanently. Upload and share files to your Mask friends on top of Arweave Network",
-    url: FileSvg
+    url: FileSvg,
+    link: ""
   },
   {
     mode: { reverse: true, row: true },
     title: "Fiat On-ramp",
     subtitle: "Fiat On-Ramp Aggregator on Twitter. Buy crypto in 60+ countries with Transak support.",
-    url: FiatSvg
+    url: FiatSvg,
+    link: ""
   }
 ]
 
@@ -79,7 +87,7 @@ const IndexPage = () => {
   return (
     <Layout>
       <SEO title="Mask Network"/>
-      <div className="fixed top-0 left-0" style={{ zIndex: -1 }}>
+      <div className="fixed top-0 left-0" style={{ zIndex: -100 }}>
         <Background />
       </div>
       <Banner/>

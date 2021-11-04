@@ -153,6 +153,7 @@ export const Footer = () => {
                     href="https://twitter.com/realMaskNetwork"
                     target="_blank"
                     rel="noreferrer"
+                    aria-label="Goto twitter"
                   >
                     <img alt="" src={iconTwitterImage} className="cursor-pointer"/>
                   </a>
@@ -160,6 +161,7 @@ export const Footer = () => {
                     href="https://t.me/maskbook_group#telegram"
                     target="_blank"
                     rel="noreferrer"
+                    aria-label="Goto telegram"
                   >
                     <img alt="" src={iconTelegramImage} className="cursor-pointer"/>
                   </a>
@@ -167,6 +169,7 @@ export const Footer = () => {
                     href="https://discord.gg/4SVXvj7"
                     target="_blank"
                     rel="noreferrer"
+                    aria-label="Goto discord"
                   >
                     <img alt="" src={iconDiscordImage} className="cursor-pointer"/>
                   </a>
@@ -174,6 +177,7 @@ export const Footer = () => {
                     href="https://www.facebook.com/masknetwork"
                     target="_blank"
                     rel="noreferrer"
+                    aria-label="Goto facebook"
                   >
                     <img alt="" src={iconFacebookImage} className="cursor-pointer"/>
                   </a>
@@ -181,6 +185,7 @@ export const Footer = () => {
                     href="https://www.reddit.com/r/MaskNetwork/"
                     target="_blank"
                     rel="noreferrer"
+                    aria-label="Goto reddit"
                   >
                     <img alt="" src={iconRedditImage} className="cursor-pointer"/>
                   </a>
@@ -188,6 +193,7 @@ export const Footer = () => {
                     href="https://github.com/DimensionDev"
                     target="_blank"
                     rel="noreferrer"
+                    aria-label="Goto github"
                   >
                     <img alt="" src={iconGithubImage} className="cursor-pointer"/>
                   </a>

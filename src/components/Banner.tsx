@@ -59,7 +59,7 @@ export const Banner = () => {
                   The defender to data autonomy.</h5>
               </div>
               <div className="flex-grow-0 sm:absolute bottom-0 right-6 sm:w-28 relative w-8/12 z-0">
-                <img src={WhatSvg} />
+                <img src={WhatSvg} alt="What is Mask Network?" />
               </div>
             </section>
           </div>

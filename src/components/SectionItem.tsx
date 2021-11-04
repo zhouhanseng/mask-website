@@ -1,16 +1,17 @@
 import * as React from "react"
-import { memo, PropsWithChildren, ReactNode } from "react"
+import { memo, ReactNode } from "react"
 
-interface SectionItemProps extends PropsWithChildren<{}>{
+interface SectionItemProps {
   title: string
   subtitle: ReactNode
+  url: string
   mode: {
     row?: boolean,
     reverse?: boolean
   }
 }
 
-export const SectionItem = memo<SectionItemProps>(({ mode, children, subtitle, title }) => {
+export const SectionItem = memo<SectionItemProps>(({ mode, subtitle, title, url }) => {
   const { row = true, reverse = false } = mode
   const flexRowStyle = row ? (reverse ? 'flex-row-reverse sm:flex-col md:flex-col' : 'flex-row sm:flex-col md:flex-col') : 'flex-col'
   return (
@@ -26,7 +27,7 @@ export const SectionItem = memo<SectionItemProps>(({ mode, children, subtitle, t
           </div>
           <div className={`flex-1 sm:flex-grow max-md:w-full ${row ? '' : 'w-full pt-24'} max-md:pt-16`}>
             <div className="w-10/12 min-lg:max-w-800 mx-auto">
-              {children}
+              <img src={url} alt={title}/>
             </div>
           </div>
         </div>

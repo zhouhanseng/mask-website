@@ -428,7 +428,7 @@ const FaqPage = () => {
               </div>
               {type === "faq" || !type ? (
                 <div>
-                  <div className="sticky top-16 flex sm:hidden flex-col">
+                  <aside className="sticky top-16 flex sm:hidden flex-col">
                     {contents.map((x, i) => (
                       <Anchor
                         title={x.title}
@@ -437,7 +437,7 @@ const FaqPage = () => {
                         action={() => setAnchor(x.title)}
                       />
                     ))}
-                  </div>
+                  </aside>
                 </div>
               ) : null}
             </div>

@@ -5,8 +5,8 @@ import MenuIcon from "@mui/icons-material/Menu"
 import CloseIcon from "@mui/icons-material/Close"
 import { Drawer, List } from "@mui/material"
 // assets
-import LogoBlueImage from "../images/logo_blue.svg"
 import { GetMaskButton } from "./GetMaskButton"
+import { Logo } from "./Logo"
 
 interface MenuLinkProps extends PropsWithChildren<{}>{
   open: boolean
@@ -85,7 +85,7 @@ export const Navbar = () => {
         className={"flex flex-grow-0 items-center px-6 justify-between w-full h-20 z-10"}
       >
         <Link to="/" className="w-1/6">
-          <LogoBlueImage className="w-1/6 max-w-nav-logo min-w-nav-logo" />
+          <Logo />
         </Link>
         <div
           className={"flex flex-grow items-center w-2/5 justify-between sm:min-w-nav-links antialiased text-xl h-full sm:flex sm:hidden md:hidden"} >
@@ -106,7 +106,7 @@ export const Navbar = () => {
           <Drawer PaperProps={{ sx: { width: '100vw', minHeight: '100vh', background: '#F5F9FF' } }} className="w-full" open={open} onClose={() => setOpen(false)}>
             <div className="w-full h-16 pt-5 px-6">
               <Link to="/">
-                <LogoBlueImage className="w-1/6 max-w-nav-logo min-w-nav-logo" />
+                <Logo />
               </Link>
             </div>
             <CloseIcon

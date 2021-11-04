@@ -1,6 +1,6 @@
 import * as React from "react"
 import { SEO } from "../components/SEO"
-import AboutSvg from "../images/about.svg"
+import aboutSvg from "../images/outsvg/about.svg"
 
 import Layout from "../components/Layout"
 
@@ -35,7 +35,7 @@ const AnoutPage = () => {
           </div>
           <div className="flex-grow w-1/2 sm:w-full max-md:pb-28 max-md:mt-16">
             <div className="w-full">
-              <AboutSvg />
+              <img src={aboutSvg} />
             </div>
           </div>
         </div>

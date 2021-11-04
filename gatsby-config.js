@@ -17,13 +17,11 @@ module.exports = {
     "gatsby-plugin-use-query-params",
     "gatsby-plugin-react-helmet",
     {
-      resolve: "gatsby-plugin-react-svg",
+      resolve: 'gatsby-plugin-svgr',
       options: {
-        rule: {
-          include:  /\.svg$/ // See below to configure properly
-        }
-      }
-    }
+        include: /outsvg/,
+      },
+    },
   ],
   pathPrefix: "/mask-website",
 }

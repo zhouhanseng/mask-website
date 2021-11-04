@@ -1,26 +1,33 @@
+import { StaticImage } from "gatsby-plugin-image"
 import React from "react"
-import LoginWithMaskSvg from '../images/login_with_mask.svg'
-import AddMaskToBrowserSvg from '../images/add_mask_to_browser.svg'
-import EnjoyWeb3Svg from '../images/enjoy_web3.svg'
 
 const config = [
   {
     title: "Add Mask to your browser",
-    svg: <div className="w-full">
-      <AddMaskToBrowserSvg />
-    </div>
+    svg: <StaticImage
+      alt="Enjoy your familiar Web 2.0 sites turbocharged by Web 3.0 icon"
+      src={'../images/add_mask_to_browser.png'}
+      placeholder="none"
+      className="w-full"
+    />
   },
   {
     title: "Login in with Mask ID and connect wallet",
-    svg: <div className="w-full">
-      <LoginWithMaskSvg />
-    </div>
+    svg:<StaticImage
+      alt="Enjoy your familiar Web 2.0 sites turbocharged by Web 3.0 icon"
+      src={'../images/login_with_mask.png'}
+      placeholder="none"
+      className="w-full"
+    />
   },
   {
     title: "Enjoy your familiar Web 2.0 sites turbocharged by Web 3.0",
-    svg: <div className="w-full">
-      <EnjoyWeb3Svg />
-    </div>
+    svg: <StaticImage
+      alt="Enjoy your familiar Web 2.0 sites turbocharged by Web 3.0 icon"
+      src={'../images/enjoy_web3.png'}
+      placeholder="none"
+      className="w-full"
+    />
   },
 ]
 

@@ -22,22 +22,23 @@ const sectionConfig = [
   {
     mode: { reverse: false, row: false },
     title: "Encryption & Unlock",
-    subtitle: "Encrypt or set access criteria for your unique content, share only with your target audience",
-    url: MessageSvg
+    subtitle: "Encrypt or set access criteria for your unique content, share only with your target audience.",
+    url: MessageSvg,
+    link: "https://realmasknetwork.notion.site/Send-an-Encrypted-Text-365ba60facbd4d069ea6ca72ec16a154",
   },
   {
     mode: { reverse: false, row: false },
     title: "ITO (Initial Twitter Offering)",
-    subtitle: "Launch decentralized asset freely and participate in token launch directly on Twitter",
+    subtitle: "Launch decentralized asset freely and participate in token launch directly on Twitter.",
     url: ITOSvg,
-    link: ""
+    link: "https://realmasknetwork.notion.site/Participate-in-ITO-Initial-Twitter-Offering-Support-ETH-BSC-and-Polygon-16de37684de54f36923f55158159a11c"
   },
   {
     mode: { reverse: false, row: false },
     title: "Social Trading",
-    subtitle: "Pop-up trading widget that allows you to instantly view prices of the hottest Crypto/Stock and trade. Can also invest in the best performing  managers.",
+    subtitle: "Pop-up trading widget that allows you to instantly view prices of the hottest Crypto/Stock and trade. Can also invest in the best performing managers.",
     url: MarketSvg,
-    link: ""
+    link: "https://realmasknetwork.notion.site/Trade-tokens-via-Uniswap-Sushi-0x-etc-on-Twitter-Support-ETH-BSC-and-Polygon-803402915c2c4148a269dc88faf0306e"
   },
   {
     mode: { reverse: false, row: false },
@@ -49,9 +50,9 @@ const sectionConfig = [
   {
     mode: { reverse: false, row: false },
     title: "Digital Footprint Aggregation",
-    subtitle: "Aggregate all your digital footprint, including your writing history, NFT collection, POAPs, donation records, etc all in your own profile",
+    subtitle: "Aggregate all your digital footprint, including your writing history, NFT collection, POAPs, donation records, etc all in your own profile.",
     url: Footprint,
-    link: ""
+    link: "https://realmasknetwork.notion.site/Trade-tokens-via-Uniswap-Sushi-0x-etc-on-Twitter-Support-ETH-BSC-and-Polygon-803402915c2c4148a269dc88faf0306e"
   },
   {
     mode: { reverse: false, row: true },
@@ -65,14 +66,14 @@ const sectionConfig = [
     title: "Giveaway",
     subtitle: "Gift crypto or NFTs to any users, first come first serve.",
     url: RedPacketSvg,
-    link: ""
+    link: "https://realmasknetwork.notion.site/Send-a-Red-Packet-Support-ETH-BSC-and-Polygon-d5a3c18464474a07bd07581c31cea7f7"
   },
   {
     mode: { reverse: false, row: true },
     title: "File Service",
-    subtitle: "Decentralized file storage, permanently. Upload and share files to your Mask friends on top of Arweave Network",
+    subtitle: "Decentralized file storage, permanently. Upload and share files to your Mask friends on top of Arweave Network.",
     url: FileSvg,
-    link: ""
+    link: "https://realmasknetwork.notion.site/Use-File-Service-via-Arweave-IPFS-SIA-Swarm-soon-e5d60b122fda433e921ddad242b58c05"
   },
   {
     mode: { reverse: true, row: true },

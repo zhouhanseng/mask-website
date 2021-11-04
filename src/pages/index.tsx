@@ -11,6 +11,7 @@ import FileSvg from "../images/file.svg"
 import RedPacketSvg from "../images/red_packet.svg"
 import Footprint from "../images/footprint.svg"
 import MarketSvg from "../images/market.svg"
+import AvatarSvg from "../images/index_avatar.svg"
 
 import { JoinCommunity } from "../components/JoinCommunity"
 import { BrowserExtension } from "../components/BrowserExtension"
@@ -31,10 +32,16 @@ const sectionConfig = [
     children: <ITOSvg/>
   },
   {
-    mode: { reverse: false, row: true },
+    mode: { reverse: false, row: false },
     title: "Social Trading",
     subtitle: "Pop-up trading widget that allows you to instantly view prices of the hottest Crypto/Stock and trade. Can also invest in the best performing  managers.",
     children: <MarketSvg/>
+  },
+  {
+    mode: { reverse: false, row: false },
+    title: "Verifiable NFT Avatars",
+    subtitle: "Pop-up trading widget that allows you to instantly view prices of the hottest Crypto/Stock and trade. Can also invest in the best performing  managers.",
+    children: <AvatarSvg/>
   },
   {
     mode: { reverse: false, row: false },
@@ -45,7 +52,7 @@ const sectionConfig = [
   {
     mode: { reverse: false, row: true },
     title: "Social Marketplaces",
-    subtitle: "Buy and sell NFTs directly on social networks, powered by Opensea Initial NFT launches also available",
+    subtitle: `Buy and sell NFTs directly on social networks, powered by Opensea. \nInitial NFT launches also available.`,
     children: <NFTSvg/>
   },
   {

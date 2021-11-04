@@ -1,9 +1,9 @@
 import * as React from "react"
-import { memo, PropsWithChildren } from "react"
+import { memo, PropsWithChildren, ReactNode } from "react"
 
 interface SectionItemProps extends PropsWithChildren<{}>{
   title: string
-  subtitle: string
+  subtitle: ReactNode
   mode: {
     row?: boolean,
     reverse?: boolean
@@ -21,7 +21,7 @@ export const SectionItem = memo<SectionItemProps>(({ mode, children, subtitle, t
               <h2 className={`h2 max-md:text-left ${row ? 'text-left' : 'text-center'}`}>
                 {title}
               </h2>
-              <p className="description-text">{subtitle}</p>
+              <p className="description-text whitespace-pre-wrap">{subtitle}</p>
             </div>
           </div>
           <div className={`flex-1 sm:flex-grow max-md:w-full ${row ? '' : 'w-full pt-24'} max-md:pt-16`}>

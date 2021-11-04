@@ -3,7 +3,6 @@ import { useEffect, useState, useRef } from "react"
 import { StaticImage } from "gatsby-plugin-image"
 import AnchorLink from "react-anchor-link-smooth-scroll"
 import { useQueryParam, StringParam } from "use-query-params"
-import { Footer } from "../components/Footer"
 import { SEO } from "../components/SEO"
 
 //assets
@@ -212,6 +211,52 @@ const FaqPage = () => {
       ],
     },
     {
+      title: "Features",
+      image: faq8Image,
+      contents: [
+        {
+          text: "Send an Encrypted Text",
+          link: "https://realmasknetwork.notion.site/Send-an-Encrypted-Text-365ba60facbd4d069ea6ca72ec16a154",
+        },
+        {
+          text: "Purchase NFTs or place a bid  for NFTs  via OpenSea or Rarible on Twitter",
+          link: "https://realmasknetwork.notion.site/Purchase-NFTs-or-place-a-bid-for-NFTs-via-OpenSea-or-Rarible-on-Twitter-912fea95f84b49bfb481ef152e1423c1",
+        },
+        {
+          text: "Use File Service via Arweave (IPFS, SIA, Swarm soon)",
+          link: "https://realmasknetwork.notion.site/Use-File-Service-via-Arweave-IPFS-SIA-Swarm-soon-e5d60b122fda433e921ddad242b58c05",
+        },
+        {
+          text: "Cast a Snapshot vote",
+          link: "https://realmasknetwork.notion.site/Cast-a-Snapshot-vote-4ba42d31d00647d782ff431e8fe986d2",
+        },
+        {
+          text: "Send a Lucky Drop (Support ETH, BSC and Polygon)",
+          link: "https://realmasknetwork.notion.site/Send-a-Red-Packet-Support-ETH-BSC-and-Polygon-d5a3c18464474a07bd07581c31cea7f7",
+        },
+        {
+          text: "Launch an ITO (Initial Twitter Offering) (Support ETH, BSC and Polygon)",
+          link: "https://realmasknetwork.notion.site/Launch-an-ITO-Initial-Twitter-Offering-Support-ETH-BSC-and-Polygon-eb242a21eaff4c48ba4c1445bd7b9482",
+        },
+        {
+          text: "Participate in ITO (Initial Twitter Offering) (Support ETH, BSC and Polygon)",
+          link: "https://realmasknetwork.notion.site/Participate-in-ITO-Initial-Twitter-Offering-Support-ETH-BSC-and-Polygon-16de37684de54f36923f55158159a11c",
+        },
+        {
+          text: "Claim tokens (from ITO/Airdrop) (Support ETH only, Polygon soon)",
+          link: "https://realmasknetwork.notion.site/Claim-tokens-from-ITO-Airdrop-Support-ETH-only-Polygon-soon-90ccfe8812ea4e44bb998921b80aaa80",
+        },
+        {
+          text: "Check cryptocurrency info on social media (CoinGecko, CoinMarketCap, Uniswap Info)",
+          link: "https://realmasknetwork.notion.site/Check-cryptocurrency-info-on-social-media-CoinGecko-CoinMarketCap-Uniswap-Info-f086e3aa33964f74a84cf2033dfcba9c",
+        },
+        {
+          text: "Display the NFTs you own on your Twitter profile",
+          link: "https://realmasknetwork.notion.site/Display-the-NFTs-you-own-on-your-Twitter-profile-1cdcf9569ecc4e98987e05c88e0d2deb",
+        },
+      ],
+    },
+    {
       title: "Switch Network & Cross Chain",
       image: faq1Image,
       contents: [
@@ -226,52 +271,6 @@ const FaqPage = () => {
         {
           text: "Convert $MASK from ERC20 to BEP20",
           link: "https://realmasknetwork.notion.site/Convert-MASK-from-ERC20-to-BEP20-7e982c16c1404d758a3c94b1e5ee9ca2",
-        },
-      ],
-    },
-    {
-      title: "Features",
-      image: faq8Image,
-      contents: [
-        {
-          text: "Send an Encrypted Text",
-          link: "https://realmasknetwork.notion.site/Send-an-Encrypted-Text-365ba60facbd4d069ea6ca72ec16a154",
-        },
-        {
-          text: "Purchase NFTs or place a bid  for NFTs  via OpenSea or Rarible on Twitter",
-          link: "https://realmasknetwork.notion.site/Purchase-NFTs-or-place-a-bid-for-NFTs-via-OpenSea-or-Rarible-on-Twitter-912fea95f84b49bfb481ef152e1423c1",
-        },
-        {
-          text: "Send a Lucky Drop (Support ETH, BSC and Polygon)",
-          link: "https://realmasknetwork.notion.site/Send-a-Red-Packet-Support-ETH-BSC-and-Polygon-d5a3c18464474a07bd07581c31cea7f7",
-        },
-        {
-          text: "Use File Service via Arweave (IPFS, SIA, Swarm soon)",
-          link: "https://realmasknetwork.notion.site/Use-File-Service-via-Arweave-IPFS-SIA-Swarm-soon-e5d60b122fda433e921ddad242b58c05",
-        },
-        {
-          text: "Cast a Snapshot vote",
-          link: "https://realmasknetwork.notion.site/Cast-a-Snapshot-vote-4ba42d31d00647d782ff431e8fe986d2",
-        },
-        {
-          text: "Launch an ITO (Initial Twitter Offering) (Support ETH, BSC and Polygon)",
-          link: "https://realmasknetwork.notion.site/Launch-an-ITO-Initial-Twitter-Offering-Support-ETH-BSC-and-Polygon-eb242a21eaff4c48ba4c1445bd7b9482",
-        },
-        {
-          text: "Claim tokens (from ITO/Airdrop) (Support ETH only, Polygon soon)",
-          link: "https://realmasknetwork.notion.site/Claim-tokens-from-ITO-Airdrop-Support-ETH-only-Polygon-soon-90ccfe8812ea4e44bb998921b80aaa80",
-        },
-        {
-          text: "Check cryptocurrency info on social media (CoinGecko, CoinMarketCap, Uniswap Info)",
-          link: "https://realmasknetwork.notion.site/Check-cryptocurrency-info-on-social-media-CoinGecko-CoinMarketCap-Uniswap-Info-f086e3aa33964f74a84cf2033dfcba9c",
-        },
-        {
-          text: "Participate in ITO (Initial Twitter Offering) (Support ETH, BSC and Polygon)",
-          link: "https://realmasknetwork.notion.site/Participate-in-ITO-Initial-Twitter-Offering-Support-ETH-BSC-and-Polygon-16de37684de54f36923f55158159a11c",
-        },
-        {
-          text: "Display the NFTs you own on your Twitter profile",
-          link: "https://realmasknetwork.notion.site/Display-the-NFTs-you-own-on-your-Twitter-profile-1cdcf9569ecc4e98987e05c88e0d2deb",
         },
       ],
     },
@@ -306,12 +305,12 @@ const FaqPage = () => {
           link: "https://realmasknetwork.notion.site/Cultivate-a-weekly-saving-habit-via-GoodGhosting-on-Twitter-Polygon-only-6b80d1ee67b64987aa54be7cb4fd9983",
         },
         {
-          text: "Participate in lossless lottery via PoolTogether on Twitter (ETH and Polygon)",
-          link: "https://realmasknetwork.notion.site/Participate-in-lossless-lottery-via-PoolTogether-on-Twitter-ETH-and-Polygon-4e4954ffc592452b9c8903babec47959",
-        },
-        {
           text: "Copy your favourite manager's portfolio via dHEDGE on Twitter (ETH and Polygon)",
           link: "https://realmasknetwork.notion.site/Copy-your-favourite-manager-s-portfolio-via-dHEDGE-on-Twitter-ETH-and-Polygon-eab2d7120a094834b24d86b1a54aa1c7",
+        },
+        {
+          text: "Participate in lossless lottery via PoolTogether on Twitter (ETH and Polygon)",
+          link: "https://realmasknetwork.notion.site/Participate-in-lossless-lottery-via-PoolTogether-on-Twitter-ETH-and-Polygon-4e4954ffc592452b9c8903babec47959",
         },
       ],
     },
@@ -367,29 +366,29 @@ const FaqPage = () => {
                 <p
                   className="cursor-pointer mb-14 max-sm:mb-6"
                   onClick={() => {
-                    setType(type === "faq" || !type ? "tutorials" : "faq")
+                    setType(type === "faq" ? "tutorials" : "faq")
                   }}
                 >
                   <span
                     className={
-                      type === "faq" || !type
-                        ? "text-6xl font-semibold md:text-4xl sm:text-3xl font-bold"
-                        : "text-5xl text-gray-500 md:text-4xl sm:text-3xl font-bold"
-                    }
-                  >
-                    FAQ\
-                  </span>
-                  <span
-                    className={
-                      type === "faq" || !type
+                      type === "faq"
                         ? "text-5xl text-gray-500 md:text-4xl sm:text-3xl font-bold"
                         : "text-6xl font-semibold md:text-4xl sm:text-3xl font-bold"
                     }
                   >
-                    Tutorial
+                    Tutorial\
+                  </span>
+                  <span
+                    className={
+                      type === "faq"
+                        ? "text-6xl font-semibold md:text-4xl sm:text-3xl font-bold"
+                        : "text-5xl text-gray-500 md:text-4xl sm:text-3xl font-bold"
+                    }
+                  >
+                    FAQ
                   </span>
                 </p>
-                {type === "tutorials" ? (
+                {type === "tutorials" || !type ? (
                   <div className="max-w-4xl my-24 max-sm:my-8">
                     <p className="text-4xl mb-8 px-4 md:px-0 max-sm:mb-4 max-sm:px-0 md:text-3xl sm:text-2xl">
                       An (In)Complete Guide to Mask Network
@@ -407,14 +406,14 @@ const FaqPage = () => {
                     </p>
                   </div>
                 ) : null}
-                {type === "tutorials"
+                {type === "tutorials" || !type
                   ? tutorialContents.map((x, i) => (
                       <div key={i.toString()} className="max-w-3xl">
                         <TutorialTopic i={i} content={x} />
                       </div>
                     ))
                   : null}
-                {type === "faq" || !type
+                {type === "faq"
                   ? contents.map((x, i) => (
                       <div key={i.toString()} className="max-w-3xl">
                         <FaqTopic

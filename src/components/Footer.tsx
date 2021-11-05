@@ -106,7 +106,7 @@ export const Footer = () => {
                     >
                       News
                     </a>
-                    <Link className="text-base text-white opacity-80" to="/faq">
+                    <Link className="text-base text-white opacity-80" to="/faq?type=faq">
                       FAQs
                     </Link>
                     <a
@@ -117,7 +117,7 @@ export const Footer = () => {
                     >
                       Source Code
                     </a>
-                    <Link className="text-white opacity-80" to="/faq">
+                    <Link className="text-white opacity-80" to="/faq?type=faq">
                       Help
                     </Link>
                     <Link className="text-white opacity-80" to="/faq?type=tutorials">

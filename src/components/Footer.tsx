@@ -66,7 +66,7 @@ export const Footer = () => {
                   <div
                     className="grid grid-cols-1 gap-x-16 gap-x-4 gap-y-10 sm:gap-y-5 max-md:gap-x-0 max-md:gap-y-1 text-base max-md::text-sm">
                     <a
-                      href="https://dimensiondev.github.io/Maskbook-VI/"
+                      href="https://dimensiondev.github.io/Mask-VI/"
                       target="_blank"
                       rel="noreferrer"
                       className="text-base text-white opacity-80"

@@ -24,56 +24,56 @@ const sectionConfig = [
     title: "Encryption & Unlock",
     subtitle: "Encrypt or set access criteria for your unique content, share only with your target audience.",
     url: MessageSvg,
-    link: "https://realmasknetwork.notion.site/Send-an-Encrypted-Text-365ba60facbd4d069ea6ca72ec16a154",
+    link: "https://realmasknetwork.notion.site/Send-an-Encrypted-Tweet-b76c1e6ec9fd4e9a8033df51669b4daf",
   },
   {
     mode: { reverse: false, row: false },
     title: "ITO (Initial Twitter Offering)",
     subtitle: "Launch decentralized asset freely and participate in token launch directly on Twitter.",
     url: ITOSvg,
-    link: "https://realmasknetwork.notion.site/Participate-in-ITO-Initial-Twitter-Offering-Support-ETH-BSC-and-Polygon-16de37684de54f36923f55158159a11c"
+    link: "https://realmasknetwork.notion.site/Participate-in-ITO-Initial-Twitter-Offering-Support-ETH-BSC-Polygon-Arbitrum-05619ffc02204848bcaf6d81b0db589f"
   },
   {
     mode: { reverse: false, row: false },
     title: "Social Trading",
     subtitle: "Pop-up trading widget that allows you to instantly view prices of the hottest Crypto/Stock and trade. Can also invest in the best performing managers.",
     url: MarketSvg,
-    link: "https://realmasknetwork.notion.site/Trade-tokens-via-Uniswap-Sushi-0x-etc-on-Twitter-Support-ETH-BSC-and-Polygon-803402915c2c4148a269dc88faf0306e"
+    link: "https://realmasknetwork.notion.site/Trade-cryptos-on-Twitter-via-Uniswap-Sushi-0x-Support-ETH-BSC-Polygon-Arbitrum-f2e7d081ee38487ca1db958393ac1edc"
   },
   {
     mode: { reverse: false, row: false },
     title: "Verifiable NFT Avatars",
     subtitle: "Display your NFT avatars, verifiable on chain.",
     url: AvatarSvg,
-    link: ""
+    link: "https://realmasknetwork.notion.site/Set-any-NFT-you-own-as-your-Twitter-Profile-Picture-b60da726f7054f918d72634400479d1d"
   },
   {
     mode: { reverse: false, row: false },
     title: "Digital Footprint Aggregation",
     subtitle: "Aggregate all your digital footprint, including your writing history, NFT collection, POAPs, donation records, etc all in your own profile.",
     url: Footprint,
-    link: "https://realmasknetwork.notion.site/Trade-tokens-via-Uniswap-Sushi-0x-etc-on-Twitter-Support-ETH-BSC-and-Polygon-803402915c2c4148a269dc88faf0306e"
+    link: "https://realmasknetwork.notion.site/Display-Your-NFTs-on-your-Twitter-profile-page-5772759b609843309839beb056bead02"
   },
   {
     mode: { reverse: false, row: true },
     title: "Social Marketplaces",
     subtitle: `Buy and sell NFTs directly on social networks, powered by Opensea. \nInitial NFT launches also available.`,
     url: NFTSvg,
-    link: ""
+    link: "https://realmasknetwork.notion.site/Purchase-or-bid-for-NFTs-via-OpenSea-or-Rarible-on-Twitter-c388746f11774ecfa17914c900d3ed97"
   },
   {
     mode: { reverse: true, row: true },
     title: "Giveaway",
     subtitle: "Gift crypto or NFTs to any users, first come first serve.",
     url: RedPacketSvg,
-    link: "https://realmasknetwork.notion.site/Send-a-Red-Packet-Support-ETH-BSC-and-Polygon-d5a3c18464474a07bd07581c31cea7f7"
+    link: "https://realmasknetwork.notion.site/Gift-token-NFTs-to-your-friends-Support-ETH-BSC-and-Polygon-0a71fd421aae4563bd07caa3e2129e5b"
   },
   {
     mode: { reverse: false, row: true },
     title: "File Service",
     subtitle: "Decentralized file storage, permanently. Upload and share files to your Mask friends on top of Arweave Network.",
     url: FileSvg,
-    link: "https://realmasknetwork.notion.site/Use-File-Service-via-Arweave-IPFS-SIA-Swarm-soon-e5d60b122fda433e921ddad242b58c05"
+    link: "https://realmasknetwork.notion.site/Use-File-Service-via-Arweave-IPFS-SIA-Swarm-soon-8c8fe1efce5a48b49739a38f4ea8c60f"
   },
   {
     mode: { reverse: true, row: true },

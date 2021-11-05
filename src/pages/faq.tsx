@@ -406,8 +406,7 @@ const FaqPage = () => {
                       </div>
                     ))
                   : null}
-                {type === "faq"
-                  ? contents.map((x, i) => (
+                {type === "faq" ? contents.map((x, i) => (
                       <div key={i.toString()} className="max-w-3xl">
                         <FaqTopic
                           contents={contents}
@@ -419,7 +418,7 @@ const FaqPage = () => {
                     ))
                   : null}
               </div>
-              {type === "faq" || !type ? (
+              {type === "faq" ? (
                 <div>
                   <aside className="sticky top-16 flex sm:hidden flex-col">
                     {contents.map((x, i) => (

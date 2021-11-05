@@ -26,12 +26,14 @@ export const SectionItem = memo<SectionItemProps>(({ mode, subtitle, title, url,
             </h2>
             <p className={`description-text whitespace-pre-wrap ${!row ? 'min-lg:text-center' : ''}`}>
               {subtitle}
+              {link &&
               <a href={link} className="inline-block ml-2 leading-tight relative"
                  target="_blank"
                  rel="noreferrer"
                  style={{ width: "1.4em", top: '0.2rem' }}>
-                <img src={arrowSvg} className='w-6' alt={`got ${title} page`}/>
+                  <img src={arrowSvg} className='w-6' alt={`got ${title} page`}/>
               </a>
+              }
             </p>
           </div>
         </div>

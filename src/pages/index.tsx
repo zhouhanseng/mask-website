@@ -64,7 +64,7 @@ const sectionConfig = [
   {
     mode: { reverse: true, row: true },
     title: "Giveaway",
-    subtitle: "Gift crypto or NFTs to any users, first come first serve.",
+    subtitle: "Gift crypto or NFTs to any users, first come, first served.",
     url: RedPacketSvg,
     link: "https://realmasknetwork.notion.site/Gift-token-NFTs-to-your-friends-Support-ETH-BSC-and-Polygon-0a71fd421aae4563bd07caa3e2129e5b"
   },

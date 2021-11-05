@@ -105,7 +105,7 @@ export const Navbar = () => {
         {open ? (
           <Drawer PaperProps={{ sx: { width: '100vw', minHeight: '100vh', background: '#F5F9FF' } }} className="w-full" open={open} onClose={() => setOpen(false)}>
             <div className="w-full h-16 pt-5 px-6">
-              <Link to="/">
+              <Link to="/" aria-label="home">
                 <Logo />
               </Link>
             </div>
@@ -127,7 +127,7 @@ export const Navbar = () => {
                     </p>
                   </h2>
                 </div>
-                <div className='pb-8'>
+                <div className='pb-8' onClick={() => setOpen(false)}>
                   <GetMaskButton size={'large'} />
                 </div>
                 <Menu open={open} />

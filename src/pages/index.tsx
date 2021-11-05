@@ -77,7 +77,7 @@ const sectionConfig = [
   },
   {
     mode: { reverse: true, row: true },
-    title: "Fiat On-ramp",
+    title: "Fiat On-Ramp",
     subtitle: "Fiat On-Ramp Aggregator on Twitter. Buy crypto in 60+ countries with Transak support.",
     url: FiatSvg,
     link: ""

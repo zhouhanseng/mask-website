@@ -72,7 +72,7 @@ const DownloadPage = () => {
                   <img alt="" src={value.image} className="w-20 h-20" />
                   <a
                     href={value.link}
-                    className="bg-black text-white py-3 px-4 rounded-md cursor-pointer"
+                    className="bg-black py-3 px-4 rounded-md cursor-pointer"
                   >
                     {value.text}
                   </a>
@@ -125,7 +125,7 @@ const DownloadPage = () => {
               <img alt="" src={apkImage} className="w-48" />
               <a
                 href="https://github.com/DimensionDev/Mask-Android-Release/releases/download/1.34.0/app-release.apk"
-                className="text-white bg-black rounded-md px-4 py-3 mt-8"
+                className="bg-black rounded-md px-4 py-3 mt-8"
               >
                 Github releases
               </a>

@@ -4,7 +4,6 @@ import { StaticImage } from "gatsby-plugin-image"
 import AnchorLink from "react-anchor-link-smooth-scroll"
 import { useQueryParam, StringParam } from "use-query-params"
 import { SEO } from "../components/SEO"
-import { Link } from "gatsby"
 
 //assets
 import faqSmImage from "../images/faq_sm.png"
@@ -395,7 +394,7 @@ const FaqPage = () => {
                       An (In)Complete Guide to Mask Network (2.0)
                     </p>
                     <p className="text-xl text-gray-500 px-4 md:px-0 max-sm:text-base max-sm:px-0">
-                      Mask has dedicated itself to protect data privacy and build the best bridge between Web 2.0 and Web 3.0. Through our browser extension, we have introduced an ecosystem of 30+ popular Web 3.0 dApps / Features that works seamlessly on top of existing Web 2.0 sites like Twitter and Facebook
+                      Mask has dedicated itself to protect data privacy and build the best bridge between Web 2.0 and Web 3.0. Through our browser extension, we have introduced an ecosystem of 30+ popular Web 3.0 dApps / Features that works seamlessly on top of existing Web 2.0 sites like Twitter and Facebook.
                     </p>
                   </div>
                 ) : null}

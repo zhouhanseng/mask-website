@@ -9,7 +9,7 @@ const AnoutPage = () => {
   return (
     <Layout>
       <SEO title="About us - Mask Network"/>
-      <div className='container my-16 sm:my-10'>
+      <div className='container my-16 sm:my-10 animate__animated animate__fadeIn'>
         <div className='flex max-md:flex-col justify-center items-center'>
           <div className="flex-grow min-lg:w-1/2 max-md:w-10/12">
             <p className="h2">
@@ -34,7 +34,7 @@ const AnoutPage = () => {
             </p>
           </div>
           <div className="flex-grow w-1/2 sm:w-full max-md:pb-28 max-md:mt-16">
-            <div className="w-full">
+            <div className="w-full animate__animated animate__fadeIn">
               <img src={aboutSvg} />
             </div>
           </div>

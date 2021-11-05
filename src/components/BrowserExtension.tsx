@@ -39,7 +39,7 @@ export const BrowserExtension = () => {
           Browser Extension
         </h2>
       </div>
-      <div className={`flex justify-between items-start pt-8 gap-x-2 sm:flex-col`}>
+      <div className={`flex justify-between items-start pt-8 gap-x-2 sm:flex-col animate__animated animate__fadeIn`}>
         {
           config.map(x =>{
             return (

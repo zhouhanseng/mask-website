@@ -112,7 +112,7 @@ export const Navbar = () => {
             <CloseIcon
               onClick={() => setOpen(false)}
               className={
-                "absolute right-7 top-7 text-black cursor-pointer flex hidden md:flex sm:flex"
+                "absolute right-4 top-5 text-black cursor-pointer flex hidden md:flex sm:flex"
               }
             />
             <List className="w-full flex flex-col px-4 pt-8 text-xl max-md:px-2 max-md:pt-4">

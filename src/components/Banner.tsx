@@ -53,12 +53,16 @@ export const Banner = () => {
               </div>
             </div>
             <section className="rounded-xl flex justify-center items-center relative p-2 sm:pb-6" style={{ background: '#06018E' }}>
-              <div className="text-blue-50 flex-grow sm:px-4 sm:py-2 md:px-8 md:py-6 pl-24 py-40 z-10">
+              <div className="text-blue-50 flex-grow sm:px-4 sm:py-2 md:px-8 md:py-6 pl-24 py-40 z-10 animate__animated animate__fadeIn">
                 <h2 className="h2 text-blue-50 md:pb-10 font-extrabold">What is Mask Network?</h2>
-                <h5 className="h5 text-blue-50">The bridge that helps you seamlessly transit to web3.
-                  The defender to data autonomy.</h5>
+                <p className="h5 text-blue-50">
+                  The bridge that helps you seamlessly transit to Web3.0
+                </p>
+                <p className="h5 text-blue-50">
+                  The defender to data autonomy.
+                </p>
               </div>
-              <div className="flex-grow-0 sm:absolute bottom-0 right-6 sm:w-28 relative w-8/12 z-0">
+              <div className="flex-grow-0 sm:absolute bottom-0 right-6 sm:w-28 relative w-1/3 z-0">
                 <img src={WhatSvg} alt="What is Mask Network?" />
               </div>
             </section>

@@ -190,7 +190,7 @@ const FaqPage = () => {
 
   const tutorialContents = [
     {
-      title: "Setup",
+      title: "Set up & Back up",
       image: faq7Image,
       contents: [
         {
@@ -392,18 +392,10 @@ const FaqPage = () => {
                 {type === "tutorials" || !type ? (
                   <div className="max-w-4xl my-24 max-sm:my-8">
                     <p className="text-4xl mb-8 px-4 md:px-0 max-sm:mb-4 max-sm:px-0 md:text-3xl sm:text-2xl">
-                      An (In)Complete Guide to Mask Network
+                      An (In)Complete Guide to Mask Network (2.0)
                     </p>
                     <p className="text-xl text-gray-500 px-4 md:px-0 max-sm:text-base max-sm:px-0">
-                      Mask Network is the portal to the new internet that
-                      connects mainstream Web 2.0 social media with the open,
-                      decentralized Web 3.0. Through our browser extension,
-                      users could get a glimpse of the decentralized application
-                      world. You can easily make borderless cryptocurrency
-                      transfers, decentralized file storage and sharing, display
-                      and trade NFTs, participate in various DeFi projects, and
-                      vote on governance proposals. Do everything in a Web 3.0
-                      way, but on top of Web 2.0.
+                      Mask has dedicated itself to protect data privacy and build the best bridge between Web 2.0 and Web 3.0. Through our browser extension, we have introduced an ecosystem of 30+ popular Web 3.0 dApps / Features that works seamlessly on top of existing Web 2.0 sites like Twitter and Facebook
                     </p>
                   </div>
                 ) : null}
@@ -576,11 +568,11 @@ function FaqContent(props: any) {
           src={!show ? faqExpandImage : faqShrinkImage}
           className="pr-4 w-8 max-md:w-6"
         />
-        <span className='font-bold'>{props.title}</span>
+        <h5 className='font-bold'>{props.title}</h5>
       </p>
       {show ? (
         <p
-          className="text-gray-500 text-xl md:text-base sm:text-sm relative left-8 max-sm:left-7 max-xsm:left-6 w-5/6"
+          className="text-gray-500 text-xl md:text-base sm:text-sm relative left-8 max-sm:left-7 max-xsm:left-6 w-5/6 animate__animated animate__fadeIn"
           dangerouslySetInnerHTML={{ __html: props.content }}
         />
       ) : null}

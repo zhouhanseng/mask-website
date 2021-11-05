@@ -43,7 +43,7 @@ const sectionConfig = [
   {
     mode: { reverse: false, row: false },
     title: "Verifiable NFT Avatars",
-    subtitle: "Pop-up trading widget that allows you to instantly view prices of the hottest Crypto/Stock and trade. Can also invest in the best performing  managers.",
+    subtitle: "Display your NFT avatars, verifiable on chain.",
     url: AvatarSvg,
     link: ""
   },

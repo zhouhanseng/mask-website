@@ -376,7 +376,7 @@ const FaqPage = () => {
                         : "text-6xl font-semibold md:text-4xl sm:text-3xl font-bold"
                     }
                   >
-                    Tutorial\
+                    Tutorial&nbsp;/&nbsp;
                   </span>
                   <span
                     className={
@@ -408,7 +408,7 @@ const FaqPage = () => {
                 ) : null}
                 {type === "tutorials" || !type
                   ? tutorialContents.map((x, i) => (
-                      <div key={i.toString()} className="max-w-3xl">
+                      <div key={i.toString()} className="w-full">
                         <TutorialTopic i={i} content={x} />
                       </div>
                     ))

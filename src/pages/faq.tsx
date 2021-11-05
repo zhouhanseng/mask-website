@@ -4,6 +4,7 @@ import { StaticImage } from "gatsby-plugin-image"
 import AnchorLink from "react-anchor-link-smooth-scroll"
 import { useQueryParam, StringParam } from "use-query-params"
 import { SEO } from "../components/SEO"
+import { Link } from "gatsby"
 
 //assets
 import faqSmImage from "../images/faq_sm.png"
@@ -36,17 +37,17 @@ const FaqPage = () => {
           title: "Where can I use Mask Network ?",
           show: true,
           content:
-            "Mask Network is now available on Facebook and Twitter. We will support more platforms in the future.",
+            "Mask Network is now available on Facebook, Twitter, and Minds.com.<p> We will support more platforms in the future.</p>",
         },
         {
           title: "How to install Mask Network?",
           content:
-            "Go to <a class='font-semibold' href='mask.io/download-links'>mask.io/download-links</a> to install Mask Network directly. You can also install through the Chrome Web Store, Google Play Store(beta), or the Apple App Store(beta).",
+            "Go to <a class='font-semibold' href='/download-links'>download page</a> to install Mask Network directly. You can also install through the Chrome Web Store, Google Play Store(beta), or the Apple App Store(beta).",
         },
         {
           title: "How to create a persona?",
           content:
-            "Mask Network will automatically remind your own persona since you use for the first time.Just follow the steps! Click “Enter the Dashboard” -> “Personas” -> “Create persona” -> Enter Name -> Click “ Create” -> Choose to connect Twitter or Facebook account -> Mask Network will automatically find your username, confirm and click “Connect” -> Done, remember to “Say Hello to everyone”",
+            "Once installed, the Mask extension will guide you to create a persona. Make sure you take a good note of the mnemonic phrases, then you will have a persona ready to connect all the Web 2.0 accounts and Web 3.0 addresses.",
         },
         {
           title: "Explain like I am a nerd.",
@@ -62,17 +63,17 @@ const FaqPage = () => {
         {
           title: "Where does the crypto price info come from?",
           content:
-            "Mask Network support price chart by both CoinMarketCap and CoinGecko. You can change the data source on “Settings.”",
+            "Mask Network support price chart by CoinMarketCap, CoinGecko, and UniSwap Info.",
         },
         {
           title: "What is swap and where can I find it?",
           content:
-            "<p class='max-sm:mb-2 mb-3'>Mask Network will auto-detect trading pairs, and the “Swap🔥” will be lit. Click “Swap🔥” and you will be able to purchase the token.</p><p class='max-sm:mb-2 mb-3'>The Mask extension now supports:</p><p class='max-sm:mb-2 mb-3'>Ethereum: Uniswap, SushiSwap, 0x, Balancer, DODO</p><p class='max-sm:mb-2 mb-3'>Binance Smart Chain: PancakeSwap, SushiSwap, DODO</p><p class='max-sm:mb-2 mb-3'>Polygon: QuickSwap, SushiSwap, DODO</p>",
+            "<p class='max-sm:mb-2 mb-3'>Mask Network will auto-detect trading pairs, and the “Swap🔥” will be lit. Click “Swap🔥” and you will be able to purchase the token.</p><p class='max-sm:mb-2 mb-3'>The Mask extension now supports:</p><p class='max-sm:mb-2 mb-3'>Ethereum: Uniswap, SushiSwap, 0x, Balancer, DODO</p><p class='max-sm:mb-2 mb-3'>Binance Smart Chain: PancakeSwap, SushiSwap, DODO</p><p class='max-sm:mb-2 mb-3'>Polygon: QuickSwap, SushiSwap, DODO</p><p class='max-sm:mb-2 mb-3'>Arbitrum: UniSwap</p><p class='max-sm:mb-2 mb-3'>xDai: SushiSwap</p>",
         },
         {
           title: "Does Mask Network charge a fee on swap?",
           content:
-            "No, the swap on Mask Network is provided by Uniswap, we don’t charge any fee.",
+            "No, we don’t charge any fee.",
         },
       ],
     },
@@ -83,7 +84,7 @@ const FaqPage = () => {
         {
           title: "How to use the file service on Mask Network?",
           content:
-            "Mask Network is now available on Twitter, Facebook, and Minds.com. We will support more platforms in the future.",
+            `Please check <a class='font-semibold' href='https://realmasknetwork.notion.site/Use-File-Service-via-Arweave-IPFS-SIA-Swarm-soon-8c8fe1efce5a48b49739a38f4ea8c60f'>this tutorial</<a>.`,
         },
         {
           title: "Who will be able to see the uploaded file?",
@@ -93,7 +94,7 @@ const FaqPage = () => {
         {
           title: "Can my friends see the uploaded file?",
           content:
-            "Only our users with the proper permission can see this file.",
+            "Only Mask Network users with specific permission settings can see this file.",
         },
       ],
     },
@@ -104,26 +105,26 @@ const FaqPage = () => {
         {
           title: "What is ITO ( Initial Twitter Offering )?",
           content:
-            '<p class="max-sm:mb-2 mb-3">ITO (Initial Twitter Offering) is a decentralized asset offering feature, available on the decentralized blockchain network infrastructure Ethereum, Binance Smart Chain, and Polygon. Users could participate in a token launch directly on Twitter; projects could also reward users or build awareness through ITO by offering their existing tokens with a discount, or simply launch a new token.</p><p class="max-sm:mb-2 mb-3">Please follow our Blog (<a class="font-semibold" href="http://masknetwork.medium.com/">http://masknetwork.medium.com/</a>) or Telegram Channel for more information. After the event starts, find the relevant tweets of ITO and click "Enter" to participate in ITO.</p>',
+            '<p class="max-sm:mb-2 mb-3">ITO (Initial Twitter Offering) is a decentralized asset offering feature, available on the decentralized blockchain network infrastructure Ethereum, Binance Smart Chain, and Polygon. Users could participate in a token launch directly on Twitter; projects could also reward users or build awareness through ITO by offering their existing tokens with a discount, or simply launch a new token.</p><p class="max-sm:mb-2 mb-3">Please follow our <a class="font-semibold" href="http://masknetwork.medium.com/">Blog</a> or <a class="font-semibold" href="https://t.me/maskbook_group">Telegram Channel</a> for more information. After the event starts, find the relevant tweets of ITO and click "Enter" to participate in ITO.</p>',
         },
         {
           title: "How do I prepare for participating in an ITO?",
           content:
-            "<p class='max-sm:mb-2 mb-3'>First of all, please make sure that you have installed the Mask extension.</p><p class='max-sm:mb-2 mb-3'>Second, please create a Mask account and bind the Twitter account. Remember to back up the Mask account~</p> <p class='max-sm:mb-2 mb-3'>Third, import or bind a wallet, Mask will automatically generate an Ethereum wallet address for you, and we also support binding MetaMask and WalletConnect.</p><p class='max-sm:mb-2 mb-3'>Fourth, prepare enough token for purchasing, and a sufficient gas fee. We encrypt the ITO page in Tweet, and the entrance can only be seen when ITO starts.</p>",
+            "<p class='max-sm:mb-2 mb-3'>1. Please make sure that you have installed the Mask extension.</p><p class='max-sm:mb-2 mb-3'>2. Create a Mask persona and connect to your Twitter account. Don’t forget to BACK UP!</p> <p class='max-sm:mb-2 mb-3'>3. Import or create a wallet, Mask will automatically generate an Ethereum wallet address for you, and we also support connecting MetaMask and WalletConnect.</p><p class='max-sm:mb-2 mb-3'>4. Prepare enough token for purchase and for sufficient gas fee. The ITO will be encrypted in a Tweet, and the entrance can only be seen when ITO starts.</p>",
         },
         {
           title: "How much can I purchase a single ITO address?",
           content:
-            "According to the different rules of each ITO, the purchase limit of a single address is different. Mask Network also plans to support various forms of auctions and joint curves to serve various ITO needs.",
+            "<p>Each ITO has different rules, and the purchase limit for a single wallet address will be different.</p><p>In the future, Mask Network will support various forms of auctions and joint curves to serve various ITO needs.</p>",
         },
         {
-          title: "What should I do if gas is very high?",
+          title: "What should I do if the gas is HIGH?",
           content:
-            "The fluctuating gas fee is annoying, we get that. Mask Network provides a multi-chain solution. You may have more options by switching to Binance Smart Chain (BSC), or Polygon (Matic), a Layer 2 solution.",
+            "The fluctuating gas fee is annoying, we get that. Mask Network provides a multi-chain solution. You may have more options by switching to Binance Smart Chain (BSC), or Polygon (Matic), a Layer-2 solution.",
         },
         {
           title:
-            "If an ITO is on BSC/Polygon, but my $MASK is on Ethereum, will I be able to meet the snapshot requirement?",
+            "If an ITO is on BSC/ Polygon, but all my $MASK is on Ethereum, will I be able to meet the snapshot requirement?",
           content:
             "Don’t worry about it, it doesn’t matter which chain your asset is on.",
         },
@@ -134,14 +135,14 @@ const FaqPage = () => {
       image: faq5Image,
       contents: [
         {
-          title: "How to create a wallet?",
+          title: "How to use the file service on Mask Network?",
           content:
-            "Mask Network will automatically create an Ethereum wallet for you since you create a persona. Or you can create a wallet on the dashboard. Click “Enter the Dashboard” -> “Wallets” -> “Create Wallet” -> Enter Wallet Name -> Choose “ I confirm that i need to create a wallet” -> Click “Import” -> Done!",
+            `Please check <a class='font-semibold' href='https://realmasknetwork.notion.site/Setting-up-your-wallet-Support-MetaMask-and-WalletConnect-67c1ba13c5664eda9a9240f8e145366a'>this tutorial</<a>.`,
         },
         {
           title: "I already have a wallet…?",
           content:
-            "<p class='max-sm:mb-2 mb-3'>You can connect wallets from Mask Network, MetaMask, and Wallet Connect.</p> <p class='max-sm:mb-2 mb-3'> The Mask Network extension currently supports Ethereum, Binance Smart Chain (BSC), and Polygon (Matic).</p>",
+            "<p class='max-sm:mb-2 mb-3'>You can connect wallets from Mask Network, MetaMask, and Wallet Connect.</p> <p class='max-sm:mb-2 mb-3'>The Mask Network extension currently supports Ethereum, Binance Smart Chain (BSC), Polygon (Matic), Arbitrum, and xDai. We will support more chains in the future.</p>",
         },
       ],
     },
@@ -151,15 +152,15 @@ const FaqPage = () => {
       contents: [
         {
           title:
-            "How to view the history and detail information of the received Lucky Drop?",
+            "How to view the history and detailed information of the received Lucky Drop?",
           content:
-            'Click the blue smiley face on the top right corner. ->Click “Enter the Dashboard” - > “Wallets” -> Choose "Activity" -> InBound, You can see an OutBound list, Select the record you need to view.',
+            'Click the blue smiley face in the compose window, select “Lucky Drop.” You will be able to see them in the “Past” tab.',
         },
         {
           title:
             "How long is the Lucky Drop validity period? What happens when the lucky drop is expired?",
           content:
-            'The current Lucky Drop is valid for 24 hours. After 24 hours, if the Lucky Drop has a remaining quantity, the remaining cryptocurrency will be refunded. You can find that record in “Dashboard” -> “Wallets” -> Choose "Activity" -> OutBound and click the record to refund.',
+            'Lucky Drop is valid for 24 hours. After 24 hours, if parts of the Lucky Drop is unclaimed, then the remaining amount will be refunded.',
         },
       ],
     },
@@ -170,7 +171,7 @@ const FaqPage = () => {
         {
           title: "Will Mask Network be banned (by Twitter)?",
           content:
-            "<p class='max-sm:mb-2 mb-3'>Mask Network is part of the BlueSky ecosystem. Bluesky is funded by Jack Dorsey, who proposed the creation of a decentralized social media standard/protocol in December 2019. Mask joined this chat and talked about the issues regarding the centralized social media protocols. We talked to many big names, including Tim Berners Lee, and we will post more progress in the future.</p> <p class='max-sm:mb-2 mb-3'>Check this article for the technical details about Mask Network.</p>",
+            "<p class='max-sm:mb-2 mb-3'>Mask Network is part of the BlueSky ecosystem. Bluesky is funded by Jack Dorsey, who proposed the creation of a decentralized social media standard/protocol in December 2019. Mask joined this chat and talked about the issues regarding the centralized social media protocols. We talked to many big names, including Tim Berners Lee, and we will post more progress in the future.</p> <p class='max-sm:mb-2 mb-3'>Check <a class='font-semibold' href='https://hackmd.io/lW-K1-97R_C1wv-bg2rfGw?view'>this article</a> for the technical details about Mask Network.</p>",
         },
         {
           title:
@@ -193,125 +194,125 @@ const FaqPage = () => {
       image: faq7Image,
       contents: [
         {
-          text: "Installation & set up",
-          link: "https://realmasknetwork.notion.site/Installation-set-up-8147f28c734c4038b4cba4b6ba9a772f",
+          "link": "https://realmasknetwork.notion.site/Installation-set-up-dd3329c7b3124108a8e992829a61a51e",
+          "text": "🔨 Installation & set up"
         },
         {
-          text: "Setting up your wallet (Support MetaMask and WalletConnect)",
-          link: "https://realmasknetwork.notion.site/Setting-up-your-wallet-Support-MetaMask-and-WalletConnect-3f39ee5c74a6403f88d8af3e2a76ec0b",
+          "link": "https://realmasknetwork.notion.site/Setting-up-your-wallet-Support-MetaMask-and-WalletConnect-67c1ba13c5664eda9a9240f8e145366a",
+          "text": "👛 Setting up your wallet (Support MetaMask and WalletConnect)"
         },
         {
-          text: "Manually update the Mask Network plugin",
-          link: "https://realmasknetwork.notion.site/Manually-update-the-Mask-Network-plugin-1e87e9d71ae64e5c8cf0d6bc11f57fb3",
+          "link": "https://realmasknetwork.notion.site/Manually-update-the-Mask-Network-plugin-44fa7bbb3bab48bab4cb6198f54cc126",
+          "text": "🛠️ Manually update the Mask Network plugin"
         },
         {
-          text: "Back up your private key",
-          link: "https://realmasknetwork.notion.site/Back-up-your-private-key-ad5909e3cf8849bdb7e5989d8487e8d3",
+          "link": "https://realmasknetwork.notion.site/Back-up-your-private-key-5af0c5f5f7f342fe97b66d029159f9ca",
+          "text": "🗝️ Back up your private key"
         },
       ],
     },
     {
-      title: "Features",
+      title: "NFT Features",
       image: faq8Image,
       contents: [
         {
-          text: "Send an Encrypted Text",
-          link: "https://realmasknetwork.notion.site/Send-an-Encrypted-Text-365ba60facbd4d069ea6ca72ec16a154",
+          "link": "https://realmasknetwork.notion.site/Set-any-NFT-you-own-as-your-Twitter-Profile-Picture-b60da726f7054f918d72634400479d1d",
+          "text": "👻 Set any NFT you own as your Twitter Profile Picture"
         },
         {
-          text: "Purchase NFTs or place a bid  for NFTs  via OpenSea or Rarible on Twitter",
-          link: "https://realmasknetwork.notion.site/Purchase-NFTs-or-place-a-bid-for-NFTs-via-OpenSea-or-Rarible-on-Twitter-912fea95f84b49bfb481ef152e1423c1",
+          "link": "https://realmasknetwork.notion.site/Display-Your-NFTs-on-your-Twitter-profile-page-5772759b609843309839beb056bead02",
+          "text": "🖼️ Display Your NFTs on your Twitter profile page"
         },
         {
-          text: "Use File Service via Arweave (IPFS, SIA, Swarm soon)",
-          link: "https://realmasknetwork.notion.site/Use-File-Service-via-Arweave-IPFS-SIA-Swarm-soon-e5d60b122fda433e921ddad242b58c05",
+          "link": "https://realmasknetwork.notion.site/Purchase-or-bid-for-NFTs-via-OpenSea-or-Rarible-on-Twitter-c388746f11774ecfa17914c900d3ed97",
+          "text": "🎨 Purchase or bid for NFTs via OpenSea or Rarible on Twitter"
         },
         {
-          text: "Cast a Snapshot vote",
-          link: "https://realmasknetwork.notion.site/Cast-a-Snapshot-vote-4ba42d31d00647d782ff431e8fe986d2",
-        },
-        {
-          text: "Send a Lucky Drop (Support ETH, BSC and Polygon)",
-          link: "https://realmasknetwork.notion.site/Send-a-Red-Packet-Support-ETH-BSC-and-Polygon-d5a3c18464474a07bd07581c31cea7f7",
-        },
-        {
-          text: "Launch an ITO (Initial Twitter Offering) (Support ETH, BSC and Polygon)",
-          link: "https://realmasknetwork.notion.site/Launch-an-ITO-Initial-Twitter-Offering-Support-ETH-BSC-and-Polygon-eb242a21eaff4c48ba4c1445bd7b9482",
-        },
-        {
-          text: "Participate in ITO (Initial Twitter Offering) (Support ETH, BSC and Polygon)",
-          link: "https://realmasknetwork.notion.site/Participate-in-ITO-Initial-Twitter-Offering-Support-ETH-BSC-and-Polygon-16de37684de54f36923f55158159a11c",
-        },
-        {
-          text: "Claim tokens (from ITO/Airdrop) (Support ETH only, Polygon soon)",
-          link: "https://realmasknetwork.notion.site/Claim-tokens-from-ITO-Airdrop-Support-ETH-only-Polygon-soon-90ccfe8812ea4e44bb998921b80aaa80",
-        },
-        {
-          text: "Check cryptocurrency info on social media (CoinGecko, CoinMarketCap, Uniswap Info)",
-          link: "https://realmasknetwork.notion.site/Check-cryptocurrency-info-on-social-media-CoinGecko-CoinMarketCap-Uniswap-Info-f086e3aa33964f74a84cf2033dfcba9c",
-        },
-        {
-          text: "Display the NFTs you own on your Twitter profile",
-          link: "https://realmasknetwork.notion.site/Display-the-NFTs-you-own-on-your-Twitter-profile-1cdcf9569ecc4e98987e05c88e0d2deb",
+          "link": "https://realmasknetwork.notion.site/See-the-latest-offer-of-a-Tweet-NFT-by-Valuables-Plugin-27424923ee454a4a9b0ed16fc5cb93d0",
+          "text": "🔓 See the latest offer of a Tweet NFT by Valuables Plugin"
         },
       ],
     },
     {
-      title: "Switch Network & Cross Chain",
+      title: "Personal Finance / DeFi Features",
       image: faq1Image,
       contents: [
         {
-          text: "Switch network between ETH, BSC, and Polygon",
-          link: "https://realmasknetwork.notion.site/Switch-network-between-ETH-BSC-and-Polygon-30501828d0db492fb2ee9b9f9822c178",
+          "link": "https://realmasknetwork.notion.site/Trade-cryptos-on-Twitter-via-Uniswap-Sushi-0x-Support-ETH-BSC-Polygon-Arbitrum-f2e7d081ee38487ca1db958393ac1edc",
+          "text": "💸 Trade cryptos on Twitter via Uniswap, Sushi, 0x (Support ETH, BSC, Polygon, Arbitrum)"
         },
         {
-          text: "Use the Polygon Bridge to convert from Ethereum Mainnet and Polygon",
-          link: "https://realmasknetwork.notion.site/Use-the-Polygon-Bridge-to-convert-from-Ethereum-Mainnet-and-Polygon-81c0a8268b064c80aec2ee226871741a",
+          "link": "https://realmasknetwork.notion.site/Check-crypto-info-on-Twitter-Support-CoinGecko-CoinMarketCap-307619336f704ff78063550c7b37a1f6",
+          "text": "💹 Check crypto info on Twitter (Support  CoinGecko, CoinMarketCap)"
         },
         {
-          text: "Convert $MASK from ERC20 to BEP20",
-          link: "https://realmasknetwork.notion.site/Convert-MASK-from-ERC20-to-BEP20-7e982c16c1404d758a3c94b1e5ee9ca2",
+          "link": "https://realmasknetwork.notion.site/Invest-in-your-favourite-fund-manager-via-dHEDGE-on-Twitter-ETH-and-Polygon-fb00ff2e626949279c83b59ed9207b9a",
+          "text": "👨🏼‍🎤 Invest in your favourite fund manager via dHEDGE on Twitter (ETH and Polygon)"
+        },
+        {
+          "link": "https://realmasknetwork.notion.site/Cultivate-a-weekly-saving-habit-via-GoodGhosting-on-Twitter-Polygon-only-f94aa38b01404b9c99c7a03935840962",
+          "text": "🏦 Cultivate a weekly saving habit via GoodGhosting on Twitter (Polygon only)"
+        },
+        {
+          "link": "https://realmasknetwork.notion.site/Participate-in-lossless-lottery-via-PoolTogether-on-Twitter-ETH-and-Polygon-377597e14aff441ab645ecba5ea690f1",
+          "text": "💱 Participate in lossless lottery via PoolTogether on Twitter (ETH and Polygon)"
+        },
+        {
+          "link": "https://realmasknetwork.notion.site/Launch-an-ITO-Initial-Twitter-Offering-Support-ETH-BSC-Polygon-Arbitrum-d84c60903f974f4880d2085a13906d55",
+          "text": "🚀 Launch an ITO (Initial Twitter Offering) (Support ETH, BSC, Polygon, Arbitrum)"
+        },
+        {
+          "link": "https://realmasknetwork.notion.site/Participate-in-ITO-Initial-Twitter-Offering-Support-ETH-BSC-Polygon-Arbitrum-05619ffc02204848bcaf6d81b0db589f",
+          "text": "🙋 Participate in ITO (Initial Twitter Offering) (Support ETH, BSC, Polygon, Arbitrum)"
         },
       ],
     },
     {
-      title: "$Mask Token Related",
+      title: "Broader Web 3.0 Features",
       image: faq9Image,
       contents: [
         {
-          text: "How to add $MASK liquidity to PancakeSwap",
-          link: "https://realmasknetwork.notion.site/How-to-add-MASK-liquidity-to-PancakeSwap-1af175c8a4524e3d8c3ec988480c4674",
+          "link": "https://realmasknetwork.notion.site/Send-an-Encrypted-Tweet-b76c1e6ec9fd4e9a8033df51669b4daf",
+          "text": "🔏 Send an Encrypted Tweet"
         },
-      ],
+        {
+          "link": "https://realmasknetwork.notion.site/Gift-token-NFTs-to-your-friends-Support-ETH-BSC-and-Polygon-0a71fd421aae4563bd07caa3e2129e5b",
+          "text": "💰 Gift token/NFTs to your friends (Support ETH, BSC and Polygon)"
+        },
+        {
+          "link": "https://realmasknetwork.notion.site/Cast-a-Snapshot-vote-10c08ed9629942dd852d9afbfab61208",
+          "text": "🗳️ Cast a Snapshot vote"
+        },
+        {
+          "link": "https://realmasknetwork.notion.site/Use-File-Service-via-Arweave-IPFS-SIA-Swarm-soon-8c8fe1efce5a48b49739a38f4ea8c60f",
+          "text": "🗄️ Use File Service via Arweave (IPFS, SIA, Swarm soon)"
+        },
+        {
+          "link": "https://realmasknetwork.notion.site/Make-a-quick-Gitcoin-Grant-donation-98ed83784ed4446a8a13fa685c7bddfb",
+          "text": "🔗 Make a quick Gitcoin Grant donation"
+        },
+        {
+          "link": "https://realmasknetwork.notion.site/Claim-tokens-from-ITO-Airdrop-Support-ETH-and-Polygon-c34c70345868455d8a1107244f9e5922",
+          "text": "🎁 Claim tokens (from ITO/Airdrop) (Support ETH and Polygon)"
+        },
+      ]
     },
     {
-      title: "Third-party Plugins",
+      title: "Switch Network & Cross Chain",
       image: faq10Image,
       contents: [
         {
-          text: "See the latest offer of a Tweet NFT by Valuables Plugin",
-          link: "https://realmasknetwork.notion.site/See-the-latest-offer-of-a-Tweet-NFT-by-Valuables-Plugin-ce284e61c703460096f1b10f8e378685",
+          "link": "https://realmasknetwork.notion.site/MultiChain-Switch-networks-d9ba6324159741d49e816bd96f7867f2",
+          "text": "⛓️ MultiChain - Switch networks"
         },
         {
-          text: "Make a quick Gitcoin Grant donation using the Mask extension",
-          link: "https://realmasknetwork.notion.site/Make-a-quick-Gitcoin-Grant-donation-using-the-Mask-extension-89bdc65b8fa34c05a3707792ea05e52f",
+          "link": "https://realmasknetwork.notion.site/Use-the-Polygon-Bridge-to-convert-from-Ethereum-Mainnet-and-Polygon-295ba2736178444dbea5c1cc8b474489",
+          "text": "🌉 Use the Polygon Bridge to convert from Ethereum Mainnet and Polygon"
         },
         {
-          text: "Trade tokens via Uniswap, Sushi, 0x,Balancer, Dodo,etc. on Twitter (Support ETH, BSC and Polygon)",
-          link: "https://realmasknetwork.notion.site/Trade-tokens-via-Uniswap-Sushi-0x-etc-on-Twitter-Support-ETH-BSC-and-Polygon-803402915c2c4148a269dc88faf0306e",
-        },
-        {
-          text: "Cultivate a weekly saving habit via GoodGhosting on Twitter (Polygon only)",
-          link: "https://realmasknetwork.notion.site/Cultivate-a-weekly-saving-habit-via-GoodGhosting-on-Twitter-Polygon-only-6b80d1ee67b64987aa54be7cb4fd9983",
-        },
-        {
-          text: "Copy your favourite manager's portfolio via dHEDGE on Twitter (ETH and Polygon)",
-          link: "https://realmasknetwork.notion.site/Copy-your-favourite-manager-s-portfolio-via-dHEDGE-on-Twitter-ETH-and-Polygon-eab2d7120a094834b24d86b1a54aa1c7",
-        },
-        {
-          text: "Participate in lossless lottery via PoolTogether on Twitter (ETH and Polygon)",
-          link: "https://realmasknetwork.notion.site/Participate-in-lossless-lottery-via-PoolTogether-on-Twitter-ETH-and-Polygon-4e4954ffc592452b9c8903babec47959",
-        },
+          "link": "https://realmasknetwork.notion.site/Convert-MASK-from-ERC20-to-BEP20-04d205700d0246d3a27909eac408b971",
+          "text": "🌉 Convert $MASK from ERC20 to BEP20"
+        }
       ],
     },
   ]

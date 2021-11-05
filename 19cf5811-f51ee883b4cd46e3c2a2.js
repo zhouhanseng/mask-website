@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkmask_website=self.webpackChunkmask_website||[]).push([[205],{3504:function(s,e,a){a(7294);e.Z=a.p+"static/avatar.246c59d3.svg"}}]);
+//# sourceMappingURL=19cf5811-f51ee883b4cd46e3c2a2.js.map

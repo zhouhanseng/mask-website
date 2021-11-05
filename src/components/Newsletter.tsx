@@ -25,10 +25,10 @@ export const Newsletter = () => {
         className="flex flex-row justify-between max-md:flex-col max-md:justify-center items-center sm:px-4 md:px-8 px-10 p-10 pb-7 bg-blue-100 box-shadow-news-letter-out">
         <div className="mb-8 max-md:w-full">
           <h3 className="h2 font-medium sm:w-full sm:text-center text-left sm:text-xl min-lg:text-4xl md:text-3xl md:font-semibold md:text-left">
-            MASK NETWORK Newsletter
+            Mask Network Newsletter
           </h3>
           <p className="description-text text-gray-500 sm:w-full text-center text-left md:font-normal sm:font-light md:text-left min-lg:font-normal">
-            Follow us for more information about MASK
+            Follow us for more information about Mask
           </p>
         </div>
         <form

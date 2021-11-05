@@ -63,7 +63,7 @@ const FaqPage = () => {
         {
           title: "Where does the crypto price info come from?",
           content:
-            "Mask Network support price chart by CoinMarketCap, CoinGecko, and UniSwap Info.",
+            "Mask Network supports price chart by CoinMarketCap, CoinGecko, and UniSwap Info.",
         },
         {
           title: "What is swap and where can I find it?",
@@ -135,7 +135,7 @@ const FaqPage = () => {
       image: faq5Image,
       contents: [
         {
-          title: "How to use the file service on Mask Network?",
+          title: "How to create a wallet?",
           content:
             `Please check <a class='font-semibold' href='https://realmasknetwork.notion.site/Setting-up-your-wallet-Support-MetaMask-and-WalletConnect-67c1ba13c5664eda9a9240f8e145366a'>this tutorial</<a>.`,
         },
@@ -217,7 +217,7 @@ const FaqPage = () => {
       contents: [
         {
           "link": "https://realmasknetwork.notion.site/Set-any-NFT-you-own-as-your-Twitter-Profile-Picture-b60da726f7054f918d72634400479d1d",
-          "text": "👻 Set any NFT you own as your Twitter Profile Picture"
+          "text": "👻 Set any NFT you owned as your Twitter Profile Avatar"
         },
         {
           "link": "https://realmasknetwork.notion.site/Display-Your-NFTs-on-your-Twitter-profile-page-5772759b609843309839beb056bead02",
@@ -307,7 +307,7 @@ const FaqPage = () => {
         },
         {
           "link": "https://realmasknetwork.notion.site/Use-the-Polygon-Bridge-to-convert-from-Ethereum-Mainnet-and-Polygon-295ba2736178444dbea5c1cc8b474489",
-          "text": "🌉 Use the Polygon Bridge to convert from Ethereum Mainnet and Polygon"
+          "text": "🌉 Use the Polygon Bridge to convert from Ethereum Mainnet between Polygon"
         },
         {
           "link": "https://realmasknetwork.notion.site/Convert-MASK-from-ERC20-to-BEP20-04d205700d0246d3a27909eac408b971",
@@ -386,7 +386,7 @@ const FaqPage = () => {
                         : "text-5xl text-gray-500 md:text-4xl sm:text-3xl font-bold"
                     }
                   >
-                    FAQ
+                    FAQs
                   </span>
                 </p>
                 {type === "tutorials" || !type ? (

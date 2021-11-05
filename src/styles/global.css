@@ -78,7 +78,6 @@ body *::-webkit-scrollbar-thumb  {
     width: 100%;
     height: 6px;
     background-color: #1C68F3;
-    opacity: 0.8;
     font-weight: bold;
     z-index: -1;
 }
@@ -161,9 +160,9 @@ body *::-webkit-scrollbar-thumb  {
     user-select: none;
     opacity: 1;
     font-weight: lighter;
-    animation: typedjsBlink 0.7s infinite;
-    -webkit-animation: typedjsBlink 0.7s infinite;
-    animation: typedjsBlink 0.7s infinite;
+    animation: typedjsBlink 1.2s infinite;
+    -webkit-animation: typedjsBlink 1.2s infinite;
+    animation: typedjsBlink 1.2s infinite;
 }
 @keyframes typedjsBlink{
     50% { opacity: 0.0; }

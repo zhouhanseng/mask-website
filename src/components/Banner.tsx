@@ -13,8 +13,8 @@ export const Banner = () => {
     if (!ref || !ref.current) return
     const options = {
       strings: ['The Portal to <br> the New, <br>Open Internet.'],
-      typeSpeed: 80,
-      backSpeed: 80,
+      typeSpeed: 90,
+      backSpeed: 90,
       onComplete: () => setTypingFinish(true)
     }
 
@@ -32,7 +32,7 @@ export const Banner = () => {
         <section className='container pt-16 flex items-center pb-20 md:pb-10 sm:pb-4' style={{ minHeight: 'calc(100vh - 80px)' }}>
           <div className='w-full'>
             <div className='flex justify-start relative items-center'>
-              <div className="flex-grow z-10 p-10 md:p-4 sm:p-4 min-h-564 md:min-h-396 sm:min-h-276" style={{ marginRight: '-12em' }} >
+              <div className="flex-grow z-10 p-10 md:p-4 sm:p-4 min-h-564 md:min-h-396 sm:min-h-276 md:-mr-48" >
                 <h1 className="text-black-main sm:text-4xl leading-tight md:text-6xl text-8xl font-bold w-full">
                   <span  className='element leading-tight' ref={ref} />
                   <p className="invisible h-0">

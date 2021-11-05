@@ -97,7 +97,7 @@ export const Footer = () => {
                 <div className="py-1 flex flex-col">
                   <p className="text-2xl text-white mb-6">Navigate</p>
                   <div
-                    className="grid grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-x-1 gap-y-10 sm:gap-y-5 max-md:gap-x-0 max-md:gap-y-1 text-base max-md::text-sm">
+                    className="grid grid-cols-3 min-lg:grid-rows-2 md:grid-cols-2 sm:grid-cols-1 gap-x-1 gap-y-10 sm:gap-y-5 max-md:gap-x-0 max-md:gap-y-1 text-base max-md::text-sm">
                     <a
                       href="https://news.mask.io/"
                       target="_blank"
@@ -117,20 +117,9 @@ export const Footer = () => {
                     >
                       Source Code
                     </a>
-                    <Link className="text-white opacity-80" to="/faq?type=faq">
-                      Help
-                    </Link>
                     <Link className="text-white opacity-80" to="/faq?type=tutorials">
                       Tutorials
                     </Link>
-                    <a
-                      href='https://github.com/DimensionDev/Maskbook/issues?q=is:issue+is:open+label:"Bounty:+Open"'
-                      target="_blank"
-                      rel="noreferrer"
-                      className="text-white opacity-80"
-                    >
-                      Bounty Program
-                    </a>
                     <a
                       href="https://www.linkedin.com/company/masknetwork/jobs/"
                       target="_blank"
@@ -138,6 +127,14 @@ export const Footer = () => {
                       className="text-white opacity-80"
                     >
                       Join Us
+                    </a>
+                    <a
+                      href='https://github.com/DimensionDev/Maskbook/issues?q=is:issue+is:open+label:"Bounty:+Open"'
+                      target="_blank"
+                      rel="noreferrer"
+                      className="text-white opacity-80"
+                    >
+                      Bounty Program
                     </a>
                   </div>
                 </div>

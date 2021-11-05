@@ -58,9 +58,9 @@ module.exports = {
                 "hg-about-content": "767px",
                 "md-about-content": "567px",
                 "screen-2/5": "40vh",
-                "276": "290px",
-                "396": "305px",
-                "564": "564px",
+                "276": "320px",
+                "396": "420px",
+                "564": "600px",
                 "300": "300px",
             },
             minWidth: {

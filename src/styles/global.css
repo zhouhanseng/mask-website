@@ -80,6 +80,7 @@ body *::-webkit-scrollbar-thumb  {
     background-color: #1C68F3;
     opacity: 0.8;
     font-weight: bold;
+    z-index: -1;
 }
 
 .banner-svg svg {
@@ -88,24 +89,6 @@ body *::-webkit-scrollbar-thumb  {
 
 .section-svg svg {
     min-height: 500px;
-}
-
-.typing {
-    width: 18.5em; height: 1.25em;
-    border-right: 1px solid transparent;
-    animation: typing 3.5s steps(37, end), blink-caret .75s step-end infinite;
-    /*word-break: break-all;*/
-    overflow: hidden;
-}
-/* 打印效果 */
-@keyframes typing {
-    from { width: 0; }
-    to { width: 18.5em; }
-}
-/* 光标闪啊闪 */
-@keyframes blink-caret {
-    from, to { border-color: transparent; }
-    50% { border-color: currentColor; }
 }
 
 .hoverFilter img {
@@ -190,6 +173,7 @@ body *::-webkit-scrollbar-thumb  {
     50% { opacity: 0.0; }
     100% { opacity: 1; }
 }
+
 .typed-fade-out{
     opacity: 0;
     transition: opacity .25s;

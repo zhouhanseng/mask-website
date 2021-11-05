@@ -1,41 +1,39 @@
-import * as React from "react"
-import { useEffect, useState } from "react"
-import { SEO } from "../components/SEO"
-import { StaticImage } from "gatsby-plugin-image"
+import * as React from "react";
+import { useEffect, useState } from "react";
+import { SEO } from "../components/SEO";
+import { StaticImage } from "gatsby-plugin-image";
 
 //assets
-import chromeImage from "../images/chrome.png"
-import firefoxImage from "../images/firefox.png"
-import mobileAppImage from "../images/mobile_side_app.png"
-import appleStoreImage from "../images/apple_store.png"
-import googlePlayImage from "../images/google_play.png"
-import apkImage from "../images/apk.png"
-import Layout from "../components/Layout"
+import chromeImage from "../images/chrome.png";
+import firefoxImage from "../images/firefox.png";
+import mobileAppImage from "../images/mobile_side_app.png";
+import appleStoreImage from "../images/apple_store.png";
+import googlePlayImage from "../images/google_play.png";
+import apkImage from "../images/apk.png";
+import Layout from "../components/Layout";
 
 // markup
 const DownloadPage = () => {
-  const [os, setOs] = useState("")
-  const [showAll, setShowAll] = useState(false)
+  const [os, setOs] = useState("");
+  const [showAll, setShowAll] = useState(false);
   useEffect(() => {
     // @ts-ignore
-    const userAgent = navigator.userAgent || navigator.vendor || window.opera
+    const userAgent = navigator.userAgent || navigator.vendor || window.opera;
     if (/android/i.test(userAgent)) {
-      setOs("Android")
+      setOs("Android");
     } else if (/iPad|iPhone|iPod/.test(userAgent)) {
-      setOs("iOS")
+      setOs("iOS");
     } else {
-      setOs("Other")
+      setOs("Other");
     }
-  }, [])
+  }, []);
   return os ? (
     <Layout>
       <SEO title="Download Links - Mask Network" />
       {os === "Other" || showAll ? (
         <div className="mt-16 sm:mt-0 w-full max-sm:my-8">
           <div className="flex flex-col items-center text-center px-4 sm:hidden">
-            <p className="h2 mb-4">
-              Install Mask Network on Your Devices
-            </p>
+            <p className="h2 mb-4">Install Mask Network on Your Devices</p>
             <p className="text-2xl max-sm:text-xl max-sm:font-light hg:mb-24 md:mb-16 mb-8">
               Enjoy the Web 3.0 world with Mask Network
             </p>
@@ -64,7 +62,7 @@ const DownloadPage = () => {
                 <div
                   className={
                     (i === 0 ? "mb-24" : "") +
-                    " flex flex-col justify-between h-72 items-center"
+                    " flex flex-col justify-between h-72 items-center md:w-64"
                   }
                 >
                   <p className="text-4xl font-light">{value.name}</p>
@@ -72,7 +70,7 @@ const DownloadPage = () => {
                   <img alt="" src={value.image} className="w-20 h-20" />
                   <a
                     href={value.link}
-                    className="bg-black py-3 px-4 rounded-md cursor-pointer"
+                    className="bg-black text-white py-3 text-center w-download-badge rounded-md cursor-pointer"
                   >
                     {value.text}
                   </a>
@@ -95,10 +93,7 @@ const DownloadPage = () => {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <img
-                      alt=""
-                      src={appleStoreImage}
-                    />
+                    <img alt="" src={appleStoreImage} />
                   </a>
                   <a
                     href="https://play.google.com/store/apps/details?id=com.dimension.maskbook"
@@ -106,10 +101,7 @@ const DownloadPage = () => {
                     rel="noreferrer"
                     className="text-center"
                   >
-                    <img
-                      alt=""
-                      src={googlePlayImage}
-                    />
+                    <img alt="" src={googlePlayImage} />
                   </a>
                 </div>
               </div>
@@ -163,17 +155,17 @@ const DownloadPage = () => {
           />
           <p
             onClick={() => {
-              document.body.scrollTop = document.documentElement.scrollTop = 0
-              setShowAll(true)
+              document.body.scrollTop = document.documentElement.scrollTop = 0;
+              setShowAll(true);
             }}
             className="px-4 text-white text-lg text-center underline mb-24 max-sm:mb-14 sm:mt-16"
           >
-            Download for another operating system.
+            Download for another operating system
           </p>
         </div>
       )}
     </Layout>
-  ) : null
-}
+  ) : null;
+};
 
-export default DownloadPage
+export default DownloadPage;

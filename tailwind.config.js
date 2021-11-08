@@ -5,6 +5,7 @@ module.exports = {
         screens: {
             'sm': { 'max': '667px' },
             'md': { 'min': '668px', 'max': '1279px' },
+            'md-for-menu': { 'min': '668px', 'max': '968px' },
             'md-container': { 'min': '1024px', 'max': '1279px' },
             'lg': { 'min': '1280px', 'max': '1535px' },
             'max-md': { 'max': '1279px' },

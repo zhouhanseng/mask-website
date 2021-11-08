@@ -1,12 +1,12 @@
-import * as React from "react";
-import { memo, PropsWithChildren, useState } from "react";
-import { Link } from "gatsby";
-import MenuIcon from "@mui/icons-material/Menu";
-import CloseIcon from "@mui/icons-material/Close";
-import { Drawer, List } from "@mui/material";
+import * as React from "react"
+import { memo, PropsWithChildren, useState } from "react"
+import { Link } from "gatsby"
+import MenuIcon from "@mui/icons-material/Menu"
+import CloseIcon from "@mui/icons-material/Close"
+import { Drawer, List } from "@mui/material"
 // assets
-import { GetMaskButton } from "./GetMaskButton";
-import { Logo } from "./Logo";
+import { GetMaskButton } from "./GetMaskButton"
+import { Logo } from "./Logo"
 
 interface MenuLinkProps extends PropsWithChildren<{}> {
   open: boolean;
@@ -19,7 +19,7 @@ interface MenuProps {
 
 const MenuLink = memo<MenuLinkProps>(({ open, to, children }) => {
   return (
-    <div className="sm:min-w-full md:min-w-full">
+    <div className="sm:min-w-full md-for-menu:min-w-full">
       <Link
         to={to}
         className="menu-link relative"
@@ -28,16 +28,16 @@ const MenuLink = memo<MenuLinkProps>(({ open, to, children }) => {
         {children}
       </Link>
     </div>
-  );
-});
+  )
+})
 
 const Menu = ({ open }: MenuProps) => {
   return (
-    <div className="w-full flex sm:flex-col md:flex-col items-center justify-center max-md:justify-start self-start h-full">
+    <div className="w-full flex sm:flex-col md-for-menu:flex-col items-center justify-center md-for-menu:justify-start self-start h-full">
       <MenuLink open={open} to={"/"}>
         Home
       </MenuLink>
-      <div className="sm:min-w-full md:min-w-full">
+      <div className="sm:min-w-full md-for-menu:min-w-full">
         <a
           target="_blank"
           rel="noreferrer"
@@ -47,7 +47,7 @@ const Menu = ({ open }: MenuProps) => {
           News
         </a>
       </div>
-      <div className="sm:min-w-full md:min-w-full">
+      <div className="sm:min-w-full md-for-menu:min-w-full">
         <a
           target="_blank"
           rel="noreferrer"
@@ -64,11 +64,11 @@ const Menu = ({ open }: MenuProps) => {
         About
       </MenuLink>
     </div>
-  );
-};
+  )
+}
 
 export const Navbar = () => {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(false)
 
   return (
     <>
@@ -82,13 +82,13 @@ export const Navbar = () => {
         </Link>
         <div
           className={
-            "flex flex-grow items-center w-2/5 justify-between sm:min-w-nav-links antialiased text-xl h-full sm:flex sm:hidden md:hidden"
+            "flex flex-grow items-center w-2/5 justify-between sm:min-w-nav-links antialiased text-xl h-full sm:flex sm:hidden md-for-menu:hidden"
           }
         >
           <Menu open={open} />
         </div>
         <div className="w-1/6 flex justify-end">
-          <div className="md:hidden sm:hidden">
+          <div className="md-for-menu:hidden sm:hidden">
             <GetMaskButton size={"small"} />
           </div>
 
@@ -96,7 +96,7 @@ export const Navbar = () => {
             <MenuIcon
               onClick={() => setOpen(true)}
               className={
-                "text-black cursor-pointer flex transform scale-y-150 hidden sm:flex md:flex"
+                "text-black cursor-pointer flex transform scale-y-150 hidden sm:flex md-for-menu:flex"
               }
             />
           ) : null}
@@ -139,5 +139,5 @@ export const Navbar = () => {
         ) : null}
       </nav>
     </>
-  );
-};
+  )
+}

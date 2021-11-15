@@ -1,7 +1,7 @@
-import githubImage from "../images/github.png"
-import maskdaoImage from "../images/maskdao.png"
-import snapshotImage from "../images/mask_snapshot.png"
-import * as React from "react"
+import githubImage from "../images/github.png";
+import maskdaoImage from "../images/maskdao.png";
+import snapshotImage from "../images/mask_snapshot.png";
+import * as React from "react";
 
 // todo: color
 export const JoinCommunity = () => {
@@ -30,7 +30,7 @@ export const JoinCommunity = () => {
           target="_blank"
           rel="noreferrer"
         >
-          <img alt="" src={maskdaoImage} className="w-24 mb-3 max-sm:w-20" />
+          <img alt="" src={snapshotImage} className="w-24 mb-3 max-sm:w-20" />
           <p className="icon-name text-center">MaskDAO</p>
         </a>
         <a
@@ -39,10 +39,10 @@ export const JoinCommunity = () => {
           target="_blank"
           rel="noreferrer"
         >
-          <img alt="" src={snapshotImage} className="w-24 mb-3 max-sm:w-20" />
-          <p className="icon-name text-center">Mask Snapshot</p>
+          <img alt="" src={maskdaoImage} className="w-24 mb-3 max-sm:w-20" />
+          <p className="icon-name text-center">Mask</p>
         </a>
       </div>
     </div>
-  )
-}
+  );
+};

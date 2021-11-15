@@ -49,7 +49,7 @@ const sectionConfig = [
   },
   {
     mode: { reverse: false, row: false },
-    title: "Digital Footprint Aggregation",
+    title: "Web3 Profile",
     subtitle: "Aggregate all your digital footprint, including your writing history, NFT collection, POAPs, donation records, etc all in your own profile.",
     url: Footprint,
     link: "https://realmasknetwork.notion.site/Display-Your-NFTs-on-your-Twitter-profile-page-5772759b609843309839beb056bead02"

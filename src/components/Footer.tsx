@@ -209,9 +209,7 @@ export const Footer = () => {
               <span>
               © 2018-2021 Mask.io
               </span>
-              <span className='text-center'>
-              I thought what I'd do was, I'd pretend I was one of those deaf-mutes.
-              </span>
+              <span className='text-center'></span>
             </p>
           </div>
         </div>

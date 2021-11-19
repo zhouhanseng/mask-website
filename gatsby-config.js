@@ -12,16 +12,22 @@ module.exports = {
         defaultQuality: 80,
       },
     },
+    {
+      resolve: "gatsby-plugin-asset-path",
+      options: {
+        fileTypes: ["js", "map", "css"],
+      },
+    },
     `gatsby-transformer-sharp`,
     "gatsby-plugin-cname",
     "gatsby-plugin-use-query-params",
     "gatsby-plugin-react-helmet",
     {
-      resolve: 'gatsby-plugin-svgr',
+      resolve: "gatsby-plugin-svgr",
       options: {
         include: /outsvg/,
       },
     },
   ],
-  pathPrefix: "/mask-website",
-}
+  assetPrefix: `/gatsby-assets`,
+};

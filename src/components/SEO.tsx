@@ -1,11 +1,13 @@
-import * as React from "react"
-import { Helmet } from "react-helmet"
+import * as React from "react";
+import { Helmet } from "react-helmet";
 
 export function SEO(props: any) {
   return (
-    <Helmet htmlAttributes={{
-        lang: 'en',
-    }}>
+    <Helmet
+      htmlAttributes={{
+        lang: "en",
+      }}
+    >
       <meta charSet="UTF-8" />
       <meta
         name="viewport"
@@ -75,8 +77,22 @@ export function SEO(props: any) {
         }`}
       </script>
 
+      {/* <!-- Global site tag (gtag.js) - Google Analytics --> */}
+      <script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=G-2XCS4Y99TG"
+      ></script>
+      <script>
+        {`{
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-2XCS4Y99TG');
+        }`}
+      </script>
+
       <title>{props.title}</title>
       <link rel="shortcut icon" href="/favicon.ico" />
     </Helmet>
-  )
+  );
 }

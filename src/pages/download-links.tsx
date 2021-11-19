@@ -1,32 +1,33 @@
-import * as React from "react"
-import { useEffect, useState } from "react"
-import { SEO } from "../components/SEO"
-import { StaticImage } from "gatsby-plugin-image"
+import * as React from "react";
+import { useEffect, useState } from "react";
+import { SEO } from "../components/SEO";
+import { StaticImage } from "gatsby-plugin-image";
 
 //assets
-import chromeImage from "../images/chrome.png"
-import firefoxImage from "../images/firefox.png"
-import mobileAppImage from "../images/mobile_side_app.png"
-import appleStoreImage from "../images/apple_store.png"
-import googlePlayImage from "../images/google_play.png"
-import apkImage from "../images/apk.png"
-import Layout from "../components/Layout"
+import chromeImage from "../images/chrome.png";
+import firefoxImage from "../images/firefox.png";
+import mobileAppImage from "../images/mobile_side_app.png";
+import appleStoreImage from "../images/apple_store.png";
+import googlePlayImage from "../images/google_play.png";
+import apkImage from "../images/apk.png";
+import Layout from "../components/Layout";
+import buryPointTrigger from "../utils/gtag";
 
 // markup
 const DownloadPage = () => {
-  const [os, setOs] = useState("")
-  const [showAll, setShowAll] = useState(false)
+  const [os, setOs] = useState("");
+  const [showAll, setShowAll] = useState(false);
   useEffect(() => {
     // @ts-ignore
-    const userAgent = navigator.userAgent || navigator.vendor || window.opera
+    const userAgent = navigator.userAgent || navigator.vendor || window.opera;
     if (/android/i.test(userAgent)) {
-      setOs("Android")
+      setOs("Android");
     } else if (/iPad|iPhone|iPod/.test(userAgent)) {
-      setOs("iOS")
+      setOs("iOS");
     } else {
-      setOs("Other")
+      setOs("Other");
     }
-  }, [])
+  }, []);
   return os ? (
     <Layout>
       <SEO title="Download Links - Mask Network" />
@@ -51,12 +52,14 @@ const DownloadPage = () => {
                   image: chromeImage,
                   text: "Chrome Web Store",
                   link: "https://chrome.google.com/webstore/detail/mask-network/jkoeaghipilijlahjplgbfiocjhldnap",
+                  type: "ChromeWebStore",
                 },
                 {
                   name: "Firefox",
                   image: firefoxImage,
                   text: "ADD-ONS",
                   link: "https://addons.mozilla.org/en-US/firefox/addon/maskbook",
+                  type: "Add_ons",
                 },
               ].map((value, i) => (
                 <div
@@ -70,7 +73,10 @@ const DownloadPage = () => {
                   <img alt="" src={value.image} className="w-20 h-20" />
                   <a
                     href={value.link}
+                    onClick={() => buryPointTrigger(value.type)}
                     className="bg-black-main text-white py-3 text-center w-download-badge rounded-md cursor-pointer"
+                    target="_blank"
+                    rel="noreferrer"
                   >
                     {value.text}
                   </a>
@@ -155,8 +161,8 @@ const DownloadPage = () => {
           />
           <p
             onClick={() => {
-              document.body.scrollTop = document.documentElement.scrollTop = 0
-              setShowAll(true)
+              document.body.scrollTop = document.documentElement.scrollTop = 0;
+              setShowAll(true);
             }}
             className="px-4 text-white text-lg text-center underline mb-24 max-sm:mb-14 sm:mt-16"
           >
@@ -165,7 +171,7 @@ const DownloadPage = () => {
         </div>
       )}
     </Layout>
-  ) : null
-}
+  ) : null;
+};
 
-export default DownloadPage
+export default DownloadPage;

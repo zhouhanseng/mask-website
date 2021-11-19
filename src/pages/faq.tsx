@@ -1,31 +1,31 @@
-import * as React from "react"
-import { useEffect, useState, useRef } from "react"
-import { StaticImage } from "gatsby-plugin-image"
-import AnchorLink from "react-anchor-link-smooth-scroll"
-import { useQueryParam, StringParam } from "use-query-params"
-import { SEO } from "../components/SEO"
+import * as React from "react";
+import { useEffect, useState, useRef } from "react";
+import { StaticImage } from "gatsby-plugin-image";
+import AnchorLink from "react-anchor-link-smooth-scroll";
+import { useQueryParam, StringParam } from "use-query-params";
+import { SEO } from "../components/SEO";
 
 //assets
-import faqSmImage from "../images/faq_sm.png"
-import faq1Image from "../images/faq_one.png"
-import faq2Image from "../images/faq_two.png"
-import faq3Image from "../images/faq_three.png"
-import faq4Image from "../images/faq_four.png"
-import faq5Image from "../images/faq_five.png"
-import faq6Image from "../images/faq_six.png"
-import faqOtherImage from "../images/faq_other.png"
-import faq7Image from "../images/faq_seven.png"
-import faq8Image from "../images/faq_eight.png"
-import faq9Image from "../images/faq_nine.png"
-import faq10Image from "../images/faq_ten.png"
-import faqExpandImage from "../images/faq_expand.png"
-import faqShrinkImage from "../images/faq_shrink.png"
-import Layout from "../components/Layout"
+import faqSmImage from "../images/faq_sm.png";
+import faq1Image from "../images/faq_one.png";
+import faq2Image from "../images/faq_two.png";
+import faq3Image from "../images/faq_three.png";
+import faq4Image from "../images/faq_four.png";
+import faq5Image from "../images/faq_five.png";
+import faq6Image from "../images/faq_six.png";
+import faqOtherImage from "../images/faq_other.png";
+import faq7Image from "../images/faq_seven.png";
+import faq8Image from "../images/faq_eight.png";
+import faq9Image from "../images/faq_nine.png";
+import faq10Image from "../images/faq_ten.png";
+import faqExpandImage from "../images/faq_expand.png";
+import faqShrinkImage from "../images/faq_shrink.png";
+import Layout from "../components/Layout";
 
 // markup
 const FaqPage = () => {
-  const [size, setSize] = useState(0)
-  const [type, setType] = useQueryParam("type", StringParam)
+  const [size, setSize] = useState(0);
+  const [type, setType] = useQueryParam("type", StringParam);
 
   const contents = [
     {
@@ -41,7 +41,7 @@ const FaqPage = () => {
         {
           title: "How to install Mask Network?",
           content:
-            "Go to <a class='font-semibold' href='/download-links'>download page</a> to install Mask Network directly. You can also install through the Chrome Web Store, Google Play Store(beta), or the Apple App Store(beta).",
+            "Go to <a class='font-semibold' href='/download-links'>download page</a> to install Mask Network directly. You can also install through the , Google Play Store(beta), or the Apple App Store(beta).",
         },
         {
           title: "How to create a persona?",
@@ -71,8 +71,7 @@ const FaqPage = () => {
         },
         {
           title: "Does Mask Network charge a fee on swap?",
-          content:
-            "No, we don’t charge any fee.",
+          content: "No, we don’t charge any fee.",
         },
       ],
     },
@@ -82,8 +81,7 @@ const FaqPage = () => {
       contents: [
         {
           title: "How to use the file service on Mask Network?",
-          content:
-            `Please check <a class='font-semibold' href='https://realmasknetwork.notion.site/Use-File-Service-via-Arweave-IPFS-SIA-Swarm-soon-8c8fe1efce5a48b49739a38f4ea8c60f'>this tutorial</<a>.`,
+          content: `Please check <a class='font-semibold' href='https://realmasknetwork.notion.site/Use-File-Service-via-Arweave-IPFS-SIA-Swarm-soon-8c8fe1efce5a48b49739a38f4ea8c60f'>this tutorial</<a>.`,
         },
         {
           title: "Who will be able to see the uploaded file?",
@@ -135,8 +133,7 @@ const FaqPage = () => {
       contents: [
         {
           title: "How to create a wallet?",
-          content:
-            `Please check <a class='font-semibold' href='https://realmasknetwork.notion.site/Setting-up-your-wallet-Support-MetaMask-and-WalletConnect-67c1ba13c5664eda9a9240f8e145366a'>this tutorial</<a>.`,
+          content: `Please check <a class='font-semibold' href='https://realmasknetwork.notion.site/Setting-up-your-wallet-Support-MetaMask-and-WalletConnect-67c1ba13c5664eda9a9240f8e145366a'>this tutorial</<a>.`,
         },
         {
           title: "I already have a wallet…?",
@@ -153,13 +150,13 @@ const FaqPage = () => {
           title:
             "How to view the history and detailed information of the received Lucky Drop?",
           content:
-            'Click the blue smiley face in the compose window, select “Lucky Drop.” You will be able to see them in the “Past” tab.',
+            "Click the blue smiley face in the compose window, select “Lucky Drop.” You will be able to see them in the “Past” tab.",
         },
         {
           title:
             "How long is the Lucky Drop validity period? What happens when the lucky drop is expired?",
           content:
-            'Lucky Drop is valid for 24 hours. After 24 hours, if parts of the Lucky Drop is unclaimed, then the remaining amount will be refunded.',
+            "Lucky Drop is valid for 24 hours. After 24 hours, if parts of the Lucky Drop is unclaimed, then the remaining amount will be refunded.",
         },
       ],
     },
@@ -185,7 +182,7 @@ const FaqPage = () => {
         },
       ],
     },
-  ]
+  ];
 
   const tutorialContents = [
     {
@@ -193,20 +190,20 @@ const FaqPage = () => {
       image: faq7Image,
       contents: [
         {
-          "link": "https://realmasknetwork.notion.site/Installation-set-up-dd3329c7b3124108a8e992829a61a51e",
-          "text": "🔨 Installation & set up"
+          link: "https://realmasknetwork.notion.site/Installation-set-up-dd3329c7b3124108a8e992829a61a51e",
+          text: "🔨 Installation & set up",
         },
         {
-          "link": "https://realmasknetwork.notion.site/Setting-up-your-wallet-Support-MetaMask-and-WalletConnect-67c1ba13c5664eda9a9240f8e145366a",
-          "text": "👛 Setting up your wallet (Support MetaMask and WalletConnect)"
+          link: "https://realmasknetwork.notion.site/Setting-up-your-wallet-Support-MetaMask-and-WalletConnect-67c1ba13c5664eda9a9240f8e145366a",
+          text: "👛 Setting up your wallet (Support MetaMask and WalletConnect)",
         },
         {
-          "link": "https://realmasknetwork.notion.site/Manually-update-the-Mask-Network-plugin-44fa7bbb3bab48bab4cb6198f54cc126",
-          "text": "🛠️ Manually update the Mask Network plugin"
+          link: "https://realmasknetwork.notion.site/Manually-update-the-Mask-Network-plugin-44fa7bbb3bab48bab4cb6198f54cc126",
+          text: "🛠️ Manually update the Mask Network plugin",
         },
         {
-          "link": "https://realmasknetwork.notion.site/Back-up-your-private-key-5af0c5f5f7f342fe97b66d029159f9ca",
-          "text": "🗝️ Back up your private key"
+          link: "https://realmasknetwork.notion.site/Back-up-your-private-key-5af0c5f5f7f342fe97b66d029159f9ca",
+          text: "🗝️ Back up your private key",
         },
       ],
     },
@@ -215,20 +212,20 @@ const FaqPage = () => {
       image: faq8Image,
       contents: [
         {
-          "link": "https://realmasknetwork.notion.site/Set-any-NFT-you-own-as-your-Twitter-Profile-Picture-b60da726f7054f918d72634400479d1d",
-          "text": "👻 Set any NFT you owned as your Twitter Profile Avatar"
+          link: "https://realmasknetwork.notion.site/Set-any-NFT-you-own-as-your-Twitter-Profile-Picture-b60da726f7054f918d72634400479d1d",
+          text: "👻 Set any NFT you owned as your Twitter Profile Avatar",
         },
         {
-          "link": "https://realmasknetwork.notion.site/Display-Your-NFTs-on-your-Twitter-profile-page-5772759b609843309839beb056bead02",
-          "text": "🖼️ Display Your NFTs on your Twitter profile page"
+          link: "https://realmasknetwork.notion.site/Display-Your-NFTs-on-your-Twitter-profile-page-5772759b609843309839beb056bead02",
+          text: "🖼️ Display Your NFTs on your Twitter profile page",
         },
         {
-          "link": "https://realmasknetwork.notion.site/Purchase-or-bid-for-NFTs-via-OpenSea-or-Rarible-on-Twitter-c388746f11774ecfa17914c900d3ed97",
-          "text": "🎨 Purchase or bid for NFTs via OpenSea or Rarible on Twitter"
+          link: "https://realmasknetwork.notion.site/Purchase-or-bid-for-NFTs-via-OpenSea-or-Rarible-on-Twitter-c388746f11774ecfa17914c900d3ed97",
+          text: "🎨 Purchase or bid for NFTs via OpenSea or Rarible on Twitter",
         },
         {
-          "link": "https://realmasknetwork.notion.site/See-the-latest-offer-of-a-Tweet-NFT-by-Valuables-Plugin-27424923ee454a4a9b0ed16fc5cb93d0",
-          "text": "🔓 See the latest offer of a Tweet NFT by Valuables Plugin"
+          link: "https://realmasknetwork.notion.site/See-the-latest-offer-of-a-Tweet-NFT-by-Valuables-Plugin-27424923ee454a4a9b0ed16fc5cb93d0",
+          text: "🔓 See the latest offer of a Tweet NFT by Valuables Plugin",
         },
       ],
     },
@@ -237,32 +234,32 @@ const FaqPage = () => {
       image: faq1Image,
       contents: [
         {
-          "link": "https://realmasknetwork.notion.site/Trade-cryptos-on-Twitter-via-Uniswap-Sushi-0x-Support-ETH-BSC-Polygon-Arbitrum-f2e7d081ee38487ca1db958393ac1edc",
-          "text": "💸 Trade cryptos on Twitter via Uniswap, Sushi, 0x (Support ETH, BSC, Polygon, Arbitrum)"
+          link: "https://realmasknetwork.notion.site/Trade-cryptos-on-Twitter-via-Uniswap-Sushi-0x-Support-ETH-BSC-Polygon-Arbitrum-f2e7d081ee38487ca1db958393ac1edc",
+          text: "💸 Trade cryptos on Twitter via Uniswap, Sushi, 0x (Support ETH, BSC, Polygon, Arbitrum)",
         },
         {
-          "link": "https://realmasknetwork.notion.site/Check-crypto-info-on-Twitter-Support-CoinGecko-CoinMarketCap-307619336f704ff78063550c7b37a1f6",
-          "text": "💹 Check crypto info on Twitter (Support  CoinGecko, CoinMarketCap)"
+          link: "https://realmasknetwork.notion.site/Check-crypto-info-on-Twitter-Support-CoinGecko-CoinMarketCap-307619336f704ff78063550c7b37a1f6",
+          text: "💹 Check crypto info on Twitter (Support  CoinGecko, CoinMarketCap)",
         },
         {
-          "link": "https://realmasknetwork.notion.site/Invest-in-your-favourite-fund-manager-via-dHEDGE-on-Twitter-ETH-and-Polygon-fb00ff2e626949279c83b59ed9207b9a",
-          "text": "👨🏼‍🎤 Invest in your favourite fund manager via dHEDGE on Twitter (ETH and Polygon)"
+          link: "https://realmasknetwork.notion.site/Invest-in-your-favourite-fund-manager-via-dHEDGE-on-Twitter-ETH-and-Polygon-fb00ff2e626949279c83b59ed9207b9a",
+          text: "👨🏼‍🎤 Invest in your favourite fund manager via dHEDGE on Twitter (ETH and Polygon)",
         },
         {
-          "link": "https://realmasknetwork.notion.site/Cultivate-a-weekly-saving-habit-via-GoodGhosting-on-Twitter-Polygon-only-f94aa38b01404b9c99c7a03935840962",
-          "text": "🏦 Cultivate a weekly saving habit via GoodGhosting on Twitter (Polygon only)"
+          link: "https://realmasknetwork.notion.site/Cultivate-a-weekly-saving-habit-via-GoodGhosting-on-Twitter-Polygon-only-f94aa38b01404b9c99c7a03935840962",
+          text: "🏦 Cultivate a weekly saving habit via GoodGhosting on Twitter (Polygon only)",
         },
         {
-          "link": "https://realmasknetwork.notion.site/Participate-in-lossless-lottery-via-PoolTogether-on-Twitter-ETH-and-Polygon-377597e14aff441ab645ecba5ea690f1",
-          "text": "💱 Participate in lossless lottery via PoolTogether on Twitter (ETH and Polygon)"
+          link: "https://realmasknetwork.notion.site/Participate-in-lossless-lottery-via-PoolTogether-on-Twitter-ETH-and-Polygon-377597e14aff441ab645ecba5ea690f1",
+          text: "💱 Participate in lossless lottery via PoolTogether on Twitter (ETH and Polygon)",
         },
         {
-          "link": "https://realmasknetwork.notion.site/Launch-an-ITO-Initial-Twitter-Offering-Support-ETH-BSC-Polygon-Arbitrum-d84c60903f974f4880d2085a13906d55",
-          "text": "🚀 Launch an ITO (Initial Twitter Offering) (Support ETH, BSC, Polygon, Arbitrum)"
+          link: "https://realmasknetwork.notion.site/Launch-an-ITO-Initial-Twitter-Offering-Support-ETH-BSC-Polygon-Arbitrum-d84c60903f974f4880d2085a13906d55",
+          text: "🚀 Launch an ITO (Initial Twitter Offering) (Support ETH, BSC, Polygon, Arbitrum)",
         },
         {
-          "link": "https://realmasknetwork.notion.site/Participate-in-ITO-Initial-Twitter-Offering-Support-ETH-BSC-Polygon-Arbitrum-05619ffc02204848bcaf6d81b0db589f",
-          "text": "🙋 Participate in ITO (Initial Twitter Offering) (Support ETH, BSC, Polygon, Arbitrum)"
+          link: "https://realmasknetwork.notion.site/Participate-in-ITO-Initial-Twitter-Offering-Support-ETH-BSC-Polygon-Arbitrum-05619ffc02204848bcaf6d81b0db589f",
+          text: "🙋 Participate in ITO (Initial Twitter Offering) (Support ETH, BSC, Polygon, Arbitrum)",
         },
       ],
     },
@@ -271,63 +268,63 @@ const FaqPage = () => {
       image: faq9Image,
       contents: [
         {
-          "link": "https://realmasknetwork.notion.site/Send-an-Encrypted-Tweet-b76c1e6ec9fd4e9a8033df51669b4daf",
-          "text": "🔏 Send an Encrypted Tweet"
+          link: "https://realmasknetwork.notion.site/Send-an-Encrypted-Tweet-b76c1e6ec9fd4e9a8033df51669b4daf",
+          text: "🔏 Send an Encrypted Tweet",
         },
         {
-          "link": "https://realmasknetwork.notion.site/Gift-token-NFTs-to-your-friends-Support-ETH-BSC-and-Polygon-0a71fd421aae4563bd07caa3e2129e5b",
-          "text": "💰 Gift token/NFTs to your friends (Support ETH, BSC and Polygon)"
+          link: "https://realmasknetwork.notion.site/Gift-token-NFTs-to-your-friends-Support-ETH-BSC-and-Polygon-0a71fd421aae4563bd07caa3e2129e5b",
+          text: "💰 Gift token/NFTs to your friends (Support ETH, BSC and Polygon)",
         },
         {
-          "link": "https://realmasknetwork.notion.site/Cast-a-Snapshot-vote-10c08ed9629942dd852d9afbfab61208",
-          "text": "🗳️ Cast a Snapshot vote"
+          link: "https://realmasknetwork.notion.site/Cast-a-Snapshot-vote-10c08ed9629942dd852d9afbfab61208",
+          text: "🗳️ Cast a Snapshot vote",
         },
         {
-          "link": "https://realmasknetwork.notion.site/Use-File-Service-via-Arweave-IPFS-SIA-Swarm-soon-8c8fe1efce5a48b49739a38f4ea8c60f",
-          "text": "🗄️ Use File Service via Arweave (IPFS, SIA, Swarm soon)"
+          link: "https://realmasknetwork.notion.site/Use-File-Service-via-Arweave-IPFS-SIA-Swarm-soon-8c8fe1efce5a48b49739a38f4ea8c60f",
+          text: "🗄️ Use File Service via Arweave (IPFS, SIA, Swarm soon)",
         },
         {
-          "link": "https://realmasknetwork.notion.site/Make-a-quick-Gitcoin-Grant-donation-98ed83784ed4446a8a13fa685c7bddfb",
-          "text": "🔗 Make a quick Gitcoin Grant donation"
+          link: "https://realmasknetwork.notion.site/Make-a-quick-Gitcoin-Grant-donation-98ed83784ed4446a8a13fa685c7bddfb",
+          text: "🔗 Make a quick Gitcoin Grant donation",
         },
         {
-          "link": "https://realmasknetwork.notion.site/Claim-tokens-from-ITO-Airdrop-Support-ETH-and-Polygon-c34c70345868455d8a1107244f9e5922",
-          "text": "🎁 Claim tokens (from ITO/Airdrop) (Support ETH and Polygon)"
+          link: "https://realmasknetwork.notion.site/Claim-tokens-from-ITO-Airdrop-Support-ETH-and-Polygon-c34c70345868455d8a1107244f9e5922",
+          text: "🎁 Claim tokens (from ITO/Airdrop) (Support ETH and Polygon)",
         },
-      ]
+      ],
     },
     {
       title: "Switch Network & Cross Chain",
       image: faq10Image,
       contents: [
         {
-          "link": "https://realmasknetwork.notion.site/MultiChain-Switch-networks-d9ba6324159741d49e816bd96f7867f2",
-          "text": "⛓️ MultiChain - Switch networks"
+          link: "https://realmasknetwork.notion.site/MultiChain-Switch-networks-d9ba6324159741d49e816bd96f7867f2",
+          text: "⛓️ MultiChain - Switch networks",
         },
         {
-          "link": "https://realmasknetwork.notion.site/Use-the-Polygon-Bridge-to-convert-from-Ethereum-Mainnet-and-Polygon-295ba2736178444dbea5c1cc8b474489",
-          "text": "🌉 Use the Polygon Bridge to convert from Ethereum Mainnet between Polygon"
+          link: "https://realmasknetwork.notion.site/Use-the-Polygon-Bridge-to-convert-from-Ethereum-Mainnet-and-Polygon-295ba2736178444dbea5c1cc8b474489",
+          text: "🌉 Use the Polygon Bridge to convert from Ethereum Mainnet between Polygon",
         },
         {
-          "link": "https://realmasknetwork.notion.site/Convert-MASK-from-ERC20-to-BEP20-04d205700d0246d3a27909eac408b971",
-          "text": "🌉 Convert $MASK from ERC20 to BEP20"
-        }
+          link: "https://realmasknetwork.notion.site/Convert-MASK-from-ERC20-to-BEP20-04d205700d0246d3a27909eac408b971",
+          text: "🌉 Convert $MASK from ERC20 to BEP20",
+        },
       ],
     },
-  ]
+  ];
 
-  const [anchor, setAnchor] = useState(contents[0].title)
+  const [anchor, setAnchor] = useState(contents[0].title);
 
   useEffect(() => {
-    setSize(getWindowDimensions(window))
+    setSize(getWindowDimensions(window));
 
     function handleResize() {
-      setSize(getWindowDimensions(window))
+      setSize(getWindowDimensions(window));
     }
 
-    window.addEventListener("resize", handleResize)
-    return () => window.removeEventListener("resize", handleResize)
-  }, [])
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   return (
     <Layout>
@@ -337,7 +334,9 @@ const FaqPage = () => {
           {size > 768 ? (
             <div className="w-full h-full flex relative max-h-screen-1/3 min-h-300">
               <div className="flex justify-center items-center bg-gray-200 w-1/2 max-md:absolute max-md:top-0 max-md:left-0 max-md:w-full">
-                <p className="h2 w-1/2 max-md:w-full max-md:text-gray-h2">How can we help you?</p>
+                <p className="h2 w-1/2 max-md:w-full max-md:text-gray-h2">
+                  How can we help you?
+                </p>
               </div>
               <div className="w-1/2 max-md:w-full overflow-hidden">
                 {size > 768 ? (
@@ -366,7 +365,7 @@ const FaqPage = () => {
                 <p
                   className="cursor-pointer mb-14 max-sm:mb-6"
                   onClick={() => {
-                    setType(type === "faq" ? "tutorials" : "faq")
+                    setType(type === "faq" ? "tutorials" : "faq");
                   }}
                 >
                   <span
@@ -394,7 +393,12 @@ const FaqPage = () => {
                       An (In)Complete Guide to Mask Network (2.0)
                     </p>
                     <p className="text-xl text-gray-500 px-4 md:px-0 max-sm:text-base max-sm:px-0">
-                      Mask has dedicated itself to protect data privacy and build the best bridge between Web 2.0 and Web 3.0. Through our browser extension, we have introduced an ecosystem of 30+ popular Web 3.0 dApps / Features that works seamlessly on top of existing Web 2.0 sites like Twitter and Facebook.
+                      Mask has dedicated itself to protect data privacy and
+                      build the best bridge between Web 2.0 and Web 3.0. Through
+                      our browser extension, we have introduced an ecosystem of
+                      30+ popular Web 3.0 dApps / Features that works seamlessly
+                      on top of existing Web 2.0 sites like Twitter and
+                      Facebook.
                     </p>
                   </div>
                 ) : null}
@@ -405,7 +409,8 @@ const FaqPage = () => {
                       </div>
                     ))
                   : null}
-                {type === "faq" ? contents.map((x, i) => (
+                {type === "faq"
+                  ? contents.map((x, i) => (
                       <div key={i.toString()} className="max-w-3xl">
                         <FaqTopic
                           contents={contents}
@@ -438,8 +443,8 @@ const FaqPage = () => {
         <div className="h-screen" />
       )}
     </Layout>
-  )
-}
+  );
+};
 
 function TutorialTopic(props: any) {
   return (
@@ -472,25 +477,25 @@ function TutorialTopic(props: any) {
         ))}
       </div>
     </>
-  )
+  );
 }
 
 function FaqTopic(props: any) {
-  const ref = useRef(null)
+  const ref = useRef(null);
 
   useEffect(() => {
-    if (!ref) return
-    if (!ref.current) return
+    if (!ref) return;
+    if (!ref.current) return;
 
     let observer = new IntersectionObserver(
       (changes) => {
-        if (!ref) return
-        if (!ref.current) return
-        if (!changes[0]) return
+        if (!ref) return;
+        if (!ref.current) return;
+        if (!changes[0]) return;
 
         if (changes[0].isIntersecting) {
           // @ts-ignore
-          props.action(ref.current.textContent!)
+          props.action(ref.current.textContent!);
         }
       },
       {
@@ -498,10 +503,10 @@ function FaqTopic(props: any) {
         rootMargin: "0px",
         threshold: 1.0,
       }
-    )
+    );
 
-    observer.observe(ref.current!)
-  }, [ref])
+    observer.observe(ref.current!);
+  }, [ref]);
 
   return (
     <>
@@ -532,7 +537,7 @@ function FaqTopic(props: any) {
         ))}
       </div>
     </>
-  )
+  );
 }
 
 function Anchor(props: any) {
@@ -550,11 +555,11 @@ function Anchor(props: any) {
     >
       {props.title}
     </AnchorLink>
-  )
+  );
 }
 
 function FaqContent(props: any) {
-  const [show, setShow] = useState(Boolean(props.show))
+  const [show, setShow] = useState(Boolean(props.show));
 
   return (
     <div className="mb-10 max-sm:mb-6">
@@ -566,7 +571,7 @@ function FaqContent(props: any) {
           src={!show ? faqExpandImage : faqShrinkImage}
           className="pr-4 w-8 max-md:w-6"
         />
-        <h5 className='font-bold'>{props.title}</h5>
+        <h5 className="font-bold">{props.title}</h5>
       </p>
       {show ? (
         <p
@@ -575,12 +580,12 @@ function FaqContent(props: any) {
         />
       ) : null}
     </div>
-  )
+  );
 }
 
 function getWindowDimensions(window: any) {
-  const { innerWidth } = window
-  return innerWidth
+  const { innerWidth } = window;
+  return innerWidth;
 }
 
-export default FaqPage
+export default FaqPage;

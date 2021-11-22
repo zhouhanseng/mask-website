@@ -14,7 +14,7 @@ export const GetMaskButton = memo<GetMaskButtonProps>(({ size }) => {
       : "inline-flex text-sm w-28 text-white border-blue-600 bg-blue-600 px-4 py-3 text-center font-bold py-2 border-none justify-center border rounded-full cursor-pointer";
   return (
     <Link
-      onClick={() => buryPointTrigger("GetMask")}
+      onClick={() => buryPointTrigger("event", "getmask")}
       to="/download-links"
       className={classname}
     >

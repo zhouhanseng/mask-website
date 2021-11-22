@@ -73,7 +73,7 @@ const DownloadPage = () => {
                   <img alt="" src={value.image} className="w-20 h-20" />
                   <a
                     href={value.link}
-                    onClick={() => buryPointTrigger(value.type)}
+                    onClick={() => buryPointTrigger("event", value.type)}
                     className="bg-black-main text-white py-3 text-center w-download-badge rounded-md cursor-pointer"
                     target="_blank"
                     rel="noreferrer"

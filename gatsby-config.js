@@ -61,5 +61,6 @@ module.exports = {
       },
     },
   ],
-  assetPrefix: `/gatsby-assets`,
+  // assetPrefix: `/gatsby-assets`,
+  pathPrefix: "/mask-website",
 };

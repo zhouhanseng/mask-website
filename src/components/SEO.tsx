@@ -76,13 +76,17 @@ export function SEO(props: any) {
           offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
         }`}
       </script>
-
       {/* <!-- Global site tag (gtag.js) - Google Analytics --> */}
       <script
         async
         src="https://www.googletagmanager.com/gtag/js?id=G-2XCS4Y99TG"
       ></script>
-
+      <script>
+        {`window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-2XCS4Y99TG');`}
+      </script>
       <title>{props.title}</title>
       <link rel="shortcut icon" href="/favicon.ico" />
     </Helmet>

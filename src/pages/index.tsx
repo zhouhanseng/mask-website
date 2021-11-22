@@ -39,7 +39,7 @@ const sectionConfig = [
     mode: { reverse: false, row: false },
     title: "Social Trading",
     subtitle:
-      "Pop-up trading widget that allows you to instantly view prices of the hottest Crypto/Stock and trade. Can also invest in the best performing managers.",
+      "Pop-up trading widget that allows you to instantly view prices of the hottest Crypto/Stock and trade. Can also invest in the best performing managers. Powered by Uniswap, Sushiswap, 0x, dHEDGE, etc.",
     url: MarketSvg,
     link: "https://realmasknetwork.notion.site/Trade-cryptos-on-Twitter-via-Uniswap-Sushi-0x-Support-ETH-BSC-Polygon-Arbitrum-f2e7d081ee38487ca1db958393ac1edc",
   },

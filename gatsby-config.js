@@ -15,22 +15,16 @@ module.exports = {
     {
       resolve: "gatsby-plugin-google-tagmanager",
       options: {
-        id: "G-2XCS4Y99T",
-
+        id: "G-2XCS4Y99TG",
         // Include GTM in development.
-        //
         // Defaults to false meaning GTM will only be loaded in production.
         includeInDevelopment: true,
-
-        // datalayer to be set before GTM is loaded
-        // should be an object or a function that is executed in the browser
-        //
         // Defaults to null
         defaultDataLayer: { platform: "gatsby" },
-        // Defaults to gatsby-route-change
         // Defaults to false
         enableWebVitalsTracking: true,
-        // Defaults to https://www.googletagmanager.com
+        selfHostedOrigin:
+          "https://www.googletagmanager.com/gtag/js?id=G-2XCS4Y99TG",
       },
     },
     {

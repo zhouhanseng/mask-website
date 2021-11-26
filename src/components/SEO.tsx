@@ -77,6 +77,19 @@ export function SEO(props: any) {
         }`}
       </script>
 
+      <script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=G-2XCS4Y99TG"
+      ></script>
+      <script>
+        {`
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){window.dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-2XCS4Y99TG');
+            `}
+      </script>
+
       <title>{props.title}</title>
       <link rel="shortcut icon" href="/favicon.ico" />
     </Helmet>

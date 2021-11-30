@@ -227,6 +227,10 @@ const FaqPage = () => {
           link: "https://realmasknetwork.notion.site/See-the-latest-offer-of-a-Tweet-NFT-by-Valuables-Plugin-27424923ee454a4a9b0ed16fc5cb93d0",
           text: "🔓 See the latest offer of a Tweet NFT by Valuables Plugin",
         },
+        {
+          link: "https://realmasknetwork.notion.site/How-to-participate-in-a-MaskBox-sale-d0941687649a4ef7a38d71f23ecbe4da",
+          text: "📦 How to participate in a MaskBox sale",
+        },
       ],
     },
     {

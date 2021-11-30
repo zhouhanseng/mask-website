@@ -32,7 +32,10 @@ export const Footer = () => {
     "/mask-website/faq",
     "/mask-website/faq/",
   ].includes(path);
+  const footerLinkTextClassName =
+    "text-base text-white opacity-80 hover:opacity-100";
 
+  const linkImgClassName = "cursor-pointer hover:opacity-80";
   return (
     <>
       <div className="md:hidden min-lg:hidden">
@@ -74,7 +77,7 @@ export const Footer = () => {
                       href="https://dimensiondev.github.io/Mask-VI/"
                       target="_blank"
                       rel="noreferrer"
-                      className="text-base text-white opacity-80"
+                      className={footerLinkTextClassName}
                     >
                       Brand Guide
                     </a>
@@ -82,7 +85,7 @@ export const Footer = () => {
                       href="mailto:info@dimension.im"
                       target="_blank"
                       rel="noreferrer"
-                      className="text-base text-white opacity-80"
+                      className={footerLinkTextClassName}
                     >
                       Contact Us
                     </a>
@@ -90,7 +93,7 @@ export const Footer = () => {
                       href="https://legal.mask.io/maskbook/"
                       target="_blank"
                       rel="noreferrer"
-                      className="text-base text-white opacity-80"
+                      className={footerLinkTextClassName}
                     >
                       Privacy Policy
                     </a>
@@ -105,12 +108,12 @@ export const Footer = () => {
                       href="https://news.mask.io/"
                       target="_blank"
                       rel="noreferrer"
-                      className="text-white opacity-80"
+                      className={footerLinkTextClassName}
                     >
                       News
                     </a>
                     <Link
-                      className="text-base text-white opacity-80"
+                      className={footerLinkTextClassName}
                       to="/faq?type=faq"
                     >
                       FAQs
@@ -119,12 +122,12 @@ export const Footer = () => {
                       href="https://github.com/DimensionDev"
                       target="_blank"
                       rel="noreferrer"
-                      className="text-white opacity-80"
+                      className={footerLinkTextClassName}
                     >
                       Source Code
                     </a>
                     <Link
-                      className="text-white opacity-80"
+                      className={footerLinkTextClassName}
                       to="/faq?type=tutorials"
                     >
                       Tutorials
@@ -133,7 +136,7 @@ export const Footer = () => {
                       href="https://www.linkedin.com/company/masknetwork/jobs/"
                       target="_blank"
                       rel="noreferrer"
-                      className="text-white opacity-80"
+                      className={footerLinkTextClassName}
                     >
                       Join Us
                     </a>
@@ -141,7 +144,7 @@ export const Footer = () => {
                       href='https://github.com/DimensionDev/Maskbook/issues?q=is:issue+is:open+label:"Bounty:+Open"'
                       target="_blank"
                       rel="noreferrer"
-                      className="text-white opacity-80"
+                      className={footerLinkTextClassName}
                     >
                       Bounty Program
                     </a>
@@ -162,7 +165,7 @@ export const Footer = () => {
                     <img
                       alt=""
                       src={iconTwitterImage}
-                      className="cursor-pointer"
+                      className={linkImgClassName}
                     />
                   </a>
                   <a
@@ -174,7 +177,7 @@ export const Footer = () => {
                     <img
                       alt=""
                       src={iconTelegramImage}
-                      className="cursor-pointer"
+                      className={linkImgClassName}
                     />
                   </a>
                   <a
@@ -186,7 +189,7 @@ export const Footer = () => {
                     <img
                       alt=""
                       src={iconDiscordImage}
-                      className="cursor-pointer"
+                      className={linkImgClassName}
                     />
                   </a>
                   <a
@@ -198,7 +201,7 @@ export const Footer = () => {
                     <img
                       alt=""
                       src={iconFacebookImage}
-                      className="cursor-pointer"
+                      className={linkImgClassName}
                     />
                   </a>
                   <a
@@ -210,7 +213,7 @@ export const Footer = () => {
                     <img
                       alt=""
                       src={iconRedditImage}
-                      className="cursor-pointer"
+                      className={linkImgClassName}
                     />
                   </a>
                   <a
@@ -222,7 +225,7 @@ export const Footer = () => {
                     <img
                       alt=""
                       src={iconGithubImage}
-                      className="cursor-pointer"
+                      className={linkImgClassName}
                     />
                   </a>
                   <a
@@ -234,7 +237,7 @@ export const Footer = () => {
                     <img
                       src={iconYoutubeImage}
                       alt="youtube"
-                      className="cursor-pointer"
+                      className={linkImgClassName}
                     />
                   </a>
                   <div className="opacity-0 hidden hg:flex">

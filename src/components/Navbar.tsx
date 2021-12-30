@@ -1,12 +1,12 @@
-import * as React from "react"
-import { memo, PropsWithChildren, useState } from "react"
-import { Link } from "gatsby"
-import MenuIcon from "@mui/icons-material/Menu"
-import CloseIcon from "@mui/icons-material/Close"
-import { Drawer, List } from "@mui/material"
+import * as React from "react";
+import { memo, PropsWithChildren, useState } from "react";
+import { Link } from "gatsby";
+import MenuIcon from "@mui/icons-material/Menu";
+import CloseIcon from "@mui/icons-material/Close";
+import { Drawer, List } from "@mui/material";
 // assets
-import { GetMaskButton } from "./GetMaskButton"
-import { Logo } from "./Logo"
+import { GetMaskButton } from "./GetMaskButton";
+import { Logo } from "./Logo";
 
 interface MenuLinkProps extends PropsWithChildren<{}> {
   open: boolean;
@@ -28,8 +28,8 @@ const MenuLink = memo<MenuLinkProps>(({ open, to, children }) => {
         {children}
       </Link>
     </div>
-  )
-})
+  );
+});
 
 const Menu = ({ open }: MenuProps) => {
   return (
@@ -64,11 +64,11 @@ const Menu = ({ open }: MenuProps) => {
         About
       </MenuLink>
     </div>
-  )
-}
+  );
+};
 
 export const Navbar = () => {
-  const [open, setOpen] = useState(false)
+  const [open, setOpen] = useState(false);
 
   return (
     <>
@@ -139,5 +139,5 @@ export const Navbar = () => {
         ) : null}
       </nav>
     </>
-  )
-}
+  );
+};

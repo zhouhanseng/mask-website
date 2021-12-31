@@ -9,9 +9,11 @@ import firefoxImage from "../images/firefox.png";
 import mobileAppImage from "../images/mobile_side_app.png";
 import appleStoreImage from "../images/apple_store.png";
 import googlePlayImage from "../images/google_play.png";
+import testFlightImage from "../images/test_flight.png";
 import apkImage from "../images/apk.png";
 import Layout from "../components/Layout";
 import buryPointTrigger from "../utils/gtag";
+import { Link } from "gatsby";
 
 // markup
 const DownloadPage = () => {
@@ -28,6 +30,15 @@ const DownloadPage = () => {
       setOs("Other");
     }
   }, []);
+  const handleTestFlightClick = () => {
+    switch (os) {
+      case "Other":
+      case "Android":
+      case "iOS":
+      default:
+        return;
+    }
+  };
   return os ? (
     <Layout>
       <SEO title="Download Links - Mask Network" />
@@ -95,20 +106,27 @@ const DownloadPage = () => {
                 </p>
                 <div className="flex sm:justify-between gap-x-4">
                   <a
-                    href="https://mask.io/links/?ios-app-store"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <img alt="" src={appleStoreImage} />
-                  </a>
-                  <a
                     href="https://play.google.com/store/apps/details?id=com.dimension.maskbook"
                     target="_blank"
                     rel="noreferrer"
                     className="text-center"
                   >
-                    <img alt="" src={googlePlayImage} />
+                    <img alt="google" src={googlePlayImage} />
                   </a>
+                  <a
+                    href="https://mask.io/links/?ios-app-store"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img alt="app" src={appleStoreImage} />
+                  </a>
+                  <Link
+                    className="cursor-pointer"
+                    to="/tf-docs"
+                    // onClick={handleTestFlightClick}
+                  >
+                    <img src={testFlightImage} alt="testflight" />
+                  </Link>
                 </div>
               </div>
               <img

@@ -510,7 +510,7 @@ function FaqTopic(props: any) {
     );
 
     observer.observe(ref.current!);
-  }, [ref]);
+  }, [props, ref]);
 
   return (
     <>
@@ -574,6 +574,7 @@ function FaqContent(props: any) {
         <img
           src={!show ? faqExpandImage : faqShrinkImage}
           className="pr-4 w-8 max-md:w-6"
+          alt=""
         />
         <h5 className="font-bold">{props.title}</h5>
       </p>

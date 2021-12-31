@@ -1,12 +1,12 @@
-import * as React from "react"
-import { useState, useEffect } from "react"
+import * as React from "react";
+import { useState, useEffect } from "react";
 
 export function Cookies() {
-  const [hidden, setHidden] = useState("true")
+  const [hidden, setHidden] = useState("true");
 
   useEffect(() => {
-    setHidden(window.localStorage.getItem("accept-cookies") ?? "false")
-  }, [])
+    setHidden(window.localStorage.getItem("accept-cookies") ?? "false");
+  }, []);
 
   return hidden === "true" ? null : (
     <div className="bg-blue-cookies w-full z-30 sticky bottom-0 text-white">
@@ -19,13 +19,13 @@ export function Cookies() {
         <p
           className="px-4 py-3 bg-blue-mask rounded-md text-sm whitespace-nowrap cursor-pointer"
           onClick={() => {
-            window.localStorage.setItem("accept-cookies", "true")
-            setHidden("true")
+            window.localStorage.setItem("accept-cookies", "true");
+            setHidden("true");
           }}
         >
           I Accept
         </p>
       </div>
     </div>
-  )
+  );
 }

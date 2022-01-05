@@ -19,7 +19,6 @@ import { Link } from "gatsby";
 const DownloadPage = () => {
   const [os, setOs] = useState("");
   const [showAll, setShowAll] = useState(false);
-  const [hasTF, setHasTF] = useState(false);
   useEffect(() => {
     // @ts-ignore
     const userAgent = navigator.userAgent || navigator.vendor || window.opera;
@@ -30,20 +29,16 @@ const DownloadPage = () => {
     } else {
       setOs("Other");
     }
-    judgeHasTestFlight();
   }, []);
-  const judgeHasTestFlight = async () => {
-    if (os === "iOS") {
-      try {
-        await fetch("itms-beta://");
-        setHasTF(true);
-      } catch (e) {
-        setHasTF(false);
-      } finally {
-        return;
-      }
-    } else {
-      return;
+  const handleIosTFClick = () => {
+    const newPathName = window.location.pathname.replace(
+      "download-links",
+      "tf-docs"
+    );
+    try {
+      window.open("https://testflight.apple.com/join/PYomz4pJ");
+    } catch {
+      window.location.pathname = newPathName;
     }
   };
   return os ? (
@@ -127,18 +122,9 @@ const DownloadPage = () => {
                   >
                     <img alt="app" src={appleStoreImage} />
                   </a>
-                  {os !== "Android" && (
-                    <Link
-                      className="cursor-pointer"
-                      to={
-                        hasTF
-                          ? "https://testflight.apple.com/join/PYomz4pJ"
-                          : "/tf-docs"
-                      }
-                    >
-                      <img src={testFlightImage} alt="testflight" />
-                    </Link>
-                  )}
+                  <Link className="cursor-pointer" to={"/tf-docs"}>
+                    <img src={testFlightImage} alt="testflight" />
+                  </Link>
                 </div>
               </div>
               <img
@@ -184,19 +170,13 @@ const DownloadPage = () => {
               />
             </a>
             {os === "iOS" && (
-              <Link
-                to={
-                  hasTF
-                    ? "https://testflight.apple.com/join/PYomz4pJ"
-                    : "/tf-docs"
-                }
-              >
+              <div onClick={handleIosTFClick}>
                 <img
                   src={testFlightImage}
                   alt="testflight"
                   className="w-download-badge"
                 />
-              </Link>
+              </div>
             )}
           </div>
 

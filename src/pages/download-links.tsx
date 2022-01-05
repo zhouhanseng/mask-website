@@ -29,15 +29,20 @@ const DownloadPage = () => {
     } else {
       setOs("Other");
     }
+    console.log(os, "ff");
   }, []);
   const handleIosTFClick = () => {
     const newPathName = window.location.pathname.replace(
       "download-links",
       "tf-docs"
     );
-    try {
-      window.open("https://testflight.apple.com/join/PYomz4pJ");
-    } catch {
+    if (os === "iOS") {
+      try {
+        window.open("https://testflight.apple.com/join/PYomz4pJ");
+      } catch {
+        window.location.pathname = newPathName;
+      }
+    } else {
       window.location.pathname = newPathName;
     }
   };
@@ -122,9 +127,9 @@ const DownloadPage = () => {
                   >
                     <img alt="app" src={appleStoreImage} />
                   </a>
-                  <Link className="cursor-pointer" to={"/tf-docs"}>
+                  <div className="cursor-pointer" onClick={handleIosTFClick}>
                     <img src={testFlightImage} alt="testflight" />
-                  </Link>
+                  </div>
                 </div>
               </div>
               <img

@@ -13,7 +13,7 @@ import testFlightImage from "../images/test_flight.png";
 import apkImage from "../images/apk.png";
 import Layout from "../components/Layout";
 import buryPointTrigger from "../utils/gtag";
-import { Link } from "gatsby";
+import CallApp from "callapp-lib";
 
 // markup
 const DownloadPage = () => {
@@ -29,21 +29,24 @@ const DownloadPage = () => {
     } else {
       setOs("Other");
     }
-    console.log(os, "ff");
   }, []);
   const handleIosTFClick = () => {
-    const newPathName = window.location.pathname.replace(
-      "download-links",
-      "tf-docs"
-    );
+    const newHref = window.location.href.replace("download-links", "tf-docs");
     if (os === "iOS") {
-      try {
-        window.open("https://testflight.apple.com/join/PYomz4pJ");
-      } catch {
-        window.location.pathname = newPathName;
-      }
+      const options = {
+        scheme: {
+          protocol: "itms-beta",
+        },
+        appstore: newHref,
+        fallback: newHref,
+        timeout: 500,
+      };
+      const callLib = new CallApp(options);
+      callLib.open({
+        path: "testflight.apple.com/join/PYomz4pJ",
+      });
     } else {
-      window.location.pathname = newPathName;
+      window.location.href = newHref;
     }
   };
   return os ? (

@@ -25,6 +25,7 @@
     "@mui/material": "^5.0.2",
     "@svgr/webpack": "^5.5.0",
     "animate.css": "^4.1.1",
+    "callapp-lib": "^3.5.1",
     "gatsby": "^4.0.0-next",
     "gatsby-plugin-asset-path": "^3.0.4",
     "gatsby-plugin-cname": "^1.0.0",

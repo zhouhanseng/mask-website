@@ -13,11 +13,13 @@ import testFlightImage from "../images/test_flight.png";
 import apkImage from "../images/apk.png";
 import Layout from "../components/Layout";
 import buryPointTrigger from "../utils/gtag";
+import { Link } from "gatsby";
 
 // markup
 const DownloadPage = () => {
   const [os, setOs] = useState("");
   const [showAll, setShowAll] = useState(false);
+  const [hasTF, setHasTF] = useState(false);
   useEffect(() => {
     // @ts-ignore
     const userAgent = navigator.userAgent || navigator.vendor || window.opera;
@@ -28,24 +30,20 @@ const DownloadPage = () => {
     } else {
       setOs("Other");
     }
+    judgeHasTestFlight();
   }, []);
-  const handleTestFlightClick = async () => {
-    switch (os) {
-      case "Other":
-        window.location.pathname = "/tf-docs/";
-        break;
-      case "Android":
-        break;
-      case "iOS":
-        try {
-          await window.fetch("items-beta://");
-          window.open("https://testflight.apple.com/join/PYomz4pJ");
-        } catch (e) {
-          window.location.pathname = "/tf-docs/";
-        }
-        break;
-      default:
+  const judgeHasTestFlight = async () => {
+    if (os === "iOS") {
+      try {
+        await fetch("itms-beta://");
+        setHasTF(true);
+      } catch (e) {
+        setHasTF(false);
+      } finally {
         return;
+      }
+    } else {
+      return;
     }
   };
   return os ? (
@@ -130,12 +128,16 @@ const DownloadPage = () => {
                     <img alt="app" src={appleStoreImage} />
                   </a>
                   {os !== "Android" && (
-                    <div
+                    <Link
                       className="cursor-pointer"
-                      onClick={handleTestFlightClick}
+                      to={
+                        hasTF
+                          ? "https://testflight.apple.com/join/PYomz4pJ"
+                          : "/tf-docs"
+                      }
                     >
                       <img src={testFlightImage} alt="testflight" />
-                    </div>
+                    </Link>
                   )}
                 </div>
               </div>

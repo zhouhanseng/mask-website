@@ -19,6 +19,10 @@ export const Newsletter = () => {
     "/faq/",
     "/mask-website/faq",
     "/mask-website/faq/",
+    "/tf-docs",
+    "/tf-docs/",
+    "/mask-website/tf-docs",
+    "/mask-website/tf-docs/",
   ].includes(path) ? null : (
     <div className="flex flex-row justify-between max-md:flex-col max-md:justify-center items-center sm:px-4 md:px-8 px-10 p-10 pb-7 bg-blue-100 box-shadow-news-letter-out">
       <div className="mb-8 max-md:w-full">

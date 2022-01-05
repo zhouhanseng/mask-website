@@ -82,7 +82,7 @@ module.exports = {
         "1/3": "33vw",
         800: "800px",
         half: "50%",
-        infoMax: "285px",
+        infoMax: "292px",
         imgMax: "325px",
       },
       maxHeight: {

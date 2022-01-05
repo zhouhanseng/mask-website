@@ -8,12 +8,12 @@ import InstallImg from "../images/install.png";
 import OpenImg from "../images/open.png";
 import { SEO } from "../components/SEO";
 
-const StepClassName = "text-blue-mask text-2xl font-bold mt-12 mb-4";
+const StepClassName = "text-blue-mask text-2xl font-bold mt-16 mb-5";
 const ArrowDownClassName = "mx-2";
 const BtnGuideTextClassName =
-  "flex items-center justify-center text-base font-bold";
+  "flex items-center justify-center text-base font-bold mb-1";
 const InfoClassName = "max-w-infoMax text-center mt-10 mx-auto";
-const ImgContainer = "max-w-imgMax mx-auto";
+const ImgContainer = "max-w-imgMax mx-auto my-2";
 
 const Step1Render = () => {
   return (
@@ -29,7 +29,7 @@ const Step1Render = () => {
         className="flex justify-center"
         rel="noreferrer"
       >
-        <img style={{ width: "50%" }} src={DownloadTestFlightImg} alt="" />
+        <img style={{ width: "200px" }} src={DownloadTestFlightImg} alt="" />
       </a>
       <div className={InfoClassName}>
         If you already have TestFlight, please scroll down to Step 2
@@ -51,7 +51,7 @@ const Step2Render = () => {
         className="flex justify-center "
         rel="noreferrer"
       >
-        <img style={{ width: "50%" }} src={DownloadMaskImg} alt="" />
+        <img style={{ width: "200px" }} src={DownloadMaskImg} alt="" />
       </a>
       <div className={InfoClassName}>
         In TestFlight, click the “<strong>Accept</strong>” button and then the "
@@ -69,7 +69,7 @@ const Step2Render = () => {
 
 const Step3Render = () => {
   return (
-    <div>
+    <div className="pb-16">
       <div className={StepClassName}>Step 3</div>
 
       <div className={InfoClassName}>

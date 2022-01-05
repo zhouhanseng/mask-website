@@ -14,8 +14,6 @@ import apkImage from "../images/apk.png";
 import Layout from "../components/Layout";
 import buryPointTrigger from "../utils/gtag";
 
-import CallApp from "callapp-lib";
-
 // markup
 const DownloadPage = () => {
   const [os, setOs] = useState("");
@@ -31,22 +29,7 @@ const DownloadPage = () => {
       setOs("Other");
     }
   }, []);
-  const handleTestFlightClick = () => {
-    const option = {
-      scheme: {
-        protocol: "itms-beta",
-      },
-      outChain: {
-        protocol: "itms-beta",
-        path: "",
-        key: "",
-      },
-      appstore: "http://www.apple.com",
-      fallback: "https://mask.io",
-      timeout: 500,
-    };
-    const lib = new CallApp(option);
-
+  const handleTestFlightClick = async () => {
     switch (os) {
       case "Other":
         window.location.pathname = "/tf-docs/";
@@ -54,13 +37,13 @@ const DownloadPage = () => {
       case "Android":
         break;
       case "iOS":
-        lib.open({
-          path: "/text",
-          callback: () => {
-            window.location.pathname = "/tf-docs/";
-            return false;
-          },
-        });
+        try {
+          await window.fetch("items-beta://");
+          window.open("https://testflight.apple.com/join/PYomz4pJ");
+        } catch (e) {
+          window.location.pathname = "/tf-docs/";
+        }
+
         break;
       default:
         return;

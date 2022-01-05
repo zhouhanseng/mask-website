@@ -86,7 +86,7 @@ const TestFlightDocPage = () => {
   return (
     <Layout>
       <SEO title="TestFlight - Mask Network" />
-      <div className="flex-col text-center items-center justify-center">
+      <div className="flex-col text-center items-center justify-center bg-tfBg-main w-full">
         {Step1Render()}
         {Step2Render()}
         {Step3Render()}

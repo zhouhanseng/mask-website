@@ -43,7 +43,6 @@ const DownloadPage = () => {
         } catch (e) {
           window.location.pathname = "/tf-docs/";
         }
-
         break;
       default:
         return;

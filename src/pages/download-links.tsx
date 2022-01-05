@@ -13,7 +13,8 @@ import testFlightImage from "../images/test_flight.png";
 import apkImage from "../images/apk.png";
 import Layout from "../components/Layout";
 import buryPointTrigger from "../utils/gtag";
-import { Link } from "gatsby";
+
+import CallApp from "callapp-lib";
 
 // markup
 const DownloadPage = () => {
@@ -31,10 +32,36 @@ const DownloadPage = () => {
     }
   }, []);
   const handleTestFlightClick = () => {
+    const option = {
+      scheme: {
+        protocol: "itms-beta",
+      },
+      outChain: {
+        protocol: "itms-beta",
+        path: "",
+        key: "",
+      },
+      appstore: "http://www.apple.com",
+      fallback: "https://mask.io",
+      timeout: 500,
+    };
+    const lib = new CallApp(option);
+
     switch (os) {
       case "Other":
+        window.location.pathname = "/tf-docs/";
+        break;
       case "Android":
+        break;
       case "iOS":
+        lib.open({
+          path: "/text",
+          callback: () => {
+            window.location.pathname = "/tf-docs/";
+            return false;
+          },
+        });
+        break;
       default:
         return;
     }
@@ -120,13 +147,14 @@ const DownloadPage = () => {
                   >
                     <img alt="app" src={appleStoreImage} />
                   </a>
-                  <Link
-                    className="cursor-pointer"
-                    to="/tf-docs"
-                    // onClick={handleTestFlightClick}
-                  >
-                    <img src={testFlightImage} alt="testflight" />
-                  </Link>
+                  {os !== "Android" && (
+                    <div
+                      className="cursor-pointer"
+                      onClick={handleTestFlightClick}
+                    >
+                      <img src={testFlightImage} alt="testflight" />
+                    </div>
+                  )}
                 </div>
               </div>
               <img

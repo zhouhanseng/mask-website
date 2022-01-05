@@ -168,21 +168,38 @@ const DownloadPage = () => {
           <p className="text-white text-xl items-center px-6 text-center mb-7">
             Enjoy the Web 3.0 world with Mask Network
           </p>
+          <div className="mb-16 flex-col items-center gap-8">
+            <a
+              href={
+                os === "iOS"
+                  ? "https://mask.io/links/?ios-app-store"
+                  : "https://play.google.com/store/apps/details?id=com.dimension.maskbook"
+              }
+              className="mb-8 block"
+            >
+              <img
+                alt="appStore"
+                src={os === "iOS" ? appleStoreImage : googlePlayImage}
+                className="w-download-badge"
+              />
+            </a>
+            {os === "iOS" && (
+              <Link
+                to={
+                  hasTF
+                    ? "https://testflight.apple.com/join/PYomz4pJ"
+                    : "/tf-docs"
+                }
+              >
+                <img
+                  src={testFlightImage}
+                  alt="testflight"
+                  className="w-download-badge"
+                />
+              </Link>
+            )}
+          </div>
 
-          <a
-            href={
-              os === "iOS"
-                ? "https://mask.io/links/?ios-app-store"
-                : "https://play.google.com/store/apps/details?id=com.dimension.maskbook"
-            }
-            className="mb-16"
-          >
-            <img
-              alt=""
-              src={os === "iOS" ? appleStoreImage : googlePlayImage}
-              className="w-download-badge"
-            />
-          </a>
           <StaticImage
             alt=""
             src={"../images/mobile_side_app.png"}

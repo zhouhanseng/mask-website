@@ -12,21 +12,7 @@ module.exports = {
         defaultQuality: 80,
       },
     },
-    // {
-    //   resolve: "gatsby-plugin-google-tagmanager",
-    //   options: {
-    //     id: "G-2XCS4Y99TG",
-    //     // Include GTM in development.
-    //     // Defaults to false meaning GTM will only be loaded in production.
-    //     includeInDevelopment: true,
-    //     // Defaults to null
-    //     defaultDataLayer: { platform: "gatsby" },
-    //     // Defaults to false
-    //     enableWebVitalsTracking: true,
-    //     selfHostedOrigin:
-    //       "https://www.googletagmanager.com/gtag/js?id=G-2XCS4Y99TG",
-    //   },
-    // },
+
     {
       resolve: "gatsby-plugin-asset-path",
       options: {

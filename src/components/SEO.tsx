@@ -87,6 +87,7 @@ export function SEO(props: any) {
               function gtag(){window.dataLayer.push(arguments);}
               gtag('js', new Date());
               gtag('config', 'G-2XCS4Y99TG');
+              gtag('config', 'G-3GW35TS5N7');
             `}
       </script>
 

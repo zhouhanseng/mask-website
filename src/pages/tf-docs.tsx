@@ -17,7 +17,7 @@ const ImgContainer = "max-w-imgMax mx-auto my-2";
 
 const Step1Render = () => {
   return (
-    <div>
+    <div className="flex flex-col items-center">
       <div className={StepClassName}>Step 1</div>
       <div className={BtnGuideTextClassName}>
         Click to download TestFlight
@@ -26,10 +26,10 @@ const Step1Render = () => {
       <a
         href="https://apps.apple.com/us/app/testflight/id899247664?l=zh"
         target="_blank"
-        className="flex justify-center"
         rel="noreferrer"
+        style={{ width: "200px" }}
       >
-        <img style={{ width: "200px" }} src={DownloadTestFlightImg} alt="" />
+        <img width="100%" src={DownloadTestFlightImg} alt="" />
       </a>
       <div className={InfoClassName}>
         If you already have TestFlight, please scroll down to Step 2
@@ -39,7 +39,7 @@ const Step1Render = () => {
 };
 const Step2Render = () => {
   return (
-    <div>
+    <div className="flex flex-col items-center">
       <div className={StepClassName}>Step 2</div>
       <div className={BtnGuideTextClassName}>
         Click to download Mask Network
@@ -48,10 +48,10 @@ const Step2Render = () => {
       <a
         href="https://testflight.apple.com/join/PYomz4pJ"
         target="_blank"
-        className="flex justify-center "
         rel="noreferrer"
+        style={{ width: "200px" }}
       >
-        <img style={{ width: "200px" }} src={DownloadMaskImg} alt="" />
+        <img width="100%" src={DownloadMaskImg} alt="" />
       </a>
       <div className={InfoClassName}>
         In TestFlight, click the “<strong>Accept</strong>” button and then the "

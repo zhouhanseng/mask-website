@@ -217,7 +217,7 @@ const FaqPage = () => {
         },
         {
           link: "https://realmasknetwork.notion.site/Display-Your-NFTs-on-your-Twitter-profile-page-5772759b609843309839beb056bead02",
-          text: "🖼️ Display Your NFTs on your Twitter profile page",
+          text: "🖼️ Customise your Twitter page: Set up a Web3 Tab & create a NFT gallery",
         },
         {
           link: "https://realmasknetwork.notion.site/Purchase-or-bid-for-NFTs-via-OpenSea-or-Rarible-on-Twitter-c388746f11774ecfa17914c900d3ed97",

@@ -61,10 +61,7 @@ export const Footer = () => {
               </div>
               <div className="pr-2">
                 <p className="text-white opacity-80 text-base mb-4 md:max-w-xs w-full">
-                  Mask Network is developed and maintained by Dimension.{" "}
-                </p>
-                <p className="text-white opacity-80 text-base md:mb-4 mb-8 md:max-w-xs w-full">
-                  Mask Network is a free and open source software.
+                  Mask Network is a free and open source software developed and maintained by Dimension. 
                 </p>
               </div>
             </div>

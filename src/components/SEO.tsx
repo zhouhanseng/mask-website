@@ -17,7 +17,7 @@ export function SEO(props: any) {
       {/* <!-- For Google --> */}
       <meta
         name="description"
-        content="The Portal to the New, Open Internet."
+        content="Your Portal To The New, Open Internet."
       />
       <meta name="author" content="Mask Network" />
       <meta name="application-name" content="Mask Network" />
@@ -25,14 +25,14 @@ export function SEO(props: any) {
       {/* <!-- For Facebook --> */}
       <meta
         property="og:title"
-        content="Mask Network — The Portal to the New, Open Internet."
+        content="Mask Network — Your Portal To The New, Open Internet."
       />
       <meta property="og:type" content="website" />
       <meta property="og:image" content="/fb-share-banner.png" />
       <meta property="og:url" content="https://mask.io" />
       <meta
         property="og:description"
-        content="The Portal to the New, Open Internet."
+        content="Your Portal To The New, Open Internet."
       />
       <meta property="fb:app_id" content="321539018508290" />
 
@@ -40,11 +40,11 @@ export function SEO(props: any) {
       <meta name="twitter:card" content="summary" />
       <meta
         name="twitter:title"
-        content="Mask Network — The Portal to the New, Open Internet."
+        content="Mask Network — Your Portal To The New, Open Internet."
       />
       <meta
         name="twitter:description"
-        content="The Portal to the New, Open Internet."
+        content="Your Portal To The New, Open Internet."
       />
       <meta name="twitter:image" content="/apple-touch-icon.png" />
 

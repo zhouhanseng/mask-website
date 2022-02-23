@@ -125,7 +125,7 @@ export const Navbar = () => {
               <div className="p-10 max-md:p-4">
                 <div className="pb-8 pt-4 max-md:pb-4 max-md:pt-2">
                   <h2 className="h2">
-                    <p>The Portal to the New,</p>
+                    <p>Your Portal To The New,</p>
                     <p>Open Internet</p>
                   </h2>
                 </div>

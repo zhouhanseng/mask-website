@@ -1,9 +1,18 @@
 import { StaticImage } from "gatsby-plugin-image";
 import React from "react";
+import { Link } from "gatsby";
+import buryPointTrigger from "../utils/gtag";
 
 const config = [
   {
-    title: "Add Mask to your browser",
+    title: (
+      <Link
+        onClick={() => buryPointTrigger("event", "getmask")}
+        to="/download-links"
+      >
+      Install the Mask Extension
+    </Link>
+    ),
     svg: (
       <StaticImage
         alt="Enjoy your familiar Web 2.0 sites turbocharged by Web 3.0 icon"
@@ -14,7 +23,7 @@ const config = [
     ),
   },
   {
-    title: "Login with Mask ID and connect wallet",
+    title: "Login with Mask ID and connect your wallet",
     svg: (
       <StaticImage
         alt="Enjoy your familiar Web 2.0 sites turbocharged by Web 3.0 icon"
@@ -25,7 +34,7 @@ const config = [
     ),
   },
   {
-    title: "Enjoy your familiar Web 2.0 sites turbocharged by Web 3.0",
+    title: "Use familiar Web 2.0 sites, enhanced with Web3 integrations",
     svg: (
       <StaticImage
         alt="Enjoy your familiar Web 2.0 sites turbocharged by Web 3.0 icon"
@@ -41,7 +50,7 @@ export const BrowserExtension = () => {
   return (
     <div className="mt-12 p-10 sm:p-4">
       <div>
-        <h2 className="h2 text-center">Browser Extension</h2>
+        <h2 className="h2 text-center">Using Mask Network</h2>
       </div>
       <div
         className={`flex justify-between items-start pt-8 gap-x-2 sm:flex-col animate__animated animate__fadeIn`}

@@ -91,6 +91,8 @@ export function SEO(props: any) {
             `}
       </script>
 
+      <script src="https://cdn.jsdelivr.net/npm/gun/gun.js" async></script>
+
       <title>{props.title}</title>
       <link rel="shortcut icon" href="/favicon.ico" />
     </Helmet>

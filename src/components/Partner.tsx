@@ -107,6 +107,13 @@ export const Partner = () => {
             placeholder="none"
           />
         </a>
+        <a href="https://www.animocabrands.com/" target="_blank" rel="noopener noreferrer">
+          <StaticImage
+            alt="Animoca Brands"
+            src={"../images/partner_animocabrands.png"}
+            placeholder="none"
+          />
+        </a>
       </div>
     </div>
   );

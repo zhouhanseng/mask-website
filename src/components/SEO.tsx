@@ -46,7 +46,7 @@ export function SEO(props: any) {
         name="twitter:description"
         content="Your Portal To The New, Open Internet."
       />
-      <meta name="twitter:image" content="https://mask.io/apple-touch-icon.png" />
+      <meta name="twitter:image" content="https://mask.io/twitter-share-image.png" />
 
       {/* <!-- For Apple --> */}
       <meta name="apple-itunes-app" content="app-id=1478382964" />

@@ -10,6 +10,7 @@ import mobileAppImage from "../images/mobile_side_app.png";
 import appleStoreImage from "../images/apple_store.png";
 import googlePlayImage from "../images/google_play.png";
 import testFlightImage from "../images/test_flight.png";
+import operaImage from "../images/opera.svg";
 import apkImage from "../images/apk.png";
 import Layout from "../components/Layout";
 import buryPointTrigger from "../utils/gtag";
@@ -76,6 +77,13 @@ const DownloadPage = () => {
                   text: "Chrome Web Store",
                   link: "https://chrome.google.com/webstore/detail/mask-network/jkoeaghipilijlahjplgbfiocjhldnap",
                   type: "ChromeWebStore",
+                },
+                {
+                  name: "Opera",
+                  image: operaImage,
+                  text: "ADD-ONS",
+                  link: "https://addons.opera.com/en/extensions/details/maskbook/",
+                  type: "Add_ons",
                 },
                 {
                   name: "Firefox",

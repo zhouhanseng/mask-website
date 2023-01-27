@@ -157,6 +157,9 @@ export const Partner = () => {
           rel="noopener noreferrer"
         >
           <StaticImage
+            style={{
+              maxHeight: '75px', maxWidth: '75px', margin: '0 auto', display: 'block'
+            }}
             alt="Animoca Brands"
             src={"../images/dwf.png"}
             placeholder="none"

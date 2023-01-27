@@ -151,6 +151,17 @@ export const Partner = () => {
             placeholder="none"
           />
         </a>
+        <a
+          href="https://www.dwf-labs.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <StaticImage
+            alt="Animoca Brands"
+            src={"../images/dwf.png"}
+            placeholder="none"
+          />
+        </a>
       </div>
     </div>
   );

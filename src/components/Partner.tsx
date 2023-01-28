@@ -19,18 +19,6 @@ export const Partner = () => {
             placeholder="none"
           />
         </a>
-
-        <a
-          href="https://bootcamp.web3.foundation/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <StaticImage
-            alt="Web3 Bootcamp"
-            src={"../images/partner_web30.png"}
-            placeholder="none"
-          />
-        </a>
         <a
           href="https://www.okx.com/"
           target="_blank"
@@ -158,7 +146,10 @@ export const Partner = () => {
         >
           <StaticImage
             style={{
-              maxHeight: '75px', maxWidth: '75px', margin: '0 auto', display: 'block'
+              maxHeight: "75px",
+              maxWidth: "75px",
+              margin: "0 auto",
+              display: "block",
             }}
             alt="Animoca Brands"
             src={"../images/dwf.png"}

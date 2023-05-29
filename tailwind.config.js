@@ -1,6 +1,7 @@
 module.exports = {
   purge: ["./src/**/*.{js,jsx,ts,tsx}"],
   darkMode: false, // or 'media' or 'class'
+  mode: "jit",
   theme: {
     screens: {
       sm: { max: "667px" },
@@ -57,6 +58,10 @@ module.exports = {
         tfBg: {
           main: "#EFF3F4",
         },
+      },
+      fontFamily: {
+        poppins: ["Poppins"],
+        Manrope: ["Manrope"],
       },
       minHeight: {
         "hg-about-content": "767px",

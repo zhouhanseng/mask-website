@@ -128,7 +128,7 @@ const DownloadPage = () => {
                     src={fireflyDownloadImage}
                     className="w-[30px] h-[40px]"
                   />
-                  <div className="flex text-[20px] font-medium font-poppin text-white">
+                  <div className="flex text-[20px] font-medium font-poppin text-white font-poppins">
                     Get Firefly
                   </div>
                 </div>
@@ -164,7 +164,7 @@ const DownloadPage = () => {
                   src={fireflyDownloadImage}
                   className="w-[30px] h-[40px]"
                 />
-                <div className="flex text-[20px] font-medium text-white ">
+                <div className="flex text-[20px] font-medium text-white font-poppins">
                   Get Firefly
                 </div>
               </div>
@@ -184,7 +184,7 @@ const DownloadPage = () => {
               document.body.scrollTop = document.documentElement.scrollTop = 0;
               setShowAll(true);
             }}
-            className="text-white text-[18px] font-normal text-center underline mb-24 max-sm:mb-14 sm:mt-16"
+            className="text-white text-[18px] font-normal text-center underline mb-24 max-sm:mb-14 sm:mt-16 font-Roboto"
           >
             Download for another operating system
           </p>

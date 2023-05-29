@@ -62,6 +62,7 @@ module.exports = {
       fontFamily: {
         poppins: ["Poppins"],
         Manrope: ["Manrope"],
+        Roboto: ["Roboto"],
       },
       minHeight: {
         "hg-about-content": "767px",

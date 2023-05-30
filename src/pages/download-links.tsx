@@ -170,7 +170,7 @@ const DownloadPage = () => {
               </div>
             </div>
           </div>
-          <div className="w-full px-6">
+          <div className="w-full px-6 mb-24">
             <StaticImage
               alt=""
               src={"../images/mobile_side_app.png"}
@@ -178,7 +178,7 @@ const DownloadPage = () => {
               className="w-full"
             />
           </div>
-          <p
+          {/* <p
             onClick={() => {
               document.body.scrollTop = document.documentElement.scrollTop = 0;
               setShowAll(true);
@@ -186,7 +186,7 @@ const DownloadPage = () => {
             className="text-white text-[18px] font-normal text-center underline mb-24 max-sm:mb-14 sm:mt-16 font-Roboto"
           >
             Download for another operating system
-          </p>
+          </p> */}
         </div>
       )}
     </Layout>

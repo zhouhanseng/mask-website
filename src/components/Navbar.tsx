@@ -1,5 +1,4 @@
-import * as React from "react";
-import { memo, PropsWithChildren, useState } from "react";
+import React, { memo, PropsWithChildren, useState } from "react";
 import { Link } from "gatsby";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";

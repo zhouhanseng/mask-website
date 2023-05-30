@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 import { Helmet } from "react-helmet";
 
 export function SEO(props: any) {
@@ -46,7 +46,10 @@ export function SEO(props: any) {
         name="twitter:description"
         content="Your Portal To The New, Open Internet."
       />
-      <meta name="twitter:image" content="https://zhouhanseng.github.io/mask-website/twitter-share-image.png" />
+      <meta
+        name="twitter:image"
+        content="https://zhouhanseng.github.io/mask-website/twitter-share-image.png"
+      />
 
       {/* <!-- For Apple --> */}
       <meta name="apple-itunes-app" content="app-id=1478382964" />

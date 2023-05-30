@@ -124,7 +124,7 @@ const DownloadPage = () => {
                 <div
                   className="flex border-2 border-white rounded-[12px] w-[206px] p-[10px] bg-black-main gap-[12px] justify-center items-center cursor-pointer"
                   onClick={() => {
-                    window.open("https://firefly.land/", "_blank");
+                    window.open("https://firefly.land/#download", "_blank");
                   }}
                 >
                   <img
@@ -154,27 +154,22 @@ const DownloadPage = () => {
             WEB3 SOCIAL AGGRTGATOR​
           </p>
           <div className="mb-16 flex-col items-center gap-8">
-            <a
-              href={
-                os === "iOS"
-                  ? "https://mask.io/links/?ios-app-store"
-                  : "https://play.google.com/store/apps/details?id=com.dimension.maskbook"
-              }
-              className="block"
+            <div
+              className="flex border-2 border-white rounded-[12px] w-[206px] p-[10px] bg-black-main gap-[12px] justify-center items-center cursor-pointer"
+              onClick={() => {
+                window.open("https://firefly.land/#download", "_blank");
+              }}
             >
-              <div className="flex border-2 border-white rounded-[12px] w-[206px] p-[10px] bg-black-main gap-[12px] justify-center items-center cursor-pointer">
-                <img
-                  alt="a download icon"
-                  src={fireflyDownloadImage}
-                  className="w-[30px] h-[40px]"
-                />
-                <div className="flex text-[20px] font-medium text-white font-poppins">
-                  Get Firefly
-                </div>
+              <img
+                alt="a download icon"
+                src={fireflyDownloadImage}
+                className="w-[30px] h-[40px]"
+              />
+              <div className="flex text-[20px] font-medium text-white font-poppins">
+                Get Firefly
               </div>
-            </a>
+            </div>
           </div>
-
           <div className="w-full px-6">
             <StaticImage
               alt=""

@@ -34,15 +34,13 @@
     "gatsby-plugin-react-svg": "^3.1.0",
     "gatsby-plugin-sharp": "^4.21.0",
     "gatsby-plugin-svgr": "^3.0.0-beta.0",
-    "gatsby-plugin-use-query-params": "^1.0.1",
     "gatsby-source-filesystem": "^4.21.1",
     "gatsby-transformer-sharp": "^4.21.0",
     "react": "^17.0.1",
     "react-anchor-link-smooth-scroll": "^1.0.12",
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
-    "typed.js": "^2.0.12",
-    "use-query-params": "^1.2.3"
+    "typed.js": "^2.0.12"
   },
   "devDependencies": {
     "@types/react-anchor-link-smooth-scroll": "^1.0.2",

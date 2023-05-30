@@ -2,7 +2,7 @@ import * as React from "react";
 import { useEffect, useState, useRef } from "react";
 import { StaticImage } from "gatsby-plugin-image";
 import AnchorLink from "react-anchor-link-smooth-scroll";
-import { useQueryParam, StringParam } from "use-query-params";
+// import { useQueryParam, StringParam } from "use-query-params";
 import { SEO } from "../components/SEO";
 
 //assets
@@ -25,7 +25,9 @@ import Layout from "../components/Layout";
 // markup
 const FaqPage = () => {
   const [size, setSize] = useState(0);
-  const [type, setType] = useQueryParam("type", StringParam);
+  const [type, setType] = useState(
+    new URLSearchParams(location.search).get("type") ?? ""
+  );
 
   const contents = [
     {
@@ -376,7 +378,7 @@ const FaqPage = () => {
                     className={
                       type === "faq"
                         ? "text-5xl text-gray-500 md:text-4xl sm:text-3xl font-bold"
-                        : "text-6xl font-semibold md:text-4xl sm:text-3xl font-bold"
+                        : "text-6xl md:text-4xl sm:text-3xl font-bold"
                     }
                   >
                     Tutorial&nbsp;/&nbsp;
@@ -384,7 +386,7 @@ const FaqPage = () => {
                   <span
                     className={
                       type === "faq"
-                        ? "text-6xl font-semibold md:text-4xl sm:text-3xl font-bold"
+                        ? "text-6xl md:text-4xl sm:text-3xl font-bold"
                         : "text-5xl text-gray-500 md:text-4xl sm:text-3xl font-bold"
                     }
                   >

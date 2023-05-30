@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 import { SEO } from "../components/SEO";
 import { Banner } from "../components/Banner";
 import { SectionItem } from "../components/SectionItem";
@@ -46,7 +46,8 @@ const sectionConfig = [
   {
     mode: { reverse: false, row: false },
     title: "Verify NFT Avatars",
-    subtitle: "Got a BAYC or a Punk? Get your profile pictures verified on-chain. For free.",
+    subtitle:
+      "Got a BAYC or a Punk? Get your profile pictures verified on-chain. For free.",
     url: AvatarSvg,
     link: "https://realmasknetwork.notion.site/Set-any-NFT-you-own-as-your-Twitter-Profile-Picture-b60da726f7054f918d72634400479d1d",
   },
@@ -67,7 +68,8 @@ const sectionConfig = [
   {
     mode: { reverse: true, row: true },
     title: "Start and Take Part In Giveaways",
-    subtitle: "Gift NFTs and tokens to users on a first-come-first-served basis.",
+    subtitle:
+      "Gift NFTs and tokens to users on a first-come-first-served basis.",
     url: RedPacketSvg,
     link: "https://realmasknetwork.notion.site/Gift-token-NFTs-to-your-friends-Support-ETH-BSC-and-Polygon-0a71fd421aae4563bd07caa3e2129e5b",
   },

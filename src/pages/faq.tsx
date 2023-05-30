@@ -1,9 +1,9 @@
-import * as React from "react";
-import { useEffect, useState, useRef } from "react";
-import { StaticImage } from "gatsby-plugin-image";
+import React, { useEffect, useState, useRef } from "react";
 import AnchorLink from "react-anchor-link-smooth-scroll";
-import { useQueryParam, StringParam } from "use-query-params";
+import { StaticImage } from "gatsby-plugin-image";
 import { SEO } from "../components/SEO";
+import Layout from "../components/Layout";
+import { getLocationSearch } from "../utils/getLocationSearch";
 
 //assets
 import faqSmImage from "../images/faq_sm.png";
@@ -20,12 +20,13 @@ import faq9Image from "../images/faq_nine.png";
 import faq10Image from "../images/faq_ten.png";
 import faqExpandImage from "../images/faq_expand.png";
 import faqShrinkImage from "../images/faq_shrink.png";
-import Layout from "../components/Layout";
 
 // markup
 const FaqPage = () => {
   const [size, setSize] = useState(0);
-  const [type, setType] = useQueryParam("type", StringParam);
+  const [type, setType] = useState(
+    new URLSearchParams(getLocationSearch()).get("type") ?? ""
+  );
 
   const contents = [
     {
@@ -376,7 +377,7 @@ const FaqPage = () => {
                     className={
                       type === "faq"
                         ? "text-5xl text-gray-500 md:text-4xl sm:text-3xl font-bold"
-                        : "text-6xl font-semibold md:text-4xl sm:text-3xl font-bold"
+                        : "text-6xl md:text-4xl sm:text-3xl font-bold"
                     }
                   >
                     Tutorial&nbsp;/&nbsp;
@@ -384,7 +385,7 @@ const FaqPage = () => {
                   <span
                     className={
                       type === "faq"
-                        ? "text-6xl font-semibold md:text-4xl sm:text-3xl font-bold"
+                        ? "text-6xl md:text-4xl sm:text-3xl font-bold"
                         : "text-5xl text-gray-500 md:text-4xl sm:text-3xl font-bold"
                     }
                   >

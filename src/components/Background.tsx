@@ -1,5 +1,4 @@
-import * as React from "react";
-import { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import TickManager from "../utils/TickerManager";
 import Shader2d from "../utils/shader2d";
 import circleVert from "../utils/circleVert.vert";

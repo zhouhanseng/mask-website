@@ -21,7 +21,6 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     "gatsby-plugin-cname",
-    "gatsby-plugin-use-query-params",
     "gatsby-plugin-react-helmet",
     {
       resolve: "gatsby-plugin-svgr",
@@ -31,5 +30,4 @@ module.exports = {
     },
   ],
   assetPrefix: `/gatsby-assets`,
-  // pathPrefix: "/mask-website",
 };

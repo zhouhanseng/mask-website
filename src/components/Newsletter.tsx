@@ -1,5 +1,4 @@
-import * as React from "react";
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 
 export const Newsletter = () => {
   const [path, setPath] = useState("");

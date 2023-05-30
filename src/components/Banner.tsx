@@ -1,7 +1,6 @@
-import * as React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { GetMaskButton } from "./GetMaskButton";
 import WhatSvg from "../images/outsvg/what.svg";
-import { useEffect, useRef, useState } from "react";
 import Typed from "typed.js";
 import { StatueOfLibertySvg } from "./StatueOfLiberty";
 
@@ -57,7 +56,8 @@ export const Banner = () => {
               What is Mask Network?
             </h2>
             <p className="h5 text-blue-50">
-            Mask Network brings privacy and benefits from Web3 to social media like Facebook & Twitter - with an open-sourced browser extension.
+              Mask Network brings privacy and benefits from Web3 to social media
+              like Facebook & Twitter - with an open-sourced browser extension.
             </p>
           </div>
           <div className="flex-grow-0 sm:absolute bottom-0 right-6 sm:w-28 relative w-1/3 z-0">

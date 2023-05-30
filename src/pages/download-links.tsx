@@ -122,7 +122,12 @@ const DownloadPage = () => {
                 <p className="w-full font-poppins md:max-w-xss font-bold text-[24px] max-sm:text-sm leading-tight max-sm:text-center mb-14">
                   WEB3 SOCIAL AGGRTGATOR​
                 </p>
-                <div className="flex border-2 border-white rounded-[12px] w-[206px] p-[10px] bg-black-main gap-[12px] justify-center items-center cursor-pointer">
+                <div
+                  className="flex border-2 border-white rounded-[12px] w-[206px] p-[10px] bg-black-main gap-[12px] justify-center items-center cursor-pointer"
+                  onClick={() => {
+                    window.open("https://firefly.land/", "_blank");
+                  }}
+                >
                   <img
                     alt="a download icon"
                     src={fireflyDownloadImage}

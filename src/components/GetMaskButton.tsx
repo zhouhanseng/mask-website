@@ -1,6 +1,5 @@
 import { Link } from "gatsby";
-import * as React from "react";
-import { memo } from "react";
+import React, { memo } from "react";
 import buryPointTrigger from "../utils/gtag";
 
 interface GetMaskButtonProps {

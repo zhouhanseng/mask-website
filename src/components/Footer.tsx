@@ -1,4 +1,4 @@
-import * as React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "gatsby";
 import logoWhiteImage from "../images/logo.png";
 
@@ -10,7 +10,6 @@ import iconTelegramImage from "../images/icon_telegram.png";
 import iconTwitterImage from "../images/icon_twitter.png";
 import iconYoutubeImage from "../images/icon_youtube.png";
 import { Newsletter } from "./Newsletter";
-import { useEffect, useState } from "react";
 
 export const Footer = () => {
   const [path, setPath] = useState("");
@@ -61,7 +60,8 @@ export const Footer = () => {
               </div>
               <div className="pr-2">
                 <p className="text-white opacity-80 text-base mb-4 md:max-w-xs w-full">
-                  Mask Network is a free and open source software developed and maintained by Dimension. 
+                  Mask Network is a free and open source software developed and
+                  maintained by Dimension.
                 </p>
               </div>
             </div>

@@ -115,11 +115,11 @@ const DownloadPage = () => {
           </div>
           <div className="bg-blue-mask w-full py-[114px]">
             <div className="mx-auto flex container md:justify-between flex-row sm:flex-col-reverse items-center justify-between px-16 max-md:px-8">
-              <div className="h-48 max-sm:h-36 max-sm:px-4 w-full text-white flex flex-col justify-between md:mt-0 mt-20 min-lg:mt-0">
-                <p className="text-[48px] font-bold max-sm:text-center mb-4">
+              <div className="h-48 max-sm:h-36 max-sm:px-4 w-full text-white flex flex-col justify-between sm:items-center md:mt-0 mt-20 min-lg:mt-0">
+                <p className="text-[48px] font-bold max-sm:text-center mb-4 sm:text-[32px] sm:text-center">
                   Mobile App Firefly
                 </p>
-                <p className="w-full font-poppins md:max-w-xss font-bold text-[24px] max-sm:text-sm leading-tight max-sm:text-center mb-14">
+                <p className="w-full font-poppins md:max-w-xss font-bold text-[24px] sm:text-sm leading-tight sm:text-center mb-14">
                   WEB3 SOCIAL AGGRTGATOR​
                 </p>
                 <div

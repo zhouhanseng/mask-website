@@ -1,6 +1,7 @@
 {
   "name": "mask-website",
   "version": "1.0.0",
+  "homepage": "https://DimensionDev.github.io/Mask-Website",
   "private": true,
   "description": "Mask Website",
   "author": "Hancheng Zhou",
@@ -20,7 +21,10 @@
   "dependencies": {
     "@emotion/react": "^11.4.1",
     "@emotion/styled": "^11.3.0",
+    "@fontsource/manrope": "^5.0.1",
     "@fontsource/montserrat": "^4.5.1",
+    "@fontsource/poppins": "^5.0.1",
+    "@fontsource/roboto": "^5.0.1",
     "@mui/icons-material": "^5.0.1",
     "@mui/material": "^5.0.2",
     "@svgr/webpack": "^5.5.0",

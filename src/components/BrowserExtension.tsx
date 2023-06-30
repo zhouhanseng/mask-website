@@ -10,8 +10,8 @@ const config = [
         onClick={() => buryPointTrigger("event", "getmask")}
         to="/download-links"
       >
-      Install the Mask Extension
-    </Link>
+        Install the Mask Extension
+      </Link>
     ),
     svg: (
       <StaticImage
@@ -55,10 +55,10 @@ export const BrowserExtension = () => {
       <div
         className={`flex justify-between items-start pt-8 gap-x-2 sm:flex-col animate__animated animate__fadeIn`}
       >
-        {config.map((x) => {
+        {config.map((x, i) => {
           return (
             <div
-              key={x.title}
+              key={i}
               className="flex-grow-0 w-1/3 items-center flex flex-col justify-center sm:flex-row sm:w-full sm:pt-6"
             >
               <div className="flex justify-center w-24 sm:w-1/4 max-w-nav-logo">

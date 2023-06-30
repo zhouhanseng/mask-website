@@ -1,5 +1,4 @@
-import React from "react";
-import { memo } from "react";
+import React, { memo } from "react";
 
 export const Logo = memo(() => {
   return (

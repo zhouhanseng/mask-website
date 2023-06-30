@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 import { Helmet } from "react-helmet";
 
 export function SEO(props: any) {
@@ -8,7 +8,7 @@ export function SEO(props: any) {
         lang: "en",
       }}
     >
-      <meta charSet="UTF-8" />
+      <meta name="Content-Type" content="text/html; charset=UTF-8" />
       <meta
         name="viewport"
         content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
@@ -22,18 +22,20 @@ export function SEO(props: any) {
       <meta name="author" content="Mask Network" />
       <meta name="application-name" content="Mask Network" />
 
-      {/* <!-- For Facebook --> */}
+      {/* <!-- For OpenGraph --> */}
       <meta
         property="og:title"
         content="Mask Network — Your Portal To The New, Open Internet."
       />
-      <meta property="og:type" content="website" />
-      <meta property="og:image" content="/fb-share-banner.png" />
-      <meta property="og:url" content="https://mask.io" />
       <meta
         property="og:description"
         content="Your Portal To The New, Open Internet."
       />
+      <meta property="og:type" content="website" />
+      <meta property="og:site_name" content="Mask Network" />
+      <meta property="og:locale" content="en-US" />
+      <meta property="og:image" content="https://mask.io/og-image-512.jpg" />
+      <meta property="og:url" content="https://mask.io" />
       <meta property="fb:app_id" content="321539018508290" />
 
       {/* <!-- For Twitter --> */}
@@ -46,7 +48,9 @@ export function SEO(props: any) {
         name="twitter:description"
         content="Your Portal To The New, Open Internet."
       />
-      <meta name="twitter:image" content="https://zhouhanseng.github.io/mask-website/twitter-share-image.png" />
+      <meta name="twitter:site" content="@realMaskNetwork" />
+      <meta name="twitter:creator" content="@realMaskNetwork" />
+      <meta name="twitter:image" content="https://mask.io/og-image-512.jpg" />
 
       {/* <!-- For Apple --> */}
       <meta name="apple-itunes-app" content="app-id=1478382964" />

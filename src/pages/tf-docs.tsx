@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 import Layout from "../components/Layout";
 import ArrowDownImg from "../images/outsvg/arrow_down.svg";
 import DownloadTestFlightImg from "../images/download_testflight.png";

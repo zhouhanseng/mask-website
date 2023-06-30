@@ -28,7 +28,7 @@ export function SEO(props: any) {
         content="Mask Network — Your Portal To The New, Open Internet."
       />
       <meta property="og:type" content="website" />
-      <meta property="og:image" content="https://mask.io/fb-share-banner.png" />
+      <meta property="og:image" content="https://mask.io/og-image-512.jpg" />
       <meta property="og:url" content="https://mask.io" />
       <meta
         property="og:description"
@@ -48,10 +48,7 @@ export function SEO(props: any) {
       />
       <meta name="twitter:site" content="@realMaskNetwork" />
       <meta name="twitter:creator" content="@realMaskNetwork" />
-      <meta
-        name="twitter:image"
-        content="https://mask.io/fb-share-banner.png"
-      />
+      <meta name="twitter:image" content="https://mask.io/twitter-image.png" />
 
       {/* <!-- For Apple --> */}
       <meta name="apple-itunes-app" content="app-id=1478382964" />

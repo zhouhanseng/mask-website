@@ -8,7 +8,7 @@ export function SEO(props: any) {
         lang: "en",
       }}
     >
-      <meta charSet="UTF-8" />
+      <meta name="Content-Type" content="text/html; charset=UTF-8" />
       <meta
         name="viewport"
         content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
@@ -37,7 +37,7 @@ export function SEO(props: any) {
       <meta property="fb:app_id" content="321539018508290" />
 
       {/* <!-- For Twitter --> */}
-      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:card" content="summary_large_image" />
       <meta
         name="twitter:title"
         content="Mask Network — Your Portal To The New, Open Internet."
@@ -50,7 +50,7 @@ export function SEO(props: any) {
       <meta name="twitter:creator" content="@realMaskNetwork" />
       <meta
         name="twitter:image"
-        content="https://mask.io/twitter-share-image.png"
+        content="https://mask.io/fb-share-banner.png"
       />
 
       {/* <!-- For Apple --> */}

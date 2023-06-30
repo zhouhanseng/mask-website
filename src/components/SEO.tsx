@@ -22,22 +22,24 @@ export function SEO(props: any) {
       <meta name="author" content="Mask Network" />
       <meta name="application-name" content="Mask Network" />
 
-      {/* <!-- For Facebook --> */}
+      {/* <!-- For OpenGraph --> */}
       <meta
         property="og:title"
         content="Mask Network — Your Portal To The New, Open Internet."
       />
-      <meta property="og:type" content="website" />
-      <meta property="og:image" content="https://mask.io/og-image-512.jpg" />
-      <meta property="og:url" content="https://mask.io" />
       <meta
         property="og:description"
         content="Your Portal To The New, Open Internet."
       />
+      <meta property="og:type" content="website" />
+      <meta property="og:site_name" content="Mask Network" />
+      <meta property="og:locale" content="en-US" />
+      <meta property="og:image" content="https://mask.io/og-image-512.jpg" />
+      <meta property="og:url" content="https://mask.io" />
       <meta property="fb:app_id" content="321539018508290" />
 
       {/* <!-- For Twitter --> */}
-      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:card" content="summary" />
       <meta
         name="twitter:title"
         content="Mask Network — Your Portal To The New, Open Internet."
@@ -48,7 +50,7 @@ export function SEO(props: any) {
       />
       <meta name="twitter:site" content="@realMaskNetwork" />
       <meta name="twitter:creator" content="@realMaskNetwork" />
-      <meta name="twitter:image" content="https://mask.io/twitter-image.png" />
+      <meta name="twitter:image" content="https://mask.io/og-image-512.jpg" />
 
       {/* <!-- For Apple --> */}
       <meta name="apple-itunes-app" content="app-id=1478382964" />

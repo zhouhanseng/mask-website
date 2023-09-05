@@ -97,38 +97,6 @@ const FaqPage = () => {
       ],
     },
     {
-      title: "About ITO",
-      image: faq4Image,
-      contents: [
-        {
-          title: "What is ITO ( Initial Twitter Offering )?",
-          content:
-            '<p class="max-sm:mb-2 mb-3">ITO (Initial Twitter Offering) is a decentralized asset offering feature, available on the decentralized blockchain network infrastructure Ethereum, Binance Smart Chain, and Polygon. Users could participate in a token launch directly on Twitter; projects could also reward users or build awareness through ITO by offering their existing tokens with a discount, or simply launch a new token.</p><p class="max-sm:mb-2 mb-3">Please follow our <a class="font-semibold" href="http://masknetwork.medium.com/">Blog</a> or <a class="font-semibold" href="https://t.me/maskbook_group">Telegram Channel</a> for more information. After the event starts, find the relevant tweets of ITO and click "Enter" to participate in ITO.</p>',
-        },
-        {
-          title: "How do I prepare for participating in an ITO?",
-          content:
-            "<p class='max-sm:mb-2 mb-3'>1. Please make sure that you have installed the Mask extension.</p><p class='max-sm:mb-2 mb-3'>2. Create a Mask persona and connect to your Twitter account. Don’t forget to BACK UP!</p> <p class='max-sm:mb-2 mb-3'>3. Import or create a wallet, Mask will automatically generate an Ethereum wallet address for you, and we also support connecting MetaMask and WalletConnect.</p><p class='max-sm:mb-2 mb-3'>4. Prepare enough token for purchase and for sufficient gas fee. The ITO will be encrypted in a Tweet, and the entrance can only be seen when ITO starts.</p>",
-        },
-        {
-          title: "How much can I purchase a single ITO address?",
-          content:
-            "<p>Each ITO has different rules, and the purchase limit for a single wallet address will be different.</p><p>In the future, Mask Network will support various forms of auctions and joint curves to serve various ITO needs.</p>",
-        },
-        {
-          title: "What should I do if the gas is HIGH?",
-          content:
-            "The fluctuating gas fee is annoying, we get that. Mask Network provides a multi-chain solution. You may have more options by switching to Binance Smart Chain (BSC), or Polygon (Matic), a Layer-2 solution.",
-        },
-        {
-          title:
-            "If an ITO is on BSC/ Polygon, but all my $MASK is on Ethereum, will I be able to meet the snapshot requirement?",
-          content:
-            "Don’t worry about it, it doesn’t matter which chain your asset is on.",
-        },
-      ],
-    },
-    {
       title: "Wallet",
       image: faq5Image,
       contents: [
@@ -258,14 +226,6 @@ const FaqPage = () => {
           link: "https://realmasknetwork.notion.site/Participate-in-lossless-lottery-via-PoolTogether-on-Twitter-ETH-and-Polygon-377597e14aff441ab645ecba5ea690f1",
           text: "💱 Participate in lossless lottery via PoolTogether on Twitter (ETH and Polygon)",
         },
-        {
-          link: "https://realmasknetwork.notion.site/Launch-an-ITO-Initial-Twitter-Offering-Support-ETH-BSC-Polygon-Arbitrum-d84c60903f974f4880d2085a13906d55",
-          text: "🚀 Launch an ITO (Initial Twitter Offering) (Support ETH, BSC, Polygon, Arbitrum)",
-        },
-        {
-          link: "https://realmasknetwork.notion.site/Participate-in-ITO-Initial-Twitter-Offering-Support-ETH-BSC-Polygon-Arbitrum-05619ffc02204848bcaf6d81b0db589f",
-          text: "🙋 Participate in ITO (Initial Twitter Offering) (Support ETH, BSC, Polygon, Arbitrum)",
-        },
       ],
     },
     {
@@ -291,10 +251,6 @@ const FaqPage = () => {
         {
           link: "https://realmasknetwork.notion.site/Make-a-quick-Gitcoin-Grant-donation-98ed83784ed4446a8a13fa685c7bddfb",
           text: "🔗 Make a quick Gitcoin Grant donation",
-        },
-        {
-          link: "https://realmasknetwork.notion.site/Claim-tokens-from-ITO-Airdrop-Support-ETH-and-Polygon-c34c70345868455d8a1107244f9e5922",
-          text: "🎁 Claim tokens (from ITO/Airdrop) (Support ETH and Polygon)",
         },
       ],
     },

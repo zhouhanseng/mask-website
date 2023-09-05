@@ -6,7 +6,6 @@ import Layout from "../components/Layout";
 import FiatSvg from "../images/outsvg/fiat.svg";
 import NFTSvg from "../images/outsvg/nft.svg";
 import MessageSvg from "../images/outsvg/message.svg";
-import ITOSvg from "../images/outsvg/ito.svg";
 import FileSvg from "../images/outsvg/file.svg";
 import RedPacketSvg from "../images/outsvg/red_packet.svg";
 import Footprint from "../images/outsvg/footprint.svg";
@@ -26,14 +25,6 @@ const sectionConfig = [
       "Use the Mask Extension to hide your content from prying eyes and allow only your target audience to see it.",
     url: MessageSvg,
     link: "https://realmasknetwork.notion.site/Send-an-Encrypted-Tweet-b76c1e6ec9fd4e9a8033df51669b4daf",
-  },
-  {
-    mode: { reverse: false, row: false },
-    title: "Launch New Projects Via a ITO (Initial Twitter Offering)",
-    subtitle:
-      "If you’re launching a new project on the Ethereum, BSC, Polygon, or Arbitrum networks, ITOs are a completely new way of launching decentralised assets fairly.",
-    url: ITOSvg,
-    link: "https://realmasknetwork.notion.site/Participate-in-ITO-Initial-Twitter-Offering-Support-ETH-BSC-Polygon-Arbitrum-05619ffc02204848bcaf6d81b0db589f",
   },
   {
     mode: { reverse: false, row: false },

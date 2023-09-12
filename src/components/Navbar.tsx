@@ -40,10 +40,10 @@ const Menu = ({ open }: MenuProps) => {
         <a
           target="_blank"
           rel="noreferrer"
-          href="https://news.mask.io/"
+          href="https://masknetwork.medium.com/"
           className="menu-link"
         >
-          News
+          Medium
         </a>
       </div>
       <div className="sm:min-w-full md-for-menu:min-w-full">

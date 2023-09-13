@@ -102,12 +102,12 @@ export const Footer = () => {
                   <p className="text-2xl text-white mb-6">Navigate</p>
                   <div className="grid grid-cols-3 min-lg:grid-rows-2 md:grid-cols-2 sm:grid-cols-1 gap-x-1 gap-y-10 sm:gap-y-5 max-md:gap-x-0 max-md:gap-y-1 text-base max-md::text-sm">
                     <a
-                      href="https://masknetwork.medium.com/"
+                      href="https://news.mask.io/"
                       target="_blank"
                       rel="noreferrer"
                       className={footerLinkTextClassName}
                     >
-                      Medium
+                      News
                     </a>
                     <Link
                       className={footerLinkTextClassName}

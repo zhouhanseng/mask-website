@@ -13,7 +13,7 @@ export function GA() {
                     window.dataLayer = window.dataLayer || [];
                     function gtag(){dataLayer.push(arguments);}
                     gtag('js', new Date());
-                    gtag('config', 'G-HH3XSGH6WT');
+                    gtag('config', 'G-5EXJ1HMZ97');
                 `}
       </Script>
     </>
